@@ -4,6 +4,8 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
 }
 
+@OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
+
 kotlin {
     androidTarget()
     
@@ -48,7 +50,7 @@ kotlin {
         
         androidMain.dependencies {
             implementation(compose.uiTooling)
-            implementation(libs.androidx.activityCompose)
+            implementation(libs.androidx.activity.compose)
             implementation(libs.koin.android)
         }
     }
