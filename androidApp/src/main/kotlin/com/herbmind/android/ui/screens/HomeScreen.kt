@@ -17,7 +17,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.herbmind.android.ui.theme.HerbColors
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
 fun HomeScreen(modifier: Modifier = Modifier) {
     Scaffold(
@@ -153,12 +153,14 @@ private fun HotEffectsSection() {
         
         val effects = listOf("补气", "活血", "清热", "安神", "解毒", "止痛")
         
-        FlowRow(
-            horizontalArrangement = Arrangement.spacedBy(8.dp),
-            verticalArrangement = Arrangement.spacedBy(8.dp)
-        ) {
-            effects.forEach { effect ->
-                EffectTag(text = effect)
+        // 使用 Row 替代 FlowRow
+        Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            effects.chunked(3).forEach { rowEffects ->
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    rowEffects.forEach { effect ->
+                        EffectTag(text = effect)
+                    }
+                }
             }
         }
     }
