@@ -4,6 +4,8 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
 }
 
+@file:OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
+
 kotlin {
     androidTarget()
     
