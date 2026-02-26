@@ -28,6 +28,7 @@ private val LightColorScheme = lightColorScheme(
 fun HerbMindTheme(content: @Composable () -> Unit) {
     MaterialTheme(
         colorScheme = LightColorScheme,
+        typography = Typography,
         content = content
     )
 }

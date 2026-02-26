@@ -5,6 +5,6 @@ import android.app.Application
 class HerbMindApplication : Application() {
     override fun onCreate() {
         super.onCreate()
-        // TODO: Initialize Koin
+        // Application initialization
     }
 }
