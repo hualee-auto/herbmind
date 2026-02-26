@@ -1,6 +1,6 @@
 # 本草记 HerbMind
 
-一款基于 Compose Multiplatform 开发的中药查询学习应用。
+一款基于 Jetpack Compose 开发的 Android 中药查询学习应用。
 
 ## 功能特性
 
@@ -12,27 +12,39 @@
 
 ## 技术栈
 
-- **UI 框架**: Compose Multiplatform
+- **平台**: Android (minSdk 24, targetSdk 34)
+- **UI 框架**: Jetpack Compose
 - **编程语言**: Kotlin
-- **架构**: MVVM + MVI
-- **依赖注入**: Koin
+- **架构**: MVVM
 - **本地存储**: SQLDelight
-- **导航**: Voyager
+- **图片加载**: Coil
 
 ## 项目结构
 
 ```
 herbmind/
-├── shared/              # 共享模块 (KMP)
-│   ├── data/           # 数据层 (数据库、模型、仓库)
-│   ├── domain/         # 领域层 (UseCase)
-│   └── di/             # 依赖注入配置
-├── composeApp/         # Compose UI
-│   ├── theme/          # 主题配置 (国风配色)
-│   ├── components/     # 可复用组件
-│   ├── screens/        # 页面
-│   └── navigation/     # 导航
-└── androidApp/         # Android 入口
+├── androidApp/          # Android 应用模块
+│   ├── src/main/kotlin/com/herbmind/android/
+│   │   ├── MainActivity.kt
+│   │   ├── HerbMindApplication.kt
+│   │   └── ui/
+│   │       ├── theme/      # 主题配置 (国风配色)
+│   │       ├── components/ # 可复用组件
+│   │       └── screens/    # 页面
+│   └── build.gradle.kts
+├── shared/              # 数据模块 (Android Library)
+│   ├── src/main/kotlin/com/herbmind/
+│   │   ├── data/         # 数据层 (数据库、模型、仓库)
+│   │   ├── domain/       # 领域层 (UseCase)
+│   │   └── di/           # 依赖注入配置
+│   └── build.gradle.kts
+└── docs/                # 项目文档
+    ├── PRD-中药记忆学习App.md
+    ├── PRD-中药记忆学习App-UI原型-v2.md
+    ├── PRD-中药记忆学习App-技术方案-Android.md
+    ├── design.md
+    ├── UI-Visual-Design.md
+    └── CHANGELOG.md
 ```
 
 ## 国风设计
@@ -47,24 +59,23 @@ herbmind/
 ### Android
 
 ```bash
-./gradlew :androidApp:installDebug
+./gradlew :androidApp:assembleDebug
 ```
 
-### iOS
+APK 将生成在 `androidApp/build/outputs/apk/debug/`
 
-```bash
-./gradlew :composeApp:podInstall
-# 然后在 Xcode 中打开 iosApp 运行
-```
+## 文档
 
-## 数据
+项目文档位于 `docs/` 目录：
 
-包含 30+ 味常用中药的完整数据，包括：
-- 性味归经
-- 功效主治
-- 记忆口诀
-- 趣味联想
-- 易混淆对比
+| 文档 | 说明 |
+|------|------|
+| [PRD-中药记忆学习App.md](docs/PRD-中药记忆学习App.md) | 产品需求文档 |
+| [PRD-中药记忆学习App-UI原型-v2.md](docs/PRD-中药记忆学习App-UI原型-v2.md) | UI 原型设计 |
+| [PRD-中药记忆学习App-技术方案-Android.md](docs/PRD-中药记忆学习App-技术方案-Android.md) | Android 技术方案 |
+| [design.md](docs/design.md) | UI 设计规范 |
+| [UI-Visual-Design.md](docs/UI-Visual-Design.md) | UI 视觉设计图 |
+| [CHANGELOG.md](docs/CHANGELOG.md) | 项目变更记录 |
 
 ## 核心算法
 
@@ -78,11 +89,10 @@ herbmind/
 - 高频考点（考试频率加权随机）
 - 易混淆药（有相似药物的药材）
 
-## 截图
+## 构建状态
 
-*(待添加)*
+[![Android Build](https://github.com/hualee-auto/herbmind/actions/workflows/android-build.yml/badge.svg)](https://github.com/hualee-auto/herbmind/actions)
 
 ## 许可证
 
 MIT License
-# Build Status
