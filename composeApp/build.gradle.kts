@@ -6,7 +6,8 @@ plugins {
 @file:OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
 
 kotlin {
-    androidTarget()
+    // Android target is handled by androidApp module
+    // androidTarget()
     
     listOf(
         iosX64(),
@@ -40,10 +41,6 @@ kotlin {
             implementation(libs.coil.network)
             
             implementation(libs.kotlinx.coroutines.core)
-        }
-        
-        androidMain.dependencies {
-            implementation(libs.koin.android)
         }
     }
 }
