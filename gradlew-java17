@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# 设置 Java 环境
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+
+# 运行 Gradle
+exec /root/.openclaw/workspace/output/herbmind/gradlew "$@"

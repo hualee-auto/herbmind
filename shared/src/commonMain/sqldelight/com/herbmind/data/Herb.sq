@@ -1,3 +1,4 @@
+-- 中药表
 CREATE TABLE herb (
     id TEXT PRIMARY KEY,
     name TEXT NOT NULL,
@@ -17,63 +18,77 @@ CREATE TABLE herb (
     keyPoint TEXT,
     similarTo TEXT,
     image TEXT,
-    isCommon INTEGER DEFAULT 0,
+    isCommon INTEGER AS Boolean DEFAULT 0,
     examFrequency INTEGER DEFAULT 1
 );
 
+-- 收藏表
 CREATE TABLE favorite (
     herbId TEXT PRIMARY KEY,
     addedAt INTEGER NOT NULL,
-    FOREIGN KEY (herbId) REFERENCES herb(id)
+    FOREIGN KEY (herbId) REFERENCES herb(id) ON DELETE CASCADE
 );
 
+-- 搜索历史表
 CREATE TABLE searchHistory (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     query TEXT NOT NULL,
     timestamp INTEGER NOT NULL
 );
 
+-- 索引
 CREATE INDEX idx_herb_category ON herb(category);
 
--- Queries
+-- 查询所有中药
 selectAll:
 SELECT * FROM herb;
 
+-- 根据ID查询
 selectById:
 SELECT * FROM herb WHERE id = ?;
 
+-- 根据分类查询
 selectByCategory:
 SELECT * FROM herb WHERE category = ?;
 
+-- 查询收藏的中药
 selectFavorites:
 SELECT h.* FROM herb h
 INNER JOIN favorite f ON h.id = f.herbId
 ORDER BY f.addedAt DESC;
 
+-- 查询收藏的ID列表
 selectFavoritesIds:
 SELECT herbId FROM favorite;
 
+-- 添加收藏
 insertFavorite:
 INSERT OR REPLACE INTO favorite (herbId, addedAt)
 VALUES (?, ?);
 
+-- 删除收藏
 deleteFavorite:
 DELETE FROM favorite WHERE herbId = ?;
 
+-- 检查是否已收藏
 isFavorite:
-SELECT COUNT(*) FROM favorite WHERE herbId = ?;
+SELECT COUNT(*) > 0 FROM favorite WHERE herbId = ?;
 
+-- 添加搜索历史
 insertSearchHistory:
 INSERT INTO searchHistory (query, timestamp)
 VALUES (?, ?);
 
+-- 查询最近搜索
 selectRecentSearches:
 SELECT DISTINCT query FROM searchHistory
 ORDER BY timestamp DESC
 LIMIT 10;
 
+-- 删除某条搜索历史
 deleteSearchHistory:
 DELETE FROM searchHistory WHERE query = ?;
 
+-- 清空搜索历史
 clearSearchHistory:
 DELETE FROM searchHistory;
