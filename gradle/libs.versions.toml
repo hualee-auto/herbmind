@@ -1,0 +1,53 @@
+[versions]
+agp = "8.2.0"
+kotlin = "1.9.22"
+compose = "1.6.0"
+compose-plugin = "1.5.11"
+android-minSdk = "24"
+android-compileSdk = "34"
+android-targetSdk = "34"
+
+[libraries]
+# Kotlin
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version = "1.7.3" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.6.2" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version = "0.5.0" }
+
+# Compose
+compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "compose-plugin" }
+compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "compose-plugin" }
+compose-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "compose-plugin" }
+compose-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "compose-plugin" }
+compose-components-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "compose-plugin" }
+
+# Android
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.8.2" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version = "1.12.0" }
+
+# SQLDelight
+sqldelight-runtime = { module = "app.cash.sqldelight:runtime", version = "2.0.1" }
+sqldelight-coroutines = { module = "app.cash.sqldelight:coroutines-extensions", version = "2.0.1" }
+sqldelight-android = { module = "app.cash.sqldelight:android-driver", version = "2.0.1" }
+sqldelight-native = { module = "app.cash.sqldelight:native-driver", version = "2.0.1" }
+
+# Koin
+koin-core = { module = "io.insert-koin:koin-core", version = "3.5.3" }
+koin-compose = { module = "io.insert-koin:koin-compose", version = "1.1.2" }
+koin-android = { module = "io.insert-koin:koin-android", version = "3.5.3" }
+
+# Navigation
+voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version = "1.0.0" }
+voyager-screenmodel = { module = "cafe.adriel.voyager:voyager-screenmodel", version = "1.0.0" }
+voyager-koin = { module = "cafe.adriel.voyager:voyager-koin", version = "1.0.0" }
+
+# Image Loading
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version = "3.0.0-alpha04" }
+coil-network = { module = "io.coil-kt.coil3:coil-network", version = "3.0.0-alpha04" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+sqldelight = { id = "app.cash.sqldelight", version = "2.0.1" }
+kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

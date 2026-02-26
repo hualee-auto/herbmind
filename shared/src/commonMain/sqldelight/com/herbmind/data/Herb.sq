@@ -1,0 +1,79 @@
+CREATE TABLE herb (
+    id TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    pinyin TEXT NOT NULL,
+    aliases TEXT,
+    category TEXT NOT NULL,
+    subCategory TEXT,
+    nature TEXT,
+    flavor TEXT,
+    meridians TEXT,
+    effects TEXT NOT NULL,
+    indications TEXT,
+    usage TEXT,
+    contraindications TEXT,
+    memoryTip TEXT,
+    association TEXT,
+    keyPoint TEXT,
+    similarTo TEXT,
+    image TEXT,
+    isCommon INTEGER DEFAULT 0,
+    examFrequency INTEGER DEFAULT 1
+);
+
+CREATE TABLE favorite (
+    herbId TEXT PRIMARY KEY,
+    addedAt INTEGER NOT NULL,
+    FOREIGN KEY (herbId) REFERENCES herb(id)
+);
+
+CREATE TABLE searchHistory (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    query TEXT NOT NULL,
+    timestamp INTEGER NOT NULL
+);
+
+CREATE INDEX idx_herb_category ON herb(category);
+
+-- Queries
+selectAll:
+SELECT * FROM herb;
+
+selectById:
+SELECT * FROM herb WHERE id = ?;
+
+selectByCategory:
+SELECT * FROM herb WHERE category = ?;
+
+selectFavorites:
+SELECT h.* FROM herb h
+INNER JOIN favorite f ON h.id = f.herbId
+ORDER BY f.addedAt DESC;
+
+selectFavoritesIds:
+SELECT herbId FROM favorite;
+
+insertFavorite:
+INSERT OR REPLACE INTO favorite (herbId, addedAt)
+VALUES (?, ?);
+
+deleteFavorite:
+DELETE FROM favorite WHERE herbId = ?;
+
+isFavorite:
+SELECT COUNT(*) FROM favorite WHERE herbId = ?;
+
+insertSearchHistory:
+INSERT INTO searchHistory (query, timestamp)
+VALUES (?, ?);
+
+selectRecentSearches:
+SELECT DISTINCT query FROM searchHistory
+ORDER BY timestamp DESC
+LIMIT 10;
+
+deleteSearchHistory:
+DELETE FROM searchHistory WHERE query = ?;
+
+clearSearchHistory:
+DELETE FROM searchHistory;
