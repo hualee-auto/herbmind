@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.herbmind"
+    namespace = "com.herbmind.android"
     compileSdk = 34
 
     defaultConfig {
