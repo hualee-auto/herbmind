@@ -4,8 +4,6 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
 }
 
-@OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
-
 kotlin {
     androidTarget()
     
@@ -27,7 +25,7 @@ kotlin {
             implementation(compose.material3)
             implementation(compose.ui)
             implementation(compose.components.resources)
-            implementation(libs.compose.components.uiToolingPreview)
+            // implementation(libs.compose.components.uiToolingPreview) // Not available in 1.5.11
             
             implementation(projects.shared)
             
