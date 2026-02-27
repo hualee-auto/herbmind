@@ -1,3 +1,5 @@
+package com.herbmind.data.model
+
 import kotlinx.serialization.Serializable
 
 @Serializable

@@ -3,23 +3,41 @@ package com.herbmind.android.ui.screens
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
-import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.herbmind.android.ui.theme.HerbColors
+import com.herbmind.android.ui.viewmodel.HomeViewModel
+import com.herbmind.data.model.DailyRecommend
+import com.herbmind.data.model.Herb
+import com.herbmind.data.model.HerbCategory
+import org.koin.androidx.compose.koinViewModel
 
-@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeScreen(modifier: Modifier = Modifier) {
+fun HomeScreen(
+    onSearchClick: () -> Unit,
+    onSearchWithQuery: (String) -> Unit,
+    onHerbClick: (String) -> Unit,
+    onFavoritesClick: () -> Unit,
+    onCategoryClick: (String) -> Unit,
+    modifier: Modifier = Modifier,
+    viewModel: HomeViewModel = koinViewModel()
+) {
+    val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -32,11 +50,11 @@ fun HomeScreen(modifier: Modifier = Modifier) {
                     )
                 },
                 actions = {
-                    IconButton(onClick = { }) {
+                    IconButton(onClick = onFavoritesClick) {
                         Icon(
-                            imageVector = Icons.Default.Settings,
-                            contentDescription = "设置",
-                            tint = HerbColors.InkGray
+                            imageVector = Icons.Default.Star,
+                            contentDescription = "我的收藏",
+                            tint = HerbColors.AccentRed
                         )
                     }
                 },
@@ -57,46 +75,58 @@ fun HomeScreen(modifier: Modifier = Modifier) {
             // 搜索框
             item {
                 Spacer(modifier = Modifier.height(8.dp))
-                SearchBar()
+                SearchBar(onClick = onSearchClick)
             }
 
             // 热门功效
             item {
-                HotEffectsSection()
+                HotEffectsSection(
+                    onEffectClick = { effect ->
+                        onSearchWithQuery(effect)
+                    }
+                )
             }
 
             // 今日推荐
-            item {
-                SectionTitle("今日推荐")
-            }
+            if (uiState.dailyRecommends.isNotEmpty()) {
+                item {
+                    SectionTitle("今日推荐")
+                }
 
-            items(3) { index ->
-                when (index) {
-                    0 -> DailyRecommendCard(
-                        name = "当归",
-                        effects = "补血活血 · 调经止痛",
-                        tag = "妇科圣药"
-                    )
-                    1 -> DailyRecommendCard(
-                        name = "黄芪",
-                        effects = "补气升阳 · 益卫固表",
-                        tag = "补气诸药之最"
-                    )
-                    2 -> DailyRecommendCard(
-                        name = "金银花",
-                        effects = "清热解毒 · 疏散风热",
-                        tag = "疮家圣药"
+                items(uiState.dailyRecommends) { recommend ->
+                    DailyRecommendCard(
+                        recommend = recommend,
+                        onClick = { onHerbClick(recommend.herb.id) }
                     )
                 }
             }
 
             // 分类浏览
-            item {
-                SectionTitle("浏览中药库")
+            if (uiState.categories.isNotEmpty()) {
+                item {
+                    SectionTitle("浏览中药库")
+                }
+
+                item {
+                    CategoryGrid(
+                        categories = uiState.categories,
+                        onCategoryClick = { category -> onCategoryClick(category.name) }
+                    )
+                }
             }
 
-            item {
-                CategoryGrid()
+            // 常用药材
+            if (uiState.hotHerbs.isNotEmpty()) {
+                item {
+                    SectionTitle("常用药材")
+                }
+
+                items(uiState.hotHerbs) { herb ->
+                    HerbListCard(
+                        herb = herb,
+                        onClick = { onHerbClick(herb.id) }
+                    )
+                }
             }
 
             item {
@@ -107,9 +137,9 @@ fun HomeScreen(modifier: Modifier = Modifier) {
 }
 
 @Composable
-private fun SearchBar() {
+private fun SearchBar(onClick: () -> Unit) {
     Card(
-        onClick = { },
+        onClick = onClick,
         modifier = Modifier
             .fillMaxWidth()
             .height(56.dp),
@@ -142,7 +172,9 @@ private fun SearchBar() {
 }
 
 @Composable
-private fun HotEffectsSection() {
+private fun HotEffectsSection(
+    onEffectClick: (String) -> Unit
+) {
     Column {
         Text(
             text = "热门功效",
@@ -150,15 +182,17 @@ private fun HotEffectsSection() {
             color = HerbColors.InkGray,
             modifier = Modifier.padding(bottom = 8.dp)
         )
-        
+
         val effects = listOf("补气", "活血", "清热", "安神", "解毒", "止痛")
-        
-        // 使用 Row 替代 FlowRow
+
         Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
             effects.chunked(3).forEach { rowEffects ->
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     rowEffects.forEach { effect ->
-                        EffectTag(text = effect)
+                        EffectTag(
+                            text = effect,
+                            onClick = { onEffectClick(effect) }
+                        )
                     }
                 }
             }
@@ -167,8 +201,12 @@ private fun HotEffectsSection() {
 }
 
 @Composable
-private fun EffectTag(text: String) {
+private fun EffectTag(
+    text: String,
+    onClick: () -> Unit
+) {
     Surface(
+        onClick = onClick,
         shape = RoundedCornerShape(16.dp),
         color = HerbColors.BambooGreenPale
     ) {
@@ -195,7 +233,7 @@ private fun SectionTitle(title: String) {
             color = HerbColors.InkBlack
         )
         Spacer(modifier = Modifier.width(8.dp))
-        Divider(
+        HorizontalDivider(
             modifier = Modifier.weight(1f),
             color = HerbColors.BorderPale,
             thickness = 1.dp
@@ -205,12 +243,12 @@ private fun SectionTitle(title: String) {
 
 @Composable
 private fun DailyRecommendCard(
-    name: String,
-    effects: String,
-    tag: String
+    recommend: DailyRecommend,
+    onClick: () -> Unit
 ) {
+    val herb = recommend.herb
     Card(
-        onClick = { },
+        onClick = onClick,
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(16.dp),
         colors = CardDefaults.cardColors(
@@ -237,25 +275,25 @@ private fun DailyRecommendCard(
                 Spacer(modifier = Modifier.width(12.dp))
                 Column {
                     Text(
-                        text = name,
+                        text = herb.name,
                         fontSize = 18.sp,
                         fontWeight = FontWeight.SemiBold,
                         color = HerbColors.InkBlack
                     )
                     Text(
-                        text = effects,
+                        text = herb.effects.joinToString(" · ") { it.take(8) },
                         fontSize = 14.sp,
                         color = HerbColors.InkGray
                     )
                 }
             }
-            
+
             Spacer(modifier = Modifier.height(8.dp))
-            Divider(color = HerbColors.BorderPale, thickness = 1.dp)
+            HorizontalDivider(color = HerbColors.BorderPale, thickness = 1.dp)
             Spacer(modifier = Modifier.height(8.dp))
-            
+
             Text(
-                text = tag,
+                text = recommend.reason,
                 fontSize = 14.sp,
                 color = HerbColors.Ochre
             )
@@ -264,26 +302,84 @@ private fun DailyRecommendCard(
 }
 
 @Composable
-private fun CategoryGrid() {
-    val categories = listOf(
-        "解表药" to "🌡️",
-        "清热药" to "🔥",
-        "补虚药" to "💊",
-        "理气药" to "🌿",
-        "活血化瘀" to "💉",
-        "安神药" to "😴"
-    )
-    
+private fun HerbListCard(
+    herb: Herb,
+    onClick: () -> Unit
+) {
+    Card(
+        onClick = onClick,
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(12.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = HerbColors.PureWhite
+        ),
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Box(
+                modifier = Modifier
+                    .size(48.dp)
+                    .clip(RoundedCornerShape(10.dp))
+                    .background(HerbColors.BambooGreenPale),
+                contentAlignment = Alignment.Center
+            ) {
+                Text(
+                    text = "🌿",
+                    fontSize = 24.sp
+                )
+            }
+            Spacer(modifier = Modifier.width(12.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = herb.name,
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    color = HerbColors.InkBlack
+                )
+                Text(
+                    text = herb.effects.joinToString(" · ") { it.take(8) },
+                    fontSize = 13.sp,
+                    color = HerbColors.InkGray,
+                    maxLines = 1
+                )
+            }
+            if (herb.keyPoint != null) {
+                Surface(
+                    shape = RoundedCornerShape(12.dp),
+                    color = HerbColors.OchrePale
+                ) {
+                    Text(
+                        text = herb.keyPoint!!,
+                        modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
+                        fontSize = 12.sp,
+                        color = HerbColors.Ochre
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun CategoryGrid(
+    categories: List<HerbCategory>,
+    onCategoryClick: (HerbCategory) -> Unit
+) {
     Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
         categories.chunked(3).forEach { row ->
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(12.dp)
             ) {
-                row.forEach { (name, icon) ->
+                row.forEach { category ->
                     CategoryCard(
-                        name = name,
-                        icon = icon,
+                        category = category,
+                        onClick = { onCategoryClick(category) },
                         modifier = Modifier.weight(1f)
                     )
                 }
@@ -297,12 +393,12 @@ private fun CategoryGrid() {
 
 @Composable
 private fun CategoryCard(
-    name: String,
-    icon: String,
+    category: HerbCategory,
+    onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Card(
-        onClick = { },
+        onClick = onClick,
         modifier = modifier,
         shape = RoundedCornerShape(12.dp),
         colors = CardDefaults.cardColors(
@@ -315,15 +411,20 @@ private fun CategoryCard(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = icon,
+                text = category.icon,
                 fontSize = 24.sp
             )
             Spacer(modifier = Modifier.height(4.dp))
             Text(
-                text = name,
+                text = category.name,
                 fontSize = 14.sp,
                 fontWeight = FontWeight.SemiBold,
                 color = HerbColors.InkBlack
+            )
+            Text(
+                text = "${category.herbCount}味",
+                fontSize = 12.sp,
+                color = HerbColors.InkGray
             )
         }
     }

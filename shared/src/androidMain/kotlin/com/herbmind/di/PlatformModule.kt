@@ -1,10 +1,10 @@
 package com.herbmind.di
 
 import com.herbmind.data.database.DriverFactory
-import org.koin.android.ext.koin.androidContext
 import org.koin.core.module.Module
 import org.koin.dsl.module
+import android.content.Context
 
 actual fun platformModule(): Module = module {
-    single { DriverFactory(androidContext()) }
+    single { DriverFactory(get<Context>()) }
 }

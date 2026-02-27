@@ -1,29 +1,29 @@
 package com.herbmind.data.repository
 
-import com.herbmind.data.SearchHistoryQueries
+import com.herbmind.data.HerbQueries
+import app.cash.sqldelight.coroutines.asFlow
+import app.cash.sqldelight.coroutines.mapToList
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.map
 
 class SearchRepository(
-    private val searchHistoryQueries: SearchHistoryQueries
+    private val herbQueries: HerbQueries
 ) {
     fun getRecentSearches(): Flow<List<String>> {
-        return searchHistoryQueries.selectRecentSearches()
+        return herbQueries.selectRecentSearches()
             .asFlow()
-            .map { query ->
-                query.executeAsList()
-            }
+            .mapToList(Dispatchers.Default)
     }
 
     suspend fun addSearch(query: String) {
-        searchHistoryQueries.insertSearchHistory(query, System.currentTimeMillis())
+        herbQueries.insertSearchHistory(query, System.currentTimeMillis())
     }
 
     suspend fun deleteSearch(query: String) {
-        searchHistoryQueries.deleteSearchHistory(query)
+        herbQueries.deleteSearchHistory(query)
     }
 
     suspend fun clearHistory() {
-        searchHistoryQueries.clearSearchHistory()
+        herbQueries.clearSearchHistory()
     }
 }

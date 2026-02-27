@@ -42,4 +42,12 @@ object HerbColors {
     // 边框/分割线
     val BorderLight = Color(0xFFE0E0E0)
     val BorderPale = Color(0xFFE8E8E0)
+
+    // 新增颜色
+    val MemoryYellow = Color(0xFFFFF8E1)
+    val MemoryGreen = Color(0xFFE8F5E9)
+    val AccentYellow = Color(0xFFFFB300)
+    val AccentRed = Color(0xFFE53935)
+    val SuccessGreen = Color(0xFF43A047)
+    val OchrePale = Color(0xFFF5F0EE)
 }

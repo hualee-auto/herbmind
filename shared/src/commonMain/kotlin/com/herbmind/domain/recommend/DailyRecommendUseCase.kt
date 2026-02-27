@@ -5,7 +5,7 @@ import com.herbmind.data.model.Herb
 import com.herbmind.data.model.RecommendType
 import com.herbmind.data.repository.HerbRepository
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.map
 import kotlinx.datetime.Clock
 import kotlinx.datetime.Month
 import kotlinx.datetime.TimeZone
@@ -14,45 +14,44 @@ import kotlinx.datetime.todayIn
 class DailyRecommendUseCase(
     private val herbRepository: HerbRepository
 ) {
-    suspend operator fun invoke(): Flow<List<DailyRecommend>> = flow {
-        val allHerbs = herbRepository.getAllHerbs()
+    operator fun invoke(): Flow<List<DailyRecommend>> {
         val today = Clock.System.todayIn(TimeZone.currentSystemDefault())
         val seed = today.toString().hashCode()
 
-        val recommends = buildList {
-            // 1. 节气推荐
-            getSeasonalHerb(allHerbs, today, seed)?.let { herb ->
-                add(DailyRecommend(
-                    herb = herb,
-                    reason = generateSeasonalReason(today.month),
-                    type = RecommendType.SEASONAL
-                ))
-            }
-
-            // 2. 高频考点
-            getExamHerb(allHerbs, seed + 1)?.let { herb ->
-                add(DailyRecommend(
-                    herb = herb,
-                    reason = "历年考试高频出现，${"★".repeat(herb.examFrequency)}重点药",
-                    type = RecommendType.EXAM
-                ))
-            }
-
-            // 3. 易混淆药
-            getContrastHerb(allHerbs, seed + 2)?.let { herb ->
-                val similarName = herb.similarTo.firstOrNull()?.let { id ->
-                    allHerbs.find { it.id == id }?.name
+        return herbRepository.getAllHerbs().map { herbs ->
+            buildList {
+                // 1. 节气推荐
+                getSeasonalHerb(herbs, today, seed)?.let { herb ->
+                    add(DailyRecommend(
+                        herb = herb,
+                        reason = generateSeasonalReason(today.month),
+                        type = RecommendType.SEASONAL
+                    ))
                 }
-                add(DailyRecommend(
-                    herb = herb,
-                    reason = similarName?.let { "常与$it 混淆，注意区分" }
-                        ?: "易与其他药混淆，重点记忆",
-                    type = RecommendType.CONTRAST
-                ))
+
+                // 2. 高频考点
+                getExamHerb(herbs, seed + 1)?.let { herb ->
+                    add(DailyRecommend(
+                        herb = herb,
+                        reason = "历年考试高频出现，${"★".repeat(herb.examFrequency)}重点药",
+                        type = RecommendType.EXAM
+                    ))
+                }
+
+                // 3. 易混淆药
+                getContrastHerb(herbs, seed + 2)?.let { herb ->
+                    val similarName = herb.similarTo.firstOrNull()?.let { id ->
+                        herbs.find { it.id == id }?.name
+                    }
+                    add(DailyRecommend(
+                        herb = herb,
+                        reason = similarName?.let { "常与$it 混淆，注意区分" }
+                            ?: "易与其他药混淆，重点记忆",
+                        type = RecommendType.CONTRAST
+                    ))
+                }
             }
         }
-
-        emit(recommends)
     }
 
     private fun getSeasonalHerb(
@@ -77,20 +76,20 @@ class DailyRecommendUseCase(
             }
         }
 
-        return candidates.getOrNull(seed.mod(candidates.size))
+        return if (candidates.isEmpty()) null else candidates.getOrNull(seed.mod(candidates.size))
     }
 
     private fun getExamHerb(herbs: List<Herb>, seed: Int): Herb? {
         // 加权随机：frequency 越高，被选中的概率越大
         val weightedList = herbs.flatMap { herb ->
-            List(herb.examFrequency) { herb }
+            List(herb.examFrequency.coerceAtLeast(1)) { herb }
         }
-        return weightedList.getOrNull(seed.mod(weightedList.size))
+        return if (weightedList.isEmpty()) null else weightedList.getOrNull(seed.mod(weightedList.size))
     }
 
     private fun getContrastHerb(herbs: List<Herb>, seed: Int): Herb? {
         val candidates = herbs.filter { it.similarTo.isNotEmpty() }
-        return candidates.getOrNull(seed.mod(candidates.size))
+        return if (candidates.isEmpty()) null else candidates.getOrNull(seed.mod(candidates.size))
     }
 
     private fun generateSeasonalReason(month: Month): String {

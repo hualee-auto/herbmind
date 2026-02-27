@@ -1,67 +1,66 @@
 package com.herbmind.data.repository
 
 import com.herbmind.data.HerbQueries
-import com.herbmind.data.FavoriteQueries
 import com.herbmind.data.model.Herb
+import app.cash.sqldelight.coroutines.asFlow
+import app.cash.sqldelight.coroutines.mapToList
+import app.cash.sqldelight.coroutines.mapToOneOrNull
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.decodeFromString
 
 class HerbRepository(
-    private val herbQueries: HerbQueries,
-    private val favoriteQueries: FavoriteQueries
+    private val herbQueries: HerbQueries
 ) {
     private val json = Json { ignoreUnknownKeys = true }
 
     fun getAllHerbs(): Flow<List<Herb>> {
         return herbQueries.selectAll()
             .asFlow()
-            .map { query ->
-                query.executeAsList().map { it.toHerb() }
-            }
+            .mapToList(Dispatchers.Default)
+            .map { list -> list.map { it.toHerb() } }
     }
 
     fun getHerbById(id: String): Flow<Herb?> {
         return herbQueries.selectById(id)
             .asFlow()
-            .map { it.executeAsOneOrNull()?.toHerb() }
+            .mapToOneOrNull(Dispatchers.Default)
+            .map { it?.toHerb() }
     }
 
     fun getHerbsByCategory(category: String): Flow<List<Herb>> {
         return herbQueries.selectByCategory(category)
             .asFlow()
-            .map { query ->
-                query.executeAsList().map { it.toHerb() }
-            }
+            .mapToList(Dispatchers.Default)
+            .map { list -> list.map { it.toHerb() } }
     }
 
     fun getFavorites(): Flow<List<Herb>> {
-        return favoriteQueries.selectFavorites()
+        return herbQueries.selectFavorites()
             .asFlow()
-            .map { query ->
-                query.executeAsList().map { it.toHerb() }
-            }
+            .mapToList(Dispatchers.Default)
+            .map { list -> list.map { it.toHerb() } }
     }
 
     fun getFavoriteIds(): Flow<Set<String>> {
-        return favoriteQueries.selectFavoritesIds()
+        return herbQueries.selectFavoritesIds()
             .asFlow()
-            .map { query ->
-                query.executeAsList().toSet()
-            }
+            .mapToList(Dispatchers.Default)
+            .map { it.toSet() }
     }
 
     suspend fun addFavorite(herbId: String) {
-        favoriteQueries.insertFavorite(herbId, System.currentTimeMillis())
+        herbQueries.insertFavorite(herbId, System.currentTimeMillis())
     }
 
     suspend fun removeFavorite(herbId: String) {
-        favoriteQueries.deleteFavorite(herbId)
+        herbQueries.deleteFavorite(herbId)
     }
 
     suspend fun isFavorite(herbId: String): Boolean {
-        return favoriteQueries.isFavorite(herbId).executeAsOne() > 0
+        return herbQueries.isFavorite(herbId).executeAsOne()
     }
 
     private fun com.herbmind.data.Herb.toHerb(): Herb {
@@ -85,7 +84,7 @@ class HerbRepository(
             similarTo = similarTo?.let { json.decodeFromString(it) } ?: emptyList(),
             image = image,
             isCommon = isCommon == 1L,
-            examFrequency = examFrequency.toInt()
+            examFrequency = examFrequency?.toInt() ?: 1
         )
     }
 }

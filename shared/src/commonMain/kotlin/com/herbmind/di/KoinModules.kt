@@ -13,11 +13,9 @@ fun commonModule() = module {
     // Database
     single { createDatabase(get()) }
     single { get<com.herbmind.data.HerbDatabase>().herbQueries }
-    single { get<com.herbmind.data.HerbDatabase>().favoriteQueries }
-    single { get<com.herbmind.data.HerbDatabase>().searchHistoryQueries }
 
     // Repository
-    single { HerbRepository(get(), get()) }
+    single { HerbRepository(get()) }
     single { SearchRepository(get()) }
 
     // UseCase

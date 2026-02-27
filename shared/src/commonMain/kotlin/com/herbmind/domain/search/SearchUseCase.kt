@@ -4,7 +4,7 @@ import com.herbmind.data.model.Herb
 import com.herbmind.data.model.SearchResult
 import com.herbmind.data.repository.HerbRepository
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.map
 
 class SearchUseCase(
     private val herbRepository: HerbRepository
@@ -28,25 +28,21 @@ class SearchUseCase(
         "消食" to listOf("消食", "健胃", "开胃", "助消化")
     )
 
-    suspend operator fun invoke(query: String): Flow<List<SearchResult>> = flow {
+    operator fun invoke(query: String): Flow<List<SearchResult>> {
         if (query.isBlank()) {
-            emit(emptyList())
-            return@flow
+            return kotlinx.coroutines.flow.flowOf(emptyList())
         }
 
-        val herbs = herbRepository.getAllHerbs()
         val keywords = query.trim().split(Regex("\\s+"))
-
-        // 扩展同义词
         val expandedKeywords = keywords.flatMap { expandSynonyms(it) }
 
-        val results = herbs.map { herb ->
-            calculateMatchScore(herb, expandedKeywords)
+        return herbRepository.getAllHerbs().map { herbs ->
+            herbs.map { herb ->
+                calculateMatchScore(herb, expandedKeywords)
+            }
+            .filter { it.score > 0 }
+            .sortedByDescending { it.score }
         }
-        .filter { it.score > 0 }
-        .sortedByDescending { it.score }
-
-        emit(results)
     }
 
     private fun expandSynonyms(keyword: String): List<String> {

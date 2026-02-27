@@ -18,7 +18,7 @@ CREATE TABLE herb (
     keyPoint TEXT,
     similarTo TEXT,
     image TEXT,
-    isCommon INTEGER AS Boolean DEFAULT 0,
+    isCommon INTEGER DEFAULT 0,
     examFrequency INTEGER DEFAULT 1
 );
 
@@ -92,3 +92,11 @@ DELETE FROM searchHistory WHERE query = ?;
 -- 清空搜索历史
 clearSearchHistory:
 DELETE FROM searchHistory;
+
+-- 插入中药（用于初始化）
+insertHerb:
+INSERT OR REPLACE INTO herb (
+    id, name, pinyin, aliases, category, subCategory, nature, flavor,
+    meridians, effects, indications, usage, contraindications, memoryTip,
+    association, keyPoint, similarTo, image, isCommon, examFrequency
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
