@@ -290,7 +290,7 @@
   {
     "id": "gaoben",
     "name": "藁本",
-    "pinyin": "gǎoběn",
+    "pinyin": "gǎo běn",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风寒药",
@@ -321,7 +321,7 @@
   {
     "id": "xiangru",
     "name": "香薷",
-    "pinyin": "香rú",
+    "pinyin": "xiāng rú",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风寒药",
@@ -353,7 +353,7 @@
   {
     "id": "shengjiang",
     "name": "生姜",
-    "pinyin": "生姜",
+    "pinyin": "shēng jiāng",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风寒药",
@@ -386,7 +386,7 @@
   {
     "id": "congbai",
     "name": "葱白",
-    "pinyin": "cōngbái",
+    "pinyin": "cōng bái",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风寒药",
@@ -418,7 +418,7 @@
   {
     "id": "xinyi",
     "name": "辛夷",
-    "pinyin": "辛夷",
+    "pinyin": "xīn yí",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风寒药",
@@ -450,7 +450,7 @@
   {
     "id": "芫荽",
     "name": "芫荽",
-    "pinyin": "yuánsui",
+    "pinyin": "yán sui",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风寒药",
@@ -726,7 +726,7 @@
   {
     "id": "豆鼓",
     "name": "豆鼓",
-    "pinyin": "dòu鼓",
+    "pinyin": "dòu chǐ",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风热药",
@@ -760,7 +760,7 @@
   {
     "id": "doujuan",
     "name": "豆卷",
-    "pinyin": "dòu卷",
+    "pinyin": "dòu juǎn",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风热药",
@@ -792,7 +792,7 @@
   {
     "id": "chantui",
     "name": "蝉蜕",
-    "pinyin": "chántuì",
+    "pinyin": "chán tuì",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风热药",
@@ -824,7 +824,7 @@
   {
     "id": "fuping",
     "name": "浮萍",
-    "pinyin": "fú萍",
+    "pinyin": "fú píng",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风热药",
@@ -855,7 +855,7 @@
   {
     "id": "西河柳",
     "name": "西河柳",
-    "pinyin": "西河柳",
+    "pinyin": "xī hé liǔ",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风热药",
@@ -888,7 +888,7 @@
   {
     "id": "水蜈蚣",
     "name": "水蜈蚣",
-    "pinyin": "水蜈蚣",
+    "pinyin": "shuǐ wú gōng",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风热药",
@@ -917,7 +917,7 @@
   {
     "id": "天胡荽",
     "name": "天胡荽",
-    "pinyin": "天胡sui",
+    "pinyin": "tiān hú sui",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风热药",
@@ -946,7 +946,7 @@
   {
     "id": "manjingzi",
     "name": "蔓荆子",
-    "pinyin": "màn荆子",
+    "pinyin": "màn jīng zǐ",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风热药",
@@ -980,7 +980,7 @@
   {
     "id": "木贼草",
     "name": "木贼草",
-    "pinyin": "木zéicǎo",
+    "pinyin": "mù zéi cǎo",
     "aliases": [],
     "category": "解表药",
     "subCategory": "发散风热药",
@@ -1050,7 +1050,7 @@
   {
     "id": "寒水石",
     "name": "寒水石",
-    "pinyin": "寒水石",
+    "pinyin": "hán shuǐ shí",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热泻火药",
@@ -1156,7 +1156,7 @@
   {
     "id": "芦根",
     "name": "芦根",
-    "pinyin": "芦根",
+    "pinyin": "lú gēn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热泻火药",
@@ -1188,7 +1188,7 @@
   {
     "id": "天花粉",
     "name": "天花粉",
-    "pinyin": "天花fěn",
+    "pinyin": "tiān huā fěn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热泻火药",
@@ -1222,7 +1222,7 @@
   {
     "id": "鲜竹叶",
     "name": "鲜竹叶",
-    "pinyin": "鲜竹叶",
+    "pinyin": "xiān zhú yè",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热泻火药",
@@ -1255,7 +1255,7 @@
   {
     "id": "淡竹叶",
     "name": "淡竹叶",
-    "pinyin": "dàn竹叶",
+    "pinyin": "dàn zhú yè",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热泻火药",
@@ -1287,7 +1287,7 @@
   {
     "id": "夏枯草",
     "name": "夏枯草",
-    "pinyin": "夏枯cǎo",
+    "pinyin": "xià kū cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热泻火药",
@@ -1320,7 +1320,7 @@
   {
     "id": "鸭跖草",
     "name": "鸭跖草",
-    "pinyin": "鸭跖cǎo",
+    "pinyin": "yā zhí cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热泻火药",
@@ -1349,7 +1349,7 @@
   {
     "id": "西瓜皮",
     "name": "西瓜皮",
-    "pinyin": "西瓜皮",
+    "pinyin": "xī guā pí",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热泻火药",
@@ -1381,7 +1381,7 @@
   {
     "id": "荷叶",
     "name": "荷叶",
-    "pinyin": "荷叶",
+    "pinyin": "hé yè",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热泻火药",
@@ -1414,7 +1414,7 @@
   {
     "id": "莲子心",
     "name": "莲子心",
-    "pinyin": "莲子心",
+    "pinyin": "lián zǐ xīn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热泻火药",
@@ -1445,7 +1445,7 @@
   {
     "id": "青葙子",
     "name": "青葙子",
-    "pinyin": "青xiāng子",
+    "pinyin": "qīng xiāng zǐ",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清肝明目药",
@@ -1476,7 +1476,7 @@
   {
     "id": "决明子",
     "name": "决明子",
-    "pinyin": "决明子",
+    "pinyin": "jué míng zǐ",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清肝明目药",
@@ -1510,7 +1510,7 @@
   {
     "id": "谷精草",
     "name": "谷精草",
-    "pinyin": "谷精cǎo",
+    "pinyin": "gǔ jīng cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清肝明目药",
@@ -1542,7 +1542,7 @@
   {
     "id": "密蒙花",
     "name": "密蒙花",
-    "pinyin": "密蒙花",
+    "pinyin": "mì méng huā",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清肝明目药",
@@ -1573,7 +1573,7 @@
   {
     "id": "夜明砂",
     "name": "夜明砂",
-    "pinyin": "夜明砂",
+    "pinyin": "yè míng shā",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清肝明目药",
@@ -1604,7 +1604,7 @@
   {
     "id": "千里光",
     "name": "千里光",
-    "pinyin": "千里光",
+    "pinyin": "qiān lǐ guāng",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清肝明目药",
@@ -1633,7 +1633,7 @@
   {
     "id": "xianshengdi",
     "name": "鲜生地",
-    "pinyin": "xianshengdi",
+    "pinyin": "xiān shēng dì",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热凉血药",
@@ -1668,7 +1668,7 @@
   {
     "id": "shengdi",
     "name": "生地",
-    "pinyin": "shengdi",
+    "pinyin": "shēng dì",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热凉血药",
@@ -1704,7 +1704,7 @@
   {
     "id": "紫草",
     "name": "紫草",
-    "pinyin": "紫cǎo",
+    "pinyin": "zǐ cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热凉血药",
@@ -1736,7 +1736,7 @@
   {
     "id": "犀角",
     "name": "犀角",
-    "pinyin": "犀角",
+    "pinyin": "xī jiǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热凉血药",
@@ -1771,7 +1771,7 @@
   {
     "id": "牛黄",
     "name": "牛黄",
-    "pinyin": "牛黄",
+    "pinyin": "niú huáng",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热凉血药",
@@ -1838,7 +1838,7 @@
   {
     "id": "赤芍药",
     "name": "赤芍药",
-    "pinyin": "chì芍药",
+    "pinyin": "chì sháo yào",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热凉血药",
@@ -1869,7 +1869,7 @@
   {
     "id": "大qingye",
     "name": "大青叶",
-    "pinyin": "大qingye",
+    "pinyin": "dà qīng yè",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热凉血药",
@@ -1902,7 +1902,7 @@
   {
     "id": "banlangen",
     "name": "板蓝根",
-    "pinyin": "banlangen",
+    "pinyin": "bǎn lán gēn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热凉血药",
@@ -1936,7 +1936,7 @@
   {
     "id": "qingdai",
     "name": "青黛",
-    "pinyin": "qingdai",
+    "pinyin": "qīng dài",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热凉血药",
@@ -1970,7 +1970,7 @@
   {
     "id": "玄参",
     "name": "玄参",
-    "pinyin": "玄cēn",
+    "pinyin": "xuán shēn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热凉血药",
@@ -2004,7 +2004,7 @@
   {
     "id": "maogen",
     "name": "茅根",
-    "pinyin": "maogen",
+    "pinyin": "máo gēn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热凉血药",
@@ -2037,7 +2037,7 @@
   {
     "id": "maozhenhua",
     "name": "茅针花",
-    "pinyin": "maozhenhua",
+    "pinyin": "máo zhēn huā",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热凉血药",
@@ -2071,7 +2071,7 @@
   {
     "id": "jinyinhua",
     "name": "金银花",
-    "pinyin": "jinyinhua",
+    "pinyin": "jīn yín huā",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2106,7 +2106,7 @@
   {
     "id": "rendongteng",
     "name": "忍冬藤",
-    "pinyin": "rendongteng",
+    "pinyin": "rěn dōng téng",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2142,7 +2142,7 @@
   {
     "id": "rendongye",
     "name": "忍冬叶",
-    "pinyin": "rendongye",
+    "pinyin": "rěn dōng yè",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2178,7 +2178,7 @@
   {
     "id": "yinhuazi",
     "name": "银花子",
-    "pinyin": "yinhuazi",
+    "pinyin": "yín huā zǐ",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2214,7 +2214,7 @@
   {
     "id": "jinyinhualu",
     "name": "金银花露",
-    "pinyin": "jinyinhualu",
+    "pinyin": "jīn yín huā lù",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2315,7 +2315,7 @@
   {
     "id": "zihuadiding",
     "name": "紫花地丁",
-    "pinyin": "zihuadiding",
+    "pinyin": "zǐ huā dì dīng",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2349,7 +2349,7 @@
   {
     "id": "litoucao",
     "name": "犁头草",
-    "pinyin": "litoucao",
+    "pinyin": "lí tóu cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2384,7 +2384,7 @@
   {
     "id": "山慈菇",
     "name": "山慈菇",
-    "pinyin": "山cí菇",
+    "pinyin": "shān cí gū",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2417,7 +2417,7 @@
   {
     "id": "漏芦",
     "name": "漏芦",
-    "pinyin": "漏芦",
+    "pinyin": "lòu lú",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2448,7 +2448,7 @@
   {
     "id": "四季青",
     "name": "四季青",
-    "pinyin": "四季青",
+    "pinyin": "sì jì qīng",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2478,7 +2478,7 @@
   {
     "id": "乌蔹莓",
     "name": "乌蔹莓",
-    "pinyin": "乌liǎn莓",
+    "pinyin": "wū liǎn méi",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2508,7 +2508,7 @@
   {
     "id": "furonghua",
     "name": "芙蓉花",
-    "pinyin": "furonghua",
+    "pinyin": "fú róng huā",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2538,7 +2538,7 @@
   {
     "id": "furongye",
     "name": "芙蓉叶",
-    "pinyin": "furongye",
+    "pinyin": "fú róng yè",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2569,7 +2569,7 @@
   {
     "id": "白蔹",
     "name": "白蔹",
-    "pinyin": "báiliǎn",
+    "pinyin": "bái liǎn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2632,7 +2632,7 @@
   {
     "id": "野荞麦根",
     "name": "野荞麦根",
-    "pinyin": "野荞麦根",
+    "pinyin": "yě qiáo mài gēn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2666,7 +2666,7 @@
   {
     "id": "虎耳草",
     "name": "虎耳草",
-    "pinyin": "虎ěrcǎo",
+    "pinyin": "hǔ ěr cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2696,7 +2696,7 @@
   {
     "id": "红藤",
     "name": "红藤",
-    "pinyin": "红藤",
+    "pinyin": "hóng téng",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2728,7 +2728,7 @@
   {
     "id": "败酱草",
     "name": "败酱草",
-    "pinyin": "败酱cǎo",
+    "pinyin": "bài jiàng cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2762,7 +2762,7 @@
   {
     "id": "鬼针草",
     "name": "鬼针草",
-    "pinyin": "鬼针cǎo",
+    "pinyin": "guǐ zhēn cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2791,7 +2791,7 @@
   {
     "id": "地耳草",
     "name": "地耳草",
-    "pinyin": "dìěrcǎo",
+    "pinyin": "dì ěr cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2821,7 +2821,7 @@
   {
     "id": "垂盆草",
     "name": "垂盆草",
-    "pinyin": "chuí盆cǎo",
+    "pinyin": "chuí pén cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2852,7 +2852,7 @@
   {
     "id": "土茯苓",
     "name": "土茯苓",
-    "pinyin": "土茯苓",
+    "pinyin": "tǔ fú líng",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2885,7 +2885,7 @@
   {
     "id": "马兰根",
     "name": "马兰根",
-    "pinyin": "马兰根",
+    "pinyin": "mǎ lán gēn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2914,7 +2914,7 @@
   {
     "id": "射干",
     "name": "射干",
-    "pinyin": "射干",
+    "pinyin": "shè gān",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2946,7 +2946,7 @@
   {
     "id": "山豆根",
     "name": "山豆根",
-    "pinyin": "山dòu根",
+    "pinyin": "shān dòu gēn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -2978,7 +2978,7 @@
   {
     "id": "马勃",
     "name": "马勃",
-    "pinyin": "马bó",
+    "pinyin": "mǎ bó",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3009,7 +3009,7 @@
   {
     "id": "橄lan",
     "name": "橄榄",
-    "pinyin": "橄lan",
+    "pinyin": "gǎn lǎn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3043,7 +3043,7 @@
   {
     "id": "jinguolan",
     "name": "金果榄",
-    "pinyin": "jinguolan",
+    "pinyin": "jīn guǒ lǎn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3078,7 +3078,7 @@
   {
     "id": "白毛夏枯草",
     "name": "白毛夏枯草",
-    "pinyin": "bái毛夏枯cǎo",
+    "pinyin": "bái máo xià kū cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3107,7 +3107,7 @@
   {
     "id": "点地梅",
     "name": "点地梅",
-    "pinyin": "diǎndì梅",
+    "pinyin": "diǎn dì méi",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3137,7 +3137,7 @@
   {
     "id": "一枝黄花",
     "name": "一枝黄花",
-    "pinyin": "一枝黄花",
+    "pinyin": "yī zhī huáng huā",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3167,7 +3167,7 @@
   {
     "id": "爵床",
     "name": "爵床",
-    "pinyin": "爵chuáng",
+    "pinyin": "jué chuáng",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3196,7 +3196,7 @@
   {
     "id": "人中黄",
     "name": "人中黄",
-    "pinyin": "人中黄",
+    "pinyin": "rén zhōng huáng",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3228,7 +3228,7 @@
   {
     "id": "renzhongbai",
     "name": "人中白",
-    "pinyin": "renzhongbai",
+    "pinyin": "rén zhōng bái",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3262,7 +3262,7 @@
   {
     "id": "danqiushi",
     "name": "淡秋石",
-    "pinyin": "danqiushi",
+    "pinyin": "dàn qiū shí",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3297,7 +3297,7 @@
   {
     "id": "白头翁",
     "name": "白头翁",
-    "pinyin": "bái头翁",
+    "pinyin": "bái tóu wēng",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3329,7 +3329,7 @@
   {
     "id": "马齿苋",
     "name": "马齿苋",
-    "pinyin": "马chǐ苋",
+    "pinyin": "mǎ chǐ xiàn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3361,7 +3361,7 @@
   {
     "id": "鸭胆子",
     "name": "鸭胆子",
-    "pinyin": "鸭dǎn子",
+    "pinyin": "yā dǎn zǐ",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3392,7 +3392,7 @@
   {
     "id": "橄核莲",
     "name": "橄核莲",
-    "pinyin": "橄核莲",
+    "pinyin": "gǎn hé lián",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3421,7 +3421,7 @@
   {
     "id": "小飞蓬",
     "name": "小飞蓬",
-    "pinyin": "小fēi蓬",
+    "pinyin": "xiǎo fēi péng",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3448,7 +3448,7 @@
   {
     "id": "鸡眼草",
     "name": "鸡眼草",
-    "pinyin": "鸡眼cǎo",
+    "pinyin": "jī yǎn cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3478,7 +3478,7 @@
   {
     "id": "叶下珠",
     "name": "叶下珠",
-    "pinyin": "叶下珠",
+    "pinyin": "yè xià zhū",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3507,7 +3507,7 @@
   {
     "id": "lvdou",
     "name": "绿豆",
-    "pinyin": "lvdou",
+    "pinyin": "lǜ dòu",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3540,7 +3540,7 @@
   {
     "id": "lvdouyi",
     "name": "绿豆衣",
-    "pinyin": "lvdouyi",
+    "pinyin": "lǜ dòu yī",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3574,7 +3574,7 @@
   {
     "id": "七叶一枝花",
     "name": "七叶一枝花",
-    "pinyin": "七叶一枝花",
+    "pinyin": "qī yè yī zhī huā",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3603,7 +3603,7 @@
   {
     "id": "半枝莲",
     "name": "半枝莲",
-    "pinyin": "bàn枝莲",
+    "pinyin": "bàn zhī lián",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3632,7 +3632,7 @@
   {
     "id": "白英",
     "name": "白英",
-    "pinyin": "bái英",
+    "pinyin": "bái yīng",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3664,7 +3664,7 @@
   {
     "id": "龙葵",
     "name": "龙葵",
-    "pinyin": "龙葵",
+    "pinyin": "lóng kuí",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3694,7 +3694,7 @@
   {
     "id": "蛇莓",
     "name": "蛇莓",
-    "pinyin": "蛇莓",
+    "pinyin": "shé méi",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3724,7 +3724,7 @@
   {
     "id": "白花蛇舌草",
     "name": "白花蛇舌草",
-    "pinyin": "bái花蛇舌cǎo",
+    "pinyin": "bái huā shé shé cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3758,7 +3758,7 @@
   {
     "id": "凤尾草",
     "name": "凤尾草",
-    "pinyin": "fèng尾cǎo",
+    "pinyin": "fèng wěi cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3787,7 +3787,7 @@
   {
     "id": "猪殃殃",
     "name": "猪殃殃",
-    "pinyin": "猪殃殃",
+    "pinyin": "zhū yāng yāng",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3816,7 +3816,7 @@
   {
     "id": "天葵子",
     "name": "天葵子",
-    "pinyin": "天葵子",
+    "pinyin": "tiān kuí zǐ",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3845,7 +3845,7 @@
   {
     "id": "藤梨根",
     "name": "藤梨根",
-    "pinyin": "藤梨根",
+    "pinyin": "téng lí gēn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -3875,7 +3875,7 @@
   {
     "id": "猪胆汁",
     "name": "猪胆汁",
-    "pinyin": "猪dǎn汁",
+    "pinyin": "zhū dǎn zhī",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热解毒药",
@@ -4020,7 +4020,7 @@
   {
     "id": "胡黄连",
     "name": "胡黄连",
-    "pinyin": "胡黄连",
+    "pinyin": "hú huáng lián",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热燥湿药",
@@ -4053,7 +4053,7 @@
   {
     "id": "龙胆草",
     "name": "龙胆草",
-    "pinyin": "龙dǎncǎo",
+    "pinyin": "lóng dǎn cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热燥湿药",
@@ -4085,7 +4085,7 @@
   {
     "id": "秦皮",
     "name": "秦皮",
-    "pinyin": "秦皮",
+    "pinyin": "qín pí",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热燥湿药",
@@ -4119,7 +4119,7 @@
   {
     "id": "苦参",
     "name": "苦参",
-    "pinyin": "苦cēn",
+    "pinyin": "kǔ shēn",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热燥湿药",
@@ -4154,7 +4154,7 @@
   {
     "id": "白藓皮",
     "name": "白藓皮",
-    "pinyin": "báixiǎn皮",
+    "pinyin": "bái xiǎn pí",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清热燥湿药",
@@ -4188,7 +4188,7 @@
   {
     "id": "银柴胡",
     "name": "银柴胡",
-    "pinyin": "银chái胡",
+    "pinyin": "yín chái hú",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清虚热药",
@@ -4220,7 +4220,7 @@
   {
     "id": "地骨皮",
     "name": "地骨皮",
-    "pinyin": "dì骨皮",
+    "pinyin": "dì gǔ pí",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清虚热药",
@@ -4253,7 +4253,7 @@
   {
     "id": "青蒿",
     "name": "青蒿",
-    "pinyin": "青蒿",
+    "pinyin": "qīng hāo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清虚热药",
@@ -4285,7 +4285,7 @@
   {
     "id": "白薇",
     "name": "白薇",
-    "pinyin": "bái薇",
+    "pinyin": "bái wēi",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清虚热药",
@@ -4318,7 +4318,7 @@
   {
     "id": "葎草",
     "name": "葎草",
-    "pinyin": "葎cǎo",
+    "pinyin": "lǜ cǎo",
     "aliases": [],
     "category": "清热药",
     "subCategory": "清虚热药",
@@ -4386,7 +4386,7 @@
   {
     "id": "mangxiao",
     "name": "芒硝",
-    "pinyin": "mangxiao",
+    "pinyin": "máng xiāo",
     "aliases": [],
     "category": "泻下药",
     "subCategory": "攻下药",
@@ -4422,7 +4422,7 @@
   {
     "id": "xiguashuang",
     "name": "西瓜霜",
-    "pinyin": "xiguashuang",
+    "pinyin": "xī guā shuāng",
     "aliases": [],
     "category": "泻下药",
     "subCategory": "攻下药",
@@ -4459,7 +4459,7 @@
   {
     "id": "铁扁担",
     "name": "铁扁担",
-    "pinyin": "铁biǎndān",
+    "pinyin": "tiě biǎn dān",
     "aliases": [],
     "category": "泻下药",
     "subCategory": "攻下药",
@@ -4488,7 +4488,7 @@
   {
     "id": "番泻叶",
     "name": "番泻叶",
-    "pinyin": "fān泻叶",
+    "pinyin": "fān xiè yè",
     "aliases": [],
     "category": "泻下药",
     "subCategory": "攻下药",
@@ -4520,7 +4520,7 @@
   {
     "id": "芦荟",
     "name": "芦荟",
-    "pinyin": "芦荟",
+    "pinyin": "lú huì",
     "aliases": [],
     "category": "泻下药",
     "subCategory": "攻下药",
@@ -4553,7 +4553,7 @@
   {
     "id": "火麻仁",
     "name": "火麻仁",
-    "pinyin": "火麻仁",
+    "pinyin": "huǒ má rén",
     "aliases": [],
     "category": "泻下药",
     "subCategory": "润下药",
@@ -4586,7 +4586,7 @@
   {
     "id": "郁李仁",
     "name": "郁李仁",
-    "pinyin": "郁李仁",
+    "pinyin": "yù lǐ rén",
     "aliases": [],
     "category": "泻下药",
     "subCategory": "润下药",
@@ -4621,7 +4621,7 @@
   {
     "id": "胡麻仁",
     "name": "胡麻仁",
-    "pinyin": "胡麻仁",
+    "pinyin": "hú má rén",
     "aliases": [],
     "category": "泻下药",
     "subCategory": "润下药",
@@ -4655,7 +4655,7 @@
   {
     "id": "蜂蜜",
     "name": "蜂蜜",
-    "pinyin": "fēng蜜",
+    "pinyin": "fēng mì",
     "aliases": [],
     "category": "泻下药",
     "subCategory": "润下药",
@@ -4688,7 +4688,7 @@
   {
     "id": "牵牛子",
     "name": "牵牛子",
-    "pinyin": "牵牛子",
+    "pinyin": "qiān niú zǐ",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "峻下逐水药",
@@ -4717,7 +4717,7 @@
   {
     "id": "甘遂",
     "name": "甘遂",
-    "pinyin": "甘遂",
+    "pinyin": "gān suì",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "峻下逐水药",
@@ -4746,7 +4746,7 @@
   {
     "id": "大戟",
     "name": "大戟",
-    "pinyin": "dà戟",
+    "pinyin": "dà jǐ",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "峻下逐水药",
@@ -4775,7 +4775,7 @@
   {
     "id": "芫花",
     "name": "芫花",
-    "pinyin": "yuán花",
+    "pinyin": "yuán huā",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "峻下逐水药",
@@ -4804,7 +4804,7 @@
   {
     "id": "续随子",
     "name": "续随子",
-    "pinyin": "续随子",
+    "pinyin": "xù suí zǐ",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "峻下逐水药",
@@ -4833,7 +4833,7 @@
   {
     "id": "商陆",
     "name": "商陆",
-    "pinyin": "商陆",
+    "pinyin": "shāng lù",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "峻下逐水药",
@@ -4862,7 +4862,7 @@
   {
     "id": "乌臼根皮",
     "name": "乌臼根皮",
-    "pinyin": "乌臼根皮",
+    "pinyin": "wū jiù gēn pí",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "峻下逐水药",
@@ -4896,7 +4896,7 @@
   {
     "id": "巴豆",
     "name": "巴豆",
-    "pinyin": "bādòu",
+    "pinyin": "bā dòu",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "峻下逐水药",
@@ -5077,7 +5077,7 @@
   {
     "id": "tongcao",
     "name": "通草",
-    "pinyin": "tongcao",
+    "pinyin": "tōng cǎo",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5108,7 +5108,7 @@
   {
     "id": "gengtongcao",
     "name": "梗通草",
-    "pinyin": "gengtongcao",
+    "pinyin": "gěng tōng cǎo",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5169,7 +5169,7 @@
   {
     "id": "cheqianzi",
     "name": "车前子",
-    "pinyin": "cheqianzi",
+    "pinyin": "chē qián zǐ",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5199,7 +5199,7 @@
   {
     "id": "cheqiancao",
     "name": "车前草",
-    "pinyin": "cheqiancao",
+    "pinyin": "chē qián cǎo",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5287,7 +5287,7 @@
   {
     "id": "jinqiancao",
     "name": "金钱草",
-    "pinyin": "jinqiancao",
+    "pinyin": "jīn qián cǎo",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5318,7 +5318,7 @@
   {
     "id": "lianqiancao",
     "name": "连钱草",
-    "pinyin": "lianqiancao",
+    "pinyin": "lián qián cǎo",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5379,7 +5379,7 @@
   {
     "id": "石苇",
     "name": "石苇",
-    "pinyin": "石苇",
+    "pinyin": "shí wěi",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5467,7 +5467,7 @@
   {
     "id": "萆薢",
     "name": "萆薢",
-    "pinyin": "bìxiè",
+    "pinyin": "bì xiè",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5496,7 +5496,7 @@
   {
     "id": "赤小豆",
     "name": "赤小豆",
-    "pinyin": "chì小dòu",
+    "pinyin": "chì xiǎo dòu",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5526,7 +5526,7 @@
   {
     "id": "玉米须",
     "name": "玉米须",
-    "pinyin": "玉米须",
+    "pinyin": "yù mǐ xū",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5556,7 +5556,7 @@
   {
     "id": "葫芦壳",
     "name": "葫芦壳",
-    "pinyin": "葫芦壳",
+    "pinyin": "hú lú ké",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5585,7 +5585,7 @@
   {
     "id": "dongguapi",
     "name": "冬瓜皮",
-    "pinyin": "dongguapi",
+    "pinyin": "dōng guā pí",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5615,7 +5615,7 @@
   {
     "id": "dongguazi",
     "name": "冬瓜子",
-    "pinyin": "dongguazi",
+    "pinyin": "dōng guā zǐ",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5646,7 +5646,7 @@
   {
     "id": "泽漆",
     "name": "泽漆",
-    "pinyin": "泽漆",
+    "pinyin": "zé qī",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5676,7 +5676,7 @@
   {
     "id": "蝼蛄",
     "name": "蝼蛄",
-    "pinyin": "lóugū",
+    "pinyin": "lóu gū",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5705,7 +5705,7 @@
   {
     "id": "yinchenhao",
     "name": "茵陈蒿",
-    "pinyin": "yinchenhao",
+    "pinyin": "yīn chén hāo",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5735,7 +5735,7 @@
   {
     "id": "lingyinchen",
     "name": "铃茵陈",
-    "pinyin": "lingyinchen",
+    "pinyin": "líng yīn chén",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5766,7 +5766,7 @@
   {
     "id": "地耳草",
     "name": "地耳草",
-    "pinyin": "dìěrcǎo",
+    "pinyin": "dì ěr cǎo",
     "aliases": [],
     "category": "利水渗湿药",
     "subCategory": "中草药",
@@ -5796,7 +5796,7 @@
   {
     "id": "垂盆草",
     "name": "垂盆草",
-    "pinyin": "chuí盆cǎo",
+    "pinyin": "chuí pén cǎo",
     "aliases": [],
     "category": "化湿药",
     "subCategory": "中草药",
@@ -5885,7 +5885,7 @@
   {
     "id": "sharen",
     "name": "砂仁",
-    "pinyin": "sharen",
+    "pinyin": "shā rén",
     "aliases": [
       "缩砂蜜",
       "缩砂"
@@ -5918,7 +5918,7 @@
   {
     "id": "sharenke",
     "name": "砂仁壳",
-    "pinyin": "sharenke",
+    "pinyin": "shā rén ké",
     "aliases": [
       "缩砂蜜",
       "缩砂"
@@ -5952,7 +5952,7 @@
   {
     "id": "sharenhua",
     "name": "砂仁花",
-    "pinyin": "sharenhua",
+    "pinyin": "shā rén huā",
     "aliases": [
       "缩砂蜜",
       "缩砂"
@@ -5986,7 +5986,7 @@
   {
     "id": "baidoukou",
     "name": "白豆蔻",
-    "pinyin": "baidoukou",
+    "pinyin": "bái dòu kòu",
     "aliases": [],
     "category": "化湿药",
     "subCategory": "中草药",
@@ -6016,7 +6016,7 @@
   {
     "id": "doukouke",
     "name": "豆蔻壳",
-    "pinyin": "doukouke",
+    "pinyin": "dòu kòu ké",
     "aliases": [],
     "category": "化湿药",
     "subCategory": "中草药",
@@ -6047,7 +6047,7 @@
   {
     "id": "doukouhua",
     "name": "豆蔻花",
-    "pinyin": "doukouhua",
+    "pinyin": "dòu kòu huā",
     "aliases": [],
     "category": "化湿药",
     "subCategory": "中草药",
@@ -6078,7 +6078,7 @@
   {
     "id": "苍朮",
     "name": "苍朮",
-    "pinyin": "cāng朮",
+    "pinyin": "cāng zhú",
     "aliases": [],
     "category": "化湿药",
     "subCategory": "中草药",
@@ -6108,7 +6108,7 @@
   {
     "id": "houpo",
     "name": "厚朴",
-    "pinyin": "houpo",
+    "pinyin": "hòu pò",
     "aliases": [],
     "category": "化湿药",
     "subCategory": "中草药",
@@ -6139,7 +6139,7 @@
   {
     "id": "houpohua",
     "name": "厚朴花",
-    "pinyin": "houpohua",
+    "pinyin": "hòu pò huā",
     "aliases": [],
     "category": "化湿药",
     "subCategory": "中草药",
@@ -6289,7 +6289,7 @@
   {
     "id": "秦艽",
     "name": "秦艽",
-    "pinyin": "秦jiāo",
+    "pinyin": "qín jiāo",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6319,7 +6319,7 @@
   {
     "id": "防己",
     "name": "防己",
-    "pinyin": "fáng己",
+    "pinyin": "fáng jǐ",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6349,7 +6349,7 @@
   {
     "id": "臭梧桐",
     "name": "臭梧桐",
-    "pinyin": "chòu梧桐",
+    "pinyin": "chòu wú tóng",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6379,7 +6379,7 @@
   {
     "id": "老鹤草",
     "name": "老鹤草",
-    "pinyin": "老鹤cǎo",
+    "pinyin": "lǎo hè cǎo",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6438,7 +6438,7 @@
   {
     "id": "tougucao",
     "name": "透骨草",
-    "pinyin": "tougucao",
+    "pinyin": "tòu gǔ cǎo",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6468,7 +6468,7 @@
   {
     "id": "jixingzi",
     "name": "急性子",
-    "pinyin": "jixingzi",
+    "pinyin": "jí xìng zǐ",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6558,7 +6558,7 @@
   {
     "id": "鹿啼草",
     "name": "鹿啼草",
-    "pinyin": "鹿啼cǎo",
+    "pinyin": "lù tí cǎo",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6587,7 +6587,7 @@
   {
     "id": "豨签草",
     "name": "豨签草",
-    "pinyin": "豨签cǎo",
+    "pinyin": "xī qiān cǎo",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6646,7 +6646,7 @@
   {
     "id": "虎骨",
     "name": "虎骨",
-    "pinyin": "虎骨",
+    "pinyin": "hǔ gǔ",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6676,7 +6676,7 @@
   {
     "id": "baihuashe",
     "name": "白花蛇",
-    "pinyin": "baihuashe",
+    "pinyin": "bái huā shé",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6707,7 +6707,7 @@
   {
     "id": "wushaoshe",
     "name": "乌梢蛇",
-    "pinyin": "wushaoshe",
+    "pinyin": "wū shāo shé",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6739,7 +6739,7 @@
   {
     "id": "徐长卿",
     "name": "徐长卿",
-    "pinyin": "徐长卿",
+    "pinyin": "xú cháng qīng",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6768,7 +6768,7 @@
   {
     "id": "桑枝",
     "name": "桑枝",
-    "pinyin": "桑枝",
+    "pinyin": "sāng zhī",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6797,7 +6797,7 @@
   {
     "id": "luoshiteng",
     "name": "络石藤",
-    "pinyin": "luoshiteng",
+    "pinyin": "luò shí téng",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6827,7 +6827,7 @@
   {
     "id": "haifengteng",
     "name": "海风藤",
-    "pinyin": "haifengteng",
+    "pinyin": "hǎi fēng téng",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6858,7 +6858,7 @@
   {
     "id": "xungufeng",
     "name": "寻骨风",
-    "pinyin": "xungufeng",
+    "pinyin": "xún gǔ fēng",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6889,7 +6889,7 @@
   {
     "id": "sigualuo",
     "name": "丝瓜络",
-    "pinyin": "sigualuo",
+    "pinyin": "sī guā luò",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6921,7 +6921,7 @@
   {
     "id": "接骨木",
     "name": "接骨木",
-    "pinyin": "接骨木",
+    "pinyin": "jiē gǔ mù",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -6980,7 +6980,7 @@
   {
     "id": "蜇砂",
     "name": "蜇砂",
-    "pinyin": "zhē砂",
+    "pinyin": "zhé shā",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -7010,7 +7010,7 @@
   {
     "id": "song节",
     "name": "松节",
-    "pinyin": "song节",
+    "pinyin": "sōng jié",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -7043,7 +7043,7 @@
   {
     "id": "songxiang",
     "name": "松香",
-    "pinyin": "songxiang",
+    "pinyin": "sōng xiāng",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -7077,7 +7077,7 @@
   {
     "id": "songhuafen",
     "name": "松花粉",
-    "pinyin": "songhuafen",
+    "pinyin": "sōng huā fěn",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -7111,7 +7111,7 @@
   {
     "id": "海桐皮",
     "name": "海桐皮",
-    "pinyin": "海桐皮",
+    "pinyin": "hǎi tóng pí",
     "aliases": [],
     "category": "祛风湿药",
     "subCategory": "中草药",
@@ -7141,7 +7141,7 @@
   {
     "id": "jupi",
     "name": "橘皮",
-    "pinyin": "jupi",
+    "pinyin": "jú pí",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7172,7 +7172,7 @@
   {
     "id": "juluo",
     "name": "橘络",
-    "pinyin": "juluo",
+    "pinyin": "jú luò",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7204,7 +7204,7 @@
   {
     "id": "huajuhong",
     "name": "化橘红",
-    "pinyin": "huajuhong",
+    "pinyin": "huà jú hóng",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7236,7 +7236,7 @@
   {
     "id": "枳实",
     "name": "枳实",
-    "pinyin": "枳实",
+    "pinyin": "zhǐ shí",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7265,7 +7265,7 @@
   {
     "id": "gualoupi",
     "name": "瓜蒌皮",
-    "pinyin": "gualoupi",
+    "pinyin": "guā lóu pí",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7295,7 +7295,7 @@
   {
     "id": "全gualou",
     "name": "全栝蒌",
-    "pinyin": "全gualou",
+    "pinyin": "quán guā lóu",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7359,7 +7359,7 @@
   {
     "id": "乌药",
     "name": "乌药",
-    "pinyin": "乌药",
+    "pinyin": "wū yào",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7388,7 +7388,7 @@
   {
     "id": "檀香",
     "name": "檀香",
-    "pinyin": "檀香",
+    "pinyin": "tán xiāng",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7417,7 +7417,7 @@
   {
     "id": "甘松",
     "name": "甘松",
-    "pinyin": "甘松",
+    "pinyin": "gān sōng",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7447,7 +7447,7 @@
   {
     "id": "九香虫",
     "name": "九香虫",
-    "pinyin": "九香chóng",
+    "pinyin": "jiǔ xiāng chóng",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7476,7 +7476,7 @@
   {
     "id": "lulutong",
     "name": "路路通",
-    "pinyin": "lulutong",
+    "pinyin": "lù lù tōng",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7507,7 +7507,7 @@
   {
     "id": "baijiaoxiang",
     "name": "白胶香",
-    "pinyin": "baijiaoxiang",
+    "pinyin": "bái jiāo xiāng",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7539,7 +7539,7 @@
   {
     "id": "大腹皮",
     "name": "大腹皮",
-    "pinyin": "dàfù皮",
+    "pinyin": "dà fù pí",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7568,7 +7568,7 @@
   {
     "id": "qingpi",
     "name": "青皮",
-    "pinyin": "qingpi",
+    "pinyin": "qīng pí",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7599,7 +7599,7 @@
   {
     "id": "juye",
     "name": "橘叶",
-    "pinyin": "juye",
+    "pinyin": "jú yè",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7631,7 +7631,7 @@
   {
     "id": "juhe",
     "name": "橘核",
-    "pinyin": "juhe",
+    "pinyin": "jú hé",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7663,7 +7663,7 @@
   {
     "id": "枸橘",
     "name": "枸橘",
-    "pinyin": "枸橘",
+    "pinyin": "gōu jú",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7693,7 +7693,7 @@
   {
     "id": "川楝子",
     "name": "川楝子",
-    "pinyin": "chuān楝子",
+    "pinyin": "chuān liàn zǐ",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7722,7 +7722,7 @@
   {
     "id": "香附",
     "name": "香附",
-    "pinyin": "香fù",
+    "pinyin": "xiāng fù",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7753,7 +7753,7 @@
   {
     "id": "foshou",
     "name": "佛手",
-    "pinyin": "foshou",
+    "pinyin": "fó shǒu",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7785,7 +7785,7 @@
   {
     "id": "foshouhua",
     "name": "佛手花",
-    "pinyin": "foshouhua",
+    "pinyin": "fó shǒu huā",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7818,7 +7818,7 @@
   {
     "id": "香橼",
     "name": "香橼",
-    "pinyin": "香橼",
+    "pinyin": "xiāng yuán",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7849,7 +7849,7 @@
   {
     "id": "八月札",
     "name": "八月札",
-    "pinyin": "八月札",
+    "pinyin": "bā yuè zhá",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7878,7 +7878,7 @@
   {
     "id": "娑罗子",
     "name": "娑罗子",
-    "pinyin": "娑罗子",
+    "pinyin": "suō luó zǐ",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7907,7 +7907,7 @@
   {
     "id": "meiguihua",
     "name": "玫瑰花",
-    "pinyin": "meiguihua",
+    "pinyin": "méi guī huā",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7938,7 +7938,7 @@
   {
     "id": "daidaihua",
     "name": "代代花",
-    "pinyin": "daidaihua",
+    "pinyin": "dài dài huā",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -7970,7 +7970,7 @@
   {
     "id": "lvemei",
     "name": "绿萼梅",
-    "pinyin": "lvemei",
+    "pinyin": "lǜ è méi",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -8001,7 +8001,7 @@
   {
     "id": "baicanhua",
     "name": "白残花",
-    "pinyin": "baicanhua",
+    "pinyin": "bái cán huā",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -8033,7 +8033,7 @@
   {
     "id": "荔枝核",
     "name": "荔枝核",
-    "pinyin": "荔枝核",
+    "pinyin": "lì zhī hé",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -8062,7 +8062,7 @@
   {
     "id": "xuanfuhua",
     "name": "旋覆花",
-    "pinyin": "xuanfuhua",
+    "pinyin": "xuán fù huā",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -8094,7 +8094,7 @@
   {
     "id": "xuanfugeng",
     "name": "旋覆梗",
-    "pinyin": "xuanfugeng",
+    "pinyin": "xuán fù gěng",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -8127,7 +8127,7 @@
   {
     "id": "代赭石",
     "name": "代赭石",
-    "pinyin": "dàizhě石",
+    "pinyin": "dài zhě shí",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -8156,7 +8156,7 @@
   {
     "id": "沉香",
     "name": "沉香",
-    "pinyin": "chén香",
+    "pinyin": "chén xiāng",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -8215,7 +8215,7 @@
   {
     "id": "shidi",
     "name": "柿蒂",
-    "pinyin": "shidi",
+    "pinyin": "shì dì",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -8245,7 +8245,7 @@
   {
     "id": "shishuang",
     "name": "柿霜",
-    "pinyin": "shishuang",
+    "pinyin": "shì shuāng",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -8276,7 +8276,7 @@
   {
     "id": "daodouzi",
     "name": "刀豆子",
-    "pinyin": "daodouzi",
+    "pinyin": "dāo dòu zǐ",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -8309,7 +8309,7 @@
   {
     "id": "daodouke",
     "name": "刀豆壳",
-    "pinyin": "daodouke",
+    "pinyin": "dāo dòu ké",
     "aliases": [],
     "category": "理气药",
     "subCategory": "中草药",
@@ -8404,7 +8404,7 @@
   {
     "id": "taoren",
     "name": "桃仁",
-    "pinyin": "taoren",
+    "pinyin": "táo rén",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8435,7 +8435,7 @@
   {
     "id": "bietaogan",
     "name": "瘪桃干",
-    "pinyin": "bietaogan",
+    "pinyin": "biě táo gān",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8496,7 +8496,7 @@
   {
     "id": "泽兰",
     "name": "泽兰",
-    "pinyin": "泽兰",
+    "pinyin": "zé lán",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8526,7 +8526,7 @@
   {
     "id": "马鞭草",
     "name": "马鞭草",
-    "pinyin": "马biāncǎo",
+    "pinyin": "mǎ biān cǎo",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8555,7 +8555,7 @@
   {
     "id": "乳香",
     "name": "乳香",
-    "pinyin": "乳香",
+    "pinyin": "rǔ xiāng",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8585,7 +8585,7 @@
   {
     "id": "没药",
     "name": "没药",
-    "pinyin": "没药",
+    "pinyin": "mò yào",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8614,7 +8614,7 @@
   {
     "id": "五灵脂",
     "name": "五灵脂",
-    "pinyin": "五灵脂",
+    "pinyin": "wǔ líng zhī",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8673,7 +8673,7 @@
   {
     "id": "延胡索",
     "name": "延胡索",
-    "pinyin": "延胡索",
+    "pinyin": "yán hú suǒ",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8703,7 +8703,7 @@
   {
     "id": "姜黄",
     "name": "姜黄",
-    "pinyin": "姜黄",
+    "pinyin": "jiāng huáng",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8733,7 +8733,7 @@
   {
     "id": "降香",
     "name": "降香",
-    "pinyin": "降香",
+    "pinyin": "jiàng xiāng",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8762,7 +8762,7 @@
   {
     "id": "夏天无",
     "name": "夏天无",
-    "pinyin": "夏天无",
+    "pinyin": "xià tiān wú",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8792,7 +8792,7 @@
   {
     "id": "月季花",
     "name": "月季花",
-    "pinyin": "月季花",
+    "pinyin": "yuè jì huā",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8851,7 +8851,7 @@
   {
     "id": "鸡血藤",
     "name": "鸡血藤",
-    "pinyin": "鸡血藤",
+    "pinyin": "jī xuè téng",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8881,7 +8881,7 @@
   {
     "id": "穿山甲",
     "name": "穿山甲",
-    "pinyin": "chuān山甲",
+    "pinyin": "chuān shān jiǎ",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8910,7 +8910,7 @@
   {
     "id": "王不留行",
     "name": "王不留行",
-    "pinyin": "王bù留行",
+    "pinyin": "wáng bù liú xíng",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8969,7 +8969,7 @@
   {
     "id": "苏木",
     "name": "苏木",
-    "pinyin": "苏木",
+    "pinyin": "sū mù",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -8999,7 +8999,7 @@
   {
     "id": "刘寄奴",
     "name": "刘寄奴",
-    "pinyin": "刘寄奴",
+    "pinyin": "liú jì nú",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9028,7 +9028,7 @@
   {
     "id": "荆三棱",
     "name": "荆三棱",
-    "pinyin": "荆三棱",
+    "pinyin": "jīng sān léng",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9057,7 +9057,7 @@
   {
     "id": "蓬莪朮",
     "name": "蓬莪朮",
-    "pinyin": "蓬é朮",
+    "pinyin": "péng é zhú",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9087,7 +9087,7 @@
   {
     "id": "蟅虫",
     "name": "蟅虫",
-    "pinyin": "zhèchóng",
+    "pinyin": "zhè chóng",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9175,7 +9175,7 @@
   {
     "id": "ganqi",
     "name": "干漆",
-    "pinyin": "ganqi",
+    "pinyin": "gān qī",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9206,7 +9206,7 @@
   {
     "id": "awei",
     "name": "阿魏",
-    "pinyin": "awei",
+    "pinyin": "ā wèi",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9238,7 +9238,7 @@
   {
     "id": "凌霄花",
     "name": "凌霄花",
-    "pinyin": "凌霄花",
+    "pinyin": "líng xiāo huā",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9267,7 +9267,7 @@
   {
     "id": "自然铜",
     "name": "自然铜",
-    "pinyin": "自然铜",
+    "pinyin": "zì rán tóng",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9296,7 +9296,7 @@
   {
     "id": "水红花子",
     "name": "水红花子",
-    "pinyin": "水红花子",
+    "pinyin": "shuǐ hóng huā zǐ",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9354,7 +9354,7 @@
   {
     "id": "紫珠",
     "name": "紫珠",
-    "pinyin": "紫珠",
+    "pinyin": "zǐ zhū",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9383,7 +9383,7 @@
   {
     "id": "白芨",
     "name": "白芨",
-    "pinyin": "bái芨",
+    "pinyin": "bái jī",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9418,7 +9418,7 @@
   {
     "id": "蚕豆花",
     "name": "蚕豆花",
-    "pinyin": "cándòu花",
+    "pinyin": "cán dòu huā",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9448,7 +9448,7 @@
   {
     "id": "荠菜花",
     "name": "荠菜花",
-    "pinyin": "荠cài花",
+    "pinyin": "jì cài huā",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9481,7 +9481,7 @@
   {
     "id": "铁苋菜",
     "name": "铁苋菜",
-    "pinyin": "铁苋cài",
+    "pinyin": "tiě xiàn cài",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9511,7 +9511,7 @@
   {
     "id": "地锦草",
     "name": "地锦草",
-    "pinyin": "dì锦cǎo",
+    "pinyin": "dì jǐn cǎo",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9570,7 +9570,7 @@
   {
     "id": "灶心土",
     "name": "灶心土",
-    "pinyin": "灶心土",
+    "pinyin": "zào xīn tǔ",
     "aliases": [],
     "category": "活血化瘀药",
     "subCategory": "中草药",
@@ -9602,7 +9602,7 @@
   {
     "id": "大蓟",
     "name": "大蓟",
-    "pinyin": "dà蓟",
+    "pinyin": "dà jì",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -9667,7 +9667,7 @@
   {
     "id": "山茶花",
     "name": "山茶花",
-    "pinyin": "山chá花",
+    "pinyin": "shān chá huā",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -9700,7 +9700,7 @@
   {
     "id": "羊蹄根",
     "name": "羊蹄根",
-    "pinyin": "羊蹄根",
+    "pinyin": "yáng tí gēn",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -9730,7 +9730,7 @@
   {
     "id": "万年青根",
     "name": "万年青根",
-    "pinyin": "万年青根",
+    "pinyin": "wàn nián qīng gēn",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -9824,7 +9824,7 @@
   {
     "id": "qiancao",
     "name": "茜草",
-    "pinyin": "qiancao",
+    "pinyin": "qiàn cǎo",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -9856,7 +9856,7 @@
   {
     "id": "qiancaoteng",
     "name": "茜草藤",
-    "pinyin": "qiancaoteng",
+    "pinyin": "qiàn cǎo téng",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -9921,7 +9921,7 @@
   {
     "id": "棕榈炭",
     "name": "棕榈炭",
-    "pinyin": "棕榈炭",
+    "pinyin": "zōng lǘ tàn",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -9955,7 +9955,7 @@
   {
     "id": "血余炭",
     "name": "血余炭",
-    "pinyin": "血余炭",
+    "pinyin": "xuè yú tàn",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -9987,7 +9987,7 @@
   {
     "id": "藕节",
     "name": "藕节",
-    "pinyin": "藕节",
+    "pinyin": "ǒu jié",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -10020,7 +10020,7 @@
   {
     "id": "百草霜",
     "name": "百草霜",
-    "pinyin": "bǎicǎo霜",
+    "pinyin": "bǎi cǎo shuāng",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -10053,7 +10053,7 @@
   {
     "id": "牛角\"角思\"",
     "name": "牛角\"角思\"",
-    "pinyin": "牛角\"角思\"",
+    "pinyin": "niú jiǎo sì",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -10085,7 +10085,7 @@
   {
     "id": "墓头回",
     "name": "墓头回",
-    "pinyin": "墓头回",
+    "pinyin": "mù tóu huí",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -10118,7 +10118,7 @@
   {
     "id": "参三七",
     "name": "参三七",
-    "pinyin": "cēn三七",
+    "pinyin": "cān sān qī",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -10151,7 +10151,7 @@
   {
     "id": "花蕊石",
     "name": "花蕊石",
-    "pinyin": "花蕊石",
+    "pinyin": "huā ruǐ shí",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -10183,7 +10183,7 @@
   {
     "id": "laifuzi",
     "name": "莱菔子",
-    "pinyin": "laifuzi",
+    "pinyin": "lái fú zǐ",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -10218,7 +10218,7 @@
   {
     "id": "laifuying",
     "name": "莱菔英",
-    "pinyin": "laifuying",
+    "pinyin": "lái fú yīng",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -10254,7 +10254,7 @@
   {
     "id": "dikuluo",
     "name": "地枯萝",
-    "pinyin": "dikuluo",
+    "pinyin": "dì kū luó",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -10320,7 +10320,7 @@
   {
     "id": "六曲",
     "name": "六曲",
-    "pinyin": "六曲",
+    "pinyin": "liù qū",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -10419,7 +10419,7 @@
   {
     "id": "谷芽",
     "name": "谷芽",
-    "pinyin": "谷芽",
+    "pinyin": "gǔ yá",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -10451,7 +10451,7 @@
   {
     "id": "阿魏",
     "name": "阿魏",
-    "pinyin": "ē魏",
+    "pinyin": "ā wèi",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -10484,7 +10484,7 @@
   {
     "id": "苦楝根皮",
     "name": "苦楝根皮",
-    "pinyin": "苦楝根皮",
+    "pinyin": "kǔ liàn gēn pí",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -10575,7 +10575,7 @@
   {
     "id": "番瓜子",
     "name": "番瓜子",
-    "pinyin": "fān瓜子",
+    "pinyin": "fān guā zǐ",
     "aliases": [],
     "category": "止血药",
     "subCategory": "中草药",
@@ -10663,7 +10663,7 @@
   {
     "id": "芜荑",
     "name": "芜荑",
-    "pinyin": "芜yí",
+    "pinyin": "wú yí",
     "aliases": [],
     "category": "消食药",
     "subCategory": "中草药",
@@ -10729,7 +10729,7 @@
   {
     "id": "贯众",
     "name": "贯众",
-    "pinyin": "贯众",
+    "pinyin": "guàn zhòng",
     "aliases": [],
     "category": "消食药",
     "subCategory": "中草药",
@@ -10758,7 +10758,7 @@
   {
     "id": "大蒜",
     "name": "大蒜",
-    "pinyin": "dà蒜",
+    "pinyin": "dà suàn",
     "aliases": [],
     "category": "消食药",
     "subCategory": "中草药",
@@ -10822,7 +10822,7 @@
   {
     "id": "tiannanxing",
     "name": "天南星",
-    "pinyin": "tiannanxing",
+    "pinyin": "tiān nán xīng",
     "aliases": [],
     "category": "驱虫药",
     "subCategory": "温化寒痰药",
@@ -10853,7 +10853,7 @@
   {
     "id": "dannanxing",
     "name": "胆南星",
-    "pinyin": "dannanxing",
+    "pinyin": "dǎn nán xīng",
     "aliases": [],
     "category": "驱虫药",
     "subCategory": "温化寒痰药",
@@ -10914,7 +10914,7 @@
   {
     "id": "zaojia",
     "name": "皂荚",
-    "pinyin": "zaojia",
+    "pinyin": "zào jiá",
     "aliases": [],
     "category": "驱虫药",
     "subCategory": "温化寒痰药",
@@ -10944,7 +10944,7 @@
   {
     "id": "yazao",
     "name": "牙皂",
-    "pinyin": "yazao",
+    "pinyin": "yá zào",
     "aliases": [],
     "category": "驱虫药",
     "subCategory": "温化寒痰药",
@@ -11006,7 +11006,7 @@
   {
     "id": "白芥子",
     "name": "白芥子",
-    "pinyin": "bái芥子",
+    "pinyin": "bái jiè zǐ",
     "aliases": [],
     "category": "驱虫药",
     "subCategory": "温化寒痰药",
@@ -11069,7 +11069,7 @@
   {
     "id": "xuanfuhua",
     "name": "旋覆花",
-    "pinyin": "xuanfuhua",
+    "pinyin": "xuán fù huā",
     "aliases": [],
     "category": "驱虫药",
     "subCategory": "温化寒痰药",
@@ -11106,7 +11106,7 @@
   {
     "id": "xuanfugeng",
     "name": "旋覆梗",
-    "pinyin": "xuanfugeng",
+    "pinyin": "xuán fù gěng",
     "aliases": [],
     "category": "驱虫药",
     "subCategory": "温化寒痰药",
@@ -11176,7 +11176,7 @@
   {
     "id": "tianjiangke",
     "name": "天浆壳",
-    "pinyin": "tianjiangke",
+    "pinyin": "tiān jiāng ké",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "温化寒痰药",
@@ -11210,7 +11210,7 @@
   {
     "id": "luomoteng",
     "name": "萝藦藤",
-    "pinyin": "luomoteng",
+    "pinyin": "luó mó téng",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "温化寒痰药",
@@ -11245,7 +11245,7 @@
   {
     "id": "luomozhongmao",
     "name": "萝藦种毛",
-    "pinyin": "luomozhongmao",
+    "pinyin": "luó mó zhǒng máo",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "温化寒痰药",
@@ -11280,7 +11280,7 @@
   {
     "id": "石胡荽",
     "name": "石胡荽",
-    "pinyin": "石胡sui",
+    "pinyin": "shí hú sui",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "温化寒痰药",
@@ -11309,7 +11309,7 @@
   {
     "id": "贝母",
     "name": "贝母",
-    "pinyin": "bèi母",
+    "pinyin": "bèi mǔ",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "清化热痰药",
@@ -11404,7 +11404,7 @@
   {
     "id": "zhu茹",
     "name": "竹茹",
-    "pinyin": "zhu茹",
+    "pinyin": "zhú rú",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "清化热痰药",
@@ -11437,7 +11437,7 @@
   {
     "id": "zhuli",
     "name": "竹沥",
-    "pinyin": "zhuli",
+    "pinyin": "zhú lì",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "清化热痰药",
@@ -11503,7 +11503,7 @@
   {
     "id": "猴枣",
     "name": "猴枣",
-    "pinyin": "猴枣",
+    "pinyin": "hóu zǎo",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "清化热痰药",
@@ -11538,7 +11538,7 @@
   {
     "id": "礞石",
     "name": "礞石",
-    "pinyin": "礞石",
+    "pinyin": "měng shí",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "清化热痰药",
@@ -11571,7 +11571,7 @@
   {
     "id": "海蛤壳",
     "name": "海蛤壳",
-    "pinyin": "海蛤壳",
+    "pinyin": "hǎi gé ké",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "清化热痰药",
@@ -11604,7 +11604,7 @@
   {
     "id": "海浮石",
     "name": "海浮石",
-    "pinyin": "海fú石",
+    "pinyin": "hǎi fú shí",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "清化热痰药",
@@ -11735,7 +11735,7 @@
   {
     "id": "黄药脂",
     "name": "黄药脂",
-    "pinyin": "黄药脂",
+    "pinyin": "huáng yào zhī",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "清化热痰药",
@@ -11767,7 +11767,7 @@
   {
     "id": "荸荠",
     "name": "荸荠",
-    "pinyin": "bí荠",
+    "pinyin": "bí qi",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "清化热痰药",
@@ -11800,7 +11800,7 @@
   {
     "id": "瓦愣zi",
     "name": "瓦愣子",
-    "pinyin": "瓦愣zi",
+    "pinyin": "wǎ léng zǐ",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "清化热痰药",
@@ -11834,7 +11834,7 @@
   {
     "id": "bai螺sike",
     "name": "白螺丝壳",
-    "pinyin": "bai螺sike",
+    "pinyin": "bái luó sī ké",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "清化热痰药",
@@ -11901,7 +11901,7 @@
   {
     "id": "木蝴蝶",
     "name": "木蝴蝶",
-    "pinyin": "木蝴蝶",
+    "pinyin": "mù hú dié",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "清化热痰药",
@@ -11930,7 +11930,7 @@
   {
     "id": "xingren",
     "name": "杏仁",
-    "pinyin": "xingren",
+    "pinyin": "xìng rén",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "止咳平喘药",
@@ -11961,7 +11961,7 @@
   {
     "id": "tianxingren",
     "name": "甜杏仁",
-    "pinyin": "tianxingren",
+    "pinyin": "tián xìng rén",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "止咳平喘药",
@@ -11993,7 +11993,7 @@
   {
     "id": "madouling",
     "name": "马兜铃",
-    "pinyin": "madouling",
+    "pinyin": "mǎ dōu líng",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "止咳平喘药",
@@ -12027,7 +12027,7 @@
   {
     "id": "qingmuxiang",
     "name": "青木香",
-    "pinyin": "qingmuxiang",
+    "pinyin": "qīng mù xiāng",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "止咳平喘药",
@@ -12062,7 +12062,7 @@
   {
     "id": "qingmuxiangteng",
     "name": "青木香藤",
-    "pinyin": "qingmuxiangteng",
+    "pinyin": "qīng mù xiāng téng",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "止咳平喘药",
@@ -12129,7 +12129,7 @@
   {
     "id": "鼠曲草",
     "name": "鼠曲草",
-    "pinyin": "鼠曲cǎo",
+    "pinyin": "shǔ qū cǎo",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "止咳平喘药",
@@ -12160,7 +12160,7 @@
   {
     "id": "蔊菜",
     "name": "蔊菜",
-    "pinyin": "蔊cài",
+    "pinyin": "hàn cài",
     "aliases": [],
     "category": "化痰止咳平喘药",
     "subCategory": "止咳平喘药",
@@ -12191,7 +12191,7 @@
   {
     "id": "tianzhuzi",
     "name": "天竺子",
-    "pinyin": "tianzhuzi",
+    "pinyin": "tiān zhú zǐ",
     "aliases": [],
     "category": "温里药",
     "subCategory": "止咳平喘药",
@@ -12225,7 +12225,7 @@
   {
     "id": "tianzhuye",
     "name": "天竺叶",
-    "pinyin": "tianzhuye",
+    "pinyin": "tiān zhú yè",
     "aliases": [],
     "category": "温里药",
     "subCategory": "止咳平喘药",
@@ -12260,7 +12260,7 @@
   {
     "id": "nanzhuzi",
     "name": "南烛子",
-    "pinyin": "nanzhuzi",
+    "pinyin": "nán zhú zǐ",
     "aliases": [],
     "category": "温里药",
     "subCategory": "止咳平喘药",
@@ -12421,7 +12421,7 @@
   {
     "id": "jidanmo",
     "name": "鸡蛋膜",
-    "pinyin": "jidanmo",
+    "pinyin": "jī dàn mó",
     "aliases": [],
     "category": "温里药",
     "subCategory": "止咳平喘药",
@@ -12451,7 +12451,7 @@
   {
     "id": "jidanke",
     "name": "鸡蛋壳",
-    "pinyin": "jidanke",
+    "pinyin": "jī dàn ké",
     "aliases": [],
     "category": "温里药",
     "subCategory": "止咳平喘药",
@@ -12482,7 +12482,7 @@
   {
     "id": "jizihuang",
     "name": "鸡子黄",
-    "pinyin": "jizihuang",
+    "pinyin": "jī zǐ huáng",
     "aliases": [],
     "category": "温里药",
     "subCategory": "止咳平喘药",
@@ -12513,7 +12513,7 @@
   {
     "id": "hutuiye",
     "name": "胡颓叶",
-    "pinyin": "hutuiye",
+    "pinyin": "hú tuí yè",
     "aliases": [],
     "category": "温里药",
     "subCategory": "止咳平喘药",
@@ -12545,7 +12545,7 @@
   {
     "id": "hutuizi",
     "name": "胡颓子",
-    "pinyin": "hutuizi",
+    "pinyin": "hú tuí zǐ",
     "aliases": [],
     "category": "温里药",
     "subCategory": "止咳平喘药",
@@ -12578,7 +12578,7 @@
   {
     "id": "hutuigen",
     "name": "胡颓根",
-    "pinyin": "hutuigen",
+    "pinyin": "hú tuí gēn",
     "aliases": [],
     "category": "温里药",
     "subCategory": "止咳平喘药",
@@ -12611,7 +12611,7 @@
   {
     "id": "千日红",
     "name": "千日红",
-    "pinyin": "千日红",
+    "pinyin": "qiān rì hóng",
     "aliases": [],
     "category": "温里药",
     "subCategory": "止咳平喘药",
@@ -12640,7 +12640,7 @@
   {
     "id": "钟乳石",
     "name": "钟乳石",
-    "pinyin": "钟乳石",
+    "pinyin": "zhōng rǔ shí",
     "aliases": [],
     "category": "温里药",
     "subCategory": "止咳平喘药",
@@ -12673,7 +12673,7 @@
   {
     "id": "yangjinhua",
     "name": "洋金花",
-    "pinyin": "yangjinhua",
+    "pinyin": "yáng jīn huā",
     "aliases": [],
     "category": "温里药",
     "subCategory": "止咳平喘药",
@@ -12703,7 +12703,7 @@
   {
     "id": "mantuoluojingye",
     "name": "曼陀罗茎叶",
-    "pinyin": "mantuoluojingye",
+    "pinyin": "màn tuó luó jīng yè",
     "aliases": [],
     "category": "温里药",
     "subCategory": "止咳平喘药",
@@ -12734,7 +12734,7 @@
   {
     "id": "mantuoluozhongzi",
     "name": "曼陀罗种子",
-    "pinyin": "mantuoluozhongzi",
+    "pinyin": "màn tuó luó zhǒng zǐ",
     "aliases": [],
     "category": "温里药",
     "subCategory": "止咳平喘药",
@@ -12765,7 +12765,7 @@
   {
     "id": "fuzi",
     "name": "附子",
-    "pinyin": "fuzi",
+    "pinyin": "fù zǐ",
     "aliases": [
       "侧子",
       "虎掌"
@@ -12798,7 +12798,7 @@
   {
     "id": "wutou",
     "name": "乌头",
-    "pinyin": "wutou",
+    "pinyin": "wū tóu",
     "aliases": [
       "侧子",
       "虎掌"
@@ -12832,7 +12832,7 @@
   {
     "id": "caowu",
     "name": "草乌",
-    "pinyin": "caowu",
+    "pinyin": "cǎo wū",
     "aliases": [
       "侧子",
       "虎掌"
@@ -12971,7 +12971,7 @@
   {
     "id": "gaoliangjiang",
     "name": "高良姜",
-    "pinyin": "gaoliangjiang",
+    "pinyin": "gāo liáng jiāng",
     "aliases": [],
     "category": "开窍药",
     "subCategory": "中草药",
@@ -13004,7 +13004,7 @@
   {
     "id": "hongdou寇",
     "name": "红豆寇",
-    "pinyin": "hongdou寇",
+    "pinyin": "hóng dòu kòu",
     "aliases": [],
     "category": "开窍药",
     "subCategory": "中草药",
@@ -13038,7 +13038,7 @@
   {
     "id": "shujiao",
     "name": "蜀椒",
-    "pinyin": "shujiao",
+    "pinyin": "shǔ jiāo",
     "aliases": [],
     "category": "开窍药",
     "subCategory": "中草药",
@@ -13068,7 +13068,7 @@
   {
     "id": "jiaomu",
     "name": "椒目",
-    "pinyin": "jiaomu",
+    "pinyin": "jiāo mù",
     "aliases": [],
     "category": "开窍药",
     "subCategory": "中草药",
@@ -13131,7 +13131,7 @@
   {
     "id": "荜菝",
     "name": "荜菝",
-    "pinyin": "bìbá",
+    "pinyin": "bì bá",
     "aliases": [],
     "category": "开窍药",
     "subCategory": "中草药",
@@ -13163,7 +13163,7 @@
   {
     "id": "毕澄茄",
     "name": "毕澄茄",
-    "pinyin": "毕dèng茄",
+    "pinyin": "bì chéng qié",
     "aliases": [],
     "category": "开窍药",
     "subCategory": "中草药",
@@ -13426,7 +13426,7 @@
   {
     "id": "山羊角",
     "name": "山羊角",
-    "pinyin": "山羊角",
+    "pinyin": "shān yáng jiǎo",
     "aliases": [],
     "category": "平肝息风药",
     "subCategory": "中草药",
@@ -13552,7 +13552,7 @@
   {
     "id": "白蒺藜",
     "name": "白蒺藜",
-    "pinyin": "báijílí",
+    "pinyin": "bái jí lí",
     "aliases": [],
     "category": "平肝息风药",
     "subCategory": "中草药",
@@ -13584,7 +13584,7 @@
   {
     "id": "橹豆衣",
     "name": "橹豆衣",
-    "pinyin": "橹dòu衣",
+    "pinyin": "lǔ dòu yī",
     "aliases": [],
     "category": "平肝息风药",
     "subCategory": "中草药",
@@ -13616,7 +13616,7 @@
   {
     "id": "代赭石",
     "name": "代赭石",
-    "pinyin": "dàizhě石",
+    "pinyin": "dài zhě shí",
     "aliases": [],
     "category": "平肝息风药",
     "subCategory": "中草药",
@@ -13647,7 +13647,7 @@
   {
     "id": "蚯蚓",
     "name": "蚯蚓",
-    "pinyin": "蚯蚓",
+    "pinyin": "qiū yǐn",
     "aliases": [],
     "category": "平肝息风药",
     "subCategory": "中草药",
@@ -13681,7 +13681,7 @@
   {
     "id": "jiangcan",
     "name": "僵蚕",
-    "pinyin": "jiangcan",
+    "pinyin": "jiāng cán",
     "aliases": [],
     "category": "平肝息风药",
     "subCategory": "中草药",
@@ -13715,7 +13715,7 @@
   {
     "id": "jiangjianke",
     "name": "僵茧壳",
-    "pinyin": "jiangjianke",
+    "pinyin": "jiāng jiǎn ké",
     "aliases": [],
     "category": "平肝息风药",
     "subCategory": "中草药",
@@ -13750,7 +13750,7 @@
   {
     "id": "贝齿",
     "name": "贝齿",
-    "pinyin": "bèichǐ",
+    "pinyin": "bèi chǐ",
     "aliases": [],
     "category": "平肝息风药",
     "subCategory": "中草药",
@@ -13781,7 +13781,7 @@
   {
     "id": "玳瑁",
     "name": "玳瑁",
-    "pinyin": "dài瑁",
+    "pinyin": "dài mào",
     "aliases": [],
     "category": "平肝息风药",
     "subCategory": "中草药",
@@ -13813,7 +13813,7 @@
   {
     "id": "mabao",
     "name": "马宝",
-    "pinyin": "mabao",
+    "pinyin": "mǎ bǎo",
     "aliases": [],
     "category": "平肝息风药",
     "subCategory": "中草药",
@@ -13847,7 +13847,7 @@
   {
     "id": "goubao",
     "name": "狗宝",
-    "pinyin": "goubao",
+    "pinyin": "gǒu bǎo",
     "aliases": [],
     "category": "平肝息风药",
     "subCategory": "中草药",
@@ -13882,7 +13882,7 @@
   {
     "id": "zishiying",
     "name": "紫石英",
-    "pinyin": "zishiying",
+    "pinyin": "zǐ shí yīng",
     "aliases": [],
     "category": "平肝息风药",
     "subCategory": "中草药",
@@ -13915,7 +13915,7 @@
   {
     "id": "baishiying",
     "name": "白石英",
-    "pinyin": "baishiying",
+    "pinyin": "bái shí yīng",
     "aliases": [],
     "category": "平肝息风药",
     "subCategory": "中草药",
@@ -14007,7 +14007,7 @@
   {
     "id": "壁虎",
     "name": "壁虎",
-    "pinyin": "bì虎",
+    "pinyin": "bì hǔ",
     "aliases": [],
     "category": "安神药",
     "subCategory": "中草药",
@@ -14097,7 +14097,7 @@
   {
     "id": "longgu",
     "name": "龙骨",
-    "pinyin": "longgu",
+    "pinyin": "lóng gǔ",
     "aliases": [],
     "category": "安神药",
     "subCategory": "重镇安神药",
@@ -14132,7 +14132,7 @@
   {
     "id": "longchi",
     "name": "龙齿",
-    "pinyin": "longchi",
+    "pinyin": "lóng chǐ",
     "aliases": [],
     "category": "安神药",
     "subCategory": "重镇安神药",
@@ -14202,7 +14202,7 @@
   {
     "id": "琥珀",
     "name": "琥珀",
-    "pinyin": "琥珀",
+    "pinyin": "hǔ pò",
     "aliases": [],
     "category": "安神药",
     "subCategory": "重镇安神药",
@@ -14235,7 +14235,7 @@
   {
     "id": "zhenzhu",
     "name": "珍珠",
-    "pinyin": "zhenzhu",
+    "pinyin": "zhēn zhū",
     "aliases": [],
     "category": "安神药",
     "subCategory": "重镇安神药",
@@ -14269,7 +14269,7 @@
   {
     "id": "zhenzhumu",
     "name": "珍珠母",
-    "pinyin": "zhenzhumu",
+    "pinyin": "zhēn zhū mǔ",
     "aliases": [],
     "category": "安神药",
     "subCategory": "重镇安神药",
@@ -14408,7 +14408,7 @@
   {
     "id": "夜交藤",
     "name": "夜交藤",
-    "pinyin": "夜交藤",
+    "pinyin": "yè jiāo téng",
     "aliases": [],
     "category": "安神药",
     "subCategory": "养心安神药",
@@ -14440,7 +14440,7 @@
   {
     "id": "hehuanpi",
     "name": "合欢皮",
-    "pinyin": "hehuanpi",
+    "pinyin": "hé huān pí",
     "aliases": [],
     "category": "安神药",
     "subCategory": "养心安神药",
@@ -14474,7 +14474,7 @@
   {
     "id": "hehuanhua",
     "name": "合欢花",
-    "pinyin": "hehuanhua",
+    "pinyin": "hé huān huā",
     "aliases": [],
     "category": "安神药",
     "subCategory": "养心安神药",
@@ -14509,7 +14509,7 @@
   {
     "id": "小麦",
     "name": "小麦",
-    "pinyin": "小麦",
+    "pinyin": "xiǎo mài",
     "aliases": [],
     "category": "安神药",
     "subCategory": "养心安神药",
@@ -14540,7 +14540,7 @@
   {
     "id": "秫米",
     "name": "秫米",
-    "pinyin": "秫米",
+    "pinyin": "shú mǐ",
     "aliases": [],
     "category": "安神药",
     "subCategory": "养心安神药",
@@ -14572,7 +14572,7 @@
   {
     "id": "rencan",
     "name": "人参",
-    "pinyin": "rencan",
+    "pinyin": "rén shēn",
     "aliases": [
       "人衔",
       "鬼盖"
@@ -14608,7 +14608,7 @@
   {
     "id": "rencanye",
     "name": "人参叶",
-    "pinyin": "rencanye",
+    "pinyin": "rén shēn yè",
     "aliases": [
       "人衔",
       "鬼盖"
@@ -14645,7 +14645,7 @@
   {
     "id": "rencanlu",
     "name": "人参芦",
-    "pinyin": "rencanlu",
+    "pinyin": "rén shēn lú",
     "aliases": [
       "人衔",
       "鬼盖"
@@ -14682,7 +14682,7 @@
   {
     "id": "dangcan",
     "name": "党参",
-    "pinyin": "dangcan",
+    "pinyin": "dǎng cān",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -14715,7 +14715,7 @@
   {
     "id": "mingdangcan",
     "name": "明党参",
-    "pinyin": "mingdangcan",
+    "pinyin": "míng dǎng cān",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -14749,7 +14749,7 @@
   {
     "id": "孩儿参",
     "name": "孩儿参",
-    "pinyin": "孩ércēn",
+    "pinyin": "hái ér cān",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -14782,7 +14782,7 @@
   {
     "id": "黄耆",
     "name": "黄耆",
-    "pinyin": "黄耆",
+    "pinyin": "huáng qí",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -14814,7 +14814,7 @@
   {
     "id": "白朮",
     "name": "白朮",
-    "pinyin": "bái朮",
+    "pinyin": "bái zhú",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -14847,7 +14847,7 @@
   {
     "id": "山药",
     "name": "山药",
-    "pinyin": "山药",
+    "pinyin": "shān yào",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -14879,7 +14879,7 @@
   {
     "id": "biandou",
     "name": "扁豆",
-    "pinyin": "biandou",
+    "pinyin": "biǎn dòu",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -14912,7 +14912,7 @@
   {
     "id": "biandouyi",
     "name": "扁豆衣",
-    "pinyin": "biandouyi",
+    "pinyin": "biǎn dòu yī",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -14946,7 +14946,7 @@
   {
     "id": "biandouhua",
     "name": "扁豆花",
-    "pinyin": "biandouhua",
+    "pinyin": "biǎn dòu huā",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -14980,7 +14980,7 @@
   {
     "id": "大枣",
     "name": "大枣",
-    "pinyin": "dà枣",
+    "pinyin": "dà zǎo",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -15045,7 +15045,7 @@
   {
     "id": "饴糖",
     "name": "饴糖",
-    "pinyin": "饴糖",
+    "pinyin": "yí táng",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -15078,7 +15078,7 @@
   {
     "id": "ren胞",
     "name": "人胞",
-    "pinyin": "ren胞",
+    "pinyin": "rén bāo",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -15113,7 +15113,7 @@
   {
     "id": "脐带",
     "name": "脐带",
-    "pinyin": "脐带",
+    "pinyin": "qí dài",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -15149,7 +15149,7 @@
   {
     "id": "黄精",
     "name": "黄精",
-    "pinyin": "黄精",
+    "pinyin": "huáng jīng",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -15181,7 +15181,7 @@
   {
     "id": "狼把草",
     "name": "狼把草",
-    "pinyin": "狼把cǎo",
+    "pinyin": "láng bǎ cǎo",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -15208,7 +15208,7 @@
   {
     "id": "jinquegen",
     "name": "金雀根",
-    "pinyin": "jinquegen",
+    "pinyin": "jīn què gēn",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -15236,7 +15236,7 @@
   {
     "id": "jinquehua",
     "name": "金雀花",
-    "pinyin": "jinquehua",
+    "pinyin": "jīn què huā",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "补气药",
@@ -15299,7 +15299,7 @@
   {
     "id": "鹿角（附、鹿角胶、鹿角霜）",
     "name": "鹿角（附、鹿角胶、鹿角霜）",
-    "pinyin": "鹿角",
+    "pinyin": "lù jiǎo",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15331,7 +15331,7 @@
   {
     "id": "淫羊藿",
     "name": "淫羊藿",
-    "pinyin": "淫羊藿",
+    "pinyin": "yín yáng huò",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15363,7 +15363,7 @@
   {
     "id": "仙茅",
     "name": "仙茅",
-    "pinyin": "仙茅",
+    "pinyin": "xiān máo",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15392,7 +15392,7 @@
   {
     "id": "巴戟天",
     "name": "巴戟天",
-    "pinyin": "bā戟天",
+    "pinyin": "bā jǐ tiān",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15424,7 +15424,7 @@
   {
     "id": "补骨脂",
     "name": "补骨脂",
-    "pinyin": "bǔ骨脂",
+    "pinyin": "bǔ gǔ zhī",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15457,7 +15457,7 @@
   {
     "id": "hutaorou",
     "name": "胡桃肉",
-    "pinyin": "hutaorou",
+    "pinyin": "hú táo ròu",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15490,7 +15490,7 @@
   {
     "id": "hutaojia",
     "name": "胡桃夹",
-    "pinyin": "hutaojia",
+    "pinyin": "hú táo jiá",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15524,7 +15524,7 @@
   {
     "id": "肉苁蓉",
     "name": "肉苁蓉",
-    "pinyin": "肉cōng蓉",
+    "pinyin": "ròu cōng róng",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15557,7 +15557,7 @@
   {
     "id": "益智仁",
     "name": "益智仁",
-    "pinyin": "益智仁",
+    "pinyin": "yì zhì rén",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15589,7 +15589,7 @@
   {
     "id": "沙苑蒺藜",
     "name": "沙苑蒺藜",
-    "pinyin": "沙苑jílí",
+    "pinyin": "shā yuàn jí lí",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15621,7 +15621,7 @@
   {
     "id": "菟丝子",
     "name": "菟丝子",
-    "pinyin": "菟丝子",
+    "pinyin": "tù sī zǐ",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15654,7 +15654,7 @@
   {
     "id": "蛤蚧",
     "name": "蛤蚧",
-    "pinyin": "蛤蚧",
+    "pinyin": "gé jiè",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15683,7 +15683,7 @@
   {
     "id": "冬虫夏草",
     "name": "冬虫夏草",
-    "pinyin": "dōngchóng夏cǎo",
+    "pinyin": "dōng chóng xià cǎo",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15714,7 +15714,7 @@
   {
     "id": "锁阳",
     "name": "锁阳",
-    "pinyin": "锁阳",
+    "pinyin": "suǒ yáng",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15746,7 +15746,7 @@
   {
     "id": "葫芦巴",
     "name": "葫芦巴",
-    "pinyin": "葫芦bā",
+    "pinyin": "hú lú bā",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15777,7 +15777,7 @@
   {
     "id": "蛇床子",
     "name": "蛇床子",
-    "pinyin": "蛇chuáng子",
+    "pinyin": "shé chuáng zǐ",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15809,7 +15809,7 @@
   {
     "id": "jiuzi",
     "name": "韭子",
-    "pinyin": "jiuzi",
+    "pinyin": "jiǔ zǐ",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15843,7 +15843,7 @@
   {
     "id": "jiucaigen",
     "name": "韭菜根",
-    "pinyin": "jiucaigen",
+    "pinyin": "jiǔ cài gēn",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15878,7 +15878,7 @@
   {
     "id": "阳起石",
     "name": "阳起石",
-    "pinyin": "阳起石",
+    "pinyin": "yáng qǐ shí",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15909,7 +15909,7 @@
   {
     "id": "骨碎补",
     "name": "骨碎补",
-    "pinyin": "骨碎bǔ",
+    "pinyin": "gǔ suì bǔ",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15941,7 +15941,7 @@
   {
     "id": "haigoushen",
     "name": "海狗肾",
-    "pinyin": "haigoushen",
+    "pinyin": "hǎi gǒu shèn",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -15973,7 +15973,7 @@
   {
     "id": "huanggoushen",
     "name": "黄狗肾",
-    "pinyin": "huanggoushen",
+    "pinyin": "huáng gǒu shèn",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -16006,7 +16006,7 @@
   {
     "id": "续断",
     "name": "续断",
-    "pinyin": "续duàn",
+    "pinyin": "xù duàn",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -16038,7 +16038,7 @@
   {
     "id": "杜仲",
     "name": "杜仲",
-    "pinyin": "dù仲",
+    "pinyin": "dù zhòng",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -16103,7 +16103,7 @@
   {
     "id": "棉huazi",
     "name": "棉花子",
-    "pinyin": "棉huazi",
+    "pinyin": "mián huā zǐ",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -16131,7 +16131,7 @@
   {
     "id": "棉jinpi",
     "name": "棉锦皮",
-    "pinyin": "棉jinpi",
+    "pinyin": "mián jǐn pí",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -16160,7 +16160,7 @@
   {
     "id": "薛荔果",
     "name": "薛荔果",
-    "pinyin": "薛荔果",
+    "pinyin": "xuē lì guǒ",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "助阳药",
@@ -16218,7 +16218,7 @@
   {
     "id": "何shouwu",
     "name": "何首乌",
-    "pinyin": "何shouwu",
+    "pinyin": "hé shǒu wū",
     "aliases": [
       "地精",
       "红内消"
@@ -16252,7 +16252,7 @@
   {
     "id": "xianshouwu",
     "name": "鲜首乌",
-    "pinyin": "xianshouwu",
+    "pinyin": "xiān shǒu wū",
     "aliases": [
       "地精",
       "红内消"
@@ -16395,7 +16395,7 @@
   {
     "id": "桑椹子",
     "name": "桑椹子",
-    "pinyin": "桑椹子",
+    "pinyin": "sāng shèn zǐ",
     "aliases": [],
     "category": "补虚药",
     "subCategory": "养血药",
@@ -16424,7 +16424,7 @@
   {
     "id": "桂圆肉",
     "name": "桂圆肉",
-    "pinyin": "桂圆肉",
+    "pinyin": "guì yuán ròu",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "养血药",
@@ -16456,7 +16456,7 @@
   {
     "id": "shacan",
     "name": "沙参",
-    "pinyin": "shacan",
+    "pinyin": "shā cān",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16489,7 +16489,7 @@
   {
     "id": "zhuercan",
     "name": "珠儿参",
-    "pinyin": "zhuercan",
+    "pinyin": "zhū ér cān",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16523,7 +16523,7 @@
   {
     "id": "xiyangcan",
     "name": "西洋参",
-    "pinyin": "xiyangcan",
+    "pinyin": "xī yáng shēn",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16557,7 +16557,7 @@
   {
     "id": "天门冬",
     "name": "天门冬",
-    "pinyin": "天门dōng",
+    "pinyin": "tiān mén dōng",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16590,7 +16590,7 @@
   {
     "id": "麦门冬",
     "name": "麦门冬",
-    "pinyin": "麦门dōng",
+    "pinyin": "mài mén dōng",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16624,7 +16624,7 @@
   {
     "id": "石斛",
     "name": "石斛",
-    "pinyin": "石斛",
+    "pinyin": "shí hú",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16657,7 +16657,7 @@
   {
     "id": "玉竹",
     "name": "玉竹",
-    "pinyin": "玉竹",
+    "pinyin": "yù zhú",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16689,7 +16689,7 @@
   {
     "id": "百合",
     "name": "百合",
-    "pinyin": "bǎi合",
+    "pinyin": "bǎi hé",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16721,7 +16721,7 @@
   {
     "id": "羊乳根",
     "name": "羊乳根",
-    "pinyin": "羊乳根",
+    "pinyin": "yáng rǔ gēn",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16748,7 +16748,7 @@
   {
     "id": "枸骨叶",
     "name": "枸骨叶",
-    "pinyin": "枸骨叶",
+    "pinyin": "gǒu gǔ yè",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16780,7 +16780,7 @@
   {
     "id": "chushizi",
     "name": "楮实子",
-    "pinyin": "chushizi",
+    "pinyin": "chǔ shí zǐ",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16813,7 +16813,7 @@
   {
     "id": "gushuye",
     "name": "谷树叶",
-    "pinyin": "gushuye",
+    "pinyin": "gǔ shù yè",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16847,7 +16847,7 @@
   {
     "id": "gushujiang",
     "name": "谷树浆",
-    "pinyin": "gushujiang",
+    "pinyin": "gǔ shù jiāng",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16881,7 +16881,7 @@
   {
     "id": "gushugenpi",
     "name": "谷树根皮",
-    "pinyin": "gushugenpi",
+    "pinyin": "gǔ shù gēn pí",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16950,7 +16950,7 @@
   {
     "id": "女贞zi",
     "name": "女贞子",
-    "pinyin": "女贞zi",
+    "pinyin": "nǚ zhēn zǐ",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -16984,7 +16984,7 @@
   {
     "id": "女贞ye",
     "name": "女贞叶",
-    "pinyin": "女贞ye",
+    "pinyin": "nǚ zhēn yè",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -17019,7 +17019,7 @@
   {
     "id": "旱莲草",
     "name": "旱莲草",
-    "pinyin": "旱莲cǎo",
+    "pinyin": "hàn lián cǎo",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -17052,7 +17052,7 @@
   {
     "id": "guiban",
     "name": "龟板",
-    "pinyin": "guiban",
+    "pinyin": "guī bǎn",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -17087,7 +17087,7 @@
   {
     "id": "guibanjiao",
     "name": "龟板胶",
-    "pinyin": "guibanjiao",
+    "pinyin": "guī bǎn jiāo",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -17123,7 +17123,7 @@
   {
     "id": "biejia",
     "name": "鳖甲",
-    "pinyin": "biejia",
+    "pinyin": "biē jiǎ",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -17157,7 +17157,7 @@
   {
     "id": "biejiajiao",
     "name": "鳖甲胶",
-    "pinyin": "biejiajiao",
+    "pinyin": "biē jiǎ jiāo",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "滋阴药",
@@ -17329,7 +17329,7 @@
   {
     "id": "lianzi",
     "name": "莲子",
-    "pinyin": "lianzi",
+    "pinyin": "lián zǐ",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "中草药",
@@ -17364,7 +17364,7 @@
   {
     "id": "shilianzi",
     "name": "石莲子",
-    "pinyin": "shilianzi",
+    "pinyin": "shí lián zǐ",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "中草药",
@@ -17400,7 +17400,7 @@
   {
     "id": "lianxu",
     "name": "莲须",
-    "pinyin": "lianxu",
+    "pinyin": "lián xū",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "中草药",
@@ -17436,7 +17436,7 @@
   {
     "id": "hehualian房",
     "name": "荷花莲房",
-    "pinyin": "hehualian房",
+    "pinyin": "hé huā lián fáng",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "中草药",
@@ -17505,7 +17505,7 @@
   {
     "id": "hezi",
     "name": "诃子",
-    "pinyin": "hezi",
+    "pinyin": "hē zǐ",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "中草药",
@@ -17540,7 +17540,7 @@
   {
     "id": "zangqingguo",
     "name": "藏青果",
-    "pinyin": "zangqingguo",
+    "pinyin": "cáng qīng guǒ",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "中草药",
@@ -17709,7 +17709,7 @@
   {
     "id": "shiliupi",
     "name": "石榴皮",
-    "pinyin": "shiliupi",
+    "pinyin": "shí liu pí",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "中草药",
@@ -17743,7 +17743,7 @@
   {
     "id": "shiliugenpi",
     "name": "石榴根皮",
-    "pinyin": "shiliugenpi",
+    "pinyin": "shí liu gēn pí",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "中草药",
@@ -17778,7 +17778,7 @@
   {
     "id": "明矾",
     "name": "明矾",
-    "pinyin": "明fán",
+    "pinyin": "míng fán",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "中草药",
@@ -17809,7 +17809,7 @@
   {
     "id": "chungenpi",
     "name": "椿根皮",
-    "pinyin": "chungenpi",
+    "pinyin": "chūn gēn pí",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "中草药",
@@ -17843,7 +17843,7 @@
   {
     "id": "fengyancao",
     "name": "凤眼草",
-    "pinyin": "fengyancao",
+    "pinyin": "fèng yǎn cǎo",
     "aliases": [],
     "category": "收涩药",
     "subCategory": "中草药",
@@ -18009,7 +18009,7 @@
   {
     "id": "乌贼骨",
     "name": "乌贼骨",
-    "pinyin": "乌zéi骨",
+    "pinyin": "wū zéi gǔ",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18041,7 +18041,7 @@
   {
     "id": "碎米荞",
     "name": "碎米荞",
-    "pinyin": "碎米荞",
+    "pinyin": "suì mǐ qiáo",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18068,7 +18068,7 @@
   {
     "id": "鸡冠花",
     "name": "鸡冠花",
-    "pinyin": "鸡冠花",
+    "pinyin": "jī guān huā",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18100,7 +18100,7 @@
   {
     "id": "浮小麦",
     "name": "浮小麦",
-    "pinyin": "fú小麦",
+    "pinyin": "fú xiǎo mài",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18131,7 +18131,7 @@
   {
     "id": "糯稻gen",
     "name": "糯稻根",
-    "pinyin": "糯稻gen",
+    "pinyin": "nuò dào gēn",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18159,7 +18159,7 @@
   {
     "id": "糯稻cao",
     "name": "糯稻草",
-    "pinyin": "糯稻cao",
+    "pinyin": "nuò dào cǎo",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18188,7 +18188,7 @@
   {
     "id": "麻黄根",
     "name": "麻黄根",
-    "pinyin": "麻黄根",
+    "pinyin": "má huáng gēn",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18219,7 +18219,7 @@
   {
     "id": "baiguo",
     "name": "白果",
-    "pinyin": "baiguo",
+    "pinyin": "bái guǒ",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18250,7 +18250,7 @@
   {
     "id": "baiguoye",
     "name": "白果叶",
-    "pinyin": "baiguoye",
+    "pinyin": "bái guǒ yè",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18282,7 +18282,7 @@
   {
     "id": "刺猬皮",
     "name": "刺猬皮",
-    "pinyin": "cì猬皮",
+    "pinyin": "cì wei pí",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18314,7 +18314,7 @@
   {
     "id": "蟾酥",
     "name": "蟾酥",
-    "pinyin": "蟾酥",
+    "pinyin": "chán sū",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18345,7 +18345,7 @@
   {
     "id": "蟾pi",
     "name": "蟾皮",
-    "pinyin": "蟾pi",
+    "pinyin": "chán pí",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18377,7 +18377,7 @@
   {
     "id": "雄黄",
     "name": "雄黄",
-    "pinyin": "雄黄",
+    "pinyin": "xióng huáng",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18406,7 +18406,7 @@
   {
     "id": "硼砂",
     "name": "硼砂",
-    "pinyin": "硼砂",
+    "pinyin": "péng shā",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18439,7 +18439,7 @@
   {
     "id": "磠砂",
     "name": "磠砂",
-    "pinyin": "磠砂",
+    "pinyin": "lǔ shā",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18470,7 +18470,7 @@
   {
     "id": "砒石",
     "name": "砒石",
-    "pinyin": "砒石",
+    "pinyin": "pī shí",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18527,7 +18527,7 @@
   {
     "id": "石灰",
     "name": "石灰",
-    "pinyin": "石灰",
+    "pinyin": "shí huī",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18554,7 +18554,7 @@
   {
     "id": "轻粉",
     "name": "轻粉",
-    "pinyin": "轻fěn",
+    "pinyin": "qīng fěn",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18581,7 +18581,7 @@
   {
     "id": "大风子",
     "name": "大风子",
-    "pinyin": "dàfēng子",
+    "pinyin": "dà fēng zǐ",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18608,7 +18608,7 @@
   {
     "id": "蜂房",
     "name": "蜂房",
-    "pinyin": "fēngfáng",
+    "pinyin": "fēng fáng",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18637,7 +18637,7 @@
   {
     "id": "mu槿pi",
     "name": "木槿皮",
-    "pinyin": "mu槿pi",
+    "pinyin": "mù jǐn pí",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18669,7 +18669,7 @@
   {
     "id": "tu槿pi",
     "name": "土槿皮",
-    "pinyin": "tu槿pi",
+    "pinyin": "tǔ jǐn pí",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18702,7 +18702,7 @@
   {
     "id": "mu槿hua",
     "name": "木槿花",
-    "pinyin": "mu槿hua",
+    "pinyin": "mù jǐn huā",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18735,7 +18735,7 @@
   {
     "id": "mu槿zi",
     "name": "木槿子",
-    "pinyin": "mu槿zi",
+    "pinyin": "mù jǐn zǐ",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18768,7 +18768,7 @@
   {
     "id": "绿矾",
     "name": "绿矾",
-    "pinyin": "绿fán",
+    "pinyin": "lǜ fán",
     "aliases": [],
     "category": "攻毒杀虫止痒药",
     "subCategory": "中草药",
@@ -18800,7 +18800,7 @@
   {
     "id": "樟脑",
     "name": "樟脑",
-    "pinyin": "樟脑",
+    "pinyin": "zhāng nǎo",
     "aliases": [],
     "category": "涌吐药",
     "subCategory": "中草药",
@@ -18829,7 +18829,7 @@
   {
     "id": "硫黄",
     "name": "硫黄",
-    "pinyin": "硫黄",
+    "pinyin": "liú huáng",
     "aliases": [],
     "category": "涌吐药",
     "subCategory": "中草药",
@@ -18858,7 +18858,7 @@
   {
     "id": "炉甘石",
     "name": "炉甘石",
-    "pinyin": "炉甘石",
+    "pinyin": "lú gān shí",
     "aliases": [],
     "category": "涌吐药",
     "subCategory": "中草药",
@@ -18885,7 +18885,7 @@
   {
     "id": "孩儿茶",
     "name": "孩儿茶",
-    "pinyin": "孩érchá",
+    "pinyin": "hái ér chá",
     "aliases": [],
     "category": "涌吐药",
     "subCategory": "中草药",
@@ -18917,7 +18917,7 @@
   {
     "id": "血竭",
     "name": "血竭",
-    "pinyin": "血竭",
+    "pinyin": "xuè jié",
     "aliases": [],
     "category": "涌吐药",
     "subCategory": "中草药",
@@ -18950,7 +18950,7 @@
   {
     "id": "象pi",
     "name": "象皮",
-    "pinyin": "象pi",
+    "pinyin": "xiàng pí",
     "aliases": [],
     "category": "涌吐药",
     "subCategory": "中草药",
@@ -18978,7 +18978,7 @@
   {
     "id": "象ya屑",
     "name": "象牙屑",
-    "pinyin": "象ya屑",
+    "pinyin": "xiàng yá xiè",
     "aliases": [],
     "category": "涌吐药",
     "subCategory": "中草药",
@@ -19007,7 +19007,7 @@
   {
     "id": "松香",
     "name": "松香",
-    "pinyin": "松香",
+    "pinyin": "sōng xiāng",
     "aliases": [],
     "category": "涌吐药",
     "subCategory": "中草药",
@@ -19034,7 +19034,7 @@
   {
     "id": "铅丹",
     "name": "铅丹",
-    "pinyin": "铅dān",
+    "pinyin": "qiān dān",
     "aliases": [],
     "category": "涌吐药",
     "subCategory": "中草药",
@@ -19063,7 +19063,7 @@
   {
     "id": "毛茛",
     "name": "毛茛",
-    "pinyin": "毛gèn",
+    "pinyin": "máo gèn",
     "aliases": [],
     "category": "涌吐药",
     "subCategory": "中草药",
@@ -19090,7 +19090,7 @@
   {
     "id": "maqianzi",
     "name": "马钱子",
-    "pinyin": "maqianzi",
+    "pinyin": "mǎ qián zǐ",
     "aliases": [],
     "category": "拔毒化腐生肌药",
     "subCategory": "中草药",
@@ -19120,7 +19120,7 @@
   {
     "id": "tumubie",
     "name": "土木鳖",
-    "pinyin": "tumubie",
+    "pinyin": "tǔ mù biē",
     "aliases": [],
     "category": "拔毒化腐生肌药",
     "subCategory": "中草药",
@@ -19151,7 +19151,7 @@
   {
     "id": "蒟蒻",
     "name": "蒟蒻",
-    "pinyin": "蒟蒻",
+    "pinyin": "jǔ ruò",
     "aliases": [],
     "category": "拔毒化腐生肌药",
     "subCategory": "中草药",
@@ -19178,7 +19178,7 @@
   {
     "id": "常shan",
     "name": "常山",
-    "pinyin": "常shan",
+    "pinyin": "cháng shān",
     "aliases": [],
     "category": "拔毒化腐生肌药",
     "subCategory": "中草药",
@@ -19209,7 +19209,7 @@
   {
     "id": "tiancha",
     "name": "甜茶",
-    "pinyin": "tiancha",
+    "pinyin": "tián chá",
     "aliases": [],
     "category": "拔毒化腐生肌药",
     "subCategory": "中草药",
@@ -19241,7 +19241,7 @@
   {
     "id": "瓜蒂",
     "name": "瓜蒂",
-    "pinyin": "瓜dì",
+    "pinyin": "guā dì",
     "aliases": [],
     "category": "拔毒化腐生肌药",
     "subCategory": "中草药",
@@ -19270,7 +19270,7 @@
   {
     "id": "藜芦",
     "name": "藜芦",
-    "pinyin": "lí芦",
+    "pinyin": "lí lú",
     "aliases": [],
     "category": "拔毒化腐生肌药",
     "subCategory": "中草药",
@@ -19300,7 +19300,7 @@
   {
     "id": "辣蓼",
     "name": "辣蓼",
-    "pinyin": "辣liǎo",
+    "pinyin": "là liǎo",
     "aliases": [],
     "category": "拔毒化腐生肌药",
     "subCategory": "中草药",
