@@ -7,6 +7,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.outlined.Star
 import androidx.compose.material3.*
@@ -24,7 +26,10 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.herbmind.android.ui.theme.HerbColors
 import com.herbmind.android.ui.viewmodel.HerbDetailUiState
 import com.herbmind.android.ui.viewmodel.HerbDetailViewModel
+import com.herbmind.android.util.ImageResourceConfig
 import com.herbmind.data.model.Herb
+import coil.compose.rememberAsyncImagePainter
+import coil.request.ImageRequest
 import org.koin.androidx.compose.koinViewModel
 import org.koin.core.parameter.parametersOf
 
@@ -44,6 +49,7 @@ fun HerbDetailScreen(
     LaunchedEffect(herbId) {
         viewModel.loadHerb(herbId)
         viewModel.checkFavoriteStatus(herbId)
+        viewModel.checkStudyStatus(herbId)
     }
 
     val herb = uiState.herb
@@ -64,6 +70,7 @@ fun HerbDetailScreen(
         isFavorite = isFavorite,
         onBackClick = onBackClick,
         onFavoriteClick = onFavoriteClick,
+        onStartStudying = { viewModel.startStudying() },
         modifier = modifier
     )
 }
@@ -75,6 +82,7 @@ private fun HerbDetailContent(
     isFavorite: Boolean,
     onBackClick: () -> Unit,
     onFavoriteClick: () -> Unit,
+    onStartStudying: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     val herb = uiState.herb ?: return
@@ -116,6 +124,16 @@ private fun HerbDetailContent(
         ) {
             // 头部信息
             HerbHeader(herb = herb)
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            // 开始学习按钮
+            StudyActionButton(
+                isStudying = uiState.isStudying,
+                isStarting = uiState.isStartingStudy,
+                studyMessage = uiState.studyMessage,
+                onStartStudying = onStartStudying
+            )
 
             Spacer(modifier = Modifier.height(16.dp))
 
@@ -227,19 +245,12 @@ private fun HerbHeader(herb: Herb) {
         modifier = Modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        // 药材图片占位
-        Box(
-            modifier = Modifier
-                .size(200.dp)
-                .clip(RoundedCornerShape(20.dp))
-                .background(HerbColors.BambooGreenPale.copy(alpha = 0.3f)),
-            contentAlignment = Alignment.Center
-        ) {
-            Text(
-                text = "🌿",
-                fontSize = 80.sp
-            )
-        }
+        // 药材图片 - 使用新的图片组件
+        HerbDetailImage(
+            imagePath = herb.image,
+            herbName = herb.name,
+            modifier = Modifier.size(200.dp)
+        )
 
         Spacer(modifier = Modifier.height(16.dp))
 
@@ -642,6 +653,191 @@ private fun ExamTipCard(frequency: Int) {
                 color = HerbColors.InkBlack,
                 lineHeight = 22.sp
             )
+        }
+    }
+}
+
+/**
+ * 学习操作按钮 - 竹青主题统一风格
+ */
+@Composable
+private fun StudyActionButton(
+    isStudying: Boolean,
+    isStarting: Boolean,
+    studyMessage: String?,
+    onStartStudying: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    Card(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = HerbColors.BambooGreen.copy(alpha = 0.08f)
+        ),
+        border = androidx.compose.foundation.BorderStroke(
+            1.dp,
+            HerbColors.BambooGreen.copy(alpha = 0.2f)
+        )
+    ) {
+        Column(
+            modifier = Modifier.padding(16.dp)
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                // 竹韵图标
+                Box(
+                    modifier = Modifier
+                        .size(48.dp)
+                        .clip(RoundedCornerShape(12.dp))
+                        .background(HerbColors.BambooGreen.copy(alpha = 0.15f)),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = if (isStudying) "📚" else "➕",
+                        fontSize = 24.sp
+                    )
+                }
+
+                Spacer(modifier = Modifier.width(16.dp))
+
+                // 文字信息
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = if (isStudying) "正在学习" else "加入学习计划",
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.SemiBold,
+                        color = HerbColors.InkBlack
+                    )
+                    studyMessage?.let { message ->
+                        Spacer(modifier = Modifier.height(4.dp))
+                        Text(
+                            text = message,
+                            fontSize = 12.sp,
+                            color = HerbColors.BambooGreenDark
+                        )
+                    } ?: Text(
+                        text = if (isStudying) "已纳入记忆曲线复习系统"
+                        else "基于记忆曲线的智能复习，帮助长期记忆",
+                        fontSize = 12.sp,
+                        color = HerbColors.InkGray
+                    )
+                }
+
+                // 按钮
+                if (!isStudying) {
+                    Button(
+                        onClick = onStartStudying,
+                        enabled = !isStarting,
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = HerbColors.BambooGreen,
+                            disabledContainerColor = HerbColors.BambooGreen.copy(alpha = 0.5f)
+                        ),
+                        shape = RoundedCornerShape(24.dp),
+                        modifier = Modifier.height(44.dp)
+                    ) {
+                        if (isStarting) {
+                            CircularProgressIndicator(
+                                modifier = Modifier.size(18.dp),
+                                color = HerbColors.PureWhite,
+                                strokeWidth = 2.dp
+                            )
+                        } else {
+                            Text(
+                                "开始学习",
+                                fontSize = 15.sp,
+                                fontWeight = FontWeight.Medium,
+                                color = HerbColors.PureWhite
+                            )
+                        }
+                    }
+                } else {
+                    // 已在学习中，显示状态标签
+                    Surface(
+                        shape = RoundedCornerShape(24.dp),
+                        color = HerbColors.BambooGreen.copy(alpha = 0.15f),
+                        modifier = Modifier.height(44.dp)
+                    ) {
+                        Row(
+                            modifier = Modifier.padding(horizontal = 20.dp, vertical = 10.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Icon(
+                                imageVector = Icons.Default.CheckCircle,
+                                contentDescription = null,
+                                modifier = Modifier.size(18.dp),
+                                tint = HerbColors.BambooGreen
+                            )
+                            Spacer(modifier = Modifier.width(6.dp))
+                            Text(
+                                text = "学习中",
+                                fontSize = 15.sp,
+                                fontWeight = FontWeight.Medium,
+                                color = HerbColors.BambooGreen
+                            )
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**
+ * 药材详情页图片组件
+ * 
+ * @param imagePath 图片半路径（如：resources/images/concocted/人参_hkbu.jpg）
+ * @param herbName 药材名称
+ * @param modifier 修饰符
+ */
+@Composable
+private fun HerbDetailImage(
+    imagePath: String?,
+    herbName: String,
+    modifier: Modifier = Modifier
+) {
+    val context = LocalContext.current
+    val imageUrl = ImageResourceConfig.getImageUrl(imagePath)
+    val hasImage = !imageUrl.isNullOrEmpty()
+    
+    Box(
+        modifier = modifier
+            .clip(RoundedCornerShape(20.dp))
+            .background(MaterialTheme.colorScheme.surfaceVariant),
+        contentAlignment = Alignment.Center
+    ) {
+        if (hasImage) {
+            Image(
+                painter = rememberAsyncImagePainter(
+                    model = ImageRequest.Builder(context)
+                        .data(imageUrl)
+                        .crossfade(true)
+                        .build()
+                ),
+                contentDescription = herbName,
+                modifier = Modifier.fillMaxSize(),
+                contentScale = ContentScale.Crop
+            )
+        } else {
+            // 显示占位符
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    text = "🌿",
+                    fontSize = 64.sp
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                Text(
+                    text = herbName,
+                    fontSize = 18.sp,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
         }
     }
 }

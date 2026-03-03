@@ -8,10 +8,16 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 
+/**
+ * HerbMind Application
+ * 初始化全局配置
+ */
 class HerbMindApplication : Application() {
+    
     override fun onCreate() {
         super.onCreate()
-
+        
+        // 初始化Koin依赖注入
         startKoin {
             androidLogger()
             androidContext(this@HerbMindApplication)
