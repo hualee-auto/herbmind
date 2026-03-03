@@ -6,6 +6,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.*
@@ -33,6 +34,7 @@ fun HomeScreen(
     onHerbClick: (String) -> Unit,
     onFavoritesClick: () -> Unit,
     onCategoryClick: (String) -> Unit,
+    onStudyClick: () -> Unit = {},
     modifier: Modifier = Modifier,
     viewModel: HomeViewModel = koinViewModel()
 ) {
@@ -76,6 +78,11 @@ fun HomeScreen(
             item {
                 Spacer(modifier = Modifier.height(8.dp))
                 SearchBar(onClick = onSearchClick)
+            }
+
+            // 今日复习入口
+            item {
+                StudyEntryCard(onClick = onStudyClick)
             }
 
             // 热门功效
@@ -399,7 +406,7 @@ private fun CategoryCard(
 ) {
     Card(
         onClick = onClick,
-        modifier = modifier,
+        modifier = modifier.height(96.dp),
         shape = RoundedCornerShape(12.dp),
         colors = CardDefaults.cardColors(
             containerColor = HerbColors.PureWhite
@@ -407,25 +414,112 @@ private fun CategoryCard(
         border = androidx.compose.foundation.BorderStroke(1.dp, HerbColors.BorderPale)
     ) {
         Column(
-            modifier = Modifier.padding(16.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(12.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
         ) {
             Text(
                 text = category.icon,
-                fontSize = 24.sp
+                fontSize = 28.sp
             )
             Spacer(modifier = Modifier.height(4.dp))
             Text(
                 text = category.name,
-                fontSize = 14.sp,
+                fontSize = 13.sp,
                 fontWeight = FontWeight.SemiBold,
-                color = HerbColors.InkBlack
+                color = HerbColors.InkBlack,
+                textAlign = androidx.compose.ui.text.style.TextAlign.Center,
+                maxLines = 1
             )
             Text(
                 text = "${category.herbCount}味",
-                fontSize = 12.sp,
-                color = HerbColors.InkGray
+                fontSize = 11.sp,
+                color = HerbColors.InkGray,
+                textAlign = androidx.compose.ui.text.style.TextAlign.Center
             )
+        }
+    }
+}
+
+/**
+ * 今日复习入口卡片 - 竹青主题
+ */
+@Composable
+private fun StudyEntryCard(onClick: () -> Unit) {
+    Card(
+        onClick = onClick,
+        modifier = Modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(
+            containerColor = HerbColors.BambooGreen.copy(alpha = 0.08f)
+        ),
+        shape = RoundedCornerShape(16.dp),
+        border = androidx.compose.foundation.BorderStroke(
+            1.dp,
+            HerbColors.BambooGreen.copy(alpha = 0.2f)
+        )
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            // 竹韵图标
+            Box(
+                modifier = Modifier
+                    .size(52.dp)
+                    .clip(RoundedCornerShape(14.dp))
+                    .background(HerbColors.BambooGreen.copy(alpha = 0.15f)),
+                contentAlignment = Alignment.Center
+            ) {
+                Icon(
+                    imageVector = Icons.Default.Refresh,
+                    contentDescription = null,
+                    modifier = Modifier.size(28.dp),
+                    tint = HerbColors.BambooGreen
+                )
+            }
+
+            Spacer(modifier = Modifier.width(16.dp))
+
+            // 文字信息
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = "今日复习",
+                    fontSize = 17.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    color = HerbColors.InkBlack
+                )
+                Spacer(modifier = Modifier.height(4.dp))
+                Text(
+                    text = "基于记忆曲线的智能复习",
+                    fontSize = 13.sp,
+                    color = HerbColors.InkGray
+                )
+            }
+
+            // 白色按钮
+            Button(
+                onClick = onClick,
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = HerbColors.PureWhite,
+                    contentColor = HerbColors.BambooGreen
+                ),
+                shape = RoundedCornerShape(24.dp),
+                modifier = Modifier.height(40.dp),
+                border = androidx.compose.foundation.BorderStroke(
+                    1.dp,
+                    HerbColors.BambooGreen.copy(alpha = 0.3f)
+                )
+            ) {
+                Text(
+                    "开始",
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Medium
+                )
+            }
         }
     }
 }

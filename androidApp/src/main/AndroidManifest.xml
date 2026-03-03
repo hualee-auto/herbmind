@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.herbmind.android">
 
+    <!-- 通知权限 -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- 前台服务权限（WorkManager 可能需要） -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- 开机启动权限（可选，用于重启后恢复提醒） -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:name=".HerbMindApplication"
         android:allowBackup="true"

@@ -15,6 +15,7 @@ import com.herbmind.android.ui.screens.FavoritesScreen
 import com.herbmind.android.ui.screens.HerbDetailScreen
 import com.herbmind.android.ui.screens.HomeScreen
 import com.herbmind.android.ui.screens.SearchScreen
+import com.herbmind.android.ui.screens.StudyScreen
 
 @Composable
 fun HerbMindNavHost(
@@ -44,6 +45,9 @@ fun HerbMindNavHost(
                 },
                 onCategoryClick = { category ->
                     navController.navigate(Screen.Category.createRoute(category))
+                },
+                onStudyClick = {
+                    navController.navigate(Screen.Study.route)
                 }
             )
         }
@@ -124,6 +128,15 @@ fun HerbMindNavHost(
                     } else {
                         favoriteHerbs + herbId
                     }
+                }
+            )
+        }
+
+        // 学习/复习页
+        composable(Screen.Study.route) {
+            StudyScreen(
+                onBackClick = {
+                    navController.popBackStack()
                 }
             )
         }

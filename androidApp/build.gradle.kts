@@ -71,4 +71,13 @@ dependencies {
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.activity:activity-compose:1.8.2")
+
+    // DateTime
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.5.0")
+
+    // WorkManager for background tasks
+    implementation("androidx.work:work-runtime-ktx:2.9.0")
+
+    // Coil for image loading
+    implementation("io.coil-kt:coil-compose:2.5.0")
 }
