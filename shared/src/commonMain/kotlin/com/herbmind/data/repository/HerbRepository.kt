@@ -82,7 +82,22 @@ class HerbRepository(
             association = association,
             keyPoint = keyPoint,
             similarTo = similarTo?.let { json.decodeFromString(it) } ?: emptyList(),
-            image = image,
+            images = images?.let { 
+                try {
+                    json.decodeFromString(it)
+                } catch (e: Exception) {
+                    // 兼容旧数据：如果 image 字段存在，使用它作为 slice
+                    if (!image.isNullOrEmpty()) {
+                        com.herbmind.data.model.Images(
+                            plant = "",
+                            medicinal = "",
+                            slice = image
+                        )
+                    } else {
+                        com.herbmind.data.model.Images()
+                    }
+                }
+            } ?: com.herbmind.data.model.Images(),
             isCommon = isCommon == 1L,
             examFrequency = examFrequency?.toInt() ?: 1
         )

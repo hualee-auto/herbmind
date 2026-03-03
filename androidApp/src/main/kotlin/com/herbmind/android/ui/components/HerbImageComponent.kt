@@ -16,10 +16,34 @@ import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
 import com.herbmind.android.util.ImageResourceConfig
+import com.herbmind.data.model.Images
 
 /**
  * 药材图片组件
  * 用于在UI中显示药材图片
+ * 
+ * @param images 图片信息对象
+ * @param herbName 药材名称（用于占位符显示）
+ * @param modifier 修饰符
+ * @param contentScale 内容缩放模式
+ */
+@Composable
+fun HerbImage(
+    images: Images,
+    herbName: String,
+    modifier: Modifier = Modifier.size(120.dp),
+    contentScale: ContentScale = ContentScale.Crop
+) {
+    HerbImageFromPath(
+        imagePath = images.slice,
+        herbName = herbName,
+        modifier = modifier,
+        contentScale = contentScale
+    )
+}
+
+/**
+ * 药材图片组件（直接使用路径）
  * 
  * @param imagePath 图片半路径（如：resources/images/concocted/人参_hkbu.jpg）
  * @param herbName 药材名称（用于占位符显示）
@@ -27,7 +51,7 @@ import com.herbmind.android.util.ImageResourceConfig
  * @param contentScale 内容缩放模式
  */
 @Composable
-fun HerbImage(
+fun HerbImageFromPath(
     imagePath: String?,
     herbName: String,
     modifier: Modifier = Modifier.size(120.dp),
@@ -84,13 +108,36 @@ fun HerbImage(
 /**
  * 带占位符的药材图片组件
  * 
- * @param imagePath 图片半路径
+ * @param images 图片信息对象
  * @param herbName 药材名称
  * @param modifier 修饰符
  * @param placeholderColor 占位符背景色
  */
 @Composable
 fun HerbImageWithPlaceholder(
+    images: Images,
+    herbName: String,
+    modifier: Modifier = Modifier.size(120.dp),
+    placeholderColor: Color = MaterialTheme.colorScheme.surfaceVariant
+) {
+    HerbImageWithPlaceholderFromPath(
+        imagePath = images.slice,
+        herbName = herbName,
+        modifier = modifier,
+        placeholderColor = placeholderColor
+    )
+}
+
+/**
+ * 带占位符的药材图片组件（直接使用路径）
+ * 
+ * @param imagePath 图片半路径
+ * @param herbName 药材名称
+ * @param modifier 修饰符
+ * @param placeholderColor 占位符背景色
+ */
+@Composable
+fun HerbImageWithPlaceholderFromPath(
     imagePath: String?,
     herbName: String,
     modifier: Modifier = Modifier.size(120.dp),
@@ -99,7 +146,7 @@ fun HerbImageWithPlaceholder(
     val context = LocalContext.current
     val imageUrl = ImageResourceConfig.getImageUrl(imagePath)
     val hasImage = !imageUrl.isNullOrEmpty()
-    
+
     Box(
         modifier = modifier
             .clip(RoundedCornerShape(12.dp))
@@ -132,14 +179,14 @@ fun HerbImageWithPlaceholder(
  * 
  * @param herbId 药材ID
  * @param herbName 药材名称
- * @param imagePath 图片半路径
+ * @param images 图片信息对象
  * @param onClick 点击回调
  */
 @Composable
 fun HerbImageRow(
     herbId: String,
     herbName: String,
-    imagePath: String?,
+    images: Images,
     onClick: () -> Unit = {}
 ) {
     Row(
@@ -149,7 +196,7 @@ fun HerbImageRow(
         verticalAlignment = Alignment.CenterVertically
     ) {
         HerbImage(
-            imagePath = imagePath,
+            images = images,
             herbName = herbName,
             modifier = Modifier.size(80.dp)
         )
@@ -173,12 +220,32 @@ fun HerbImageRow(
 /**
  * 小型药材图片（用于列表项）
  * 
- * @param imagePath 图片半路径
+ * @param images 图片信息对象
  * @param herbName 药材名称
  * @param modifier 修饰符
  */
 @Composable
 fun HerbSmallImage(
+    images: Images,
+    herbName: String,
+    modifier: Modifier = Modifier.size(48.dp)
+) {
+    HerbSmallImageFromPath(
+        imagePath = images.slice,
+        herbName = herbName,
+        modifier = modifier
+    )
+}
+
+/**
+ * 小型药材图片（直接使用路径）
+ * 
+ * @param imagePath 图片半路径
+ * @param herbName 药材名称
+ * @param modifier 修饰符
+ */
+@Composable
+fun HerbSmallImageFromPath(
     imagePath: String?,
     herbName: String,
     modifier: Modifier = Modifier.size(48.dp)
@@ -186,7 +253,7 @@ fun HerbSmallImage(
     val context = LocalContext.current
     val imageUrl = ImageResourceConfig.getImageUrl(imagePath)
     val hasImage = !imageUrl.isNullOrEmpty()
-    
+
     Box(
         modifier = modifier
             .clip(RoundedCornerShape(10.dp))

@@ -21,7 +21,7 @@ data class Herb(
     val association: String? = null,
     val keyPoint: String? = null,
     val similarTo: List<String> = emptyList(),
-    val image: String? = null,
+    val images: Images = Images(),
     val isCommon: Boolean = false,
     val examFrequency: Int = 1
 ) {
@@ -33,7 +33,22 @@ data class Herb(
         append(indications.joinToString())
         append(keyPoint ?: "")
     }
+    
+    /**
+     * 获取药材图片半路径（饮片图）
+     */
+    fun getImagePath(): String = images.slice
 }
+
+/**
+ * 药材图片信息
+ */
+@Serializable
+data class Images(
+    val plant: String = "",
+    val medicinal: String = "",
+    val slice: String = ""
+)
 
 @Serializable
 data class DailyRecommend(

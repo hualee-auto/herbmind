@@ -28,6 +28,7 @@ import com.herbmind.android.ui.viewmodel.HerbDetailUiState
 import com.herbmind.android.ui.viewmodel.HerbDetailViewModel
 import com.herbmind.android.util.ImageResourceConfig
 import com.herbmind.data.model.Herb
+import com.herbmind.data.model.Images
 import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
 import org.koin.androidx.compose.koinViewModel
@@ -247,7 +248,7 @@ private fun HerbHeader(herb: Herb) {
     ) {
         // 药材图片 - 使用新的图片组件
         HerbDetailImage(
-            imagePath = herb.image,
+            images = herb.images,
             herbName = herb.name,
             modifier = Modifier.size(200.dp)
         )
@@ -789,20 +790,20 @@ private fun StudyActionButton(
 /**
  * 药材详情页图片组件
  * 
- * @param imagePath 图片半路径（如：resources/images/concocted/人参_hkbu.jpg）
+ * @param images 图片信息对象
  * @param herbName 药材名称
  * @param modifier 修饰符
  */
 @Composable
 private fun HerbDetailImage(
-    imagePath: String?,
+    images: Images,
     herbName: String,
     modifier: Modifier = Modifier
 ) {
     val context = LocalContext.current
-    val imageUrl = ImageResourceConfig.getImageUrl(imagePath)
+    val imageUrl = ImageResourceConfig.getImageUrl(images.slice)
     val hasImage = !imageUrl.isNullOrEmpty()
-    
+
     Box(
         modifier = modifier
             .clip(RoundedCornerShape(20.dp))
