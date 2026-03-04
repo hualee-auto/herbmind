@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "lastUpdated": 1741039500000,
+  "herbCount": 606,
+  "description": "修复数据格式：effects和indications转为数组",
+  "minAppVersion": "1.0.0"
+}
