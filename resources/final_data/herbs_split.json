@@ -30,7 +30,12 @@
       "水肿"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "表虚自汗、阴虚盗汗、高血压、心脏病患者慎用",
+    "contraindications": [
+      "表虚自汗",
+      "阴虚盗汗",
+      "高血压",
+      "心脏病患者慎用"
+    ],
     "memoryTip": "麻黄发汗又平喘，利水消肿功效全",
     "association": "麻黄像个小太阳，一用就能发发汗，感冒风寒不用慌",
     "keyPoint": "发汗解表要药，治风寒表实证",
@@ -75,7 +80,11 @@
       "水肿"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "外感热病、阴虚火旺、血热妄行者忌用",
+    "contraindications": [
+      "外感热病",
+      "阴虚火旺",
+      "血热妄行者忌用"
+    ],
     "memoryTip": "桂枝发汗解肌表，温通经脉助阳照",
     "association": "桂枝像春日的暖阳，温暖经脉驱寒凉",
     "keyPoint": "治风寒表虚证，善通阳气",
@@ -119,7 +128,10 @@
       "食鱼蟹中毒"
     ],
     "usage": "煎服，5-10g",
-    "contraindications": "气虚、阴虚者慎用",
+    "contraindications": [
+      "气虚",
+      "阴虚者慎用"
+    ],
     "memoryTip": "紫苏解表宽中气，解鱼蟹毒要记住",
     "association": "紫苏叶子紫又香，吃鱼螃蟹它来帮",
     "keyPoint": "治风寒感冒兼脾胃气滞",
@@ -163,7 +175,10 @@
       "便血崩漏"
     ],
     "usage": "煎服，5-10g",
-    "contraindications": "孕妇慎用，阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "荆芥祛风又解表，止血炒炭用得妙",
     "association": "荆芥随风轻轻摆，炒成黑炭止血快",
     "keyPoint": "祛风解表，生用透疹止血，炒炭止血",
@@ -209,7 +224,10 @@
       "破伤风"
     ],
     "usage": "煎服，5-10g",
-    "contraindications": "血虚发痉、阴虚火旺者慎用",
+    "contraindications": [
+      "血虚发痉",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "防风祛风胜湿好，止痛解痉效果高",
     "association": "防风像面挡风的墙，风湿疼痛它来挡",
     "keyPoint": "风药之润剂，治风通用",
@@ -254,7 +272,10 @@
       "肩背酸痛"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "血虚痹痛、阴虚头痛者慎用",
+    "contraindications": [
+      "血虚痹痛",
+      "阴虚头痛者慎用"
+    ],
     "memoryTip": "羌活祛风胜湿强，止痛解表治太阳",
     "association": "羌活住在高山上，专治后背和肩膀",
     "keyPoint": "善治太阳经头痛及上半身风湿",
@@ -301,7 +322,12 @@
       "痰饮咳喘"
     ],
     "usage": "煎服，1-3g",
-    "contraindications": "阴虚阳亢头痛、肺燥伤阴干咳、气虚多汗者忌用，不宜与藜芦同用",
+    "contraindications": [
+      "阴虚阳亢头痛",
+      "肺燥伤阴干咳",
+      "气虚多汗者忌用",
+      "不宜与藜芦同用"
+    ],
     "memoryTip": "细辛散寒止痛良，温肺化饮通窍长",
     "association": "细辛细辛细又辛，像根小管子通鼻窍",
     "keyPoint": "细辛用量不过钱，善治少阴头痛",
@@ -346,7 +372,10 @@
       "带下清稀"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "孕妇慎用，阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "白芷祛风止痛好，消肿排脓通窍妙",
     "association": "白芷白白又香香，治头痛就像止痛膏",
     "keyPoint": "善治阳明经头痛，为疮家良药",
@@ -384,7 +413,9 @@
       "风寒湿痹"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "血虚头痛者慎用",
+    "contraindications": [
+      "血虚头痛者慎用"
+    ],
     "memoryTip": "藁本祛风散寒好，巅顶头痛它最妙",
     "association": "藁本像顶小帽子，专治头顶疼痛处",
     "keyPoint": "善治巅顶头痛，祛风散寒除湿",
@@ -421,7 +452,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "香薷解表、利水效果好",
     "association": "香薷像温暖的阳光，驱散风寒保健康",
     "keyPoint": "香薷功效特点及临床应用要点",
@@ -462,7 +496,10 @@
       "寒痰咳嗽"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "阴虚内热、实热证者忌用",
+    "contraindications": [
+      "阴虚内热",
+      "实热证者忌用"
+    ],
     "memoryTip": "生姜解表、止咳效果好",
     "association": "生姜像温暖的阳光，驱散风寒保健康",
     "keyPoint": "呕家圣药，温中止呕，解表散寒",
@@ -501,7 +538,9 @@
       "寒凝气阻"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "表虚多汗者忌用",
+    "contraindications": [
+      "表虚多汗者忌用"
+    ],
     "memoryTip": "葱白发汗又通阳，阴寒腹痛它来帮",
     "association": "葱白像根小吸管，发汗通阳效果好",
     "keyPoint": "发表通阳，治阴寒腹痛",
@@ -540,7 +579,9 @@
       "鼻流浊涕"
     ],
     "usage": "煎服，3-10g，包煎",
-    "contraindications": "阴虚火旺者慎用",
+    "contraindications": [
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "辛夷散风通鼻窍，鼻渊头痛效果好",
     "association": "辛夷像个小喇叭，鼻塞不通吹一吹",
     "keyPoint": "治鼻渊头痛要药，散风寒通鼻窍",
@@ -579,7 +620,9 @@
       "食欲不振"
     ],
     "usage": "煎服，3-6g",
-    "contraindications": "热毒壅盛者慎用",
+    "contraindications": [
+      "热毒壅盛者慎用"
+    ],
     "memoryTip": "芫荽发表又透疹，开胃消食味道香",
     "association": "芫荽像把小香菜，透疹开胃人人爱",
     "keyPoint": "发表透疹，开胃消食",
@@ -625,7 +668,10 @@
       "肝郁气滞"
     ],
     "usage": "煎服，3-6g，宜后下",
-    "contraindications": "表虚自汗、阴虚血燥者慎用",
+    "contraindications": [
+      "表虚自汗",
+      "阴虚血燥者慎用"
+    ],
     "memoryTip": "薄荷疏散风热清，利咽透疹头目明",
     "association": "薄荷清凉像牙膏，含在嘴里凉飕飕",
     "keyPoint": "疏散风热，清利头目，宜后下",
@@ -668,7 +714,9 @@
       "疮疡肿毒"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "气虚便溏者慎用",
+    "contraindications": [
+      "气虚便溏者慎用"
+    ],
     "memoryTip": "牛蒡子疏散风热毒，利咽透疹消肿速",
     "association": "牛蒡子像个小刺猬，清热解毒又能利咽",
     "keyPoint": "滑利通便，风热咳嗽兼便秘者宜",
@@ -711,7 +759,9 @@
       "目赤昏花"
     ],
     "usage": "煎服，5-10g",
-    "contraindications": "肺燥咳嗽者慎用",
+    "contraindications": [
+      "肺燥咳嗽者慎用"
+    ],
     "memoryTip": "桑叶疏散风热清，平肝明目肺燥宁",
     "association": "桑叶像把小扇子，风热咳嗽扇一扇",
     "keyPoint": "疏散风热，清肝明目，蜜炙润肺",
@@ -757,7 +807,10 @@
       "疮疡肿毒"
     ],
     "usage": "煎服，5-10g",
-    "contraindications": "气虚胃寒、食少泄泻者慎用",
+    "contraindications": [
+      "气虚胃寒",
+      "食少泄泻者慎用"
+    ],
     "memoryTip": "菊花疏散风热清，平肝明目解毒灵",
     "association": "菊花黄黄像太阳，平肝明目眼睛亮",
     "keyPoint": "黄菊疏散，白菊明目，野菊解毒",
@@ -803,7 +856,9 @@
       "热痢泄泻"
     ],
     "usage": "煎服，10-15g",
-    "contraindications": "胃寒呕吐者慎用",
+    "contraindications": [
+      "胃寒呕吐者慎用"
+    ],
     "memoryTip": "葛根解肌退热好，生津透疹升阳妙",
     "association": "葛根像根大筋脉，升阳止泻像电梯",
     "keyPoint": "解肌退热，升发清阳，治项背强痛",
@@ -846,7 +901,9 @@
       "气虚下陷"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "阴虚火旺者慎用",
+    "contraindications": [
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "升麻升阳又透疹，清热解毒效果好",
     "association": "升麻像架小电梯，阳气下陷往上升",
     "keyPoint": "升举阳气，发表透疹",
@@ -892,7 +949,12 @@
       "气虚下陷"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "肝阳上亢、肝风内动、阴虚火旺、气机上逆者慎用",
+    "contraindications": [
+      "肝阳上亢",
+      "肝风内动",
+      "阴虚火旺",
+      "气机上逆者慎用"
+    ],
     "memoryTip": "柴胡解表又疏肝，升举阳气退热安",
     "association": "柴胡像把升提梯，肝郁气滞往上提",
     "keyPoint": "疏肝解郁要药，升举阳气",
@@ -933,7 +995,9 @@
       "胸中烦闷"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "胃虚易呕者慎用",
+    "contraindications": [
+      "胃虚易呕者慎用"
+    ],
     "memoryTip": "豆豉解表又除烦，宣发郁热效果好",
     "association": "豆豉像颗小豆子，解表除烦又香又好吃",
     "keyPoint": "解表除烦，宣发郁热",
@@ -972,7 +1036,9 @@
       "胸闷脘痞"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "无明显禁忌",
+    "contraindications": [
+      "无明显禁忌"
+    ],
     "memoryTip": "豆卷解表祛暑好，清热利湿效果高",
     "association": "豆卷像个小卷卷，暑湿感冒它来解",
     "keyPoint": "解表祛暑，清热利湿",
@@ -1014,7 +1080,9 @@
       "目赤翳障"
     ],
     "usage": "煎服，3-6g",
-    "contraindications": "孕妇慎用",
+    "contraindications": [
+      "孕妇慎用"
+    ],
     "memoryTip": "蝉蜕疏散风热好，利咽开音止痒妙",
     "association": "蝉蜕像件小外衣，脱下就能治咽痛",
     "keyPoint": "利咽开音，明目退翳",
@@ -1054,7 +1122,9 @@
       "水肿尿少"
     ],
     "usage": "煎服，3-9g",
-    "contraindications": "表虚自汗者慎用",
+    "contraindications": [
+      "表虚自汗者慎用"
+    ],
     "memoryTip": "浮萍宣散风热好，透疹止痒利尿妙",
     "association": "浮萍像片小荷叶，漂在水面治感冒",
     "keyPoint": "宣散风热，透疹利尿",
@@ -1093,7 +1163,9 @@
       "风湿痹痛"
     ],
     "usage": "煎服，3-6g",
-    "contraindications": "麻疹已透者慎用",
+    "contraindications": [
+      "麻疹已透者慎用"
+    ],
     "memoryTip": "西河柳发表透疹好，祛风除湿效果高",
     "association": "西河柳像把小扫帚，麻疹不透扫出门",
     "keyPoint": "发表透疹，祛风除湿",
@@ -1131,7 +1203,9 @@
       "风湿痹痛"
     ],
     "usage": "煎服，15-30g",
-    "contraindications": "无明显禁忌",
+    "contraindications": [
+      "无明显禁忌"
+    ],
     "memoryTip": "水蜈蚣解表利湿好，清热解毒效果高",
     "association": "水蜈蚣像个小蜈蚣，爬来爬去治感冒",
     "keyPoint": "疏风解表，清热利湿",
@@ -1177,7 +1251,10 @@
       "用棉花球蘸搽患处"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "天胡荽清热、祛风效果好",
     "association": "天胡荽像清凉的泉水，清热泻火解暑热",
     "keyPoint": "天胡荽功效特点及临床应用要点",
@@ -1218,7 +1295,9 @@
       "耳鸣"
     ],
     "usage": "煎服，5-10g",
-    "contraindications": "胃虚体寒者慎用",
+    "contraindications": [
+      "胃虚体寒者慎用"
+    ],
     "memoryTip": "蔓荆子疏散风热好，清利头目效果高",
     "association": "蔓荆子像个小铃铛，头痛耳鸣摇一摇",
     "keyPoint": "清利头目，治风热头痛",
@@ -1259,7 +1338,9 @@
       "目生云翳"
     ],
     "usage": "煎服，3-9g",
-    "contraindications": "气血虚者慎用",
+    "contraindications": [
+      "气血虚者慎用"
+    ],
     "memoryTip": "木贼草疏散风热好，明目退翳效果高",
     "association": "木贼草像把小刷子，刷去眼睛翳和雾",
     "keyPoint": "疏散风热，明目退翳",
@@ -1304,7 +1385,10 @@
       "疮疡不敛"
     ],
     "usage": "煎服，15-60g，先煎",
-    "contraindications": "脾胃虚寒、阴虚内热者忌用",
+    "contraindications": [
+      "脾胃虚寒",
+      "阴虚内热者忌用"
+    ],
     "memoryTip": "石膏清热泻火强，除烦止渴是良将",
     "association": "石膏像块大冰块，高热烦渴降下来",
     "keyPoint": "清气分实热要药，煅用敛疮生肌",
@@ -1345,7 +1429,9 @@
       "烫伤"
     ],
     "usage": "煎服，9-15g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "寒水石清热泻火好，热病烦渴它来消",
     "association": "寒水石像块冷石头，热病烦渴摸一摸",
     "keyPoint": "清热泻火，治热病烦渴",
@@ -1390,7 +1476,10 @@
       "内热消渴"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "脾胃虚寒、便溏者慎用",
+    "contraindications": [
+      "脾胃虚寒",
+      "便溏者慎用"
+    ],
     "memoryTip": "知母清热泻火良，滋阴润燥功效长",
     "association": "知母像位老母亲，清热又滋阴",
     "keyPoint": "上清肺火，中清胃热，下泻肾火",
@@ -1437,7 +1526,10 @@
       "疮疡肿毒"
     ],
     "usage": "煎服，6-10g",
-    "contraindications": "脾虚便溏、食少者慎用",
+    "contraindications": [
+      "脾虚便溏",
+      "食少者慎用"
+    ],
     "memoryTip": "栀子泻火除烦强，清热利湿凉血良",
     "association": "栀子黄黄像小果，三焦火毒都能泻",
     "keyPoint": "清三焦之火，生用清热，炒炭止血",
@@ -1479,7 +1571,9 @@
       "热淋涩痛"
     ],
     "usage": "煎服，15-30g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "芦根清热生津好，止呕利尿效果高",
     "association": "芦根像根小吸管，清热生津又解渴",
     "keyPoint": "清热生津，止呕利尿",
@@ -1522,7 +1616,10 @@
       "痈肿疮疡"
     ],
     "usage": "煎服，10-15g",
-    "contraindications": "孕妇、脾胃虚寒者慎用",
+    "contraindications": [
+      "孕妇",
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "天花粉清热生津好，消肿排脓效果高",
     "association": "天花粉像包粉末面，清热消肿又甘甜",
     "keyPoint": "清热生津，消肿排脓",
@@ -1561,7 +1658,9 @@
       "口疮尿赤"
     ],
     "usage": "煎服，15-30g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "鲜竹叶清热除烦好，生津利尿效果高",
     "association": "鲜竹叶像片小绿扇，扇走烦热又清凉",
     "keyPoint": "清热除烦，生津利尿",
@@ -1600,7 +1699,9 @@
       "热淋涩痛"
     ],
     "usage": "煎服，6-10g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "淡竹叶清热除烦好，利尿通淋效果高",
     "association": "淡竹叶像根小青竹，清热利尿又解暑",
     "keyPoint": "清热除烦，利尿通淋",
@@ -1641,7 +1742,9 @@
       "瘰疬瘿瘤"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "夏枯草清肝明目好，散结消肿效果高",
     "association": "夏枯草像个小球球，清肝散结又明目",
     "keyPoint": "清肝明目，散结消肿",
@@ -1678,7 +1781,9 @@
       "水肿尿少"
     ],
     "usage": "煎服，15-30g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "鸭跖草清热解毒好，利水消肿效果高",
     "association": "鸭跖草像只小鸭掌，清热解毒又利水",
     "keyPoint": "清热解毒，利水消肿",
@@ -1717,7 +1822,9 @@
       "水肿"
     ],
     "usage": "煎服，15-30g",
-    "contraindications": "中寒湿盛者慎用",
+    "contraindications": [
+      "中寒湿盛者慎用"
+    ],
     "memoryTip": "西瓜皮清热解暑好，利尿消肿效果高",
     "association": "西瓜皮像件绿外衣，暑热烦渴脱下来",
     "keyPoint": "清热解暑，利尿消肿",
@@ -1759,7 +1866,9 @@
       "血热吐衄"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "荷叶清暑化湿好，升发清阳止血妙",
     "association": "荷叶像把小绿伞，暑热烦渴撑起来",
     "keyPoint": "清暑化湿，升发清阳",
@@ -1799,7 +1908,9 @@
       "失眠遗精"
     ],
     "usage": "煎服，2-5g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "莲子心清心除烦好，交通心肾效果高",
     "association": "莲子心像颗小心心，清心除烦又安神",
     "keyPoint": "清心除烦，交通心肾",
@@ -1837,7 +1948,9 @@
       "视物昏花"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "瞳孔散大者慎用",
+    "contraindications": [
+      "瞳孔散大者慎用"
+    ],
     "memoryTip": "青葙子清肝明目好，退翳消障效果高",
     "association": "青葙子像粒小青豆，清肝明目治眼病",
     "keyPoint": "清肝明目，退翳消障",
@@ -1880,7 +1993,9 @@
       "大便秘结"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "气虚便溏者慎用",
+    "contraindications": [
+      "气虚便溏者慎用"
+    ],
     "memoryTip": "决明子清肝明目好，润肠通便效果高",
     "association": "决明子像颗小石子，清肝明目治近视",
     "keyPoint": "清肝明目，润肠通便",
@@ -1919,7 +2034,9 @@
       "眼生翳膜"
     ],
     "usage": "煎服，5-10g",
-    "contraindications": "阴虚血亏之眼疾者慎用",
+    "contraindications": [
+      "阴虚血亏之眼疾者慎用"
+    ],
     "memoryTip": "谷精草疏散风热好，明目退翳效果高",
     "association": "谷精草像朵小白花，明目退翳治眼花",
     "keyPoint": "疏散风热，明目退翳",
@@ -1958,7 +2075,9 @@
       "肝虚目暗"
     ],
     "usage": "煎服，3-9g",
-    "contraindications": "无明显禁忌",
+    "contraindications": [
+      "无明显禁忌"
+    ],
     "memoryTip": "密蒙花养肝明目好，退翳消障效果高",
     "association": "密蒙花像个小铃铛，养肝明目响叮当",
     "keyPoint": "养肝明目，退翳消障",
@@ -1998,7 +2117,9 @@
       "小儿疳积"
     ],
     "usage": "煎服，3-10g，布包",
-    "contraindications": "孕妇慎用",
+    "contraindications": [
+      "孕妇慎用"
+    ],
     "memoryTip": "夜明砂清肝明目好，散瘀消积治夜盲",
     "association": "夜明砂像粒小黑沙，夜盲眼暗见光明",
     "keyPoint": "清肝明目，治夜盲症",
@@ -2034,7 +2155,9 @@
       "湿热泻痢"
     ],
     "usage": "煎服，15-30g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "千里光清热解毒好，清肝明目效果高",
     "association": "千里光像盏小灯笼，清热解毒照千里",
     "keyPoint": "清热解毒，清肝明目",
@@ -2076,7 +2199,10 @@
       "阴虚内热"
     ],
     "usage": "煎服，12-30g",
-    "contraindications": "脾虚湿滞，腹满便溏者慎用",
+    "contraindications": [
+      "脾虚湿滞",
+      "腹满便溏者慎用"
+    ],
     "memoryTip": "鲜生地清热凉血好，养阴生津效果高",
     "association": "鲜生地像块鲜黄精，清热凉血又滋阴",
     "keyPoint": "清热凉血，养阴生津",
@@ -2120,7 +2246,10 @@
       "骨蒸劳热"
     ],
     "usage": "煎服，10-15g",
-    "contraindications": "脾虚湿滞，腹满便溏者慎用",
+    "contraindications": [
+      "脾虚湿滞",
+      "腹满便溏者慎用"
+    ],
     "memoryTip": "生地清热凉血好，养阴生津效果高",
     "association": "生地像块黑泥巴，清热凉血又滋阴",
     "keyPoint": "清热凉血要药，养阴生津",
@@ -2163,7 +2292,9 @@
       "疮疡湿疹"
     ],
     "usage": "煎服，5-10g",
-    "contraindications": "脾虚便溏者慎用",
+    "contraindications": [
+      "脾虚便溏者慎用"
+    ],
     "memoryTip": "紫草清热凉血好，活血解毒透疹妙",
     "association": "紫草像根紫萝卜，凉血解毒又透疹",
     "keyPoint": "清热凉血，透疹解毒",
@@ -2206,7 +2337,10 @@
       "惊风抽搐"
     ],
     "usage": "磨汁或研末服，0.3-0.6g",
-    "contraindications": "孕妇慎用，非实热证不宜",
+    "contraindications": [
+      "孕妇慎用",
+      "非实热证不宜"
+    ],
     "memoryTip": "犀角清热凉血好，解毒定惊效果高",
     "association": "犀角像只小角角，清热解毒定惊风",
     "keyPoint": "清热凉血解毒，定惊安神",
@@ -2249,7 +2383,10 @@
       "咽喉肿痛"
     ],
     "usage": "入丸散，0.15-0.35g",
-    "contraindications": "非实热证不宜，孕妇慎用",
+    "contraindications": [
+      "非实热证不宜",
+      "孕妇慎用"
+    ],
     "memoryTip": "牛黄清心开窍好，息风解毒效果高",
     "association": "牛黄像颗小黄金，清心开窍又定惊",
     "keyPoint": "清心开窍，息风解毒",
@@ -2292,7 +2429,11 @@
       "痈肿疮毒"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "血虚有寒、孕妇、月经过多者慎用",
+    "contraindications": [
+      "血虚有寒",
+      "孕妇",
+      "月经过多者慎用"
+    ],
     "memoryTip": "牡丹皮清热凉血良，活血化瘀退虚热",
     "association": "牡丹花开富贵红，皮入血分清热功",
     "keyPoint": "清热凉血，活血散瘀，治无汗骨蒸",
@@ -2328,7 +2469,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "血虚者 脾胃虚寒",
+    "contraindications": [
+      "血虚者 脾胃虚寒"
+    ],
     "memoryTip": "赤芍药清热、活血效果好",
     "association": "赤芍药像清凉的泉水，清热泻火解暑热",
     "keyPoint": "赤芍药功效特点及临床应用要点",
@@ -2369,7 +2512,9 @@
       "喉痹"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "大青叶清热解毒好，凉血消斑效果高",
     "association": "大青叶像片大绿叶，清热解毒又凉血",
     "keyPoint": "清热解毒，凉血消斑",
@@ -2411,7 +2556,9 @@
       "丹毒"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "板蓝根清热解毒强，凉血利咽效果好",
     "association": "板蓝根像蓝精灵，流感来了它最行",
     "keyPoint": "清热解毒，凉血利咽，治温病发热",
@@ -2455,7 +2602,9 @@
       "小儿惊痫"
     ],
     "usage": "冲服，1-3g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "青黛清热解毒好，凉血定惊效果高",
     "association": "青黛像包蓝粉末，清热解毒又凉血",
     "keyPoint": "清热解毒，凉血定惊",
@@ -2501,7 +2650,10 @@
       "骨蒸劳嗽"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "脾胃虚寒，食少便溏者慎用",
+    "contraindications": [
+      "脾胃虚寒",
+      "食少便溏者慎用"
+    ],
     "memoryTip": "玄参清热凉血好，滋阴降火效果高",
     "association": "玄参像根黑棍子，清热滋阴又降火",
     "keyPoint": "清热凉血，滋阴降火",
@@ -2542,7 +2694,9 @@
       "肺热咳嗽"
     ],
     "usage": "煎服，9-30g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "茅根凉血止血好，清热利尿效果高",
     "association": "茅根像根白吸管，凉血止血又利尿",
     "keyPoint": "凉血止血，清热利尿",
@@ -2583,7 +2737,9 @@
       "热淋"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "茅针花凉血止血好，清热利尿效果高",
     "association": "茅针花像根小银针，凉血止血又清热",
     "keyPoint": "凉血止血，为茅根的花",
@@ -2627,7 +2783,10 @@
       "热毒血痢"
     ],
     "usage": "煎服，6-15g",
-    "contraindications": "脾胃虚寒、气虚疮疡脓清者慎用",
+    "contraindications": [
+      "脾胃虚寒",
+      "气虚疮疡脓清者慎用"
+    ],
     "memoryTip": "金银花清热解毒良，疏散风热是家常",
     "association": "金银花黄白相间，清热解毒是花仙",
     "keyPoint": "清热解毒要药，为疮家圣药",
@@ -2670,7 +2829,9 @@
       "风湿热痹"
     ],
     "usage": "煎服，9-30g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "忍冬藤清热解毒好，疏风通络效果高",
     "association": "忍冬藤像条绿丝带，清热解毒又通络",
     "keyPoint": "清热解毒，疏风通络",
@@ -2714,7 +2875,9 @@
       "风热感冒"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "忍冬叶清热解毒好，凉散风热效果高",
     "association": "忍冬叶像片小绿叶，清热解毒又散风",
     "keyPoint": "清热解毒，为忍冬的叶",
@@ -2757,7 +2920,9 @@
       "痈肿疔疮"
     ],
     "usage": "煎服，3-9g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "银花子清热解毒好，疏散风热效果高",
     "association": "银花子像颗小绿豆，清热解毒又散风",
     "keyPoint": "清热解毒，为金银花的子",
@@ -2801,7 +2966,9 @@
       "咽喉肿痛"
     ],
     "usage": "口服，60-120ml",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "金银花露解暑好，清利头目效果高",
     "association": "金银花露像瓶清凉水，清热解暑又解渴",
     "keyPoint": "清热解暑，清利头目",
@@ -2844,7 +3011,10 @@
       "温病初起"
     ],
     "usage": "煎服，6-15g",
-    "contraindications": "脾胃虚寒、气虚发热者慎用",
+    "contraindications": [
+      "脾胃虚寒",
+      "气虚发热者慎用"
+    ],
     "memoryTip": "连翘清热解毒良，消肿散结疏散风",
     "association": "连翘像个小铃铛，疮家圣药响当当",
     "keyPoint": "疮家圣药，善清心火，消痈散结",
@@ -2886,7 +3056,10 @@
       "湿热黄疸"
     ],
     "usage": "煎服，10-15g",
-    "contraindications": "非热毒证、阴疽者慎用",
+    "contraindications": [
+      "非热毒证",
+      "阴疽者慎用"
+    ],
     "memoryTip": "蒲公英清热解毒良，消肿散结利湿长",
     "association": "蒲公英像小伞兵，飞到哪都清热解毒",
     "keyPoint": "乳痈要药，清热解毒，消痈散结",
@@ -2927,7 +3100,9 @@
       "毒蛇咬伤"
     ],
     "usage": "煎服，15-30g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "紫花地丁解毒好，凉血消肿效果高",
     "association": "紫花地丁像朵紫花，清热解毒又消肿",
     "keyPoint": "清热解毒，治疔疮要药",
@@ -2968,7 +3143,9 @@
       "毒蛇咬伤"
     ],
     "usage": "煎服，15-30g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "犁头草清热解毒好，凉血消肿效果高",
     "association": "犁头草像个小犁头，清热解毒又消肿",
     "keyPoint": "清热解毒，为紫花地丁的附药",
@@ -3010,7 +3187,9 @@
       "蛇虫咬伤"
     ],
     "usage": "煎服，3-9g",
-    "contraindications": "正虚体弱者慎用",
+    "contraindications": [
+      "正虚体弱者慎用"
+    ],
     "memoryTip": "山慈菇清热解毒好，化痰散结效果高",
     "association": "山慈菇像个小灯泡，清热解毒又散结",
     "keyPoint": "清热解毒，化痰散结",
@@ -3050,7 +3229,9 @@
       "乳汁不下"
     ],
     "usage": "煎服，5-9g",
-    "contraindications": "孕妇慎用",
+    "contraindications": [
+      "孕妇慎用"
+    ],
     "memoryTip": "漏芦清热解毒好，消痈下乳效果高",
     "association": "漏芦像个小漏斗，清热解毒又下乳",
     "keyPoint": "清热解毒，通经下乳",
@@ -3089,7 +3270,9 @@
       "疮疡肿痛"
     ],
     "usage": "煎服，15-30g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "四季青清热解毒好，凉血敛疮效果高",
     "association": "四季青像片常青叶，清热解毒又敛疮",
     "keyPoint": "清热解毒，治烧烫伤",
@@ -3128,7 +3311,9 @@
       "风湿痹痛"
     ],
     "usage": "煎服，15-30g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "乌蔹莓清热解毒好，活血散瘀效果高",
     "association": "乌蔹莓像串小葡萄，清热解毒又活血",
     "keyPoint": "清热解毒，活血散瘀",
@@ -3167,7 +3352,9 @@
       "崩漏"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "虚寒者慎用",
+    "contraindications": [
+      "虚寒者慎用"
+    ],
     "memoryTip": "芙蓉花清热解毒好，消肿排脓效果高",
     "association": "芙蓉花像朵芙蓉花，清热解毒又消肿",
     "keyPoint": "清热解毒，消肿排脓",
@@ -3207,7 +3394,9 @@
       "外伤出血"
     ],
     "usage": "煎服，9-15g，外用适量",
-    "contraindications": "虚寒者慎用",
+    "contraindications": [
+      "虚寒者慎用"
+    ],
     "memoryTip": "芙蓉叶清热解毒好，消肿排脓效果高",
     "association": "芙蓉叶像片大荷叶，清热解毒又消肿",
     "keyPoint": "清热解毒，消肿排脓",
@@ -3250,7 +3439,10 @@
       "湿疮"
     ],
     "usage": "煎服，5-10g，外用适量",
-    "contraindications": "脾胃虚寒者慎用，不宜与乌头类同用",
+    "contraindications": [
+      "脾胃虚寒者慎用",
+      "不宜与乌头类同用"
+    ],
     "memoryTip": "白蔹清热解毒好，敛疮生肌效果高",
     "association": "白蔹像块白石头，清热解毒又生肌",
     "keyPoint": "清热解毒，敛疮生肌",
@@ -3291,7 +3483,9 @@
       "痈肿疮毒"
     ],
     "usage": "煎服，15-25g，不宜久煎",
-    "contraindications": "虚寒证及阴证疮疡者忌用",
+    "contraindications": [
+      "虚寒证及阴证疮疡者忌用"
+    ],
     "memoryTip": "鱼腥草清热解毒好，消痈排脓效果高",
     "association": "鱼腥草像根小草草，清热解毒有鱼味",
     "keyPoint": "清热解毒，治肺痈要药",
@@ -3339,7 +3533,9 @@
       "也可配合鱼腥草等药同用"
     ],
     "usage": "五钱至一两，煎服错隔水炖汁服。",
-    "contraindications": "孕妇 脾胃虚寒 月经过多",
+    "contraindications": [
+      "孕妇 脾胃虚寒 月经过多"
+    ],
     "memoryTip": "野荞麦根清热、活血效果好",
     "association": "野荞麦根像清凉的泉水，清热泻火解暑热",
     "keyPoint": "野荞麦根功效特点及临床应用要点",
@@ -3378,7 +3574,9 @@
       "湿疹瘙痒"
     ],
     "usage": "煎服，9-15g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "虎耳草清热解毒好，凉血止血效果高",
     "association": "虎耳草像对虎耳朵，清热解毒又止血",
     "keyPoint": "清热解毒，凉血止血",
@@ -3419,7 +3617,9 @@
       "风湿痹痛"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "孕妇慎用",
+    "contraindications": [
+      "孕妇慎用"
+    ],
     "memoryTip": "红藤清热解毒好，活血止痛效果高",
     "association": "红藤像根红绳子，清热解毒又活血",
     "keyPoint": "清热解毒，活血止痛",
@@ -3458,7 +3658,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚津伤 孕妇 脾胃虚寒 月经过多",
+    "contraindications": [
+      "阴虚津伤 孕妇 脾胃虚寒 月经过多"
+    ],
     "memoryTip": "败酱草清热、活血效果好",
     "association": "败酱草像清凉的泉水，清热泻火解暑热",
     "keyPoint": "败酱草功效特点及临床应用要点",
@@ -3492,7 +3694,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，大剂量可用二两，煎服。",
-    "contraindications": "孕妇 月经过多",
+    "contraindications": [
+      "孕妇 月经过多"
+    ],
     "memoryTip": "鬼针草清热、活血效果好",
     "association": "鬼针草像清凉的泉水，清热泻火解暑热",
     "keyPoint": "鬼针草功效特点及临床应用要点",
@@ -3527,7 +3731,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，大剂量可用二两至三两，煎服。外用适量。",
-    "contraindications": "孕妇 月经过多",
+    "contraindications": [
+      "孕妇 月经过多"
+    ],
     "memoryTip": "地耳草清热、活血效果好",
     "association": "地耳草像清凉的泉水，清热泻火解暑热",
     "keyPoint": "地耳草功效特点及临床应用要点",
@@ -3563,7 +3769,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，煎服；鲜草一两至四两，大剂量可用半斤，煎服或洗净绞汁服。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "垂盆草清热效果好",
     "association": "垂盆草像清凉的泉水，清热泻火解暑热",
     "keyPoint": "垂盆草功效特点及临床应用要点",
@@ -3601,7 +3810,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "午前治二两，煎服。据文献记载，服药时不可饮茶。（需补充剂量）",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "土茯苓清热、祛风效果好",
     "association": "土茯苓像清凉的泉水，清热泻火解暑热",
     "keyPoint": "土茯苓功效特点及临床应用要点",
@@ -3639,7 +3851,9 @@
       "热淋"
     ],
     "usage": "煎服，15-30g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "马兰根清热解毒好，凉血止血效果高",
     "association": "马兰根像根小马兰，清热解毒又止血",
     "keyPoint": "清热解毒，凉血止血",
@@ -3678,7 +3892,10 @@
       "痈肿疮毒"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "孕妇、脾虚便溏者慎用",
+    "contraindications": [
+      "孕妇",
+      "脾虚便溏者慎用"
+    ],
     "memoryTip": "射干清热解毒好，消痰利咽效果高",
     "association": "射干像支小箭头，清热解毒利咽喉",
     "keyPoint": "清热解毒，消痰利咽",
@@ -3717,7 +3934,10 @@
       "牙龈肿痛"
     ],
     "usage": "煎服，3-6g",
-    "contraindications": "脾胃虚寒、食少便溏者忌用",
+    "contraindications": [
+      "脾胃虚寒",
+      "食少便溏者忌用"
+    ],
     "memoryTip": "山豆根清热解毒好，利咽消肿效果高",
     "association": "山豆根像根小豆子，清热解毒利咽喉",
     "keyPoint": "清热解毒，利咽消肿",
@@ -3757,7 +3977,9 @@
       "外伤出血"
     ],
     "usage": "煎服，1.5-6g，外用适量",
-    "contraindications": "风寒劳咳失音者慎用",
+    "contraindications": [
+      "风寒劳咳失音者慎用"
+    ],
     "memoryTip": "马勃清肺利咽好，止血效果真奇妙",
     "association": "马勃像个灰皮球，清肺利咽又止血",
     "keyPoint": "清肺利咽，止血",
@@ -3795,7 +4017,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "橄榄清热、止咳效果好",
     "association": "橄榄像清凉的泉水，清热泻火解暑热",
     "keyPoint": "橄榄功效特点及临床应用要点",
@@ -3834,7 +4059,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "金果榄清热、止咳效果好",
     "association": "金果榄像清凉的泉水，清热泻火解暑热",
     "keyPoint": "金果榄功效特点及临床应用要点",
@@ -3870,7 +4098,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，煎服。外用适量。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "白毛夏枯草清热效果好",
     "association": "白毛夏枯草像清凉的泉水，清热泻火解暑热",
     "keyPoint": "白毛夏枯草功效特点及临床应用要点",
@@ -3908,7 +4138,9 @@
       "疮疡肿痛"
     ],
     "usage": "煎服，9-15g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "点地梅清热解毒好，消肿止痛效果高",
     "association": "点地梅像朵小红花，清热解毒又止痛",
     "keyPoint": "清热解毒，消肿止痛",
@@ -3945,7 +4177,9 @@
       "毒蛇咬伤"
     ],
     "usage": "煎服，9-15g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "一枝黄花解毒好，消肿止痛效果高",
     "association": "一枝黄花像根小黄花，清热解毒又消肿",
     "keyPoint": "清热解毒，消肿止痛",
@@ -3979,7 +4213,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两；鲜草一两至三两，煎服。外用适量。",
-    "contraindications": "孕妇 脾胃虚寒 月经过多",
+    "contraindications": [
+      "孕妇 脾胃虚寒 月经过多"
+    ],
     "memoryTip": "爵床清热、活血效果好",
     "association": "爵床像清凉的泉水，清热泻火解暑热",
     "keyPoint": "爵床功效特点及临床应用要点",
@@ -4019,7 +4255,9 @@
       "咽喉肿痛"
     ],
     "usage": "冲服，3-6g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "人中黄清热凉血好，泻火解毒效果高",
     "association": "人中黄像块黄泥巴，清热泻火又解毒",
     "keyPoint": "清热凉血，泻火解毒",
@@ -4061,7 +4299,9 @@
       "口舌生疮"
     ],
     "usage": "研末服，3-6g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "人中白清热降火好，止血化瘀效果高",
     "association": "人中白像块白石头，清热降火又止血",
     "keyPoint": "清热降火，止血化瘀",
@@ -4104,7 +4344,9 @@
       "淋浊"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "淡秋石滋阴降火好，清热除烦效果高",
     "association": "淡秋石像块小石头，滋阴降火又清热",
     "keyPoint": "滋阴降火，清热除烦",
@@ -4145,7 +4387,9 @@
       "阿米巴痢疾"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "虚寒泻痢者忌用",
+    "contraindications": [
+      "虚寒泻痢者忌用"
+    ],
     "memoryTip": "白头翁清热解毒好，凉血止痢效果高",
     "association": "白头翁像位白头发，清热解毒止痢疾",
     "keyPoint": "清热解毒，凉血止痢要药",
@@ -4187,7 +4431,9 @@
       "蛇虫咬伤"
     ],
     "usage": "煎服，9-15g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "马齿苋清热解毒好，凉血止痢效果高",
     "association": "马齿苋像个小马蹄，清热解毒又止痢",
     "keyPoint": "清热解毒，凉血止痢",
@@ -4228,7 +4474,11 @@
       "赘疣"
     ],
     "usage": "吞服，0.5-2g，去壳取仁，装入胶囊",
-    "contraindications": "孕妇、小儿慎用，不宜入煎剂",
+    "contraindications": [
+      "孕妇",
+      "小儿慎用",
+      "不宜入煎剂"
+    ],
     "memoryTip": "鸭胆子清热解毒好，止痢截疟效果高",
     "association": "鸭胆子像颗小黑豆，清热解毒止痢疾",
     "keyPoint": "清热解毒，止痢截疟",
@@ -4266,7 +4516,9 @@
       "泄泻痢疾"
     ],
     "usage": "煎服，6-9g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "橄核莲清热解毒好，凉血消肿效果高",
     "association": "橄核莲像朵小莲花，清热解毒又消肿",
     "keyPoint": "清热解毒，凉血消肿",
@@ -4303,7 +4555,9 @@
       "疮疖肿痛"
     ],
     "usage": "煎服，15-30g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "小飞蓬清热利湿好，散瘀消肿效果高",
     "association": "小飞蓬像个小飞虫，清热利湿又消肿",
     "keyPoint": "清热利湿，散瘀消肿",
@@ -4343,7 +4597,9 @@
       "疔疮肿毒"
     ],
     "usage": "煎服，15-30g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "鸡眼草清热解毒好，健脾利湿效果高",
     "association": "鸡眼草像只小鸡眼，清热解毒又健脾",
     "keyPoint": "清热解毒，健脾利湿",
@@ -4377,7 +4633,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，煎服。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "叶下珠清热、平肝效果好",
     "association": "叶下珠像清凉的泉水，清热泻火解暑热",
     "keyPoint": "叶下珠功效特点及临床应用要点",
@@ -4418,7 +4676,9 @@
       "小便不利"
     ],
     "usage": "煎服，15-30g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "绿豆清热解毒好，消暑利水效果高",
     "association": "绿豆像颗小绿豆，清热解毒又解暑",
     "keyPoint": "清热解毒，消暑利水",
@@ -4459,7 +4719,9 @@
       "热痢"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "绿豆衣清热解毒好，消暑利水效果高",
     "association": "绿豆衣像件绿外衣，清热解毒又解暑",
     "keyPoint": "清热解毒，消暑利水",
@@ -4495,7 +4757,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "七叶一枝花清热效果好",
     "association": "七叶一枝花像清凉的泉水，清热泻火解暑热",
     "keyPoint": "七叶一枝花功效特点及临床应用要点",
@@ -4534,7 +4798,9 @@
       "癌肿"
     ],
     "usage": "煎服，15-30g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "半枝莲清热解毒好，化瘀利尿效果高",
     "association": "半枝莲像半朵莲，清热解毒又化瘀",
     "keyPoint": "清热解毒，化瘀利尿",
@@ -4571,7 +4837,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，大剂量可用一两至二两，煎服。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "白英清热、祛风效果好",
     "association": "白英像清凉的泉水，清热泻火解暑热",
     "keyPoint": "白英功效特点及临床应用要点",
@@ -4610,7 +4878,9 @@
       "水肿"
     ],
     "usage": "煎服，9-15g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "龙葵清热解毒好，活血消肿效果高",
     "association": "龙葵像串小紫珠，清热解毒又消肿",
     "keyPoint": "清热解毒，活血消肿",
@@ -4651,7 +4921,9 @@
       "疮疡肿毒"
     ],
     "usage": "煎服，9-15g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "蛇莓清热解毒好，凉血止血效果高",
     "association": "蛇莓像颗小红莓，清热解毒又止血",
     "keyPoint": "清热解毒，凉血止血",
@@ -4694,7 +4966,9 @@
       "癌肿"
     ],
     "usage": "煎服，15-30g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "白花蛇舌草解毒好，利湿通淋效果高",
     "association": "白花蛇舌草像条蛇，清热解毒又利湿",
     "keyPoint": "清热解毒，利湿通淋",
@@ -4735,7 +5009,9 @@
       "疮毒"
     ],
     "usage": "煎服，9-15g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "凤尾草清热利湿好，凉血止血效果高",
     "association": "凤尾草像尾小凤尾，清热利湿又止血",
     "keyPoint": "清热利湿，凉血止血",
@@ -4774,7 +5050,9 @@
       "癌症"
     ],
     "usage": "煎服，15-30g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "猪殃殃清热解毒好，消肿止痛效果高",
     "association": "猪殃殃像只小猪猪，清热解毒又消肿",
     "keyPoint": "清热解毒，消肿止痛",
@@ -4810,7 +5088,9 @@
       "毒蛇咬伤"
     ],
     "usage": "煎服，9-15g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "天葵子清热解毒好，消肿散结效果高",
     "association": "天葵子像颗小天葵，清热解毒又散结",
     "keyPoint": "清热解毒，消肿散结",
@@ -4845,7 +5125,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "藤梨根清热、祛风效果好",
     "association": "藤梨根像清凉的泉水，清热泻火解暑热",
     "keyPoint": "藤梨根功效特点及临床应用要点",
@@ -4889,7 +5172,9 @@
       "便秘"
     ],
     "usage": "冲服，3-6g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "猪胆汁清热润燥好，解毒效果真奇妙",
     "association": "猪胆汁像瓶黄胆汁，清热润燥又解毒",
     "keyPoint": "清热润燥，解毒",
@@ -4937,7 +5222,10 @@
       "痈肿疮毒"
     ],
     "usage": "煎服，2-5g",
-    "contraindications": "脾胃虚寒者忌用，阴虚津伤者慎用",
+    "contraindications": [
+      "脾胃虚寒者忌用",
+      "阴虚津伤者慎用"
+    ],
     "memoryTip": "黄连清热燥湿强，泻火解毒心胃凉",
     "association": "黄连苦苦像黄莲，心胃之火都能清",
     "keyPoint": "清热燥湿要药，善泻心火",
@@ -4986,7 +5274,9 @@
       "胎动不安"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "黄芩清热燥湿良，泻火解毒止血长",
     "association": "黄芩黄黄像金子，肺火咳嗽最对症",
     "keyPoint": "善清肺火，清热安胎",
@@ -5032,7 +5322,9 @@
       "疮疡肿毒"
     ],
     "usage": "煎服，3-12g",
-    "contraindications": "脾胃虚寒者忌用",
+    "contraindications": [
+      "脾胃虚寒者忌用"
+    ],
     "memoryTip": "黄柏清热燥湿强，泻火解毒退虚热",
     "association": "黄柏树下好乘凉，下焦湿热它来清",
     "keyPoint": "善清下焦湿热，泻肾火退虚热",
@@ -5074,7 +5366,9 @@
       "黄疸"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "胡黄连退虚热好，除疳清湿热效果高",
     "association": "胡黄连像根小黄连，退虚除疳又清热",
     "keyPoint": "退虚热，除疳热",
@@ -5115,7 +5409,9 @@
       "肝火头痛"
     ],
     "usage": "煎服，3-6g",
-    "contraindications": "脾胃虚寒者忌用",
+    "contraindications": [
+      "脾胃虚寒者忌用"
+    ],
     "memoryTip": "龙胆草清热燥湿好，泻肝胆火效果高",
     "association": "龙胆草像根小龙胆，泻肝清火又燥湿",
     "keyPoint": "泻肝胆实火，清下焦湿热",
@@ -5159,7 +5455,9 @@
       "目生翳膜"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "秦皮清热燥湿好，止痢明目效果高",
     "association": "秦皮像块树皮皮，清热止痢又明目",
     "keyPoint": "清热燥湿，止痢明目",
@@ -5199,7 +5497,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "脾胃虚寒 阴虚津伤",
+    "contraindications": [
+      "脾胃虚寒 阴虚津伤"
+    ],
     "memoryTip": "苦参清热、祛风效果好",
     "association": "苦参像清凉的泉水，清热泻火解暑热",
     "keyPoint": "苦参功效特点及临床应用要点",
@@ -5238,7 +5538,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。外用适量。",
-    "contraindications": "阴虚津伤 阴虚津亏 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 阴虚津亏 脾胃虚寒"
+    ],
     "memoryTip": "白藓皮清热、祛风效果好",
     "association": "白藓皮像清凉的泉水，清热泻火解暑热",
     "keyPoint": "白藓皮功效特点及临床应用要点",
@@ -5277,7 +5579,9 @@
       "小儿疳热"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "外感风寒及血虚无热者慎用",
+    "contraindications": [
+      "外感风寒及血虚无热者慎用"
+    ],
     "memoryTip": "银柴胡清虚热好，除疳热效果真奇妙",
     "association": "银柴胡像根银条条，清虚除疳又退热",
     "keyPoint": "清虚热，除疳热",
@@ -5320,7 +5624,9 @@
       "内热消渴"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "地骨皮凉血除蒸好，清肺降火效果高",
     "association": "地骨皮像根地骨骨，凉血除蒸又清肺",
     "keyPoint": "凉血退蒸，清泄肺热",
@@ -5366,7 +5672,9 @@
       "湿热黄疸"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "青蒿清虚除蒸好，解暑截疟效果高",
     "association": "青蒿像把绿扫帚，清虚除蒸又解暑",
     "keyPoint": "清虚热，除骨蒸，解暑截疟",
@@ -5410,7 +5718,9 @@
       "疮疡肿毒"
     ],
     "usage": "煎服，5-10g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "白薇清热凉血好，利尿通淋效果高",
     "association": "白薇像朵小白花，清热凉血又利尿",
     "keyPoint": "清虚热，凉血利尿",
@@ -5451,7 +5761,9 @@
       "疮毒"
     ],
     "usage": "煎服，9-15g，外用适量",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "葎草清热解毒好，利尿消肿效果高",
     "association": "葎草像条小藤蔓，清热解毒又利尿",
     "keyPoint": "清热解毒，利尿消肿",
@@ -5500,7 +5812,12 @@
       "瘀血经闭"
     ],
     "usage": "煎服，3-15g，宜后下",
-    "contraindications": "脾胃虚寒、孕妇、月经期、哺乳期忌用",
+    "contraindications": [
+      "脾胃虚寒",
+      "孕妇",
+      "月经期",
+      "哺乳期忌用"
+    ],
     "memoryTip": "大黄泻下攻积强，清热泻火解毒良",
     "association": "大黄将军真威猛，便秘腹痛一扫空",
     "keyPoint": "泻下攻积要药，生用泻下，酒制活血，炭制止血",
@@ -5545,7 +5862,11 @@
       "乳痈肿痛"
     ],
     "usage": "冲服，6-12g",
-    "contraindications": "孕妇、哺乳期妇女、脾胃虚寒者禁用",
+    "contraindications": [
+      "孕妇",
+      "哺乳期妇女",
+      "脾胃虚寒者禁用"
+    ],
     "memoryTip": "芒硝泻下攻积好，润燥软坚效果高",
     "association": "芒硝像块白冰糖，泻下软坚又清热",
     "keyPoint": "泻热通便，润燥软坚",
@@ -5586,7 +5907,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，冲入药汁内或开水中溶化后服，不入汤剂。外用适量。孕妇忌用。",
-    "contraindications": "孕妇 哺乳期 脾胃虚寒",
+    "contraindications": [
+      "孕妇 哺乳期 脾胃虚寒"
+    ],
     "memoryTip": "西瓜霜功效记心间，临床应用病自痊",
     "association": "西瓜霜功效独特，像专属的健康卫士守护身体",
     "keyPoint": "泻热通便。【临床应用】用于实热积滞",
@@ -5627,7 +5950,9 @@
       "或肝脏肿大等症"
     ],
     "usage": "三钱至五钱，新鲜的叶五钱至一两，煎服。",
-    "contraindications": "阴虚津伤 孕妇 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "铁扁担功效记心间，临床应用病自痊",
     "association": "铁扁担功效独特，像专属的健康卫士守护身体",
     "keyPoint": "铁扁担功效特点及临床应用要点",
@@ -5664,7 +5989,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至一钱五分，用开水泡汁或煎服）",
-    "contraindications": "孕妇 哺乳期 脾胃虚寒",
+    "contraindications": [
+      "孕妇 哺乳期 脾胃虚寒"
+    ],
     "memoryTip": "番泻叶功效记心间，临床应用病自痊",
     "association": "番泻叶功效独特，像专属的健康卫士守护身体",
     "keyPoint": "泻热导滞。【临床应用】用于热结便秘。本品性寒味苦",
@@ -5702,7 +6029,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三分至八分，宜作丸、散剂用，一般不入煎剂。",
-    "contraindications": "孕妇 脾胃虚寒",
+    "contraindications": [
+      "孕妇 脾胃虚寒"
+    ],
     "memoryTip": "芦荟功效记心间，临床应用病自痊",
     "association": "芦荟功效独特，像专属的健康卫士守护身体",
     "keyPoint": "芦荟功效特点及临床应用要点",
@@ -5743,7 +6072,10 @@
       "产妇及体虚者便秘"
     ],
     "usage": "煎服，10-15g",
-    "contraindications": "脾虚便溏、阳虚滑泄者慎用",
+    "contraindications": [
+      "脾虚便溏",
+      "阳虚滑泄者慎用"
+    ],
     "memoryTip": "火麻仁润肠燥，补虚通便效果好",
     "association": "火麻仁像个小油瓶，肠道干燥它能润",
     "keyPoint": "润肠通便，治老人、产妇便秘",
@@ -5792,7 +6124,9 @@
       "冬瓜皮等同用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇 阴虚液亏",
+    "contraindications": [
+      "孕妇 阴虚液亏"
+    ],
     "memoryTip": "郁李仁功效记心间，临床应用病自痊",
     "association": "郁李仁功效独特，像专属的健康卫士守护身体",
     "keyPoint": "郁李仁功效特点及临床应用要点",
@@ -5831,7 +6165,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，打碎，煎服；或炒熟研细，用白开水或蜂蜜调服；也可用炒熟研细，制成丸药吞服。",
-    "contraindications": "孕妇 脾胃虚寒",
+    "contraindications": [
+      "孕妇 脾胃虚寒"
+    ],
     "memoryTip": "胡麻仁功效记心间，临床应用病自痊",
     "association": "胡麻仁功效独特，像专属的健康卫士守护身体",
     "keyPoint": "胡麻仁功效特点及临床应用要点",
@@ -5869,7 +6205,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，用开水冲服。",
-    "contraindications": "孕妇 脾胃虚寒",
+    "contraindications": [
+      "孕妇 脾胃虚寒"
+    ],
     "memoryTip": "蜂蜜功效记心间，临床应用病自痊",
     "association": "蜂蜜功效独特，像专属的健康卫士守护身体",
     "keyPoint": "蜂蜜功效特点及临床应用要点",
@@ -5903,7 +6241,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "牵牛散《普济方》：牵牛子、木通、白朮、桑根白皮、木香、肉桂、陈皮。治水气肢体浮肿、大小便涩，上气喘促。（需补充剂量）",
-    "contraindications": "阴虚津伤 孕妇 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "牵牛子功效记心间，临床应用病自痊",
     "association": "牵牛子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "牵牛子功效特点及临床应用要点",
@@ -5946,7 +6286,9 @@
       "可配朱砂应用"
     ],
     "usage": "五分至一钱，煎服。研末吞服，每次二分至三分。本品药性峻烈，非气壮邪实者禁用。",
-    "contraindications": "孕妇 虚弱者 不宜与甘草同用",
+    "contraindications": [
+      "孕妇 虚弱者 不宜与甘草同用"
+    ],
     "memoryTip": "甘遂功效记心间，临床应用病自痊",
     "association": "甘遂功效独特，像专属的健康卫士守护身体",
     "keyPoint": "甘遂功效特点及临床应用要点",
@@ -5980,7 +6322,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至一钱五分，煎服。研末吞服，每次三分，每天一次。孕妇忌服。",
-    "contraindications": "孕妇 虚弱者 不宜与甘草同用",
+    "contraindications": [
+      "孕妇 虚弱者 不宜与甘草同用"
+    ],
     "memoryTip": "大戟功效记心间，临床应用病自痊",
     "association": "大戟功效独特，像专属的健康卫士守护身体",
     "keyPoint": "大戟功效特点及临床应用要点",
@@ -6014,7 +6358,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至一钱，煎服。研末吞服，每次二分，每天一次。外用适量。孕妇忌服。",
-    "contraindications": "孕妇 虚弱者 不宜与甘草同用",
+    "contraindications": [
+      "孕妇 虚弱者 不宜与甘草同用"
+    ],
     "memoryTip": "芫花功效记心间，临床应用病自痊",
     "association": "芫花功效独特，像专属的健康卫士守护身体",
     "keyPoint": "泻水逐饮。【临床应用】用于水肿腹水",
@@ -6048,7 +6394,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "内服每次三厘至五厘，一般不入煎剂，多配入丸散应用。本品峻烈有毒，凡中气虚弱者于孕妇忌用。（需补充剂量）",
-    "contraindications": "阴虚火旺 孕妇 月经过多 脾胃虚寒",
+    "contraindications": [
+      "阴虚火旺 孕妇 月经过多 脾胃虚寒"
+    ],
     "memoryTip": "续随子功效记心间，临床应用病自痊",
     "association": "续随子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "续随子功效特点及临床应用要点",
@@ -6091,7 +6439,9 @@
       "有消散作用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "商陆功效记心间，临床应用病自痊",
     "association": "商陆功效独特，像专属的健康卫士守护身体",
     "keyPoint": "商陆功效特点及临床应用要点",
@@ -6130,7 +6480,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "阴虚火旺 孕妇 脾胃虚寒",
+    "contraindications": [
+      "阴虚火旺 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "乌臼根皮功效记心间，临床应用病自痊",
     "association": "乌臼根皮功效独特，像专属的健康卫士守护身体",
     "keyPoint": "泻下逐水。【临床应用】用于水肿胀满。本品有泻下逐水的功效",
@@ -6174,7 +6526,9 @@
       "可与杏仁等同用"
     ],
     "usage": "内服每次一厘到三厘，一般不入煎剂，多配入丸散应用。外用适量。本品有大毒，故非急症必须时，不得轻易使用。孕妇及体虚者忌用。（需补充剂量）",
-    "contraindications": "孕妇 哺乳期 体弱 畏牵牛",
+    "contraindications": [
+      "孕妇 哺乳期 体弱 畏牵牛"
+    ],
     "memoryTip": "巴豆功效记心间，临床应用病自痊",
     "association": "巴豆功效独特，像专属的健康卫士守护身体",
     "keyPoint": "巴豆功效特点及临床应用要点",
@@ -6216,7 +6570,10 @@
       "心神不安"
     ],
     "usage": "煎服，10-15g",
-    "contraindications": "阴虚火旺、虚寒滑精者慎用",
+    "contraindications": [
+      "阴虚火旺",
+      "虚寒滑精者慎用"
+    ],
     "memoryTip": "茯苓利水健脾好，宁心安神效果高",
     "association": "茯苓像块白豆腐，健脾利水又安神",
     "keyPoint": "利水渗湿要药，健脾宁心",
@@ -6254,7 +6611,10 @@
       "带下"
     ],
     "usage": "一钱至三钱，煎服",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "猪苓利水渗湿强，专走水道无补养",
     "association": "猪苓像地下的小水泵，专门把水湿排出去",
     "keyPoint": "利水渗湿要药，比茯苓利水力强而无补益作用",
@@ -6293,7 +6653,9 @@
       "高脂血症"
     ],
     "usage": "煎服，6-10g",
-    "contraindications": "肾虚精滑无湿热者慎用",
+    "contraindications": [
+      "肾虚精滑无湿热者慎用"
+    ],
     "memoryTip": "泽泻利水渗湿强，泄热化浊降脂良",
     "association": "泽泻住在水泽边，利水渗湿最有效",
     "keyPoint": "利水渗湿，泄肾与膀胱之热",
@@ -6334,7 +6696,9 @@
       "赘疣癌肿"
     ],
     "usage": "煎服，9-30g",
-    "contraindications": "孕妇慎用",
+    "contraindications": [
+      "孕妇慎用"
+    ],
     "memoryTip": "薏苡仁利水健脾好，清热排脓除痹妙",
     "association": "薏苡仁像小白珠，健脾除湿又美容",
     "keyPoint": "健脾渗湿，除痹排脓，清热利湿",
@@ -6371,7 +6735,10 @@
       "口舌生疮"
     ],
     "usage": "三分至一钱，煎服；外用适量。本品质轻，内服用量不宜过大。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "灯心草清心火，利尿通淋治口疮",
     "association": "灯心草像细小的灯芯，能引导心火从小便排出",
     "keyPoint": "清心利尿，治心火上炎，小儿夜啼",
@@ -6408,7 +6775,9 @@
       "产后乳汁不下"
     ],
     "usage": "一钱至钱半，煎服。本品质轻，不宜用大量，孕妇禁用。",
-    "contraindications": "孕妇 气虚无湿热",
+    "contraindications": [
+      "孕妇 气虚无湿热"
+    ],
     "memoryTip": "通草通乳效果好，清热利尿水肿消",
     "association": "通草像通畅的管道，能让乳汁顺利流出",
     "keyPoint": "通气下乳要药，治产后缺乳",
@@ -6446,7 +6815,9 @@
       "产后乳汁不下"
     ],
     "usage": "一钱至钱半，煎服。本品质轻，不宜用大量，孕妇禁用。",
-    "contraindications": "孕妇 气虚无湿热",
+    "contraindications": [
+      "孕妇 气虚无湿热"
+    ],
     "memoryTip": "梗通草功效同，通乳利尿力稍轻",
     "association": "梗通草像通草的兄弟，功效相似但力道稍弱",
     "keyPoint": "功似通草，力稍逊",
@@ -6486,7 +6857,10 @@
       "便秘"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "冬葵子利水好，通乳润肠功效妙",
     "association": "冬葵子像多面手，既能利水又能通乳润肠",
     "keyPoint": "利水通淋，下乳润肠",
@@ -6525,7 +6899,10 @@
       "痰热咳嗽"
     ],
     "usage": "煎服，9-15g，宜包煎",
-    "contraindications": "肾虚精滑、内无湿热者慎用",
+    "contraindications": [
+      "肾虚精滑",
+      "内无湿热者慎用"
+    ],
     "memoryTip": "车前子利尿通淋良，渗湿止泻明目强",
     "association": "车前子长在车前面，利尿明目看得见",
     "keyPoint": "利尿通淋，分清浊而止泻，清肝明目",
@@ -6567,7 +6944,9 @@
       "痈肿疮毒"
     ],
     "usage": "一钱至三钱，包煎。",
-    "contraindications": "肾虚精滑 气虚下陷",
+    "contraindications": [
+      "肾虚精滑 气虚下陷"
+    ],
     "memoryTip": "车前草利尿好，祛痰解毒功效高",
     "association": "车前草像路边的小卫士，清热解毒，利尿祛痰",
     "keyPoint": "清热利尿，祛痰止咳，凉血解毒",
@@ -6607,7 +6986,9 @@
       "湿热痹痛"
     ],
     "usage": "一钱至三钱，煎服",
-    "contraindications": "孕妇 气虚 内无湿热",
+    "contraindications": [
+      "孕妇 气虚 内无湿热"
+    ],
     "memoryTip": "木通利水通淋好，清心下乳功效妙",
     "association": "木通像通畅的木管，能把心火从小便引出去",
     "keyPoint": "清心火，利小便，通经下乳",
@@ -6650,7 +7031,9 @@
       "痱子"
     ],
     "usage": "三钱至五钱，飞滑石须包煎。外用适量。",
-    "contraindications": "脾虚气弱 精滑 热病津伤",
+    "contraindications": [
+      "脾虚气弱 精滑 热病津伤"
+    ],
     "memoryTip": "滑石滑利通淋好，清热解暑外用妙",
     "association": "滑石像滑滑的石头，清热利湿，外用还能让皮肤滑爽",
     "keyPoint": "清热利湿，解暑外用，治暑湿要药",
@@ -6685,7 +7068,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，煎服。鲜者加倍，煎服或洗净捣汁饮服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "金钱草清热、利水效果好",
     "association": "金钱草像清凉的泉水，清热泻火解暑热",
     "keyPoint": "金钱草功效特点及临床应用要点",
@@ -6721,7 +7107,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，煎服。鲜者加倍，煎服或洗净捣汁饮服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "连钱草清热、利水效果好",
     "association": "连钱草像清凉的泉水，清热泻火解暑热",
     "keyPoint": "连钱草功效特点及临床应用要点",
@@ -6757,7 +7146,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，包煎。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "海金沙利水效果好",
     "association": "海金沙像排水管，利水消肿排废水",
     "keyPoint": "清惹利水通淋。【临床应用】用于石淋",
@@ -6800,7 +7192,9 @@
       "尿血崩漏"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "石苇利水通淋好，清肺止血功效高",
     "association": "石苇像石头上的芦苇，利尿清肺，还能凉血止血",
     "keyPoint": "利尿通淋，清肺止血，治血淋要药",
@@ -6838,7 +7232,9 @@
       "阴痒带下"
     ],
     "usage": "一钱至三钱，大剂量三钱至五钱，煎服。外用适量",
-    "contraindications": "孕妇 脾胃虚寒",
+    "contraindications": [
+      "孕妇 脾胃虚寒"
+    ],
     "memoryTip": "萹蓄利水通淋好，杀虫止痒功效妙",
     "association": "萹蓄像丛生的杂草，能清除湿热，还能杀虫止痒",
     "keyPoint": "利尿通淋，杀虫止痒，治湿热淋证",
@@ -6876,7 +7272,9 @@
       "经闭瘀阻"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇 脾肾虚弱",
+    "contraindications": [
+      "孕妇 脾肾虚弱"
+    ],
     "memoryTip": "瞿麦利水通淋好，活血通经功效高",
     "association": "瞿麦像开花的麦子，利尿通淋，还能活血通经",
     "keyPoint": "利尿通淋，活血通经，治血淋要药",
@@ -6910,7 +7308,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "萆薢功效记心间，临床应用病自痊",
     "association": "萆薢功效独特，像专属的健康卫士守护身体",
     "keyPoint": "萆薢功效特点及临床应用要点",
@@ -6950,7 +7351,10 @@
       "肠痈腹痛"
     ],
     "usage": "三钱至一两，煎服。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "赤小豆利水好，解毒排脓功效高",
     "association": "赤小豆像红色的小珍珠，利水消肿，还能解毒排脓",
     "keyPoint": "利水消肿，解毒排脓，治水肿脚气",
@@ -6990,7 +7394,10 @@
       "高血压"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "玉米须利水好，消肿退黄功效妙",
     "association": "玉米须像黄色的丝线，平淡无奇却能利水消肿",
     "keyPoint": "利水消肿，利湿退黄，药性平和",
@@ -7025,7 +7432,10 @@
       "脚气肿胀"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "葫芦壳能利水湿，消肿之功不可少",
     "association": "葫芦壳像小船，能把身体多余的水湿运出去",
     "keyPoint": "利水消肿，主治水气浮肿",
@@ -7062,7 +7472,10 @@
       "小便短赤"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "冬瓜皮利水好，清热解暑功效高",
     "association": "冬瓜皮像清凉的外衣，利水消肿还能清热解暑",
     "keyPoint": "利水消肿，兼能清热解暑",
@@ -7101,7 +7514,10 @@
       "白浊"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "冬瓜子清肺好，化痰排脓功效高",
     "association": "冬瓜子像小小的清洁工，清理肺里的痰和热毒",
     "keyPoint": "清肺化痰，利湿排脓，治内痈要药",
@@ -7142,7 +7558,9 @@
       "癣疮"
     ],
     "usage": "三钱至五钱，煎服，外用适量。",
-    "contraindications": "孕妇 气血虚弱",
+    "contraindications": [
+      "孕妇 气血虚弱"
+    ],
     "memoryTip": "泽漆利水消肿好，化痰散结有毒性",
     "association": "泽漆像有毒的野草，利水消肿，但要注意毒性",
     "keyPoint": "利水消肿，化痰散结，有毒宜慎",
@@ -7180,7 +7598,10 @@
       "痈肿恶疮"
     ],
     "usage": "三至五只，煎服。研末服，每次一至二只。体虚者不宜用。（需补充剂量）",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "蝼蛄利水消肿强，通淋之功不可少",
     "association": "蝼蛄像地下的挖掘工，利水消肿，打通水道",
     "keyPoint": "利水消肿力强，治水肿实证",
@@ -7216,7 +7637,9 @@
       "湿疮瘙痒"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "茵陈蒿退黄好，清利湿热功效高",
     "association": "茵陈蒿像黄色的精灵，专门对付黄疸，利胆退黄",
     "keyPoint": "治黄疸要药，利胆退黄第一",
@@ -7253,7 +7676,9 @@
       "湿疮瘙痒"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "铃茵陈功似茵陈，退黄利湿力稍轻",
     "association": "铃茵陈像茵陈的姐妹，功效相似但力道稍弱",
     "keyPoint": "功似茵陈，力稍逊",
@@ -7290,7 +7715,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，煎服，外用适量。",
-    "contraindications": "孕妇 脾胃虚寒 月经过多",
+    "contraindications": [
+      "孕妇 脾胃虚寒 月经过多"
+    ],
     "memoryTip": "地耳草清热、活血效果好",
     "association": "地耳草像清凉的泉水，清热泻火解暑热",
     "keyPoint": "地耳草功效特点及临床应用要点",
@@ -7328,7 +7755,9 @@
       "痈肿疮疡"
     ],
     "usage": "煎服，15-30g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "垂盆草清热解毒好，利湿退黄效果高",
     "association": "垂盆草像盆垂下来，清热解毒又退黄",
     "keyPoint": "清热解毒，利湿退黄",
@@ -7367,7 +7796,10 @@
       "湿温初起"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "阴虚火旺、胃热呕吐者慎用",
+    "contraindications": [
+      "阴虚火旺",
+      "胃热呕吐者慎用"
+    ],
     "memoryTip": "藿香化湿又止呕，暑湿感冒它能救",
     "association": "藿香像瓶清凉油，化湿解暑止呕吐",
     "keyPoint": "化湿和胃止呕要药，治湿阻中焦",
@@ -7401,7 +7833,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，鲜者加倍，煎服。",
-    "contraindications": "阴虚血燥 气虚",
+    "contraindications": [
+      "阴虚血燥 气虚"
+    ],
     "memoryTip": "佩兰功效记心间，临床应用病自痊",
     "association": "佩兰功效独特，像专属的健康卫士守护身体",
     "keyPoint": "佩兰功效特点及临床应用要点",
@@ -7438,7 +7872,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至二钱，煎服，入汤剂宜后下。",
-    "contraindications": "阴虚火旺 血热",
+    "contraindications": [
+      "阴虚火旺 血热"
+    ],
     "memoryTip": "砂仁功效记心间，临床应用病自痊",
     "association": "砂仁功效独特，像专属的健康卫士守护身体",
     "keyPoint": "砂仁功效特点及临床应用要点",
@@ -7476,7 +7912,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至二钱，煎服，入汤剂宜后下。",
-    "contraindications": "阴虚火旺 血热",
+    "contraindications": [
+      "阴虚火旺 血热"
+    ],
     "memoryTip": "砂仁壳功效记心间，临床应用病自痊",
     "association": "砂仁壳功效独特，像专属的健康卫士守护身体",
     "keyPoint": "砂仁壳功效特点及临床应用要点",
@@ -7515,7 +7953,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至二钱，煎服，入汤剂宜后下。",
-    "contraindications": "阴虚火旺 血热",
+    "contraindications": [
+      "阴虚火旺 血热"
+    ],
     "memoryTip": "砂仁花功效记心间，临床应用病自痊",
     "association": "砂仁花功效独特，像专属的健康卫士守护身体",
     "keyPoint": "砂仁花功效特点及临床应用要点",
@@ -7551,7 +7991,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至二钱，入汤剂宜后下。",
-    "contraindications": "阴虚火旺 血热",
+    "contraindications": [
+      "阴虚火旺 血热"
+    ],
     "memoryTip": "白豆蔻功效记心间，临床应用病自痊",
     "association": "白豆蔻功效独特，像专属的健康卫士守护身体",
     "keyPoint": "白豆蔻功效特点及临床应用要点",
@@ -7586,7 +8028,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至二钱，入汤剂宜后下。",
-    "contraindications": "阴虚火旺 血热",
+    "contraindications": [
+      "阴虚火旺 血热"
+    ],
     "memoryTip": "豆蔻壳功效记心间，临床应用病自痊",
     "association": "豆蔻壳功效独特，像专属的健康卫士守护身体",
     "keyPoint": "豆蔻壳功效特点及临床应用要点",
@@ -7622,7 +8066,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至二钱，入汤剂宜后下。",
-    "contraindications": "阴虚火旺 血热",
+    "contraindications": [
+      "阴虚火旺 血热"
+    ],
     "memoryTip": "豆蔻花功效记心间，临床应用病自痊",
     "association": "豆蔻花功效独特，像专属的健康卫士守护身体",
     "keyPoint": "豆蔻花功效特点及临床应用要点",
@@ -7664,7 +8110,10 @@
       "夜盲目昏"
     ],
     "usage": "煎服，3-9g",
-    "contraindications": "阴虚内热、气虚多汗者忌用",
+    "contraindications": [
+      "阴虚内热",
+      "气虚多汗者忌用"
+    ],
     "memoryTip": "苍朮燥湿健脾好，祛风散寒明目妙",
     "association": "苍朮像根小木棍，燥湿健脾力量大",
     "keyPoint": "燥湿健脾要药，祛风散寒，治夜盲",
@@ -7702,7 +8151,10 @@
       "痰饮喘咳"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "气虚津亏、孕妇慎用",
+    "contraindications": [
+      "气虚津亏",
+      "孕妇慎用"
+    ],
     "memoryTip": "厚朴燥湿消痰良，下气除满功效强",
     "association": "厚朴树皮厚又香，消除胀满效果好",
     "keyPoint": "燥湿消痰，下气除胀满，治湿阻中焦",
@@ -7738,7 +8190,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇 气虚 津亏",
+    "contraindications": [
+      "孕妇 气虚 津亏"
+    ],
     "memoryTip": "厚朴花功效记心间，临床应用病自痊",
     "association": "厚朴花功效独特，像专属的健康卫士守护身体",
     "keyPoint": "厚朴花功效特点及临床应用要点",
@@ -7782,7 +8236,9 @@
       "陈皮等配合应用"
     ],
     "usage": "一钱至二钱，煎服。",
-    "contraindications": "阴虚血燥 阴虚火旺 阴虚津亏",
+    "contraindications": [
+      "阴虚血燥 阴虚火旺 阴虚津亏"
+    ],
     "memoryTip": "草豆蔻功效记心间，临床应用病自痊",
     "association": "草豆蔻功效独特，像专属的健康卫士守护身体",
     "keyPoint": "草豆蔻功效特点及临床应用要点",
@@ -7824,7 +8280,9 @@
       "苍朮等同用"
     ],
     "usage": "一钱至二钱，煎服。",
-    "contraindications": "阴虚血燥 阴虚火旺 阴虚津亏",
+    "contraindications": [
+      "阴虚血燥 阴虚火旺 阴虚津亏"
+    ],
     "memoryTip": "草果功效记心间，临床应用病自痊",
     "association": "草果功效独特，像专属的健康卫士守护身体",
     "keyPoint": "草果功效特点及临床应用要点",
@@ -7863,7 +8321,9 @@
       "头痛"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "阴虚血燥者慎用",
+    "contraindications": [
+      "阴虚血燥者慎用"
+    ],
     "memoryTip": "独活祛风胜湿强，止痛解表治下焦",
     "association": "独活独自下山来，专治腰膝疼痛在",
     "keyPoint": "善治下半身风湿痹痛，祛风湿要药",
@@ -7903,7 +8363,9 @@
       "骨鲠咽喉"
     ],
     "usage": "煎服，6-10g",
-    "contraindications": "气血虚弱者慎用",
+    "contraindications": [
+      "气血虚弱者慎用"
+    ],
     "memoryTip": "威灵仙祛风湿良，通络止痛消骨鲠",
     "association": "威灵仙灵又威风，骨头卡住也能通",
     "keyPoint": "祛风湿通经络，善消骨鲠",
@@ -7938,7 +8400,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "秦艽功效记心间，临床应用病自痊",
     "association": "秦艽功效独特，像专属的健康卫士守护身体",
     "keyPoint": "秦艽功效特点及临床应用要点",
@@ -7973,7 +8438,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚血燥 阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚血燥 阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "防己利水效果好",
     "association": "防己像排水管，利水消肿排废水",
     "keyPoint": "防己功效特点及临床应用要点",
@@ -8008,7 +8475,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。如研粉吞服，每服三克，日服三次。外用适量。",
-    "contraindications": "阴虚血燥 阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚血燥 阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "臭梧桐功效记心间，临床应用病自痊",
     "association": "臭梧桐功效独特，像专属的健康卫士守护身体",
     "keyPoint": "臭梧桐功效特点及临床应用要点",
@@ -8043,7 +8512,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "老鹤草功效记心间，临床应用病自痊",
     "association": "老鹤草功效独特，像专属的健康卫士守护身体",
     "keyPoint": "祛除风湿。【临床应用】用于风湿痹痛。老鹤草辛散苦燥",
@@ -8079,7 +8551,9 @@
       "西河柳等药"
     ],
     "usage": "三钱至五钱，煎服。外用适量。",
-    "contraindications": "阴虚血燥 月经过多 孕妇 脾胃虚寒 阴虚津伤",
+    "contraindications": [
+      "阴虚血燥 月经过多 孕妇 脾胃虚寒 阴虚津伤"
+    ],
     "memoryTip": "虎杖清热、活血效果好",
     "association": "虎杖像清凉的泉水，清热泻火解暑热",
     "keyPoint": "虎杖功效特点及临床应用要点",
@@ -8113,7 +8587,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。外用适量。",
-    "contraindications": "阴虚血燥 阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "阴虚血燥 阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "透骨草活血效果好",
     "association": "透骨草像清道夫，活血化瘀通经络",
     "keyPoint": "透骨草功效特点及临床应用要点",
@@ -8148,7 +8624,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。外用适量。",
-    "contraindications": "阴虚血燥 阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "阴虚血燥 阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "急性子活血效果好",
     "association": "急性子像清道夫，活血化瘀通经络",
     "keyPoint": "急性子功效特点及临床应用要点",
@@ -8191,7 +8669,10 @@
       "牛膝等配伍应用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "桑寄生祛风湿良，补肝肾强筋骨长",
     "association": "桑寄生在桑树上，补肝肾强筋骨长",
     "keyPoint": "桑寄生功效特点及临床应用要点",
@@ -8226,7 +8707,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚火旺 口苦舌干",
+    "contraindications": [
+      "阴虚火旺 口苦舌干"
+    ],
     "memoryTip": "五加皮利水效果好",
     "association": "五加皮像排水管，利水消肿排废水",
     "keyPoint": "五加皮功效特点及临床应用要点",
@@ -8260,7 +8743,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "鹿啼草功效记心间，临床应用病自痊",
     "association": "鹿啼草功效独特，像专属的健康卫士守护身体",
     "keyPoint": "鹿啼草功效特点及临床应用要点",
@@ -8294,7 +8780,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚血燥 阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚血燥 阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "豨签草清热效果好",
     "association": "豨签草像清凉的泉水，清热泻火解暑热",
     "keyPoint": "豨签草功效特点及临床应用要点",
@@ -8329,7 +8817,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "阴虚血燥 阴虚火旺",
+    "contraindications": [
+      "阴虚血燥 阴虚火旺"
+    ],
     "memoryTip": "千年健功效记心间，临床应用病自痊",
     "association": "千年健功效独特，像专属的健康卫士守护身体",
     "keyPoint": "千年健功效特点及临床应用要点",
@@ -8364,7 +8854,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至二钱，入丸剂或浸酒服。",
-    "contraindications": "阴虚血燥 阴虚火旺",
+    "contraindications": [
+      "阴虚血燥 阴虚火旺"
+    ],
     "memoryTip": "虎骨祛风效果好",
     "association": "虎骨像防风林，祛风除湿护关节",
     "keyPoint": "虎骨功效特点及临床应用要点",
@@ -8399,7 +8891,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。研末吞服1--2g。",
-    "contraindications": "阴虚血燥 阴虚火旺",
+    "contraindications": [
+      "阴虚血燥 阴虚火旺"
+    ],
     "memoryTip": "白花蛇祛风效果好",
     "association": "白花蛇像防风林，祛风除湿护关节",
     "keyPoint": "白花蛇功效特点及临床应用要点",
@@ -8435,7 +8929,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。研末吞服1--2g。",
-    "contraindications": "阴虚血燥 阴虚火旺",
+    "contraindications": [
+      "阴虚血燥 阴虚火旺"
+    ],
     "memoryTip": "乌梢蛇祛风效果好",
     "association": "乌梢蛇像防风林，祛风除湿护关节",
     "keyPoint": "乌梢蛇功效特点及临床应用要点",
@@ -8471,7 +8967,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚血燥 阴虚火旺",
+    "contraindications": [
+      "阴虚血燥 阴虚火旺"
+    ],
     "memoryTip": "徐长卿祛风效果好",
     "association": "徐长卿像防风林，祛风除湿护关节",
     "keyPoint": "徐长卿功效特点及临床应用要点",
@@ -8505,7 +9003,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "桑枝祛风效果好",
     "association": "桑枝像防风林，祛风除湿护关节",
     "keyPoint": "祛风通络。【临床应用】用于风湿痹痛桑枝善于祛风",
@@ -8539,7 +9040,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "阴虚血燥 阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚血燥 阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "络石藤祛风效果好",
     "association": "络石藤像防风林，祛风除湿护关节",
     "keyPoint": "络石藤功效特点及临床应用要点",
@@ -8574,7 +9077,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "阴虚血燥 阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚血燥 阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "海风藤祛风效果好",
     "association": "海风藤像防风林，祛风除湿护关节",
     "keyPoint": "海风藤功效特点及临床应用要点",
@@ -8611,7 +9116,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "寻骨风祛风效果好",
     "association": "寻骨风像防风林，祛风除湿护关节",
     "keyPoint": "寻骨风功效特点及临床应用要点",
@@ -8647,7 +9155,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "丝瓜络祛风效果好",
     "association": "丝瓜络像防风林，祛风除湿护关节",
     "keyPoint": "丝瓜络功效特点及临床应用要点",
@@ -8684,7 +9195,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。外用适量。",
-    "contraindications": "阴虚血燥 孕妇 月经过多",
+    "contraindications": [
+      "阴虚血燥 孕妇 月经过多"
+    ],
     "memoryTip": "接骨木活血、利水效果好",
     "association": "接骨木像清道夫，活血化瘀通经络",
     "keyPoint": "接骨木功效特点及临床应用要点",
@@ -8721,7 +9234,9 @@
       "吐泻转筋"
     ],
     "usage": "煎服，6-9g",
-    "contraindications": "胃酸过多者慎用",
+    "contraindications": [
+      "胃酸过多者慎用"
+    ],
     "memoryTip": "木瓜舒筋活络好，和胃化湿效果高",
     "association": "木瓜黄黄香又甜，抽筋转筋它来牵",
     "keyPoint": "舒筋活络要药，治吐泻转筋",
@@ -8756,7 +9271,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，须包煎。",
-    "contraindications": "阴虚血燥 阴虚火旺",
+    "contraindications": [
+      "阴虚血燥 阴虚火旺"
+    ],
     "memoryTip": "蜇砂祛风效果好",
     "association": "蜇砂功效独特，像专属的健康卫士守护身体",
     "keyPoint": "蜇砂功效特点及临床应用要点",
@@ -8795,7 +9312,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚血燥 阴虚火旺 阴虚津亏",
+    "contraindications": [
+      "阴虚血燥 阴虚火旺 阴虚津亏"
+    ],
     "memoryTip": "松节祛风效果好",
     "association": "松节功效独特，像专属的健康卫士守护身体",
     "keyPoint": "除湿利痹【临床应用】用于风湿痹痛。本品苦燥温通",
@@ -8835,7 +9354,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚血燥 阴虚火旺 阴虚津亏",
+    "contraindications": [
+      "阴虚血燥 阴虚火旺 阴虚津亏"
+    ],
     "memoryTip": "松香祛风效果好",
     "association": "松香功效独特，像专属的健康卫士守护身体",
     "keyPoint": "除湿利痹【临床应用】用于风湿痹痛。本品苦燥温通",
@@ -8876,7 +9397,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚血燥 阴虚火旺 阴虚津亏",
+    "contraindications": [
+      "阴虚血燥 阴虚火旺 阴虚津亏"
+    ],
     "memoryTip": "松花粉祛风效果好",
     "association": "松花粉功效独特，像专属的健康卫士守护身体",
     "keyPoint": "除湿利痹【临床应用】用于风湿痹痛。本品苦燥温通",
@@ -8913,7 +9436,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "海桐皮清热、祛风效果好",
     "association": "海桐皮像清凉的泉水，清热泻火解暑热",
     "keyPoint": "海桐皮功效特点及临床应用要点",
@@ -8950,7 +9476,10 @@
       "咳嗽痰多"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "气虚、阴虚燥咳者慎用",
+    "contraindications": [
+      "气虚",
+      "阴虚燥咳者慎用"
+    ],
     "memoryTip": "陈皮理气健脾好，燥湿化痰效果高",
     "association": "陈皮像块老橘皮，越陈越香理气好",
     "keyPoint": "理气健脾，燥湿化痰，治脾胃气滞",
@@ -8986,7 +9515,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚火旺 阴虚津亏",
+    "contraindications": [
+      "阴虚火旺 阴虚津亏"
+    ],
     "memoryTip": "橘络止咳效果好",
     "association": "橘络功效独特，像专属的健康卫士守护身体",
     "keyPoint": "橘络功效特点及临床应用要点",
@@ -9023,7 +9554,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚火旺 阴虚津亏",
+    "contraindications": [
+      "阴虚火旺 阴虚津亏"
+    ],
     "memoryTip": "化橘红止咳效果好",
     "association": "化橘红功效独特，像专属的健康卫士守护身体",
     "keyPoint": "化橘红功效特点及临床应用要点",
@@ -9063,7 +9596,10 @@
       "痰阻气滞"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "孕妇、脾胃虚弱者慎用",
+    "contraindications": [
+      "孕妇",
+      "脾胃虚弱者慎用"
+    ],
     "memoryTip": "枳实破气消积强，化痰除痞功效良",
     "association": "枳实像个小炮弹，破气消积威力大",
     "keyPoint": "破气消积，化痰除痞，治食积痰滞",
@@ -9097,7 +9633,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "瓜蒌皮止咳效果好",
     "association": "瓜蒌皮像止咳糖，咳嗽气喘都能止",
     "keyPoint": "瓜蒌皮功效特点及临床应用要点",
@@ -9132,7 +9670,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "全栝蒌止咳效果好",
     "association": "全栝蒌像止咳糖，咳嗽气喘都能止",
     "keyPoint": "全栝蒌功效特点及临床应用要点",
@@ -9176,7 +9716,10 @@
       "不思饮食"
     ],
     "usage": "煎服，3-6g",
-    "contraindications": "阴虚火旺、津亏燥咳者慎用",
+    "contraindications": [
+      "阴虚火旺",
+      "津亏燥咳者慎用"
+    ],
     "memoryTip": "木香行气止痛良，健脾消食效果强",
     "association": "木香香香像木头，行气止痛胃肠舒",
     "keyPoint": "行气止痛要药，善行脾胃及大肠气滞",
@@ -9210,7 +9753,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "气虚 阴虚内热",
+    "contraindications": [
+      "气虚 阴虚内热"
+    ],
     "memoryTip": "乌药功效记心间，临床应用病自痊",
     "association": "乌药功效独特，像专属的健康卫士守护身体",
     "keyPoint": "乌药功效特点及临床应用要点",
@@ -9244,7 +9789,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三分至一钱，煎服。或入丸散。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "檀香功效记心间，临床应用病自痊",
     "association": "檀香功效独特，像专属的健康卫士守护身体",
     "keyPoint": "行气止痛。【临床应用】用于胸腹疼痛等症檀香味辛性温",
@@ -9281,7 +9829,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至钱半，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "甘松功效记心间，临床应用病自痊",
     "association": "甘松功效独特，像专属的健康卫士守护身体",
     "keyPoint": "行气止痛【临床应用】用于胸腹疼痛",
@@ -9320,7 +9871,10 @@
       "川楝子等同用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "九香虫功效记心间，临床应用病自痊",
     "association": "九香虫功效独特，像专属的健康卫士守护身体",
     "keyPoint": "九香虫功效特点及临床应用要点",
@@ -9355,7 +9909,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。月经过多及孕妇，不宜应用。",
-    "contraindications": "孕妇 月经过多",
+    "contraindications": [
+      "孕妇 月经过多"
+    ],
     "memoryTip": "路路通活血、利水效果好",
     "association": "路路通像清道夫，活血化瘀通经络",
     "keyPoint": "路路通功效特点及临床应用要点",
@@ -9391,7 +9947,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。月经过多及孕妇，不宜应用。",
-    "contraindications": "孕妇 月经过多",
+    "contraindications": [
+      "孕妇 月经过多"
+    ],
     "memoryTip": "白胶香活血、利水效果好",
     "association": "白胶香像清道夫，活血化瘀通经络",
     "keyPoint": "白胶香功效特点及临床应用要点",
@@ -9427,7 +9985,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "大腹皮利水效果好",
     "association": "大腹皮像排水管，利水消肿排废水",
     "keyPoint": "大腹皮功效特点及临床应用要点",
@@ -9462,7 +10023,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "气虚 孕妇",
+    "contraindications": [
+      "气虚 孕妇"
+    ],
     "memoryTip": "青皮功效记心间，临床应用病自痊",
     "association": "青皮功效独特，像专属的健康卫士守护身体",
     "keyPoint": "青皮功效特点及临床应用要点",
@@ -9498,7 +10061,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "气虚 孕妇",
+    "contraindications": [
+      "气虚 孕妇"
+    ],
     "memoryTip": "橘叶功效记心间，临床应用病自痊",
     "association": "橘叶功效独特，像专属的健康卫士守护身体",
     "keyPoint": "橘叶功效特点及临床应用要点",
@@ -9535,7 +10100,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "气虚 孕妇",
+    "contraindications": [
+      "气虚 孕妇"
+    ],
     "memoryTip": "橘核功效记心间，临床应用病自痊",
     "association": "橘核功效独特，像专属的健康卫士守护身体",
     "keyPoint": "橘核功效特点及临床应用要点",
@@ -9572,7 +10139,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。本品有缓泻作用，脾虚便溏者忌用。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "枸橘功效记心间，临床应用病自痊",
     "association": "枸橘功效独特，像专属的健康卫士守护身体",
     "keyPoint": "枸橘功效特点及临床应用要点",
@@ -9606,7 +10176,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。外用适量。",
-    "contraindications": "孕妇 脾胃虚寒",
+    "contraindications": [
+      "孕妇 脾胃虚寒"
+    ],
     "memoryTip": "川楝子功效记心间，临床应用病自痊",
     "association": "川楝子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "川楝子功效特点及临床应用要点",
@@ -9647,7 +10219,10 @@
       "经闭痛经"
     ],
     "usage": "煎服，6-10g",
-    "contraindications": "气虚、阴虚血热者慎用",
+    "contraindications": [
+      "气虚",
+      "阴虚血热者慎用"
+    ],
     "memoryTip": "香附疏肝理气好，调经止痛是女宝",
     "association": "香附是妇科之宝，调经止痛效果好",
     "keyPoint": "气病之总司，女科之主帅，疏肝理气调经",
@@ -9683,7 +10258,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "佛手止咳效果好",
     "association": "佛手功效独特，像专属的健康卫士守护身体",
     "keyPoint": "佛手功效特点及临床应用要点",
@@ -9720,7 +10298,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "佛手花止咳效果好",
     "association": "佛手花功效独特，像专属的健康卫士守护身体",
     "keyPoint": "佛手花功效特点及临床应用要点",
@@ -9758,7 +10339,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "香橼止咳效果好",
     "association": "香橼功效独特，像专属的健康卫士守护身体",
     "keyPoint": "香橼功效特点及临床应用要点",
@@ -9792,7 +10376,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "八月札功效记心间，临床应用病自痊",
     "association": "八月札功效独特，像专属的健康卫士守护身体",
     "keyPoint": "八月札功效特点及临床应用要点",
@@ -9826,7 +10413,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "娑罗子功效记心间，临床应用病自痊",
     "association": "娑罗子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "疏肝理气。【临床应用】用于肋疼痛",
@@ -9861,7 +10451,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至钱半，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "玫瑰花功效记心间，临床应用病自痊",
     "association": "玫瑰花功效独特，像专属的健康卫士守护身体",
     "keyPoint": "玫瑰花功效特点及临床应用要点",
@@ -9897,7 +10490,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至钱半，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "代代花功效记心间，临床应用病自痊",
     "association": "代代花功效独特，像专属的健康卫士守护身体",
     "keyPoint": "代代花功效特点及临床应用要点",
@@ -9942,7 +10538,10 @@
       "白朮等药同用"
     ],
     "usage": "一钱至钱半，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "绿萼梅功效记心间，临床应用病自痊",
     "association": "绿萼梅功效独特，像专属的健康卫士守护身体",
     "keyPoint": "疏肝理气。【临床应用】1.用于肋疼痛",
@@ -9986,7 +10585,10 @@
       "白朮等药同用"
     ],
     "usage": "一钱至钱半，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "白残花功效记心间，临床应用病自痊",
     "association": "白残花功效独特，像专属的健康卫士守护身体",
     "keyPoint": "疏肝理气。【临床应用】1.用于肋疼痛",
@@ -10030,7 +10632,10 @@
       "橘核等药配合应用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "荔枝核功效记心间，临床应用病自痊",
     "association": "荔枝核功效独特，像专属的健康卫士守护身体",
     "keyPoint": "荔枝核功效特点及临床应用要点",
@@ -10066,7 +10671,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，本品入汤不易澄净，每能刺喉作痒，须布包入煎。",
-    "contraindications": "孕妇 阴虚劳嗽 风热燥咳",
+    "contraindications": [
+      "孕妇 阴虚劳嗽 风热燥咳"
+    ],
     "memoryTip": "旋覆花止咳效果好",
     "association": "旋覆花像止咳糖，咳嗽气喘都能止",
     "keyPoint": "旋覆花功效特点及临床应用要点",
@@ -10103,7 +10710,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，本品入汤不易澄净，每能刺喉作痒，须布包入煎。",
-    "contraindications": "孕妇 阴虚劳嗽 风热燥咳",
+    "contraindications": [
+      "孕妇 阴虚劳嗽 风热燥咳"
+    ],
     "memoryTip": "旋覆梗止咳效果好",
     "association": "旋覆梗像止咳糖，咳嗽气喘都能止",
     "keyPoint": "旋覆梗功效特点及临床应用要点",
@@ -10139,7 +10748,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，生用须先煎。",
-    "contraindications": "孕妇 虚寒证",
+    "contraindications": [
+      "孕妇 虚寒证"
+    ],
     "memoryTip": "代赭石功效记心间，临床应用病自痊",
     "association": "代赭石功效独特，像专属的健康卫士守护身体",
     "keyPoint": "代赭石功效特点及临床应用要点",
@@ -10177,7 +10788,9 @@
       "半夏等药同用"
     ],
     "usage": "三分至一钱，入煎应后下。研末冲服，每次0.5--1g。亦可用原药磨汁服。",
-    "contraindications": "阴虚火旺 气虚下陷",
+    "contraindications": [
+      "阴虚火旺 气虚下陷"
+    ],
     "memoryTip": "沉香功效记心间，临床应用病自痊",
     "association": "沉香功效独特，像专属的健康卫士守护身体",
     "keyPoint": "沉香功效特点及临床应用要点",
@@ -10217,7 +10830,9 @@
       "可与降逆止呕的半夏同用"
     ],
     "usage": "2--5g，煎服。",
-    "contraindications": "热证 阴虚内热 不宜与郁金同用",
+    "contraindications": [
+      "热证 阴虚内热 不宜与郁金同用"
+    ],
     "memoryTip": "丁香功效记心间，临床应用病自痊",
     "association": "丁香功效独特，像专属的健康卫士守护身体",
     "keyPoint": "丁香功效特点及临床应用要点",
@@ -10251,7 +10866,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "柿蒂功效记心间，临床应用病自痊",
     "association": "柿蒂功效独特，像专属的健康卫士守护身体",
     "keyPoint": "降气止呕。【临床应用】用于呃逆柿蒂性平苦降",
@@ -10286,7 +10904,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "柿霜功效记心间，临床应用病自痊",
     "association": "柿霜功效独特，像专属的健康卫士守护身体",
     "keyPoint": "降气止呕。【临床应用】用于呃逆柿蒂性平苦降",
@@ -10327,7 +10948,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "刀豆子功效记心间，临床应用病自痊",
     "association": "刀豆子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "降气止呃【临床应用】用于呃逆本品甘温止呃",
@@ -10367,7 +10991,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "刀豆壳功效记心间，临床应用病自痊",
     "association": "刀豆壳功效独特，像专属的健康卫士守护身体",
     "keyPoint": "降气止呃【临床应用】用于呃逆本品甘温止呃",
@@ -10409,7 +11036,11 @@
       "头痛风湿痹痛"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "阴虚火旺、舌红口干者慎用，孕妇忌用",
+    "contraindications": [
+      "阴虚火旺",
+      "舌红口干者慎用",
+      "孕妇忌用"
+    ],
     "memoryTip": "川芎活血行气好，祛风止痛上头窍",
     "association": "川芎像个小火箭，上行头目下行血",
     "keyPoint": "血中之气药，上行头目，下行血海",
@@ -10449,7 +11080,10 @@
       "心烦不眠"
     ],
     "usage": "煎服，10-15g",
-    "contraindications": "孕妇慎用，不宜与藜芦同用",
+    "contraindications": [
+      "孕妇慎用",
+      "不宜与藜芦同用"
+    ],
     "memoryTip": "丹参活血祛瘀良，通经止痛清心凉",
     "association": "丹参红红像红心，一味丹参功同四物",
     "keyPoint": "活血祛瘀要药，一味丹参散，功同四物汤",
@@ -10489,7 +11123,10 @@
       "咳嗽气喘"
     ],
     "usage": "煎服，5-10g",
-    "contraindications": "孕妇、便溏者慎用",
+    "contraindications": [
+      "孕妇",
+      "便溏者慎用"
+    ],
     "memoryTip": "桃仁活血祛瘀良，润肠通便止咳长",
     "association": "桃仁像个小脑袋，活血润肠又止咳",
     "keyPoint": "活血祛瘀，润肠通便，治肺痈肠痈",
@@ -10525,7 +11162,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。桃仁霜入汤剂须包煎。",
-    "contraindications": "孕妇 便溏",
+    "contraindications": [
+      "孕妇 便溏"
+    ],
     "memoryTip": "瘪桃干活血效果好",
     "association": "瘪桃干像清道夫，活血化瘀通经络",
     "keyPoint": "瘪桃干功效特点及临床应用要点",
@@ -10565,7 +11204,10 @@
       "瘀滞腹痛"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "孕妇、月经过多者忌用",
+    "contraindications": [
+      "孕妇",
+      "月经过多者忌用"
+    ],
     "memoryTip": "红花活血通经好，祛瘀止痛效果高",
     "association": "红花红红像火苗，活血通经效果好",
     "keyPoint": "活血通经，祛瘀止痛，少用养血",
@@ -10600,7 +11242,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。月经过多，孕妇忌用。",
-    "contraindications": "血虚无瘀 阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "血虚无瘀 阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "泽兰活血、利水效果好",
     "association": "泽兰像清道夫，活血化瘀通经络",
     "keyPoint": "泽兰功效特点及临床应用要点",
@@ -10634,7 +11278,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，煎服。月经过多、孕妇忌用。",
-    "contraindications": "月经过多 血虚无瘀 孕妇 脾胃虚寒 阴虚津伤",
+    "contraindications": [
+      "月经过多 血虚无瘀 孕妇 脾胃虚寒 阴虚津伤"
+    ],
     "memoryTip": "马鞭草活血、利水效果好",
     "association": "马鞭草像清道夫，活血化瘀通经络",
     "keyPoint": "马鞭草功效特点及临床应用要点",
@@ -10669,7 +11315,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。外用适量。",
-    "contraindications": "孕妇 胃弱 无瘀滞",
+    "contraindications": [
+      "孕妇 胃弱 无瘀滞"
+    ],
     "memoryTip": "乳香活血效果好",
     "association": "乳香像清道夫，活血化瘀通经络",
     "keyPoint": "乳香功效特点及临床应用要点",
@@ -10703,7 +11351,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。外用适量。易败胃气，胃弱者慎用。",
-    "contraindications": "孕妇 胃弱",
+    "contraindications": [
+      "孕妇 胃弱"
+    ],
     "memoryTip": "没药活血效果好",
     "association": "没药像清道夫，活血化瘀通经络",
     "keyPoint": "没药功效特点及临床应用要点",
@@ -10737,7 +11387,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，包煎。或入丸、散用。",
-    "contraindications": "血虚无瘀 阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "血虚无瘀 阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "五灵脂活血效果好",
     "association": "五灵脂像清道夫，活血化瘀通经络",
     "keyPoint": "五灵脂功效特点及临床应用要点",
@@ -10772,7 +11424,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇 阴虚失血 无气滞血瘀",
+    "contraindications": [
+      "孕妇 阴虚失血 无气滞血瘀"
+    ],
     "memoryTip": "郁金活血效果好",
     "association": "郁金像清道夫，活血化瘀通经络",
     "keyPoint": "郁金功效特点及临床应用要点",
@@ -10807,7 +11461,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。研末吞服，每此三分至一钱。",
-    "contraindications": "血虚无瘀 阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "血虚无瘀 阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "延胡索活血效果好",
     "association": "延胡索像清道夫，活血化瘀通经络",
     "keyPoint": "活血行气止痛。【临床应用】1.用于胸腹疼痛",
@@ -10842,7 +11498,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。外用适量。",
-    "contraindications": "孕妇 血虚无气滞血瘀",
+    "contraindications": [
+      "孕妇 血虚无气滞血瘀"
+    ],
     "memoryTip": "姜黄活血、祛风效果好",
     "association": "姜黄像清道夫，活血化瘀通经络",
     "keyPoint": "姜黄功效特点及临床应用要点",
@@ -10876,7 +11534,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至钱半，煎服。研末吞服，每次1--2g。外用适量。阴虚火旺、血热妄行者忌服。",
-    "contraindications": "血虚无瘀 阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "血虚无瘀 阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "降香活血效果好",
     "association": "降香像清道夫，活血化瘀通经络",
     "keyPoint": "降香功效特点及临床应用要点",
@@ -10911,7 +11571,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "血虚无瘀 阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "血虚无瘀 阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "夏天无活血效果好",
     "association": "夏天无像清道夫，活血化瘀通经络",
     "keyPoint": "活血行气止痛。【临床应用】用于风湿痹痛",
@@ -10945,7 +11607,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至钱半，煎服。内服可能引起便溏腹泻，故脾胃虚弱者须慎用；月经过多及孕妇也须忌服。",
-    "contraindications": "血虚无瘀 阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "血虚无瘀 阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "月季花活血效果好",
     "association": "月季花像清道夫，活血化瘀通经络",
     "keyPoint": "月季花功效特点及临床应用要点",
@@ -10985,7 +11649,9 @@
       "疮疡肿毒"
     ],
     "usage": "煎服，9-30g",
-    "contraindications": "孕妇慎用",
+    "contraindications": [
+      "孕妇慎用"
+    ],
     "memoryTip": "益母草活血调经好，利尿消肿解毒良",
     "association": "益母草是妈妈草，产后妇科离不了",
     "keyPoint": "妇科经产要药，活血调经，利水消肿",
@@ -11026,7 +11692,9 @@
       "川芎等同用"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "孕妇 月经过多",
+    "contraindications": [
+      "孕妇 月经过多"
+    ],
     "memoryTip": "鸡血藤活血效果好",
     "association": "鸡血藤像清道夫，活血化瘀通经络",
     "keyPoint": "鸡血藤功效特点及临床应用要点",
@@ -11060,7 +11728,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。也可研末吞服，每次1--1.5g。",
-    "contraindications": "孕妇 痈疽已溃",
+    "contraindications": [
+      "孕妇 痈疽已溃"
+    ],
     "memoryTip": "穿山甲功效记心间，临床应用病自痊",
     "association": "穿山甲功效独特，像专属的健康卫士守护身体",
     "keyPoint": "穿山甲功效特点及临床应用要点",
@@ -11104,7 +11774,9 @@
       "红花等配合应用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "血虚无瘀 孕妇 月经过多",
+    "contraindications": [
+      "血虚无瘀 孕妇 月经过多"
+    ],
     "memoryTip": "王不留行功效记心间，临床应用病自痊",
     "association": "王不留行功效独特，像专属的健康卫士守护身体",
     "keyPoint": "王不留行功效特点及临床应用要点",
@@ -11146,7 +11818,11 @@
       "头痛眩晕"
     ],
     "usage": "煎服，5-12g",
-    "contraindications": "孕妇、月经过多者忌用，遗精滑精者慎用",
+    "contraindications": [
+      "孕妇",
+      "月经过多者忌用",
+      "遗精滑精者慎用"
+    ],
     "memoryTip": "牛膝活血通经好，补肝肾强筋骨妙",
     "association": "牛膝像牛膝盖弯，引血下行补肝肾",
     "keyPoint": "引血下行，治上部火热，补肝肾强筋骨",
@@ -11181,7 +11857,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。月经过多，孕妇忌用。",
-    "contraindications": "血虚无瘀 孕妇 月经过多",
+    "contraindications": [
+      "血虚无瘀 孕妇 月经过多"
+    ],
     "memoryTip": "苏木功效记心间，临床应用病自痊",
     "association": "苏木功效独特，像专属的健康卫士守护身体",
     "keyPoint": "祛瘀通经疗伤。【临床应用】用于血滞经闭",
@@ -11215,7 +11893,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，用于消食积，单味可用三钱至五钱，煎服。",
-    "contraindications": "血虚无瘀 阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "血虚无瘀 阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "刘寄奴功效记心间，临床应用病自痊",
     "association": "刘寄奴功效独特，像专属的健康卫士守护身体",
     "keyPoint": "刘寄奴功效特点及临床应用要点",
@@ -11249,7 +11929,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。月经过多与孕妇忌用。",
-    "contraindications": "血虚无瘀 孕妇 月经过多",
+    "contraindications": [
+      "血虚无瘀 孕妇 月经过多"
+    ],
     "memoryTip": "荆三棱功效记心间，临床应用病自痊",
     "association": "荆三棱功效独特，像专属的健康卫士守护身体",
     "keyPoint": "荆三棱功效特点及临床应用要点",
@@ -11284,7 +11966,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "血虚无瘀 阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "血虚无瘀 阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "蓬莪朮功效记心间，临床应用病自痊",
     "association": "蓬莪朮功效独特，像专属的健康卫士守护身体",
     "keyPoint": "蓬莪朮功效特点及临床应用要点",
@@ -11318,7 +12002,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。或研烘焙后研粉吞服，每次1--1.5g。",
-    "contraindications": "血虚无瘀 孕妇 脾胃虚寒 月经过多",
+    "contraindications": [
+      "血虚无瘀 孕妇 脾胃虚寒 月经过多"
+    ],
     "memoryTip": "蟅虫功效记心间，临床应用病自痊",
     "association": "蟅虫功效独特，像专属的健康卫士守护身体",
     "keyPoint": "蟅虫功效特点及临床应用要点",
@@ -11353,7 +12039,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至钱半，煎服。0.3--0.5g，焙焦，研细，作丸、散剂用。",
-    "contraindications": "孕妇 体弱血虚 无瘀血",
+    "contraindications": [
+      "孕妇 体弱血虚 无瘀血"
+    ],
     "memoryTip": "水蛭功效记心间，临床应用病自痊",
     "association": "水蛭功效独特，像专属的健康卫士守护身体",
     "keyPoint": "祛瘀通经消症。【临床应用】用于血滞经闭",
@@ -11387,7 +12075,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三分至一钱，煎服。研末吞服每次0.1--0.3g。服后可能会出现腹泻。孕妇与月经过多者忌用。",
-    "contraindications": "孕妇 体虚无瘀 腹泻",
+    "contraindications": [
+      "孕妇 体虚无瘀 腹泻"
+    ],
     "memoryTip": "虻虫功效记心间，临床应用病自痊",
     "association": "虻虫功效独特，像专属的健康卫士守护身体",
     "keyPoint": "祛瘀通经消症【临床应用】用于血滞经闭",
@@ -11422,7 +12112,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "0.05--0.1g，入丸、散应用，不入煎剂。孕妇及月经过多忌用。",
-    "contraindications": "血虚无瘀 阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "血虚无瘀 阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "干漆功效记心间，临床应用病自痊",
     "association": "干漆功效独特，像专属的健康卫士守护身体",
     "keyPoint": "干漆功效特点及临床应用要点",
@@ -11458,7 +12150,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "0.05--0.1g，入丸、散应用，不入煎剂。孕妇及月经过多忌用。",
-    "contraindications": "血虚无瘀 阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "血虚无瘀 阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "阿魏功效记心间，临床应用病自痊",
     "association": "阿魏功效独特，像专属的健康卫士守护身体",
     "keyPoint": "阿魏功效特点及临床应用要点",
@@ -11494,7 +12188,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。外用适量。",
-    "contraindications": "血虚无瘀 孕妇 脾胃虚寒 月经过多",
+    "contraindications": [
+      "血虚无瘀 孕妇 脾胃虚寒 月经过多"
+    ],
     "memoryTip": "凌霄花祛风效果好",
     "association": "凌霄花像防风林，祛风除湿护关节",
     "keyPoint": "凌霄花功效特点及临床应用要点",
@@ -11528,7 +12224,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "血虚无瘀 孕妇 月经过多",
+    "contraindications": [
+      "血虚无瘀 孕妇 月经过多"
+    ],
     "memoryTip": "自然铜功效记心间，临床应用病自痊",
     "association": "自然铜功效独特，像专属的健康卫士守护身体",
     "keyPoint": "祛瘀疗伤。【临床应用】用于跌打伤痛",
@@ -11562,7 +12260,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，大剂量可用至30g，煎服。",
-    "contraindications": "血虚无瘀 孕妇 脾胃虚寒 月经过多",
+    "contraindications": [
+      "血虚无瘀 孕妇 脾胃虚寒 月经过多"
+    ],
     "memoryTip": "水红花子功效记心间，临床应用病自痊",
     "association": "水红花子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "水红花子功效特点及临床应用要点",
@@ -11596,7 +12296,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，大剂量一两至二两，煎服。",
-    "contraindications": "血虚无瘀 孕妇",
+    "contraindications": [
+      "血虚无瘀 孕妇"
+    ],
     "memoryTip": "仙鹤草功效记心间，临床应用病自痊",
     "association": "仙鹤草功效独特，像专属的健康卫士守护身体",
     "keyPoint": "仙鹤草功效特点及临床应用要点",
@@ -11630,7 +12332,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱～五钱，煎服。研粉吞服，每次1～2克。外用适量。",
-    "contraindications": "阴虚津伤 孕妇 脾胃虚寒 血虚无瘀",
+    "contraindications": [
+      "阴虚津伤 孕妇 脾胃虚寒 血虚无瘀"
+    ],
     "memoryTip": "紫珠功效记心间，临床应用病自痊",
     "association": "紫珠功效独特，像专属的健康卫士守护身体",
     "keyPoint": "紫珠功效特点及临床应用要点",
@@ -11673,7 +12377,13 @@
       "皮肤皲裂"
     ],
     "usage": "煎服，6-15g",
-    "contraindications": "不宜与川乌、制川乌、草乌、制草乌、附子同用",
+    "contraindications": [
+      "不宜与川乌",
+      "制川乌",
+      "草乌",
+      "制草乌",
+      "附子同用"
+    ],
     "memoryTip": "白芨收敛止血好，消肿生肌效果高",
     "association": "白芨白白又黏黏，肺胃出血它来粘",
     "keyPoint": "收敛止血要药，善治肺胃出血，消肿生肌",
@@ -11708,7 +12418,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，煎服。",
-    "contraindications": "血虚无瘀 孕妇",
+    "contraindications": [
+      "血虚无瘀 孕妇"
+    ],
     "memoryTip": "蚕豆花功效记心间，临床应用病自痊",
     "association": "蚕豆花功效独特，像专属的健康卫士守护身体",
     "keyPoint": "蚕豆花功效特点及临床应用要点",
@@ -11746,7 +12458,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "血虚无瘀 孕妇 脾胃虚寒",
+    "contraindications": [
+      "血虚无瘀 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "荠菜花清热效果好",
     "association": "荠菜花像清凉的泉水，清热泻火解暑热",
     "keyPoint": "荠菜花功效特点及临床应用要点",
@@ -11781,7 +12495,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，煎服。外用适量。",
-    "contraindications": "血虚无瘀 孕妇",
+    "contraindications": [
+      "血虚无瘀 孕妇"
+    ],
     "memoryTip": "铁苋菜清热效果好",
     "association": "铁苋菜像清凉的泉水，清热泻火解暑热",
     "keyPoint": "铁苋菜功效特点及临床应用要点",
@@ -11815,7 +12531,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，大剂量可用二两，煎服。外用适量。",
-    "contraindications": "血虚无瘀 孕妇",
+    "contraindications": [
+      "血虚无瘀 孕妇"
+    ],
     "memoryTip": "地锦草清热效果好",
     "association": "地锦草像清凉的泉水，清热泻火解暑热",
     "keyPoint": "地锦草功效特点及临床应用要点",
@@ -11855,7 +12573,9 @@
       "经寒不调"
     ],
     "usage": "煎服，3-9g",
-    "contraindications": "阴虚血热者慎用",
+    "contraindications": [
+      "阴虚血热者慎用"
+    ],
     "memoryTip": "艾叶温经止血良，散寒止痛调经强",
     "association": "艾叶青青香又暖，温经止血像太阳",
     "keyPoint": "温经止血要药，妇科安胎良药",
@@ -11892,7 +12612,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，布袋包，先煎。或用二两至四两，煎汤代水。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "灶心土功效记心间，临床应用病自痊",
     "association": "灶心土功效独特，像专属的健康卫士守护身体",
     "keyPoint": "灶心土功效特点及临床应用要点",
@@ -11928,7 +12651,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，鲜草可用一两至二两，煎服。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "大蓟功效记心间，临床应用病自痊",
     "association": "大蓟功效独特，像专属的健康卫士守护身体",
     "keyPoint": "大蓟功效特点及临床应用要点",
@@ -11967,7 +12693,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "侧柏叶功效记心间，临床应用病自痊",
     "association": "侧柏叶功效独特，像专属的健康卫士守护身体",
     "keyPoint": "侧柏叶功效特点及临床应用要点",
@@ -12005,7 +12733,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "山茶花清热效果好",
     "association": "山茶花像清凉的泉水，清热泻火解暑热",
     "keyPoint": "山茶花功效特点及临床应用要点",
@@ -12040,7 +12771,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "阴虚津伤 孕妇 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "羊蹄根功效记心间，临床应用病自痊",
     "association": "羊蹄根功效独特，像专属的健康卫士守护身体",
     "keyPoint": "羊蹄根功效特点及临床应用要点",
@@ -12075,7 +12808,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，新鲜者可用三钱至一两，煎服。本品有小毒，不宜大量久服。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "万年青根清热效果好",
     "association": "万年青根像清凉的泉水，清热泻火解暑热",
     "keyPoint": "万年青根功效特点及临床应用要点",
@@ -12116,7 +12851,9 @@
       "头痛眩晕"
     ],
     "usage": "煎服，5-10g",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "槐花凉血止血好，清肝泻火效果高",
     "association": "槐花开在树上香，便血痔疮它来帮",
     "keyPoint": "凉血止血，善治大肠火盛之便血痔血",
@@ -12153,7 +12890,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。外用适量。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "地榆功效记心间，临床应用病自痊",
     "association": "地榆功效独特，像专属的健康卫士守护身体",
     "keyPoint": "地榆功效特点及临床应用要点",
@@ -12189,7 +12928,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "脾胃虚寒 无瘀",
+    "contraindications": [
+      "脾胃虚寒 无瘀"
+    ],
     "memoryTip": "茜草功效记心间，临床应用病自痊",
     "association": "茜草功效独特，像专属的健康卫士守护身体",
     "keyPoint": "茜草功效特点及临床应用要点",
@@ -12226,7 +12967,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "脾胃虚寒 无瘀",
+    "contraindications": [
+      "脾胃虚寒 无瘀"
+    ],
     "memoryTip": "茜草藤功效记心间，临床应用病自痊",
     "association": "茜草藤功效独特，像专属的健康卫士守护身体",
     "keyPoint": "茜草藤功效特点及临床应用要点",
@@ -12265,7 +13008,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，包煎。",
-    "contraindications": "孕妇 无瘀血",
+    "contraindications": [
+      "孕妇 无瘀血"
+    ],
     "memoryTip": "蒲黄活血效果好",
     "association": "蒲黄像清道夫，活血化瘀通经络",
     "keyPoint": "蒲黄功效特点及临床应用要点",
@@ -12304,7 +13049,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "棕榈炭功效记心间，临床应用病自痊",
     "association": "棕榈炭功效独特，像专属的健康卫士守护身体",
     "keyPoint": "棕榈炭功效特点及临床应用要点",
@@ -12343,7 +13091,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "血余炭功效记心间，临床应用病自痊",
     "association": "血余炭功效独特，像专属的健康卫士守护身体",
     "keyPoint": "止血【临床应用】用于咯血",
@@ -12383,7 +13134,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "藕节功效记心间，临床应用病自痊",
     "association": "藕节功效独特，像专属的健康卫士守护身体",
     "keyPoint": "收涩止血【临床应用】用于各种出血症藕节既能收涩",
@@ -12421,7 +13175,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至一钱五分，包煎。或入丸、散用。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "百草霜功效记心间，临床应用病自痊",
     "association": "百草霜功效独特，像专属的健康卫士守护身体",
     "keyPoint": "百草霜功效特点及临床应用要点",
@@ -12460,7 +13217,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "牛角\"角思\"功效记心间，临床应用病自痊",
     "association": "牛角\"角思\"功效独特，像专属的健康卫士守护身体",
     "keyPoint": "牛角\"角思\"功效特点及临床应用要点",
@@ -12498,7 +13258,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "墓头回功效记心间，临床应用病自痊",
     "association": "墓头回功效独特，像专属的健康卫士守护身体",
     "keyPoint": "墓头回功效特点及临床应用要点",
@@ -12540,7 +13302,9 @@
       "跌扑肿痛"
     ],
     "usage": "煎服，3-9g，研末吞服1-3g",
-    "contraindications": "孕妇慎用",
+    "contraindications": [
+      "孕妇慎用"
+    ],
     "memoryTip": "三七止血化瘀良，消肿止痛金不换",
     "association": "三七像个小石头，止血化瘀又止痛",
     "keyPoint": "止血不留瘀，化瘀不伤正，金不换",
@@ -12577,7 +13341,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。或后研细，入丸、散剂吞服，每此服用量为一分至三分。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "花蕊石功效记心间，临床应用病自痊",
     "association": "花蕊石功效独特，像专属的健康卫士守护身体",
     "keyPoint": "止血化瘀。【临床应用】用于咯血",
@@ -12616,7 +13383,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "莱菔子功效记心间，临床应用病自痊",
     "association": "莱菔子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "莱菔子功效特点及临床应用要点",
@@ -12656,7 +13426,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "莱菔英功效记心间，临床应用病自痊",
     "association": "莱菔英功效独特，像专属的健康卫士守护身体",
     "keyPoint": "莱菔英功效特点及临床应用要点",
@@ -12697,7 +13470,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "地枯萝功效记心间，临床应用病自痊",
     "association": "地枯萝功效独特，像专属的健康卫士守护身体",
     "keyPoint": "地枯萝功效特点及临床应用要点",
@@ -12734,7 +13510,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "3--10克，煎服。",
-    "contraindications": "阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "山楂活血效果好",
     "association": "山楂像清道夫，活血化瘀通经络",
     "keyPoint": "山楂功效特点及临床应用要点",
@@ -12774,7 +13552,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "六曲功效记心间，临床应用病自痊",
     "association": "六曲功效独特，像专属的健康卫士守护身体",
     "keyPoint": "和食消胃【临床应用】用于食积不化",
@@ -12813,7 +13594,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。研粉吞服每次五分至一钱。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "鸡内金功效记心间，临床应用病自痊",
     "association": "鸡内金功效独特，像专属的健康卫士守护身体",
     "keyPoint": "鸡内金功效特点及临床应用要点",
@@ -12850,7 +13634,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，大剂量可用一两至四两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "麦芽功效记心间，临床应用病自痊",
     "association": "麦芽功效独特，像专属的健康卫士守护身体",
     "keyPoint": "麦芽功效特点及临床应用要点",
@@ -12887,7 +13674,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，大剂可用一两至三两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "谷芽功效记心间，临床应用病自痊",
     "association": "谷芽功效独特，像专属的健康卫士守护身体",
     "keyPoint": "谷芽功效特点及临床应用要点",
@@ -12925,7 +13715,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "二分至五分。内服宜入丸剂。本品气味奇臭，不宜入汤剂。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "阿魏功效记心间，临床应用病自痊",
     "association": "阿魏功效独特，像专属的健康卫士守护身体",
     "keyPoint": "阿魏功效特点及临床应用要点",
@@ -12966,7 +13759,9 @@
       "木香等又可用以治疗胆道蛔虫病"
     ],
     "usage": "干者三钱到一钱，鲜者五钱到一两，煎服。",
-    "contraindications": "阴虚津伤 孕妇 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "苦楝根皮功效记心间，临床应用病自痊",
     "association": "苦楝根皮功效独特，像专属的健康卫士守护身体",
     "keyPoint": "苦楝根皮功效特点及临床应用要点",
@@ -13005,7 +13800,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。炒熟嚼食，儿童每岁一粒，总量不超过二十粒。",
-    "contraindications": "阴虚火旺 孕妇",
+    "contraindications": [
+      "阴虚火旺 孕妇"
+    ],
     "memoryTip": "使君子功效记心间，临床应用病自痊",
     "association": "使君子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "杀虫消积【临床应用】用于虫积腹痛",
@@ -13040,7 +13837,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。单用杀绦虫、姜片虫，剂量可至五钱至一两。",
-    "contraindications": "阴虚火旺 孕妇",
+    "contraindications": [
+      "阴虚火旺 孕妇"
+    ],
     "memoryTip": "槟榔功效记心间，临床应用病自痊",
     "association": "槟榔功效独特，像专属的健康卫士守护身体",
     "keyPoint": "槟榔功效特点及临床应用要点",
@@ -13076,7 +13875,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "二两至四两，连壳捣碎入煎或和蜜糖调服。（需补充剂量）",
-    "contraindications": "阴虚火旺 孕妇",
+    "contraindications": [
+      "阴虚火旺 孕妇"
+    ],
     "memoryTip": "番瓜子功效记心间，临床应用病自痊",
     "association": "番瓜子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "杀虫。【临床应用】用于线虫病",
@@ -13112,7 +13913,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "每次6g，研粉吞服，每日2～3次，连服2～3天。",
-    "contraindications": "阴虚津伤 孕妇 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "雷丸功效记心间，临床应用病自痊",
     "association": "雷丸功效独特，像专属的健康卫士守护身体",
     "keyPoint": "杀虫。【临床应用】用于线虫",
@@ -13149,7 +13952,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "鹤虱功效记心间，临床应用病自痊",
     "association": "鹤虱功效独特，像专属的健康卫士守护身体",
     "keyPoint": "杀虫。【临床应用】用于虫积腹痛等症。本品可用于多种肠寄生虫病",
@@ -13187,7 +13993,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚火旺 孕妇",
+    "contraindications": [
+      "阴虚火旺 孕妇"
+    ],
     "memoryTip": "芜荑功效记心间，临床应用病自痊",
     "association": "芜荑功效独特，像专属的健康卫士守护身体",
     "keyPoint": "杀虫消疳。【临床应用】用于虫积腹痛",
@@ -13225,7 +14033,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，煎服。或十枚至二十枚，炒熟嚼食。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "榧子功效记心间，临床应用病自痊",
     "association": "榧子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "榧子功效特点及临床应用要点",
@@ -13259,7 +14070,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "阴虚津伤 孕妇 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "贯众清热效果好",
     "association": "贯众像清凉的泉水，清热泻火解暑热",
     "keyPoint": "贯众功效特点及临床应用要点",
@@ -13302,7 +14115,9 @@
       "蛲虫病"
     ],
     "usage": "三个至五个，内服或外用。（需补充剂量）",
-    "contraindications": "阴虚火旺 肝热目疾 口舌生疮 胃溃疡",
+    "contraindications": [
+      "阴虚火旺 肝热目疾 口舌生疮 胃溃疡"
+    ],
     "memoryTip": "大蒜解毒消肿毒，杀虫止痢功效著",
     "association": "大蒜像天然抗生素，杀菌消炎，还能驱虫",
     "keyPoint": "解毒消肿，杀虫止痢",
@@ -13344,7 +14159,14 @@
       "呕吐反胃"
     ],
     "usage": "煎服，3-9g",
-    "contraindications": "不宜与川乌、制川乌、草乌、制草乌、附子同用，阴虚燥咳者慎用",
+    "contraindications": [
+      "不宜与川乌",
+      "制川乌",
+      "草乌",
+      "制草乌",
+      "附子同用",
+      "阴虚燥咳者慎用"
+    ],
     "memoryTip": "半夏燥湿化痰好，降逆止呕消痞妙",
     "association": "半夏像个小伞兵，燥湿化痰降逆气",
     "keyPoint": "燥湿化痰要药，降逆止呕，治湿痰寒痰",
@@ -13383,7 +14205,9 @@
       "常与半夏配合应用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇 阴虚燥痰",
+    "contraindications": [
+      "孕妇 阴虚燥痰"
+    ],
     "memoryTip": "天南星祛风、止咳效果好",
     "association": "天南星像防风林，祛风除湿护关节",
     "keyPoint": "天南星功效特点及临床应用要点",
@@ -13423,7 +14247,9 @@
       "常与半夏配合应用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇 阴虚燥痰",
+    "contraindications": [
+      "孕妇 阴虚燥痰"
+    ],
     "memoryTip": "胆南星祛风、止咳效果好",
     "association": "胆南星像防风林，祛风除湿护关节",
     "keyPoint": "胆南星功效特点及临床应用要点",
@@ -13459,7 +14285,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至一钱五分，煎服。",
-    "contraindications": "孕妇 阴虚火旺 血虚生风",
+    "contraindications": [
+      "孕妇 阴虚火旺 血虚生风"
+    ],
     "memoryTip": "白附子祛风效果好",
     "association": "白附子像防风林，祛风除湿护关节",
     "keyPoint": "白附子功效特点及临床应用要点",
@@ -13493,7 +14321,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至二钱，煎服。焙焦研粉吞服每次二分至五分。内服剂量不宜过大，如服量过多，可引起呕吐及腹泻。本品辛散走窜，性及锐利，孕妇、体虚即有咯血倾向者均不宜用。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "皂荚功效记心间，临床应用病自痊",
     "association": "皂荚功效独特，像专属的健康卫士守护身体",
     "keyPoint": "皂荚功效特点及临床应用要点",
@@ -13528,7 +14359,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至二钱，煎服。焙焦研粉吞服每次二分至五分。内服剂量不宜过大，如服量过多，可引起呕吐及腹泻。本品辛散走窜，性及锐利，孕妇、体虚即有咯血倾向者均不宜用。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "牙皂功效记心间，临床应用病自痊",
     "association": "牙皂功效独特，像专属的健康卫士守护身体",
     "keyPoint": "牙皂功效特点及临床应用要点",
@@ -13569,7 +14403,9 @@
       "肠燥便秘"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "脾虚便溏者慎用",
+    "contraindications": [
+      "脾虚便溏者慎用"
+    ],
     "memoryTip": "苏子降气化痰好，止咳平喘润肠妙",
     "association": "苏子像个小芝麻，降气化痰止咳佳",
     "keyPoint": "降气化痰，止咳平喘，治痰壅气逆",
@@ -13605,7 +14441,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。外用适量。",
-    "contraindications": "孕妇 阴虚火旺 皮肤过敏",
+    "contraindications": [
+      "孕妇 阴虚火旺 皮肤过敏"
+    ],
     "memoryTip": "白芥子功效记心间，临床应用病自痊",
     "association": "白芥子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "白芥子功效特点及临床应用要点",
@@ -13645,7 +14483,10 @@
       "肺痈吐脓"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "阴虚久咳、咯血者慎用",
+    "contraindications": [
+      "阴虚久咳",
+      "咯血者慎用"
+    ],
     "memoryTip": "桔梗宣肺祛痰好，利咽排脓效果高",
     "association": "桔梗像个小喇叭，宣肺利咽声音大",
     "keyPoint": "宣肺利咽，祛痰排脓，治肺痈吐脓",
@@ -13692,7 +14533,9 @@
       "当配解表药同用"
     ],
     "usage": "一钱至三钱，包煎。本品的头状花序如绒毛，入汤不易澄清，每能刺喉作痒，故需布包入煎。",
-    "contraindications": "孕妇 阴虚劳嗽 风热燥咳",
+    "contraindications": [
+      "孕妇 阴虚劳嗽 风热燥咳"
+    ],
     "memoryTip": "旋覆花功效记心间，临床应用病自痊",
     "association": "旋覆花功效独特，像专属的健康卫士守护身体",
     "keyPoint": "旋覆花功效特点及临床应用要点",
@@ -13740,7 +14583,9 @@
       "当配解表药同用"
     ],
     "usage": "一钱至三钱，包煎。本品的头状花序如绒毛，入汤不易澄清，每能刺喉作痒，故需布包入煎。",
-    "contraindications": "孕妇 阴虚劳嗽 风热燥咳",
+    "contraindications": [
+      "孕妇 阴虚劳嗽 风热燥咳"
+    ],
     "memoryTip": "旋覆梗功效记心间，临床应用病自痊",
     "association": "旋覆梗功效独特，像专属的健康卫士守护身体",
     "keyPoint": "旋覆梗功效特点及临床应用要点",
@@ -13779,7 +14624,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至二钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "白前功效记心间，临床应用病自痊",
     "association": "白前功效独特，像专属的健康卫士守护身体",
     "keyPoint": "白前功效特点及临床应用要点",
@@ -13817,7 +14665,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三只治五只，或一钱至三钱，大剂量可用五钱至一两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "天浆壳止咳效果好",
     "association": "天浆壳像止咳糖，咳嗽气喘都能止",
     "keyPoint": "天浆壳功效特点及临床应用要点",
@@ -13856,7 +14707,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三只治五只，或一钱至三钱，大剂量可用五钱至一两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "萝藦藤止咳效果好",
     "association": "萝藦藤像止咳糖，咳嗽气喘都能止",
     "keyPoint": "萝藦藤功效特点及临床应用要点",
@@ -13896,7 +14750,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三只治五只，或一钱至三钱，大剂量可用五钱至一两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "萝藦种毛止咳效果好",
     "association": "萝藦种毛像止咳糖，咳嗽气喘都能止",
     "keyPoint": "萝藦种毛功效特点及临床应用要点",
@@ -13932,7 +14789,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至二钱，煎服。本品味辣，具有刺激性，内服用量不宜过大。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "石胡荽止咳效果好",
     "association": "石胡荽像止咳糖，咳嗽气喘都能止",
     "keyPoint": "石胡荽功效特点及临床应用要点",
@@ -13972,7 +14832,13 @@
       "瘰疬乳痈"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "不宜与川乌、制川乌、草乌、制草乌、附子同用",
+    "contraindications": [
+      "不宜与川乌",
+      "制川乌",
+      "草乌",
+      "制草乌",
+      "附子同用"
+    ],
     "memoryTip": "贝母清热、止咳效果好",
     "association": "贝母像清凉的泉水，清热泻火解暑热",
     "keyPoint": "川贝润肺，浙贝清热散结，反乌头",
@@ -14009,7 +14875,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "前胡止咳效果好",
     "association": "前胡功效独特，像专属的健康卫士守护身体",
     "keyPoint": "前胡功效特点及临床应用要点",
@@ -14047,7 +14915,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇 脾虚便溏 寒痰 不宜与乌头同用",
+    "contraindications": [
+      "孕妇 脾虚便溏 寒痰 不宜与乌头同用"
+    ],
     "memoryTip": "瓜蒌止咳效果好",
     "association": "瓜蒌功效独特，像专属的健康卫士守护身体",
     "keyPoint": "瓜蒌功效特点及临床应用要点",
@@ -14084,7 +14954,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "寒痰咳嗽 胃寒呕吐",
+    "contraindications": [
+      "寒痰咳嗽 胃寒呕吐"
+    ],
     "memoryTip": "竹茹清热、止咳效果好",
     "association": "竹茹像清凉的泉水，清热泻火解暑热",
     "keyPoint": "竹茹功效特点及临床应用要点",
@@ -14122,7 +14994,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "寒痰咳嗽 胃寒呕吐",
+    "contraindications": [
+      "寒痰咳嗽 胃寒呕吐"
+    ],
     "memoryTip": "竹沥清热、止咳效果好",
     "association": "竹沥像清凉的泉水，清热泻火解暑热",
     "keyPoint": "竹沥功效特点及临床应用要点",
@@ -14161,7 +15035,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。如研粉吞服，每次二分至三分。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "天竺黄功效记心间，临床应用病自痊",
     "association": "天竺黄功效独特，像专属的健康卫士守护身体",
     "keyPoint": "天竺黄功效特点及临床应用要点",
@@ -14201,7 +15078,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一分至三分，研粉冲服。或入丸散，吞服。本品价格昂贵，用时须注意剂量。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "猴枣清热效果好",
     "association": "猴枣像清凉的泉水，清热泻火解暑热",
     "keyPoint": "猴枣功效特点及临床应用要点",
@@ -14249,7 +15128,10 @@
       "白蜜等同用"
     ],
     "usage": "三钱至五钱，煎服。一般多入丸、散。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "礞石功效记心间，临床应用病自痊",
     "association": "礞石功效独特，像专属的健康卫士守护身体",
     "keyPoint": "礞石功效特点及临床应用要点",
@@ -14287,7 +15169,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。蛤粉需包煎。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "海蛤壳止咳效果好",
     "association": "海蛤壳功效独特，像专属的健康卫士守护身体",
     "keyPoint": "海蛤壳功效特点及临床应用要点",
@@ -14323,7 +15208,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "海浮石止咳效果好",
     "association": "海浮石功效独特，像专属的健康卫士守护身体",
     "keyPoint": "海浮石功效特点及临床应用要点",
@@ -14361,7 +15249,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，包煎。",
-    "contraindications": "肺虚喘咳 脾虚肿满",
+    "contraindications": [
+      "肺虚喘咳 脾虚肿满"
+    ],
     "memoryTip": "葶苈子功效记心间，临床应用病自痊",
     "association": "葶苈子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "葶苈子功效特点及临床应用要点",
@@ -14399,7 +15289,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇 脾胃虚寒",
+    "contraindications": [
+      "孕妇 脾胃虚寒"
+    ],
     "memoryTip": "昆布功效记心间，临床应用病自痊",
     "association": "昆布功效独特，像专属的健康卫士守护身体",
     "keyPoint": "昆布功效特点及临床应用要点",
@@ -14438,7 +15330,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇 不宜与甘草同用",
+    "contraindications": [
+      "孕妇 不宜与甘草同用"
+    ],
     "memoryTip": "海藻功效记心间，临床应用病自痊",
     "association": "海藻功效独特，像专属的健康卫士守护身体",
     "keyPoint": "海藻功效特点及临床应用要点",
@@ -14475,7 +15369,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，煎服。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "黄药脂止咳效果好",
     "association": "黄药脂像止咳糖，咳嗽气喘都能止",
     "keyPoint": "黄药脂功效特点及临床应用要点",
@@ -14513,7 +15410,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一两至三两，煎服。外用适量。（需补充剂量）",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "荸荠清热、止咳效果好",
     "association": "荸荠像清凉的泉水，清热泻火解暑热",
     "keyPoint": "荸荠功效特点及临床应用要点",
@@ -14551,7 +15451,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "瓦愣子功效记心间，临床应用病自痊",
     "association": "瓦愣子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "瓦愣子功效特点及临床应用要点",
@@ -14590,7 +15493,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "白螺丝壳功效记心间，临床应用病自痊",
     "association": "白螺丝壳功效独特，像专属的健康卫士守护身体",
     "keyPoint": "白螺丝壳功效特点及临床应用要点",
@@ -14629,7 +15535,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三枚至五枚，煎服。或用沸水炮汁服。（需补充剂量）",
-    "contraindications": "孕妇 脾胃虚寒",
+    "contraindications": [
+      "孕妇 脾胃虚寒"
+    ],
     "memoryTip": "胖大海功效记心间，临床应用病自痊",
     "association": "胖大海功效独特，像专属的健康卫士守护身体",
     "keyPoint": "胖大海功效特点及临床应用要点",
@@ -14663,7 +15571,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三分至一钱，煎服。外用适量。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "木蝴蝶功效记心间，临床应用病自痊",
     "association": "木蝴蝶功效独特，像专属的健康卫士守护身体",
     "keyPoint": "木蝴蝶功效特点及临床应用要点",
@@ -14700,7 +15610,12 @@
       "肠燥便秘"
     ],
     "usage": "煎服，5-10g",
-    "contraindications": "阴虚咳嗽、大便溏泄者慎用，有小毒，用量不宜过大",
+    "contraindications": [
+      "阴虚咳嗽",
+      "大便溏泄者慎用",
+      "有小毒",
+      "用量不宜过大"
+    ],
     "memoryTip": "杏仁止咳平喘好，润肠通便效果高",
     "association": "杏仁像个小心脏，止咳平喘又润肠",
     "keyPoint": "止咳平喘要药，降肺气，润肠燥",
@@ -14736,7 +15651,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇 婴儿 阴虚咳嗽 大便溏泄",
+    "contraindications": [
+      "孕妇 婴儿 阴虚咳嗽 大便溏泄"
+    ],
     "memoryTip": "甜杏仁止咳效果好",
     "association": "甜杏仁像止咳糖，咳嗽气喘都能止",
     "keyPoint": "甜杏仁功效特点及临床应用要点",
@@ -14776,7 +15693,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "剂量过大致呕吐 虚寒咳喘",
+    "contraindications": [
+      "剂量过大致呕吐 虚寒咳喘"
+    ],
     "memoryTip": "马兜铃止咳效果好",
     "association": "马兜铃像止咳糖，咳嗽气喘都能止",
     "keyPoint": "马兜铃功效特点及临床应用要点",
@@ -14815,7 +15734,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "剂量过大致呕吐 虚寒咳喘",
+    "contraindications": [
+      "剂量过大致呕吐 虚寒咳喘"
+    ],
     "memoryTip": "青木香止咳效果好",
     "association": "青木香像止咳糖，咳嗽气喘都能止",
     "keyPoint": "青木香功效特点及临床应用要点",
@@ -14855,7 +15776,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "剂量过大致呕吐 虚寒咳喘",
+    "contraindications": [
+      "剂量过大致呕吐 虚寒咳喘"
+    ],
     "memoryTip": "青木香藤止咳效果好",
     "association": "青木香藤像止咳糖，咳嗽气喘都能止",
     "keyPoint": "青木香藤功效特点及临床应用要点",
@@ -14894,7 +15817,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，包煎。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "枇杷叶止咳效果好",
     "association": "枇杷叶像止咳糖，咳嗽气喘都能止",
     "keyPoint": "枇杷叶功效特点及临床应用要点",
@@ -14930,7 +15856,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，单味可用至一两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "鼠曲草止咳效果好",
     "association": "鼠曲草像止咳糖，咳嗽气喘都能止",
     "keyPoint": "化痰止咳。【临床应用】用于咳嗽痰多",
@@ -14966,7 +15895,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，煎服。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "蔊菜止咳效果好",
     "association": "蔊菜像止咳糖，咳嗽气喘都能止",
     "keyPoint": "蔊菜功效特点及临床应用要点",
@@ -15006,7 +15938,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚火旺 实热证",
+    "contraindications": [
+      "阴虚火旺 实热证"
+    ],
     "memoryTip": "天竺子止咳效果好",
     "association": "天竺子像止咳糖，咳嗽气喘都能止",
     "keyPoint": "止咳。【临床应用】用于咳嗽",
@@ -15047,7 +15981,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚火旺 实热证",
+    "contraindications": [
+      "阴虚火旺 实热证"
+    ],
     "memoryTip": "天竺叶止咳效果好",
     "association": "天竺叶像止咳糖，咳嗽气喘都能止",
     "keyPoint": "止咳。【临床应用】用于咳嗽",
@@ -15089,7 +16025,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚火旺 实热证",
+    "contraindications": [
+      "阴虚火旺 实热证"
+    ],
     "memoryTip": "南烛子止咳效果好",
     "association": "南烛子像止咳糖，咳嗽气喘都能止",
     "keyPoint": "止咳。【临床应用】用于咳嗽",
@@ -15127,7 +16065,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "肺火燔灼 肺气焦满",
+    "contraindications": [
+      "肺火燔灼 肺气焦满"
+    ],
     "memoryTip": "款冬花止咳效果好",
     "association": "款冬花像止咳糖，咳嗽气喘都能止",
     "keyPoint": "止咳化痰。【临床应用】用于咳嗽气喘",
@@ -15164,7 +16104,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚火旺 实热咳嗽",
+    "contraindications": [
+      "阴虚火旺 实热咳嗽"
+    ],
     "memoryTip": "紫菀止咳效果好",
     "association": "紫菀像止咳糖，咳嗽气喘都能止",
     "keyPoint": "化痰止咳。【临床应用】用于咳嗽气逆",
@@ -15209,7 +16151,10 @@
       "白芨等同用"
     ],
     "usage": "一钱至三钱，煎服。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "百部止咳效果好",
     "association": "百部像止咳糖，咳嗽气喘都能止",
     "keyPoint": "百部功效特点及临床应用要点",
@@ -15245,7 +16190,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "阴虚火旺 脾胃虚寒 实热证",
+    "contraindications": [
+      "阴虚火旺 脾胃虚寒 实热证"
+    ],
     "memoryTip": "桑白皮功效记心间，临床应用病自痊",
     "association": "桑白皮功效独特，像专属的健康卫士守护身体",
     "keyPoint": "桑白皮功效特点及临床应用要点",
@@ -15279,7 +16226,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "八分至一钱五分，煎服。",
-    "contraindications": "阴虚火旺 实热证",
+    "contraindications": [
+      "阴虚火旺 实热证"
+    ],
     "memoryTip": "鸡蛋膜止咳效果好",
     "association": "鸡蛋膜像止咳糖，咳嗽气喘都能止",
     "keyPoint": "鸡蛋膜功效特点及临床应用要点",
@@ -15314,7 +16263,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "八分至一钱五分，煎服。",
-    "contraindications": "阴虚火旺 实热证",
+    "contraindications": [
+      "阴虚火旺 实热证"
+    ],
     "memoryTip": "鸡蛋壳止咳效果好",
     "association": "鸡蛋壳像止咳糖，咳嗽气喘都能止",
     "keyPoint": "鸡蛋壳功效特点及临床应用要点",
@@ -15350,7 +16301,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "八分至一钱五分，煎服。",
-    "contraindications": "阴虚火旺 实热证",
+    "contraindications": [
+      "阴虚火旺 实热证"
+    ],
     "memoryTip": "鸡子黄止咳效果好",
     "association": "鸡子黄像止咳糖，咳嗽气喘都能止",
     "keyPoint": "鸡子黄功效特点及临床应用要点",
@@ -15388,7 +16341,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "二钱至三钱，煎服。或焙干研粉末吞服，每此五分至一钱，外用适量。",
-    "contraindications": "阴虚火旺 实热证",
+    "contraindications": [
+      "阴虚火旺 实热证"
+    ],
     "memoryTip": "胡颓叶止咳效果好",
     "association": "胡颓叶像止咳糖，咳嗽气喘都能止",
     "keyPoint": "收敛止咳。【临床应用】用于肺虚咳嗽",
@@ -15425,7 +16380,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "二钱至三钱，煎服。或焙干研粉末吞服，每此五分至一钱，外用适量。",
-    "contraindications": "阴虚火旺 实热证",
+    "contraindications": [
+      "阴虚火旺 实热证"
+    ],
     "memoryTip": "胡颓子止咳效果好",
     "association": "胡颓子像止咳糖，咳嗽气喘都能止",
     "keyPoint": "收敛止咳。【临床应用】用于肺虚咳嗽",
@@ -15463,7 +16420,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "二钱至三钱，煎服。或焙干研粉末吞服，每此五分至一钱，外用适量。",
-    "contraindications": "阴虚火旺 实热证",
+    "contraindications": [
+      "阴虚火旺 实热证"
+    ],
     "memoryTip": "胡颓根止咳效果好",
     "association": "胡颓根像止咳糖，咳嗽气喘都能止",
     "keyPoint": "收敛止咳。【临床应用】用于肺虚咳嗽",
@@ -15507,7 +16466,9 @@
       "亦可应用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "阴虚火旺 实热证",
+    "contraindications": [
+      "阴虚火旺 实热证"
+    ],
     "memoryTip": "千日红止咳、平肝效果好",
     "association": "千日红像止咳糖，咳嗽气喘都能止",
     "keyPoint": "千日红功效特点及临床应用要点",
@@ -15545,7 +16506,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "阴虚火旺 实热证",
+    "contraindications": [
+      "阴虚火旺 实热证"
+    ],
     "memoryTip": "钟乳石止咳效果好",
     "association": "钟乳石功效独特，像专属的健康卫士守护身体",
     "keyPoint": "钟乳石功效特点及临床应用要点",
@@ -15579,7 +16542,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一分，煎汤或做烟吸。本品毒性较强，内服用量切不可过大，以免中毒。",
-    "contraindications": "阴虚火旺 实热证",
+    "contraindications": [
+      "阴虚火旺 实热证"
+    ],
     "memoryTip": "洋金花功效记心间，临床应用病自痊",
     "association": "洋金花功效独特，像专属的健康卫士守护身体",
     "keyPoint": "洋金花功效特点及临床应用要点",
@@ -15614,7 +16579,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一分，煎汤或做烟吸。本品毒性较强，内服用量切不可过大，以免中毒。",
-    "contraindications": "阴虚火旺 实热证",
+    "contraindications": [
+      "阴虚火旺 实热证"
+    ],
     "memoryTip": "曼陀罗茎叶功效记心间，临床应用病自痊",
     "association": "曼陀罗茎叶功效独特，像专属的健康卫士守护身体",
     "keyPoint": "曼陀罗茎叶功效特点及临床应用要点",
@@ -15650,7 +16617,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一分，煎汤或做烟吸。本品毒性较强，内服用量切不可过大，以免中毒。",
-    "contraindications": "阴虚火旺 实热证",
+    "contraindications": [
+      "阴虚火旺 实热证"
+    ],
     "memoryTip": "曼陀罗种子功效记心间，临床应用病自痊",
     "association": "曼陀罗种子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "曼陀罗种子功效特点及临床应用要点",
@@ -15695,7 +16664,15 @@
       "阳痿宫冷"
     ],
     "usage": "煎服，3-15g，先煎30-60分钟",
-    "contraindications": "孕妇、阴虚阳亢者忌用，不宜与半夏、瓜蒌、贝母、白及、白蔹同用",
+    "contraindications": [
+      "孕妇",
+      "阴虚阳亢者忌用",
+      "不宜与半夏",
+      "瓜蒌",
+      "贝母",
+      "白及",
+      "白蔹同用"
+    ],
     "memoryTip": "附子回阳救逆好，补火助阳散寒妙",
     "association": "附子像团小火苗，回阳救逆暖身体",
     "keyPoint": "回阳救逆第一要药，补火助阳，散寒止痛",
@@ -15733,7 +16710,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，一般认为最好先煎。",
-    "contraindications": "阴虚阳亢 孕妇 不宜与半夏 瓜蒌 贝母 白蔹 白及同用",
+    "contraindications": [
+      "阴虚阳亢 孕妇 不宜与半夏 瓜蒌 贝母 白蔹 白及同用"
+    ],
     "memoryTip": "乌头功效记心间，临床应用病自痊",
     "association": "乌头功效独特，像专属的健康卫士守护身体",
     "keyPoint": "乌头功效特点及临床应用要点",
@@ -15772,7 +16751,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，一般认为最好先煎。",
-    "contraindications": "阴虚阳亢 孕妇 不宜与半夏 瓜蒌 贝母 白蔹 白及同用",
+    "contraindications": [
+      "阴虚阳亢 孕妇 不宜与半夏 瓜蒌 贝母 白蔹 白及同用"
+    ],
     "memoryTip": "草乌功效记心间，临床应用病自痊",
     "association": "草乌功效独特，像专属的健康卫士守护身体",
     "keyPoint": "草乌功效特点及临床应用要点",
@@ -15823,7 +16804,12 @@
       "心腹冷痛"
     ],
     "usage": "煎服，1-5g，宜后下或焗服",
-    "contraindications": "阴虚火旺、里有实热、血热妄行者及孕妇忌用，不宜与赤石脂同用",
+    "contraindications": [
+      "阴虚火旺",
+      "里有实热",
+      "血热妄行者及孕妇忌用",
+      "不宜与赤石脂同用"
+    ],
     "memoryTip": "肉桂补火助阳好，引火归元散寒妙",
     "association": "肉桂像块暖宝宝，补火助阳暖身体",
     "keyPoint": "补火助阳，引火归元，温通经脉",
@@ -15876,7 +16862,9 @@
       "四肢厥冷等症"
     ],
     "usage": "五分至三钱，煎服。",
-    "contraindications": "阴虚内热 血热妄行",
+    "contraindications": [
+      "阴虚内热 血热妄行"
+    ],
     "memoryTip": "干姜止咳效果好",
     "association": "干姜功效独特，像专属的健康卫士守护身体",
     "keyPoint": "干姜功效特点及临床应用要点",
@@ -15911,7 +16899,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至一钱五分，煎服。",
-    "contraindications": "阴虚火旺 孕妇",
+    "contraindications": [
+      "阴虚火旺 孕妇"
+    ],
     "memoryTip": "吴茱萸功效记心间，临床应用病自痊",
     "association": "吴茱萸功效独特，像专属的健康卫士守护身体",
     "keyPoint": "吴茱萸功效特点及临床应用要点",
@@ -15948,7 +16938,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "高良姜功效记心间，临床应用病自痊",
     "association": "高良姜功效独特，像专属的健康卫士守护身体",
     "keyPoint": "散寒止痛。【临床应用】用于胃寒作痛及呕吐等症本品善散脾胃寒邪",
@@ -15986,7 +16979,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "红豆寇功效记心间，临床应用病自痊",
     "association": "红豆寇功效独特，像专属的健康卫士守护身体",
     "keyPoint": "散寒止痛。【临床应用】用于胃寒作痛及呕吐等症本品善散脾胃寒邪",
@@ -16022,7 +17018,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至一钱五分，煎服。",
-    "contraindications": "血热妄行 阴虚火旺 孕妇 脱证",
+    "contraindications": [
+      "血热妄行 阴虚火旺 孕妇 脱证"
+    ],
     "memoryTip": "蜀椒功效记心间，临床应用病自痊",
     "association": "蜀椒功效独特，像专属的健康卫士守护身体",
     "keyPoint": "蜀椒功效特点及临床应用要点",
@@ -16057,7 +17055,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至一钱五分，煎服。",
-    "contraindications": "血热妄行 阴虚火旺 孕妇 脱证",
+    "contraindications": [
+      "血热妄行 阴虚火旺 孕妇 脱证"
+    ],
     "memoryTip": "椒目功效记心间，临床应用病自痊",
     "association": "椒目功效独特，像专属的健康卫士守护身体",
     "keyPoint": "椒目功效特点及临床应用要点",
@@ -16096,7 +17096,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至一钱，煎服；散剂每次一至三分，吞服。",
-    "contraindications": "血热妄行 阴虚火旺 孕妇 脱证",
+    "contraindications": [
+      "血热妄行 阴虚火旺 孕妇 脱证"
+    ],
     "memoryTip": "胡椒功效记心间，临床应用病自痊",
     "association": "胡椒功效独特，像专属的健康卫士守护身体",
     "keyPoint": "温中散寒。【临床应用】用于胃寒呕吐",
@@ -16133,7 +17135,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至一钱五分，煎服。",
-    "contraindications": "血热妄行 阴虚火旺 孕妇 脱证",
+    "contraindications": [
+      "血热妄行 阴虚火旺 孕妇 脱证"
+    ],
     "memoryTip": "荜菝功效记心间，临床应用病自痊",
     "association": "荜菝功效独特，像专属的健康卫士守护身体",
     "keyPoint": "温中散寒。【临床应用】用于胃寒呕吐及脘腹疼痛等症本品辛热",
@@ -16172,7 +17176,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至一钱五分，煎服。",
-    "contraindications": "阴虚火旺 孕妇 脱证",
+    "contraindications": [
+      "阴虚火旺 孕妇 脱证"
+    ],
     "memoryTip": "毕澄茄功效记心间，临床应用病自痊",
     "association": "毕澄茄功效独特，像专属的健康卫士守护身体",
     "keyPoint": "毕澄茄功效特点及临床应用要点",
@@ -16220,7 +17226,9 @@
       "则不宜应用"
     ],
     "usage": "五分至一钱五分，煎服。",
-    "contraindications": "热证 阴虚内热 不宜与郁金同用",
+    "contraindications": [
+      "热证 阴虚内热 不宜与郁金同用"
+    ],
     "memoryTip": "丁香功效记心间，临床应用病自痊",
     "association": "丁香功效独特，像专属的健康卫士守护身体",
     "keyPoint": "丁香功效特点及临床应用要点",
@@ -16259,7 +17267,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "小茴香功效记心间，临床应用病自痊",
     "association": "小茴香功效独特，像专属的健康卫士守护身体",
     "keyPoint": "小茴香功效特点及临床应用要点",
@@ -16295,7 +17306,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "内服每次一厘至五厘。本品气味芳香，内服只宜配入丸、散剂，不宜入煎剂。外用适量。（需补充剂量）",
-    "contraindications": "孕妇 月经期 虚脱证",
+    "contraindications": [
+      "孕妇 月经期 虚脱证"
+    ],
     "memoryTip": "麝香活血效果好",
     "association": "麝香像清道夫，活血化瘀通经络",
     "keyPoint": "麝香功效特点及临床应用要点",
@@ -16334,7 +17347,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "内服每次一厘至三厘。本品气味芳香，内服只宜入丸散，不入汤剂。外用适量。（需补充剂量）",
-    "contraindications": "孕妇 气血虚",
+    "contraindications": [
+      "孕妇 气血虚"
+    ],
     "memoryTip": "冰片清热效果好",
     "association": "冰片像清凉的泉水，清热泻火解暑热",
     "keyPoint": "冰片功效特点及临床应用要点",
@@ -16372,7 +17387,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "内服每次一分至三分，宜作丸剂。",
-    "contraindications": "孕妇 热闭证",
+    "contraindications": [
+      "孕妇 热闭证"
+    ],
     "memoryTip": "苏合香功效记心间，临床应用病自痊",
     "association": "苏合香功效独特，像专属的健康卫士守护身体",
     "keyPoint": "开窍辟秽。【临床应用】用于气郁暴厥",
@@ -16423,7 +17440,9 @@
       "龙齿等药同用"
     ],
     "usage": "干者一钱至三钱，鲜者三钱至五钱，煎服。",
-    "contraindications": "阴亏血虚 精滑多汗",
+    "contraindications": [
+      "阴亏血虚 精滑多汗"
+    ],
     "memoryTip": "石菖蒲止咳效果好",
     "association": "石菖蒲功效独特，像专属的健康卫士守护身体",
     "keyPoint": "石菖蒲功效特点及临床应用要点",
@@ -16459,7 +17478,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "吞服每次一分至三分。入煎剂一般用三分至一钱，须另煎冲服。",
-    "contraindications": "孕妇 脾虚慢惊",
+    "contraindications": [
+      "孕妇 脾虚慢惊"
+    ],
     "memoryTip": "羚羊角清热、平肝效果好",
     "association": "羚羊角像清凉的泉水，清热泻火解暑热",
     "keyPoint": "羚羊角功效特点及临床应用要点",
@@ -16493,7 +17514,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "山羊角平肝效果好",
     "association": "山羊角功效独特，像专属的健康卫士守护身体",
     "keyPoint": "山羊角功效特点及临床应用要点",
@@ -16539,7 +17563,9 @@
       "也可用于实症"
     ],
     "usage": "五钱至一两，先煎。",
-    "contraindications": "脾胃虚寒 食少便溏",
+    "contraindications": [
+      "脾胃虚寒 食少便溏"
+    ],
     "memoryTip": "石决明清热、平肝效果好",
     "association": "石决明像清凉的泉水，清热泻火解暑热",
     "keyPoint": "石决明功效特点及临床应用要点",
@@ -16584,7 +17610,9 @@
       "肢体麻木"
     ],
     "usage": "煎服，3-10g",
-    "contraindications": "无明显禁忌",
+    "contraindications": [
+      "无明显禁忌"
+    ],
     "memoryTip": "天麻息风止痉好，平肝祛风通络妙",
     "association": "天麻像个小脑袋，头痛眩晕它来拍",
     "keyPoint": "治风圣药，息风止痉，平肝潜阳",
@@ -16624,7 +17652,9 @@
       "头痛眩晕"
     ],
     "usage": "煎服，3-12g，宜后下",
-    "contraindications": "脾胃虚寒者慎用",
+    "contraindications": [
+      "脾胃虚寒者慎用"
+    ],
     "memoryTip": "钩藤息风止痉好，清热平肝效果高",
     "association": "钩藤弯弯像鱼钩，肝风内动能钩住",
     "keyPoint": "清热息风，治肝风内动，宜后下",
@@ -16661,7 +17691,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "白蒺藜祛风、平肝效果好",
     "association": "白蒺藜像防风林，祛风除湿护关节",
     "keyPoint": "白蒺藜功效特点及临床应用要点",
@@ -16698,7 +17731,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "橹豆衣平肝效果好",
     "association": "橹豆衣功效独特，像专属的健康卫士守护身体",
     "keyPoint": "橹豆衣功效特点及临床应用要点",
@@ -16734,7 +17770,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "孕妇 虚寒证",
+    "contraindications": [
+      "孕妇 虚寒证"
+    ],
     "memoryTip": "代赭石平肝效果好",
     "association": "代赭石功效独特，像专属的健康卫士守护身体",
     "keyPoint": "代赭石功效特点及临床应用要点",
@@ -16773,7 +17811,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。研末吞服，每次五分至一钱。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "蚯蚓清热效果好",
     "association": "蚯蚓像清凉的泉水，清热泻火解暑热",
     "keyPoint": "蚯蚓功效特点及临床应用要点",
@@ -16811,7 +17852,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。研粉吞服，每次三分至五分。",
-    "contraindications": "孕妇 血虚生风",
+    "contraindications": [
+      "孕妇 血虚生风"
+    ],
     "memoryTip": "僵蚕止咳效果好",
     "association": "僵蚕功效独特，像专属的健康卫士守护身体",
     "keyPoint": "僵蚕功效特点及临床应用要点",
@@ -16850,7 +17893,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。研粉吞服，每次三分至五分。",
-    "contraindications": "孕妇 血虚生风",
+    "contraindications": [
+      "孕妇 血虚生风"
+    ],
     "memoryTip": "僵茧壳止咳效果好",
     "association": "僵茧壳功效独特，像专属的健康卫士守护身体",
     "keyPoint": "僵茧壳功效特点及临床应用要点",
@@ -16888,7 +17933,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "贝齿安神效果好",
     "association": "贝齿像安眠曲，宁心安神睡得香",
     "keyPoint": "贝齿功效特点及临床应用要点",
@@ -16925,7 +17973,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。或研粉配入丸散。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "玳瑁清热、平肝效果好",
     "association": "玳瑁像清凉的泉水，清热泻火解暑热",
     "keyPoint": "玳瑁功效特点及临床应用要点",
@@ -16968,7 +18019,10 @@
       "亦可应用"
     ],
     "usage": "一分至三分，研粉吞服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "马宝止咳效果好",
     "association": "马宝功效独特，像专属的健康卫士守护身体",
     "keyPoint": "马宝功效特点及临床应用要点",
@@ -17012,7 +18066,10 @@
       "亦可应用"
     ],
     "usage": "一分至三分，研粉吞服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "狗宝止咳效果好",
     "association": "狗宝功效独特，像专属的健康卫士守护身体",
     "keyPoint": "狗宝功效特点及临床应用要点",
@@ -17051,7 +18108,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "紫石英功效记心间，临床应用病自痊",
     "association": "紫石英功效独特，像专属的健康卫士守护身体",
     "keyPoint": "紫石英功效特点及临床应用要点",
@@ -17089,7 +18149,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "白石英功效记心间，临床应用病自痊",
     "association": "白石英功效独特，像专属的健康卫士守护身体",
     "keyPoint": "白石英功效特点及临床应用要点",
@@ -17125,7 +18188,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至一钱，煎服。研末吞服每次二分至三分。本品以研末吞服功效较佳，故现在一般不入煎剂。但本品有毒，用量不可过大，必须注意。",
-    "contraindications": "孕妇 血虚生风",
+    "contraindications": [
+      "孕妇 血虚生风"
+    ],
     "memoryTip": "全蝎祛风效果好",
     "association": "全蝎像防风林，祛风除湿护关节",
     "keyPoint": "全蝎功效特点及临床应用要点",
@@ -17159,7 +18224,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三分至一钱，煎服。外用适量。",
-    "contraindications": "孕妇 血虚发痉",
+    "contraindications": [
+      "孕妇 血虚发痉"
+    ],
     "memoryTip": "蜈蚣祛风效果好",
     "association": "蜈蚣像防风林，祛风除湿护关节",
     "keyPoint": "蜈蚣功效特点及临床应用要点",
@@ -17202,7 +18269,10 @@
       "白芷等配合应用"
     ],
     "usage": "五分至一钱五分，煎服。或研粉吞服，每次三分至五分。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "壁虎祛风效果好",
     "association": "壁虎像防风林，祛风除湿护关节",
     "keyPoint": "壁虎功效特点及临床应用要点",
@@ -17236,7 +18306,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "每次吞服一分至三分，多入丸散剂。或拌其它药物，入汤剂煎服。外用适量。",
-    "contraindications": "不宜入煎剂 不宜过量 不宜久服 肝功能不全者 孕妇 癫痫",
+    "contraindications": [
+      "不宜入煎剂 不宜过量 不宜久服 肝功能不全者 孕妇 癫痫"
+    ],
     "memoryTip": "朱砂安神效果好",
     "association": "朱砂像安眠曲，宁心安神睡得香",
     "keyPoint": "朱砂功效特点及临床应用要点",
@@ -17273,7 +18345,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，先煎。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "磁石安神效果好",
     "association": "磁石像安眠曲，宁心安神睡得香",
     "keyPoint": "磁石功效特点及临床应用要点",
@@ -17321,7 +18396,10 @@
       "远志等同用"
     ],
     "usage": "五钱至一两，生用者须先煎。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "龙骨安神效果好",
     "association": "龙骨像安眠曲，宁心安神睡得香",
     "keyPoint": "龙骨功效特点及临床应用要点",
@@ -17370,7 +18448,10 @@
       "远志等同用"
     ],
     "usage": "五钱至一两，生用者须先煎。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "龙齿安神效果好",
     "association": "龙齿像安眠曲，宁心安神睡得香",
     "keyPoint": "龙齿功效特点及临床应用要点",
@@ -17411,7 +18492,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，生用宜先煎。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "牡蛎安神、平肝效果好",
     "association": "牡蛎像安眠曲，宁心安神睡得香",
     "keyPoint": "牡蛎功效特点及临床应用要点",
@@ -17449,7 +18533,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三分至五分，研粉，冲服。不入煎剂。",
-    "contraindications": "孕妇 月经过多",
+    "contraindications": [
+      "孕妇 月经过多"
+    ],
     "memoryTip": "琥珀活血、利水效果好",
     "association": "琥珀像清道夫，活血化瘀通经络",
     "keyPoint": "琥珀功效特点及临床应用要点",
@@ -17487,7 +18573,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一分至三分，研末吞服。不入煎剂。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "珍珠清热效果好",
     "association": "珍珠像清凉的泉水，清热泻火解暑热",
     "keyPoint": "珍珠功效特点及临床应用要点",
@@ -17526,7 +18615,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一分至三分，研末吞服。不入煎剂。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "珍珠母清热效果好",
     "association": "珍珠母像清凉的泉水，清热泻火解暑热",
     "keyPoint": "珍珠母功效特点及临床应用要点",
@@ -17574,7 +18666,10 @@
       "津伤口渴"
     ],
     "usage": "煎服，10-15g",
-    "contraindications": "实热、痰热内扰者慎用",
+    "contraindications": [
+      "实热",
+      "痰热内扰者慎用"
+    ],
     "memoryTip": "酸枣仁养心补肝好，宁心安神敛汗妙",
     "association": "酸枣仁酸酸甜，睡不着觉找它来",
     "keyPoint": "养心安神要药，治虚烦不眠",
@@ -17613,7 +18708,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "便溏 痰多",
+    "contraindications": [
+      "便溏 痰多"
+    ],
     "memoryTip": "柏子仁安神效果好",
     "association": "柏子仁像安眠曲，宁心安神睡得香",
     "keyPoint": "柏子仁功效特点及临床应用要点",
@@ -17651,7 +18748,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至一钱五分煎服。外用适量。",
-    "contraindications": "有实火 阴虚火旺 痰热",
+    "contraindications": [
+      "有实火 阴虚火旺 痰热"
+    ],
     "memoryTip": "远志安神效果好",
     "association": "远志像安眠曲，宁心安神睡得香",
     "keyPoint": "远志功效特点及临床应用要点",
@@ -17688,7 +18787,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，煎服。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "夜交藤安神效果好",
     "association": "夜交藤像安眠曲，宁心安神睡得香",
     "keyPoint": "夜交藤功效特点及临床应用要点",
@@ -17728,7 +18830,10 @@
       "夜交藤等药配伍应用"
     ],
     "usage": "三钱至五钱，煎服。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "合欢皮活血、安神效果好",
     "association": "合欢皮像清道夫，活血化瘀通经络",
     "keyPoint": "合欢皮功效特点及临床应用要点",
@@ -17769,7 +18874,10 @@
       "夜交藤等药配伍应用"
     ],
     "usage": "三钱至五钱，煎服。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "合欢花活血、安神效果好",
     "association": "合欢花像清道夫，活血化瘀通经络",
     "keyPoint": "合欢花功效特点及临床应用要点",
@@ -17807,7 +18915,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "小麦安神效果好",
     "association": "小麦像安眠曲，宁心安神睡得香",
     "keyPoint": "养心安神。【临床应用】用于神志不宁",
@@ -17844,7 +18955,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "秫米功效记心间，临床应用病自痊",
     "association": "秫米功效独特，像专属的健康卫士守护身体",
     "keyPoint": "和胃安眠。【临床应用】用于夜寐不安。本品有和胃安眠作用",
@@ -17892,7 +19006,12 @@
       "内热消渴"
     ],
     "usage": "煎服，3-9g，另煎兑服",
-    "contraindications": "实热证、湿热证及正气不虚者忌用，不宜与藜芦、五灵脂同用",
+    "contraindications": [
+      "实热证",
+      "湿热证及正气不虚者忌用",
+      "不宜与藜芦",
+      "五灵脂同用"
+    ],
     "memoryTip": "人参大补元气好，复脉固脱安神妙",
     "association": "人参像个小娃娃，大补元气顶呱呱",
     "keyPoint": "补气第一要药，大补元气，复脉固脱",
@@ -17933,7 +19052,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至三钱，用文火另煎，单独服（先饮汁，再食渣），或将参汁加入其它药汁内饮服；如用于急救虚脱，大剂可用五钱至一两，煎汁分数次灌服。如研粉或制成片剂，吞服，每次三分至五分，或三片至正片，每天一次至三次。",
-    "contraindications": "实证 热证 不宜与藜芦 五灵脂 皂荚同用",
+    "contraindications": [
+      "实证 热证 不宜与藜芦 五灵脂 皂荚同用"
+    ],
     "memoryTip": "人参叶安神效果好",
     "association": "人参叶像安眠曲，宁心安神睡得香",
     "keyPoint": "人参叶功效特点及临床应用要点",
@@ -17975,7 +19096,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至三钱，用文火另煎，单独服（先饮汁，再食渣），或将参汁加入其它药汁内饮服；如用于急救虚脱，大剂可用五钱至一两，煎汁分数次灌服。如研粉或制成片剂，吞服，每次三分至五分，或三片至正片，每天一次至三次。",
-    "contraindications": "实证 热证 不宜与藜芦 五灵脂 皂荚同用",
+    "contraindications": [
+      "实证 热证 不宜与藜芦 五灵脂 皂荚同用"
+    ],
     "memoryTip": "人参芦安神效果好",
     "association": "人参芦像安眠曲，宁心安神睡得香",
     "keyPoint": "人参芦功效特点及临床应用要点",
@@ -18014,7 +19137,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。焙干，研末吞服，每次三分至五分。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "党参功效记心间，临床应用病自痊",
     "association": "党参功效独特，像专属的健康卫士守护身体",
     "keyPoint": "补中益气。【临床应用】用于气虚不足",
@@ -18052,7 +19178,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。焙干，研末吞服，每次三分至五分。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "明党参功效记心间，临床应用病自痊",
     "association": "明党参功效独特，像专属的健康卫士守护身体",
     "keyPoint": "补中益气。【临床应用】用于气虚不足",
@@ -18092,7 +19221,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "二钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "孩儿参补气效果好",
     "association": "孩儿参像能量棒，补气提神精神爽",
     "keyPoint": "补气养胃。【临床应用】用于病后虚弱",
@@ -18136,7 +19268,12 @@
       "痈疽难溃"
     ],
     "usage": "煎服，9-30g",
-    "contraindications": "表实邪盛、气滞湿阻、食积内停、阴虚阳亢者忌用",
+    "contraindications": [
+      "表实邪盛",
+      "气滞湿阻",
+      "食积内停",
+      "阴虚阳亢者忌用"
+    ],
     "memoryTip": "黄耆补气、利水效果好",
     "association": "黄耆像能量棒，补气提神精神爽",
     "keyPoint": "补气升阳要药，益卫固表，利水消肿",
@@ -18179,7 +19316,10 @@
       "胎动不安"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "阴虚燥渴、气滞胀闷者忌用",
+    "contraindications": [
+      "阴虚燥渴",
+      "气滞胀闷者忌用"
+    ],
     "memoryTip": "白术健脾益气好，燥湿利水止汗妙",
     "association": "白术白白像美玉，健脾燥湿效果好",
     "keyPoint": "健脾益气要药，燥湿利水，固表安胎",
@@ -18216,7 +19356,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "山药功效记心间，临床应用病自痊",
     "association": "山药功效独特，像专属的健康卫士守护身体",
     "keyPoint": "山药功效特点及临床应用要点",
@@ -18253,7 +19396,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "扁豆功效记心间，临床应用病自痊",
     "association": "扁豆功效独特，像专属的健康卫士守护身体",
     "keyPoint": "健脾化湿。【临床应用】1.用于脾虚泄泻",
@@ -18291,7 +19437,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "扁豆衣功效记心间，临床应用病自痊",
     "association": "扁豆衣功效独特，像专属的健康卫士守护身体",
     "keyPoint": "健脾化湿。【临床应用】1.用于脾虚泄泻",
@@ -18330,7 +19479,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "扁豆花功效记心间，临床应用病自痊",
     "association": "扁豆花功效独特，像专属的健康卫士守护身体",
     "keyPoint": "健脾化湿。【临床应用】1.用于脾虚泄泻",
@@ -18368,7 +19520,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三枚至十枚，煎服。（需补充剂量）",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "大枣安神效果好",
     "association": "大枣像安眠曲，宁心安神睡得香",
     "keyPoint": "大枣功效特点及临床应用要点",
@@ -18415,7 +19570,14 @@
       "痈肿疮毒"
     ],
     "usage": "煎服，2-10g",
-    "contraindications": "湿盛胀满、水肿者忌用，不宜与海藻、大戟、甘遂、芫花同用",
+    "contraindications": [
+      "湿盛胀满",
+      "水肿者忌用",
+      "不宜与海藻",
+      "大戟",
+      "甘遂",
+      "芫花同用"
+    ],
     "memoryTip": "甘草补脾益气好，清热解毒调和妙",
     "association": "甘草甜甜像糖果，调和百药是个和事佬",
     "keyPoint": "国老，调和诸药，补脾益气，清热解毒",
@@ -18453,7 +19615,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一两至二两，冲服。（需补充剂量）",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "饴糖止咳效果好",
     "association": "饴糖像止咳糖，咳嗽气喘都能止",
     "keyPoint": "饴糖功效特点及临床应用要点",
@@ -18492,7 +19657,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至一钱，研粉吞服。或入丸、散、片剂服用。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "人胞功效记心间，临床应用病自痊",
     "association": "人胞功效独特，像专属的健康卫士守护身体",
     "keyPoint": "人胞功效特点及临床应用要点",
@@ -18532,7 +19700,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至一钱，研粉吞服。或入丸、散、片剂服用。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "脐带功效记心间，临床应用病自痊",
     "association": "脐带功效独特，像专属的健康卫士守护身体",
     "keyPoint": "脐带功效特点及临床应用要点",
@@ -18579,7 +19750,9 @@
       "内热消渴"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "脾虚湿阻 痰湿壅滞 气滞腹胀",
+    "contraindications": [
+      "脾虚湿阻 痰湿壅滞 气滞腹胀"
+    ],
     "memoryTip": "黄精益气养阴好，健脾润肺益肾妙",
     "association": "黄精像黄色的精华，补气养阴，被称为仙人余粮",
     "keyPoint": "补脾润肺。【临床应用】用于脾胃虚弱",
@@ -18623,7 +19796,10 @@
       "地锦草等药配合应用"
     ],
     "usage": "五钱至一两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "狼把草清热、补气效果好",
     "association": "狼把草像清凉的泉水，清热泻火解暑热",
     "keyPoint": "狼把草功效特点及临床应用要点",
@@ -18655,7 +19831,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，煎服。",
-    "contraindications": "孕妇 月经过多",
+    "contraindications": [
+      "孕妇 月经过多"
+    ],
     "memoryTip": "金雀根活血、补气效果好",
     "association": "金雀根像清道夫，活血化瘀通经络",
     "keyPoint": "金雀根功效特点及临床应用要点",
@@ -18688,7 +19866,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，煎服。",
-    "contraindications": "孕妇 月经过多",
+    "contraindications": [
+      "孕妇 月经过多"
+    ],
     "memoryTip": "金雀花活血、补气效果好",
     "association": "金雀花像清道夫，活血化瘀通经络",
     "keyPoint": "金雀花功效特点及临床应用要点",
@@ -18737,7 +19917,9 @@
       "眩晕耳鸣"
     ],
     "usage": "研末冲服，1-2g",
-    "contraindications": "阴虚阳亢者忌用",
+    "contraindications": [
+      "阴虚阳亢者忌用"
+    ],
     "memoryTip": "鹿茸补肾壮阳好，益精养血强筋骨",
     "association": "鹿茸像对小树枝，补肾壮阳强筋骨",
     "keyPoint": "补肾阳益精血要药，强筋骨，调冲任",
@@ -18775,7 +19957,9 @@
       "鹿角霜）主治血瘀等症"
     ],
     "usage": "鹿角片：一钱至三钱，煎服。鹿角粉，内服每次三分至五分，每日二至三次吞服，或入丸、散剂服。外用适量。",
-    "contraindications": "阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "鹿角（附、鹿角胶、鹿角霜）活血效果好",
     "association": "鹿角（附、鹿角胶、鹿角霜）像清道夫，活血化瘀通经络",
     "keyPoint": "鹿角（附、鹿角胶、鹿角霜）功效特点及临床应用要点",
@@ -18822,7 +20006,9 @@
       "狗脊等品"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "阴虚火旺 阳强易举",
+    "contraindications": [
+      "阴虚火旺 阳强易举"
+    ],
     "memoryTip": "淫羊藿功效记心间，临床应用病自痊",
     "association": "淫羊藿功效独特，像专属的健康卫士守护身体",
     "keyPoint": "淫羊藿功效特点及临床应用要点",
@@ -18856,7 +20042,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "仙茅祛风效果好",
     "association": "仙茅功效独特，像专属的健康卫士守护身体",
     "keyPoint": "仙茅功效特点及临床应用要点",
@@ -18893,7 +20082,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "巴戟天功效记心间，临床应用病自痊",
     "association": "巴戟天功效独特，像专属的健康卫士守护身体",
     "keyPoint": "巴戟天功效特点及临床应用要点",
@@ -18945,7 +20137,9 @@
       "狗脊等配合应用"
     ],
     "usage": "二钱至四钱，煎服。",
-    "contraindications": "阴虚火旺 大便燥结",
+    "contraindications": [
+      "阴虚火旺 大便燥结"
+    ],
     "memoryTip": "补骨脂功效记心间，临床应用病自痊",
     "association": "补骨脂功效独特，像专属的健康卫士守护身体",
     "keyPoint": "补肾助阳。【临床应用】1.用于下元虚冷",
@@ -18982,7 +20176,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，研碎，用开水冲调服；或入丸、散，吞服。",
-    "contraindications": "阴虚火旺 孕妇 脾胃虚寒",
+    "contraindications": [
+      "阴虚火旺 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "胡桃肉功效记心间，临床应用病自痊",
     "association": "胡桃肉功效独特，像专属的健康卫士守护身体",
     "keyPoint": "胡桃肉功效特点及临床应用要点",
@@ -19020,7 +20216,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，研碎，用开水冲调服；或入丸、散，吞服。",
-    "contraindications": "阴虚火旺 孕妇 脾胃虚寒",
+    "contraindications": [
+      "阴虚火旺 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "胡桃夹功效记心间，临床应用病自痊",
     "association": "胡桃夹功效独特，像专属的健康卫士守护身体",
     "keyPoint": "胡桃夹功效特点及临床应用要点",
@@ -19072,7 +20270,9 @@
       "补骨脂等同用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "阴虚火旺 便溏 实热便秘",
+    "contraindications": [
+      "阴虚火旺 便溏 实热便秘"
+    ],
     "memoryTip": "肉苁蓉功效记心间，临床应用病自痊",
     "association": "肉苁蓉功效独特，像专属的健康卫士守护身体",
     "keyPoint": "肉苁蓉功效特点及临床应用要点",
@@ -19109,7 +20309,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "益智仁功效记心间，临床应用病自痊",
     "association": "益智仁功效独特，像专属的健康卫士守护身体",
     "keyPoint": "益智仁功效特点及临床应用要点",
@@ -19155,7 +20358,10 @@
       "有固肾涩精的功效"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "沙苑蒺藜功效记心间，临床应用病自痊",
     "association": "沙苑蒺藜功效独特，像专属的健康卫士守护身体",
     "keyPoint": "沙苑蒺藜功效特点及临床应用要点",
@@ -19201,7 +20407,10 @@
       "目昏耳鸣"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "阴虚火旺、大便燥结者慎用",
+    "contraindications": [
+      "阴虚火旺",
+      "大便燥结者慎用"
+    ],
     "memoryTip": "菟丝子补肾固精好，养肝明目止泻妙",
     "association": "菟丝子像个小豆子，补肾固精又明目",
     "keyPoint": "平补肝肾，固精缩尿，安胎明目",
@@ -19235,7 +20444,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "蛤蚧功效记心间，临床应用病自痊",
     "association": "蛤蚧功效独特，像专属的健康卫士守护身体",
     "keyPoint": "蛤蚧功效特点及临床应用要点",
@@ -19271,7 +20483,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "冬虫夏草止咳效果好",
     "association": "冬虫夏草功效独特，像专属的健康卫士守护身体",
     "keyPoint": "冬虫夏草功效特点及临床应用要点",
@@ -19308,7 +20523,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚火旺 实热便秘 脾虚便溏",
+    "contraindications": [
+      "阴虚火旺 实热便秘 脾虚便溏"
+    ],
     "memoryTip": "锁阳功效记心间，临床应用病自痊",
     "association": "锁阳功效独特，像专属的健康卫士守护身体",
     "keyPoint": "锁阳功效特点及临床应用要点",
@@ -19344,7 +20561,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "葫芦巴功效记心间，临床应用病自痊",
     "association": "葫芦巴功效独特，像专属的健康卫士守护身体",
     "keyPoint": "葫芦巴功效特点及临床应用要点",
@@ -19386,7 +20606,9 @@
       "宫冷不孕"
     ],
     "usage": "一钱至三钱，煎服。外用或煎汤熏洗，可酌量应用。",
-    "contraindications": "阴虚火旺 下焦湿热",
+    "contraindications": [
+      "阴虚火旺 下焦湿热"
+    ],
     "memoryTip": "蛇床燥湿杀虫害，温肾壮阳不孕疗",
     "association": "蛇床子像蛇的床铺，蛇喜欢趴在上面，人用来杀虫止痒",
     "keyPoint": "燥湿杀虫止痒，温肾壮阳",
@@ -19424,7 +20646,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服，或作散剂内服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "韭子功效记心间，临床应用病自痊",
     "association": "韭子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "韭子功效特点及临床应用要点",
@@ -19463,7 +20688,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服，或作散剂内服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "韭菜根功效记心间，临床应用病自痊",
     "association": "韭菜根功效独特，像专属的健康卫士守护身体",
     "keyPoint": "韭菜根功效特点及临床应用要点",
@@ -19501,7 +20729,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "阳起石功效记心间，临床应用病自痊",
     "association": "阳起石功效独特，像专属的健康卫士守护身体",
     "keyPoint": "温肾壮阳。【临床应用】用于肾气虚寒",
@@ -19538,7 +20769,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "阴虚火旺 孕妇 月经过多",
+    "contraindications": [
+      "阴虚火旺 孕妇 月经过多"
+    ],
     "memoryTip": "骨碎补功效记心间，临床应用病自痊",
     "association": "骨碎补功效独特，像专属的健康卫士守护身体",
     "keyPoint": "骨碎补功效特点及临床应用要点",
@@ -19574,7 +20807,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "海狗肾功效记心间，临床应用病自痊",
     "association": "海狗肾功效独特，像专属的健康卫士守护身体",
     "keyPoint": "海狗肾功效特点及临床应用要点",
@@ -19611,7 +20847,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "黄狗肾功效记心间，临床应用病自痊",
     "association": "黄狗肾功效独特，像专属的健康卫士守护身体",
     "keyPoint": "黄狗肾功效特点及临床应用要点",
@@ -19650,7 +20889,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "初痢 怒气",
+    "contraindications": [
+      "初痢 怒气"
+    ],
     "memoryTip": "续断功效记心间，临床应用病自痊",
     "association": "续断功效独特，像专属的健康卫士守护身体",
     "keyPoint": "续断功效特点及临床应用要点",
@@ -19693,7 +20934,9 @@
       "胎动不安"
     ],
     "usage": "煎服，6-10g",
-    "contraindications": "阴虚火旺者慎用",
+    "contraindications": [
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "杜仲补肝肾好，强筋骨安胎妙",
     "association": "杜仲皮里有银丝，补肝肾强筋骨安胎",
     "keyPoint": "补肝肾强筋骨要药，治腰膝酸痛，安胎",
@@ -19731,7 +20974,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "狗脊功效记心间，临床应用病自痊",
     "association": "狗脊功效独特，像专属的健康卫士守护身体",
     "keyPoint": "狗脊功效特点及临床应用要点",
@@ -19763,7 +21009,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "棉花子功效记心间，临床应用病自痊",
     "association": "棉花子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "棉花子功效特点及临床应用要点",
@@ -19796,7 +21045,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "棉锦皮功效记心间，临床应用病自痊",
     "association": "棉锦皮功效独特，像专属的健康卫士守护身体",
     "keyPoint": "棉锦皮功效特点及临床应用要点",
@@ -19830,7 +21082,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇 月经过多",
+    "contraindications": [
+      "孕妇 月经过多"
+    ],
     "memoryTip": "薛荔果活血效果好",
     "association": "薛荔果像清道夫，活血化瘀通经络",
     "keyPoint": "薛荔果功效特点及临床应用要点",
@@ -19871,7 +21125,11 @@
       "骨蒸潮热"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "脾胃虚弱、气滞痰多、腹满便溏者忌用",
+    "contraindications": [
+      "脾胃虚弱",
+      "气滞痰多",
+      "腹满便溏者忌用"
+    ],
     "memoryTip": "熟地补血滋阴好，益精填髓效果高",
     "association": "熟地黑黑像煤炭，补血滋阴又填精",
     "keyPoint": "补血滋阴要药，益精填髓",
@@ -19915,7 +21173,9 @@
       "高脂血症"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "大便溏泄及有湿痰者不宜",
+    "contraindications": [
+      "大便溏泄及有湿痰者不宜"
+    ],
     "memoryTip": "首乌补益精血好，乌须发强筋骨妙",
     "association": "何首乌能让发黑，白发变黑返老还童",
     "keyPoint": "补肝肾益精血，乌须发，制用补益，生用通便解毒",
@@ -19954,7 +21214,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "大便溏泄 湿痰",
+    "contraindications": [
+      "大便溏泄 湿痰"
+    ],
     "memoryTip": "鲜首乌功效记心间，临床应用病自痊",
     "association": "鲜首乌功效独特，像专属的健康卫士守护身体",
     "keyPoint": "鲜首乌功效特点及临床应用要点",
@@ -20004,7 +21266,10 @@
       "肠燥便秘"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "湿盛中满、大便溏泄者忌用",
+    "contraindications": [
+      "湿盛中满",
+      "大便溏泄者忌用"
+    ],
     "memoryTip": "当归补血活血好，调经止痛润肠妙",
     "association": "当归当归回家来，补血活血又调经",
     "keyPoint": "补血要药，妇科调经要药，活血止痛",
@@ -20050,7 +21315,10 @@
       "头痛眩晕"
     ],
     "usage": "煎服，6-15g",
-    "contraindications": "不宜与藜芦同用，阳衰虚寒之证不宜",
+    "contraindications": [
+      "不宜与藜芦同用",
+      "阳衰虚寒之证不宜"
+    ],
     "memoryTip": "白芍养血调经好，敛阴止汗柔肝妙",
     "association": "白芍白白像美玉，养血柔肝又止痛",
     "keyPoint": "养血柔肝，缓急止痛，敛阴止汗",
@@ -20096,7 +21364,10 @@
       "阴虚燥咳"
     ],
     "usage": "烊化兑服，3-9g",
-    "contraindications": "脾胃虚弱、消化不良者慎用",
+    "contraindications": [
+      "脾胃虚弱",
+      "消化不良者慎用"
+    ],
     "memoryTip": "阿胶补血止血好，滋阴润燥效果高",
     "association": "阿胶像块黑琥珀，补血止血又滋阴",
     "keyPoint": "补血止血要药，滋阴润燥，烊化兑服",
@@ -20130,7 +21401,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "桑椹子补血效果好",
     "association": "桑椹子像红血球，补血养颜气色好",
     "keyPoint": "滋阴补血。【临床应用】用于阴血不足",
@@ -20167,7 +21441,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "桂圆肉安神效果好",
     "association": "桂圆肉像安眠曲，宁心安神睡得香",
     "keyPoint": "桂圆肉收敛固涩，主治滑脱不禁诸证",
@@ -20209,7 +21486,10 @@
       "麦冬等配伍"
     ],
     "usage": "三钱至五钱，煎服。鲜者用量加倍。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "沙参止咳效果好",
     "association": "沙参像止咳糖，咳嗽气喘都能止",
     "keyPoint": "养阴清肺，益胃生津，有南北之分",
@@ -20252,7 +21532,10 @@
       "麦冬等配伍"
     ],
     "usage": "三钱至五钱，煎服。鲜者用量加倍。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "珠儿参止咳效果好",
     "association": "珠儿参像止咳糖，咳嗽气喘都能止",
     "keyPoint": "珠儿参收敛固涩，主治滑脱不禁诸证",
@@ -20296,7 +21579,10 @@
       "麦冬等配伍"
     ],
     "usage": "三钱至五钱，煎服。鲜者用量加倍。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "西洋参止咳效果好",
     "association": "西洋参像止咳糖，咳嗽气喘都能止",
     "keyPoint": "西洋参收敛固涩，主治滑脱不禁诸证",
@@ -20336,7 +21622,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚津伤 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 脾胃虚寒"
+    ],
     "memoryTip": "天门冬止咳效果好",
     "association": "天门冬像止咳糖，咳嗽气喘都能止",
     "keyPoint": "天门冬收敛固涩，主治滑脱不禁诸证",
@@ -20380,7 +21668,10 @@
       "内热消渴"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "脾胃虚寒、食少便溏者慎用",
+    "contraindications": [
+      "脾胃虚寒",
+      "食少便溏者慎用"
+    ],
     "memoryTip": "麦冬养阴润肺好，益胃清心效果高",
     "association": "麦冬像根小白条，养阴润肺又清心",
     "keyPoint": "养阴润肺，益胃生津，清心除烦",
@@ -20425,7 +21716,9 @@
       "筋骨痿软"
     ],
     "usage": "一钱至三钱，煎服。鲜者用量加倍。",
-    "contraindications": "温热病早期 湿温未化燥 脾胃虚寒",
+    "contraindications": [
+      "温热病早期 湿温未化燥 脾胃虚寒"
+    ],
     "memoryTip": "石斛益胃生津好，滋阴清热虚热消",
     "association": "石斛像仙草，长在悬崖上，益胃生津功效好",
     "keyPoint": "益胃生津，滋阴清热，善养胃阴",
@@ -20464,7 +21757,9 @@
       "内热消渴"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "痰湿气滞 脾胃虚寒",
+    "contraindications": [
+      "痰湿气滞 脾胃虚寒"
+    ],
     "memoryTip": "玉竹养阴润燥强，生津止渴不寒凉",
     "association": "玉竹像温润的美玉，养阴而不寒凉，适合长期服用",
     "keyPoint": "养阴润燥，生津止渴，不寒不燥",
@@ -20504,7 +21799,9 @@
       "精神恍惚"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "风寒咳嗽 中寒便溏",
+    "contraindications": [
+      "风寒咳嗽 中寒便溏"
+    ],
     "memoryTip": "百合安神、止咳效果好",
     "association": "百合像安眠曲，宁心安神睡得香",
     "keyPoint": "养阴润肺，清心安神",
@@ -20547,7 +21844,10 @@
       "通草等同用"
     ],
     "usage": "五钱至二两，煎服。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "羊乳根清热效果好",
     "association": "羊乳根像清凉的泉水，清热泻火解暑热",
     "keyPoint": "羊乳根收敛固涩，主治滑脱不禁诸证",
@@ -20584,7 +21884,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "枸骨叶清热效果好",
     "association": "枸骨叶像清凉的泉水，清热泻火解暑热",
     "keyPoint": "枸骨叶收敛固涩，主治滑脱不禁诸证",
@@ -20621,7 +21924,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "楮实子收敛固涩强，滑脱不禁皆能康",
     "association": "楮实子像个守门的卫士，专门防止身体精气外泄",
     "keyPoint": "楮实子收敛固涩，主治滑脱不禁诸证",
@@ -20659,7 +21965,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "谷树叶收敛固涩强，滑脱不禁皆能康",
     "association": "谷树叶像个守门的卫士，专门防止身体精气外泄",
     "keyPoint": "谷树叶收敛固涩，主治滑脱不禁诸证",
@@ -20698,7 +22007,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "谷树浆收敛固涩强，滑脱不禁皆能康",
     "association": "谷树浆像个守门的卫士，专门防止身体精气外泄",
     "keyPoint": "谷树浆收敛固涩，主治滑脱不禁诸证",
@@ -20737,7 +22049,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "谷树根皮收敛固涩强，滑脱不禁皆能康",
     "association": "谷树根皮像个守门的卫士，专门防止身体精气外泄",
     "keyPoint": "谷树根皮收敛固涩，主治滑脱不禁诸证",
@@ -20783,7 +22098,9 @@
       "消渴遗精"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "脾虚便溏者慎用",
+    "contraindications": [
+      "脾虚便溏者慎用"
+    ],
     "memoryTip": "枸杞滋补肝肾好，益精明目效果高",
     "association": "枸杞红红像宝石，滋补肝肾明目子",
     "keyPoint": "滋补肝肾要药，益精明目",
@@ -20827,7 +22144,9 @@
       "骨蒸潮热"
     ],
     "usage": "煎服，6-12g。因主要成分齐墩果酸不易溶于水，故以入丸剂为佳。",
-    "contraindications": "脾胃虚寒泄泻及阳虚者忌服。",
+    "contraindications": [
+      "脾胃虚寒泄泻及阳虚者忌服。"
+    ],
     "memoryTip": "女贞滋补肝肾阴，明目乌发功效真",
     "association": "女贞子像贞洁的女子，滋补肝肾，让头发乌黑发亮，眼睛明亮",
     "keyPoint": "滋补肝肾，明目乌发，性平和可久服",
@@ -20870,7 +22189,9 @@
       "疮疡肿毒"
     ],
     "usage": "煎服，6-12g。外用适量，捣敷或煎水洗。",
-    "contraindications": "脾胃虚寒者慎用。",
+    "contraindications": [
+      "脾胃虚寒者慎用。"
+    ],
     "memoryTip": "女贞叶子清明目，消肿止痛效力速",
     "association": "女贞叶像绿色的扇子，清热明目，还能消肿止痛",
     "keyPoint": "清热明目，外用消肿止痛",
@@ -20920,7 +22241,10 @@
       "外伤出血"
     ],
     "usage": "煎服，6-12g。外用鲜品适量，捣烂敷或干品研末撒敷患处。",
-    "contraindications": "脾胃虚寒，大便溏泻者不宜服。",
+    "contraindications": [
+      "脾胃虚寒",
+      "大便溏泻者不宜服。"
+    ],
     "memoryTip": "旱莲滋补肝肾虚，凉血止血乌须发",
     "association": "旱莲草像黑色的墨汁，滋补肝肾，还能凉血止血让头发乌黑发亮",
     "keyPoint": "滋补肝肾，凉血止血，乌须发",
@@ -20967,7 +22291,10 @@
       "崩漏经多"
     ],
     "usage": "煎服，9-24g，宜先煎。",
-    "contraindications": "脾胃虚寒者忌服，孕妇慎用。",
+    "contraindications": [
+      "脾胃虚寒者忌服",
+      "孕妇慎用。"
+    ],
     "memoryTip": "龟板滋阴潜阳好，益肾健骨补心脑",
     "association": "龟甲像长寿龟的铠甲，滋阴潜阳，益肾健骨，还能养血补心",
     "keyPoint": "滋阴潜阳要药，兼能健骨补心",
@@ -21012,7 +22339,9 @@
       "筋骨痿软"
     ],
     "usage": "烊化兑服，3-9g。",
-    "contraindications": "脾胃虚寒者忌服。",
+    "contraindications": [
+      "脾胃虚寒者忌服。"
+    ],
     "memoryTip": "龟板胶滋阴好，养血止血功效高",
     "association": "龟板胶像浓缩的精华，滋阴补血效果更好，还能止血",
     "keyPoint": "龟板精华所制，滋阴补血力强",
@@ -21060,7 +22389,10 @@
       "久疟疟母"
     ],
     "usage": "煎服，9-24g，宜先煎。",
-    "contraindications": "脾胃虚寒，食少便溏及孕妇禁服。",
+    "contraindications": [
+      "脾胃虚寒",
+      "食少便溏及孕妇禁服。"
+    ],
     "memoryTip": "鳖甲滋阴潜阳良，软坚散结退虚热",
     "association": "鳖甲像甲鱼壳，滋阴退热，还能把坚硬的结块软化消散",
     "keyPoint": "滋阴潜阳，软坚散结，治久疟疟母",
@@ -21103,7 +22435,9 @@
       "久疟疟母"
     ],
     "usage": "烊化兑服，3-9g。",
-    "contraindications": "脾胃虚寒者忌服。",
+    "contraindications": [
+      "脾胃虚寒者忌服。"
+    ],
     "memoryTip": "鳖甲胶滋阴好，软坚散结止血妙",
     "association": "鳖甲胶像浓缩的营养，滋阴补血，软坚散结效果更好",
     "keyPoint": "鳖甲熬胶，滋阴软坚力更强",
@@ -21149,7 +22483,9 @@
       "胎动不安"
     ],
     "usage": "煎服，9-15g",
-    "contraindications": "无明显禁忌",
+    "contraindications": [
+      "无明显禁忌"
+    ],
     "memoryTip": "桑寄生祛风湿良，补肝肾强筋骨长",
     "association": "桑寄生在桑树上，补肝肾强筋骨长",
     "keyPoint": "祛风湿兼补肝肾，治风湿痹痛兼肝肾不足",
@@ -21195,7 +22531,10 @@
       "大汗虚脱"
     ],
     "usage": "煎服，6-12g",
-    "contraindications": "素有湿热、小便淋涩者不宜",
+    "contraindications": [
+      "素有湿热",
+      "小便淋涩者不宜"
+    ],
     "memoryTip": "山茱萸补益肝肾好，收涩固脱效果高",
     "association": "山茱萸酸酸涩，补益肝肾又固脱",
     "keyPoint": "补益肝肾，收涩固脱，治大汗虚脱",
@@ -21241,7 +22580,12 @@
       "津伤口渴"
     ],
     "usage": "煎服，2-6g",
-    "contraindications": "表邪未解、内有实热、咳嗽初起、麻疹初发者不宜",
+    "contraindications": [
+      "表邪未解",
+      "内有实热",
+      "咳嗽初起",
+      "麻疹初发者不宜"
+    ],
     "memoryTip": "五味子收敛固涩好，益气生津补肾妙",
     "association": "五味子酸酸甜甜，五种味道补五脏",
     "keyPoint": "上敛肺气，下滋肾阴，生津敛汗，宁心安神",
@@ -21282,7 +22626,9 @@
       "蛔厥呕吐腹痛"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "外有表邪 内有实热 咳嗽初起 麻疹初发 胃酸过多",
+    "contraindications": [
+      "外有表邪 内有实热 咳嗽初起 麻疹初发 胃酸过多"
+    ],
     "memoryTip": "乌梅酸涩肺肠收，生津安蛔汗能收",
     "association": "乌梅像个敛气的守门员，把身体的精气都守在里面不往外泄",
     "keyPoint": "敛肺涩肠，生津安蛔，为治久泻久痢要药",
@@ -21323,7 +22669,9 @@
       "心悸失眠"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "中满痞胀 大便燥结",
+    "contraindications": [
+      "中满痞胀 大便燥结"
+    ],
     "memoryTip": "莲子安神效果好",
     "association": "莲子像安眠曲，宁心安神睡得香",
     "keyPoint": "补脾止泻，益肾固精，养心安神",
@@ -21363,7 +22711,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "中满痞胀 大便燥结",
+    "contraindications": [
+      "中满痞胀 大便燥结"
+    ],
     "memoryTip": "石莲子安神效果好",
     "association": "石莲子像安眠曲，宁心安神睡得香",
     "keyPoint": "石莲子收敛固涩，主治滑脱不禁诸证",
@@ -21404,7 +22754,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "中满痞胀 大便燥结",
+    "contraindications": [
+      "中满痞胀 大便燥结"
+    ],
     "memoryTip": "莲须安神效果好",
     "association": "莲须像安眠曲，宁心安神睡得香",
     "keyPoint": "莲须收敛固涩，主治滑脱不禁诸证",
@@ -21445,7 +22797,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "中满痞胀 大便燥结",
+    "contraindications": [
+      "中满痞胀 大便燥结"
+    ],
     "memoryTip": "荷花莲房安神效果好",
     "association": "荷花莲房像安眠曲，宁心安神睡得香",
     "keyPoint": "荷花莲房收敛固涩，主治滑脱不禁诸证",
@@ -21487,7 +22841,9 @@
       "食少呕吐"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "湿热泻痢 胃热疼痛",
+    "contraindications": [
+      "湿热泻痢 胃热疼痛"
+    ],
     "memoryTip": "肉蔻温中行气好，涩肠止泻脾胃保",
     "association": "肉豆蔻像肠胃暖宝宝，温暖脾胃又能止泻，适合虚寒腹泻",
     "keyPoint": "温中行气，涩肠止泻，治脾胃虚寒久泻",
@@ -21529,7 +22885,9 @@
       "咽痛音哑"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "外有表邪 内有湿热 咳嗽初起 痢疾初起",
+    "contraindications": [
+      "外有表邪 内有湿热 咳嗽初起 痢疾初起"
+    ],
     "memoryTip": "诃子涩肠能敛肺，利咽开音治失语",
     "association": "诃子像声音修复师，专门修复沙哑的嗓子，让声音重新清亮",
     "keyPoint": "涩肠止泻，敛肺利咽，为治失音要药",
@@ -21569,7 +22927,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "外有表邪 内有湿热 咳嗽初起 痢疾初起",
+    "contraindications": [
+      "外有表邪 内有湿热 咳嗽初起 痢疾初起"
+    ],
     "memoryTip": "藏青果收敛固涩强，滑脱不禁皆能康",
     "association": "藏青果像个守门的卫士，专门防止身体精气外泄",
     "keyPoint": "藏青果收敛固涩，主治滑脱不禁诸证",
@@ -21613,7 +22973,9 @@
       "湿疮脓水浸淫"
     ],
     "usage": "三钱至八钱，煎服。外用适量。",
-    "contraindications": "湿热积滞 孕妇",
+    "contraindications": [
+      "湿热积滞 孕妇"
+    ],
     "memoryTip": "赤石脂涩肠止泻，止血生肌功效捷",
     "association": "赤石脂像红色止血贴，既能止泻又能止血，还能帮助伤口愈合",
     "keyPoint": "涩肠止泻，收敛止血，生肌敛疮",
@@ -21658,7 +23020,9 @@
       "牡蛎等同用"
     ],
     "usage": "三钱至八钱，煎服。",
-    "contraindications": "孕妇 实热证",
+    "contraindications": [
+      "孕妇 实热证"
+    ],
     "memoryTip": "禹余粮涩肠止血，崩漏带下皆能止",
     "association": "禹余粮像古老的存粮，专门对付久泻久痢，把精气存住",
     "keyPoint": "涩肠止泻，收敛止血，与赤石脂相须为用",
@@ -21701,7 +23065,9 @@
       "痈肿疮毒"
     ],
     "usage": "五分至一钱五分，煎服。外用适量。",
-    "contraindications": "外感咳嗽 湿热泻痢",
+    "contraindications": [
+      "外感咳嗽 湿热泻痢"
+    ],
     "memoryTip": "五倍敛肺又降火，涩肠敛汗止血多",
     "association": "五倍子像个全能管家，肺肠汗血都能管，收敛固涩本领全",
     "keyPoint": "敛肺降火，涩肠固精，敛汗止血，功效全面",
@@ -21740,7 +23106,9 @@
       "各种疼痛"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "咳嗽泻痢初起 痰多 腹胀",
+    "contraindications": [
+      "咳嗽泻痢初起 痰多 腹胀"
+    ],
     "memoryTip": "罂粟涩肠又敛肺，止痛力强易成瘾",
     "association": "罂粟壳像强力胶水，能把滑脱的肠道牢牢粘住，但用多了会上瘾",
     "keyPoint": "涩肠止泻，敛肺止咳，止痛力强但易成瘾",
@@ -21786,7 +23154,9 @@
       "鹤虱等药配合应用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚火旺 孕妇",
+    "contraindications": [
+      "阴虚火旺 孕妇"
+    ],
     "memoryTip": "石榴皮涩肠止泻，杀虫止血功效捷",
     "association": "石榴皮像红色的外衣，涩肠止泻，还能杀虫",
     "keyPoint": "涩肠止泻，收敛止血，杀虫",
@@ -21833,7 +23203,9 @@
       "鹤虱等药配合应用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚火旺 孕妇",
+    "contraindications": [
+      "阴虚火旺 孕妇"
+    ],
     "memoryTip": "石榴根皮收敛固涩强，滑脱不禁皆能康",
     "association": "石榴根皮像个守门的卫士，专门防止身体精气外泄",
     "keyPoint": "石榴根皮收敛固涩，主治滑脱不禁诸证",
@@ -21876,7 +23248,9 @@
       "癫痫发狂"
     ],
     "usage": "二分至一钱，煎服。外用适量。",
-    "contraindications": "阴虚津亏 脾胃虚寒",
+    "contraindications": [
+      "阴虚津亏 脾胃虚寒"
+    ],
     "memoryTip": "明矾解毒燥湿强，止血止泻化痰良",
     "association": "明矾像水晶一样透明，外用解毒，内服止泻",
     "keyPoint": "外用解毒燥湿，内服止血止泻",
@@ -21916,7 +23290,9 @@
       "遗精"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚津伤 阴虚津亏 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 阴虚津亏 脾胃虚寒"
+    ],
     "memoryTip": "椿根皮清热效果好",
     "association": "椿根皮像清凉的泉水，清热泻火解暑热",
     "keyPoint": "清热燥湿，收敛止带止泻",
@@ -21955,7 +23331,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚津伤 阴虚津亏 脾胃虚寒",
+    "contraindications": [
+      "阴虚津伤 阴虚津亏 脾胃虚寒"
+    ],
     "memoryTip": "凤眼草清热效果好",
     "association": "凤眼草像清凉的泉水，清热泻火解暑热",
     "keyPoint": "凤眼草收敛固涩，主治滑脱不禁诸证",
@@ -21997,7 +23375,9 @@
       "白浊带下"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "便秘 尿赤 产后",
+    "contraindications": [
+      "便秘 尿赤 产后"
+    ],
     "memoryTip": "芡实固精带下止，健脾除湿又止泻",
     "association": "芡实像水中人参，既能益肾又能健脾，被称为水中燕窝",
     "keyPoint": "益肾固精，健脾止泻，除湿止带",
@@ -22037,7 +23417,9 @@
       "肾虚阳痿"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "阴虚火旺 膀胱有热 小便短数",
+    "contraindications": [
+      "阴虚火旺 膀胱有热 小便短数"
+    ],
     "memoryTip": "桑螵固精缩小便，蒸后入药补肾阳",
     "association": "桑螵蛸像螳螂的育儿袋，专门收涩固精，还能补肾助阳",
     "keyPoint": "固精缩尿，补肾助阳，宜蒸后用",
@@ -22077,7 +23459,9 @@
       "目暗昏花"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "肾虚火旺 小便短赤",
+    "contraindications": [
+      "肾虚火旺 小便短赤"
+    ],
     "memoryTip": "覆盆固精又缩尿，养肝明目肾虚疗",
     "association": "覆盆子像个小盖子，能把遗精滑精的盖子盖上，守住精气",
     "keyPoint": "益肾固精缩尿，养肝明目",
@@ -22116,7 +23500,9 @@
       "久泻久痢"
     ],
     "usage": "三钱至一两，煎服。",
-    "contraindications": "有实火 邪热",
+    "contraindications": [
+      "有实火 邪热"
+    ],
     "memoryTip": "金樱酸涩固精关，涩肠止泻带下安",
     "association": "金樱子浑身是刺像个卫士，守护着精关不让精气外泄",
     "keyPoint": "酸涩收敛，固精缩尿，涩肠止泻",
@@ -22162,7 +23548,9 @@
       "也有止血的功效"
     ],
     "usage": "一钱至三钱，煎服。如研粉吞服，每次五分至一钱。外用适量。",
-    "contraindications": "只供外用 阴虚火旺 孕妇",
+    "contraindications": [
+      "只供外用 阴虚火旺 孕妇"
+    ],
     "memoryTip": "乌贼制酸止痛良，收敛止血带下康",
     "association": "乌贼骨像乌贼的内壳，制酸止痛，收敛止血",
     "keyPoint": "制酸止痛，收敛止血",
@@ -22195,7 +23583,9 @@
       "痢疾"
     ],
     "usage": "煎服，15-30g。",
-    "contraindications": "只供外用 孕妇",
+    "contraindications": [
+      "只供外用 孕妇"
+    ],
     "memoryTip": "碎米荞清热利湿，收敛止带止泻痢",
     "association": "碎米荞像碎米一样的荞草，清热利湿，收敛止带",
     "keyPoint": "清热利湿，收敛止带",
@@ -22236,7 +23626,9 @@
       "久痢不止"
     ],
     "usage": "三钱至五钱，煎服。",
-    "contraindications": "只供外用 孕妇 脾胃虚寒",
+    "contraindications": [
+      "只供外用 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "鸡冠收敛能止血，带下痢疾皆能止",
     "association": "鸡冠花像红色止血棉，各种出血都能止住",
     "keyPoint": "收敛止血，止带止痢，炒用增强止血",
@@ -22275,7 +23667,9 @@
       "骨蒸劳热"
     ],
     "usage": "煎服，15-30g，研末服3-5g。外用适量，炒焦研末调敷。",
-    "contraindications": "只供外用 孕妇 脾胃虚寒",
+    "contraindications": [
+      "只供外用 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "浮麦益气能除热，止汗之功不虚设",
     "association": "浮小麦像轻浮的小麦，专门对付虚汗，把汗收住",
     "keyPoint": "益气除热止汗，治自汗盗汗",
@@ -22310,7 +23704,9 @@
       "骨蒸潮热"
     ],
     "usage": "五钱至一两，煎服。",
-    "contraindications": "只供外用 孕妇",
+    "contraindications": [
+      "只供外用 孕妇"
+    ],
     "memoryTip": "糯稻根能固表汗，益胃生津功效全",
     "association": "糯稻根像糯米的根须，既能止汗又能养胃生津",
     "keyPoint": "固表止汗，益胃生津",
@@ -22345,7 +23741,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，煎服。",
-    "contraindications": "只供外用 孕妇",
+    "contraindications": [
+      "只供外用 孕妇"
+    ],
     "memoryTip": "糯稻草攻毒杀虫疮，有毒慎用莫过量",
     "association": "糯稻草像除害的勇士，专门对付各种毒虫和皮肤病",
     "keyPoint": "糯稻草攻毒杀虫，多有毒性宜慎",
@@ -22383,7 +23781,9 @@
       "盗汗"
     ],
     "usage": "煎服，3-9g。外用适量，研末作扑粉。",
-    "contraindications": "只供外用 孕妇",
+    "contraindications": [
+      "只供外用 孕妇"
+    ],
     "memoryTip": "麻黄根专能止汗，固表敛汗功效显",
     "association": "麻黄根像止汗的开关，能关闭汗液的流出",
     "keyPoint": "固表止汗，专于收敛",
@@ -22424,7 +23824,9 @@
       "黄芩等清肺药品"
     ],
     "usage": "一钱至三钱，或五只至十只，煎服。本品有毒，如炒熟服食，不宜过多。",
-    "contraindications": "只供外用 孕妇",
+    "contraindications": [
+      "只供外用 孕妇"
+    ],
     "memoryTip": "白果敛肺定痰喘，止带缩尿有毒性",
     "association": "白果像白色的果实，敛肺定喘，但有小毒要少吃",
     "keyPoint": "敛肺定喘，止带缩尿，有毒宜慎",
@@ -22466,7 +23868,9 @@
       "黄芩等清肺药品"
     ],
     "usage": "一钱至三钱，或五只至十只，煎服。本品有毒，如炒熟服食，不宜过多。",
-    "contraindications": "只供外用 孕妇",
+    "contraindications": [
+      "只供外用 孕妇"
+    ],
     "memoryTip": "白果叶攻毒杀虫疮，有毒慎用莫过量",
     "association": "白果叶像除害的勇士，专门对付各种毒虫和皮肤病",
     "keyPoint": "白果叶攻毒杀虫，多有毒性宜慎",
@@ -22509,7 +23913,9 @@
       "呕吐"
     ],
     "usage": "一钱至三钱，煎服。或焙干研末，每次吞服一钱。",
-    "contraindications": "只供外用 孕妇",
+    "contraindications": [
+      "只供外用 孕妇"
+    ],
     "memoryTip": "刺猬皮止咳效果好",
     "association": "刺猬皮像带刺的盔甲，固精缩尿，收敛止血",
     "keyPoint": "固精缩尿，收敛止血",
@@ -22547,7 +23953,9 @@
       "手术麻醉"
     ],
     "usage": "外用适量。内服每次一毫至二毫，为粉末入丸剂用，不入煎剂。本品有毒，不宜久服。（需补充剂量）",
-    "contraindications": "只供外用 阴虚火旺 孕妇",
+    "contraindications": [
+      "只供外用 阴虚火旺 孕妇"
+    ],
     "memoryTip": "蟾酥解毒止痛良，开窍醒神效力强",
     "association": "蟾酥像癞蛤蟆的毒液精华，虽然有毒但能解毒止痛",
     "keyPoint": "解毒止痛开窍，有剧毒宜慎",
@@ -22583,7 +23991,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "外用适量。内服每次一毫至二毫，为粉末入丸剂用，不入煎剂。本品有毒，不宜久服。（需补充剂量）",
-    "contraindications": "只供外用 阴虚火旺 孕妇",
+    "contraindications": [
+      "只供外用 阴虚火旺 孕妇"
+    ],
     "memoryTip": "蟾皮攻毒杀虫疮，有毒慎用莫过量",
     "association": "蟾皮像除害的勇士，专门对付各种毒虫和皮肤病",
     "keyPoint": "蟾皮攻毒杀虫，多有毒性宜慎",
@@ -22622,7 +24032,9 @@
       "疟疾"
     ],
     "usage": "外用适量。内服每次五厘至一分。一般入丸散，不入汤剂；且不能持续服用，以免蓄积中毒。",
-    "contraindications": "孕妇 阴亏血虚 焙烧后剧毒 忌火煅",
+    "contraindications": [
+      "孕妇 阴亏血虚 焙烧后剧毒 忌火煅"
+    ],
     "memoryTip": "雄黄解毒杀虫害，切忌火煅孕妇戒",
     "association": "雄黄像驱蛇的勇士，端午节洒雄黄酒，蛇虫都避开",
     "keyPoint": "解毒杀虫，切忌火煅，孕妇禁用",
@@ -22660,7 +24072,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "内服二分至三分。外用适量。",
-    "contraindications": "只供外用 孕妇 脾胃虚寒",
+    "contraindications": [
+      "只供外用 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "硼砂清热、止咳效果好",
     "association": "硼砂像清凉的泉水，清热泻火解暑热",
     "keyPoint": "硼砂攻毒杀虫，多有毒性宜慎",
@@ -22696,7 +24110,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一分至二分，吞服，或入丸散。外用适量。",
-    "contraindications": "只供外用 阴虚火旺 孕妇",
+    "contraindications": [
+      "只供外用 阴虚火旺 孕妇"
+    ],
     "memoryTip": "磠砂攻毒杀虫疮，有毒慎用莫过量",
     "association": "磠砂像除害的勇士，专门对付各种毒虫和皮肤病",
     "keyPoint": "磠砂攻毒杀虫，多有毒性宜慎",
@@ -22736,7 +24152,9 @@
       "疟疾"
     ],
     "usage": "内服每次一毫至二毫，每日一次，入丸剂。外用适量。（需补充剂量）",
-    "contraindications": "孕妇 只供外用 不可内服 剧毒",
+    "contraindications": [
+      "孕妇 只供外用 不可内服 剧毒"
+    ],
     "memoryTip": "砒石剧毒祛痰喘，蚀疮去腐外用先",
     "association": "砒石像剧毒的信子，虽然有毒但用对了也能治病",
     "keyPoint": "外用蚀疮去腐。内服截疟",
@@ -22774,7 +24192,9 @@
       "以治疮疽瘰历。现临床应用不多"
     ],
     "usage": "二厘，研末，入丸散用。外用适量。（需补充剂量）",
-    "contraindications": "孕妇 体弱者",
+    "contraindications": [
+      "孕妇 体弱者"
+    ],
     "memoryTip": "斑蝥攻毒杀虫疮，有毒慎用莫过量",
     "association": "斑蝥像除害的勇士，专门对付各种毒虫和皮肤病",
     "keyPoint": "斑蝥攻毒杀虫，多有毒性宜慎",
@@ -22806,7 +24226,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "外用适量，不作内服。（需补充剂量）",
-    "contraindications": "只供外用 孕妇",
+    "contraindications": [
+      "只供外用 孕妇"
+    ],
     "memoryTip": "石灰攻毒杀虫疮，有毒慎用莫过量",
     "association": "石灰像除害的勇士，专门对付各种毒虫和皮肤病",
     "keyPoint": "石灰攻毒杀虫，多有毒性宜慎",
@@ -22844,7 +24266,9 @@
       "二便不利"
     ],
     "usage": "外用适量。内服每次一厘至二厘。宜入丸剂，不入汤剂，且不能过量，也不能持续服用，以防汞中毒。孕妇忌用。（需补充剂量）",
-    "contraindications": "孕妇 内服宜慎 不宜过量 不宜久服",
+    "contraindications": [
+      "孕妇 内服宜慎 不宜过量 不宜久服"
+    ],
     "memoryTip": "轻粉有毒杀虫效，逐水通便内服妙",
     "association": "轻粉像水银的化身，有毒但能杀虫逐水",
     "keyPoint": "有毒，内服逐水通便",
@@ -22876,7 +24300,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "内服一次量一分至三分。外用适量。",
-    "contraindications": "只供外用 孕妇 阴虚津亏",
+    "contraindications": [
+      "只供外用 孕妇 阴虚津亏"
+    ],
     "memoryTip": "大风子攻毒杀虫疮，有毒慎用莫过量",
     "association": "大风子像除害的勇士，专门对付各种毒虫和皮肤病",
     "keyPoint": "大风子攻毒杀虫，多有毒性宜慎",
@@ -22915,7 +24341,9 @@
       "风湿痹痛"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "孕妇 气血虚弱",
+    "contraindications": [
+      "孕妇 气血虚弱"
+    ],
     "memoryTip": "蜂房攻毒又杀虫，祛风止痛治牙痛",
     "association": "蜂房像蜜蜂的家，既能攻毒又能祛风止痛",
     "keyPoint": "攻毒杀虫，祛风止痛",
@@ -22951,7 +24379,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "外用适量，研末调敷或煎水熏洗。内服遵医嘱。",
-    "contraindications": "只供外用 孕妇",
+    "contraindications": [
+      "只供外用 孕妇"
+    ],
     "memoryTip": "木槿皮攻毒杀虫疮，有毒慎用莫过量",
     "association": "木槿皮像除害的勇士，专门对付各种毒虫和皮肤病",
     "keyPoint": "杀虫治癣。【临床应用】用于皮肤疥癣等症。本品有杀虫止痒的作用",
@@ -22988,7 +24418,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "外用适量，研末调敷或煎水熏洗。内服遵医嘱。",
-    "contraindications": "只供外用 孕妇",
+    "contraindications": [
+      "只供外用 孕妇"
+    ],
     "memoryTip": "土槿皮攻毒杀虫疮，有毒慎用莫过量",
     "association": "土槿皮像除害的勇士，专门对付各种毒虫和皮肤病",
     "keyPoint": "杀虫治癣。【临床应用】用于皮肤疥癣等症。本品有杀虫止痒的作用",
@@ -23026,7 +24458,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "外用适量，研末调敷或煎水熏洗。内服遵医嘱。",
-    "contraindications": "只供外用 孕妇",
+    "contraindications": [
+      "只供外用 孕妇"
+    ],
     "memoryTip": "木槿花攻毒杀虫疮，有毒慎用莫过量",
     "association": "木槿花像除害的勇士，专门对付各种毒虫和皮肤病",
     "keyPoint": "杀虫治癣。【临床应用】用于皮肤疥癣等症。本品有杀虫止痒的作用",
@@ -23064,7 +24498,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "外用适量，研末调敷或煎水熏洗。内服遵医嘱。",
-    "contraindications": "只供外用 孕妇",
+    "contraindications": [
+      "只供外用 孕妇"
+    ],
     "memoryTip": "木槿子攻毒杀虫疮，有毒慎用莫过量",
     "association": "木槿子像除害的勇士，专门对付各种毒虫和皮肤病",
     "keyPoint": "杀虫治癣。【临床应用】用于皮肤疥癣等症。本品有杀虫止痒的作用",
@@ -23103,7 +24539,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三厘至一分，和丸内服。外用适量。",
-    "contraindications": "只供外用 孕妇 阴虚津亏 脾胃虚寒",
+    "contraindications": [
+      "只供外用 孕妇 阴虚津亏 脾胃虚寒"
+    ],
     "memoryTip": "绿矾补血效果好",
     "association": "绿矾像红血球，补血养颜气色好",
     "keyPoint": "绿矾攻毒杀虫，多有毒性宜慎",
@@ -23141,7 +24579,9 @@
       "神昏"
     ],
     "usage": "内服一分至二分，须与其它药配合制成丸剂用（不入煎剂）。外用适量。",
-    "contraindications": "血热妄行 阴虚火旺 孕妇",
+    "contraindications": [
+      "血热妄行 阴虚火旺 孕妇"
+    ],
     "memoryTip": "樟脑祛风效果好",
     "association": "樟脑像衣柜里的防虫丸，驱虫除湿，清凉止痛",
     "keyPoint": "除湿杀虫，温散止痛，开窍辟秽",
@@ -23179,7 +24619,9 @@
       "虚寒便秘"
     ],
     "usage": "一日量三分至八分，入丸、散。外用适量。",
-    "contraindications": "孕妇 阴虚火旺",
+    "contraindications": [
+      "孕妇 阴虚火旺"
+    ],
     "memoryTip": "硫黄外用杀虫疮，内服补火助阳强",
     "association": "硫黄像温泉里的矿物质，外用杀虫内服补火",
     "keyPoint": "外用杀虫止痒，内服补火助阳通便",
@@ -23211,7 +24653,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "外用适量，不作内服。（需补充剂量）",
-    "contraindications": "湿疹渗水 脓水多",
+    "contraindications": [
+      "湿疹渗水 脓水多"
+    ],
     "memoryTip": "炉甘石功效记心间，临床应用病自痊",
     "association": "炉甘石功效独特，像专属的健康卫士守护身体",
     "keyPoint": "炉甘石功效特点及临床应用要点",
@@ -23248,7 +24692,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五分至一钱，包煎。或微炒研粉入丸散吞服，每服一分至三分。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "孩儿茶功效记心间，临床应用病自痊",
     "association": "孩儿茶功效独特，像专属的健康卫士守护身体",
     "keyPoint": "孩儿茶功效特点及临床应用要点",
@@ -23286,7 +24733,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "内服三分至五分，入丸散。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "血竭功效记心间，临床应用病自痊",
     "association": "血竭功效独特，像专属的健康卫士守护身体",
     "keyPoint": "血竭功效特点及临床应用要点",
@@ -23318,7 +24768,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "象皮功效记心间，临床应用病自痊",
     "association": "象皮功效独特，像专属的健康卫士守护身体",
     "keyPoint": "敛疮生肌。【临床应用】用于疮口久不愈合等症。本品功专收敛",
@@ -23351,7 +24804,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "象牙屑功效记心间，临床应用病自痊",
     "association": "象牙屑功效独特，像专属的健康卫士守护身体",
     "keyPoint": "敛疮生肌。【临床应用】用于疮口久不愈合等症。本品功专收敛",
@@ -23385,7 +24841,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "孕妇 阴虚津亏",
+    "contraindications": [
+      "孕妇 阴虚津亏"
+    ],
     "memoryTip": "松香功效记心间，临床应用病自痊",
     "association": "松香功效独特，像专属的健康卫士守护身体",
     "keyPoint": "松香功效特点及临床应用要点",
@@ -23422,7 +24880,9 @@
       "疟疾"
     ],
     "usage": "内服一分至二分，入丸散。不可过量，以防中毒。外用适量。",
-    "contraindications": "孕妇 不宜过量 不宜久服 慎内服",
+    "contraindications": [
+      "孕妇 不宜过量 不宜久服 慎内服"
+    ],
     "memoryTip": "铅丹有毒拔毒功，生肌敛疮外贴用",
     "association": "铅丹像红色的膏药，拔毒生肌效果好",
     "keyPoint": "有毒，外用拔毒生肌",
@@ -23454,7 +24914,10 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "外用适量。（需补充剂量）",
-    "contraindications": "孕妇慎用；阴虚火旺者慎用",
+    "contraindications": [
+      "孕妇慎用",
+      "阴虚火旺者慎用"
+    ],
     "memoryTip": "毛茛功效记心间，临床应用病自痊",
     "association": "毛茛功效独特，像专属的健康卫士守护身体",
     "keyPoint": "毛茛功效特点及临床应用要点",
@@ -23488,7 +24951,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "内服一日量为二厘至三厘。外用适量。（需补充剂量）",
-    "contraindications": "只供外用 阴虚津伤 孕妇 脾胃虚寒",
+    "contraindications": [
+      "只供外用 阴虚津伤 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "马钱子功效记心间，临床应用病自痊",
     "association": "马钱子功效独特，像专属的健康卫士守护身体",
     "keyPoint": "马钱子功效特点及临床应用要点",
@@ -23523,7 +24988,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "内服一日量为二厘至三厘。外用适量。（需补充剂量）",
-    "contraindications": "只供外用 阴虚津伤 孕妇 脾胃虚寒",
+    "contraindications": [
+      "只供外用 阴虚津伤 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "土木鳖功效记心间，临床应用病自痊",
     "association": "土木鳖功效独特，像专属的健康卫士守护身体",
     "keyPoint": "土木鳖功效特点及临床应用要点",
@@ -23557,7 +25024,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "三钱至八钱，煎服（本品有毒，须煎二小时以上，滤去渣，取汁服，切勿吃渣，以免中毒）。",
-    "contraindications": "只供外用 孕妇",
+    "contraindications": [
+      "只供外用 孕妇"
+    ],
     "memoryTip": "蒟蒻功效记心间，临床应用病自痊",
     "association": "蒟蒻功效独特，像专属的健康卫士守护身体",
     "keyPoint": "蒟蒻功效特点及临床应用要点",
@@ -23593,7 +25062,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "只供外用 阴虚津伤 孕妇 脾胃虚寒",
+    "contraindications": [
+      "只供外用 阴虚津伤 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "常山功效记心间，临床应用病自痊",
     "association": "常山功效独特，像专属的健康卫士守护身体",
     "keyPoint": "截疟。【临床应用】用于疟疾。常山能杀灭疟原虫",
@@ -23630,7 +25101,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一钱至三钱，煎服。",
-    "contraindications": "只供外用 阴虚津伤 孕妇 脾胃虚寒",
+    "contraindications": [
+      "只供外用 阴虚津伤 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "甜茶功效记心间，临床应用病自痊",
     "association": "甜茶功效独特，像专属的健康卫士守护身体",
     "keyPoint": "截疟。【临床应用】用于疟疾。常山能杀灭疟原虫",
@@ -23666,7 +25139,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "煎服，6-12g。外用适量。",
-    "contraindications": "只供外用 阴虚津伤 孕妇 脾胃虚寒",
+    "contraindications": [
+      "只供外用 阴虚津伤 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "瓜蒂功效记心间，临床应用病自痊",
     "association": "瓜蒂功效独特，像专属的健康卫士守护身体",
     "keyPoint": "涌吐痰食。【临床应用】用于痰涎雍盛",
@@ -23701,7 +25176,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "一分至三分，宜作散剂。外用适量。有毒，用量不可过大。",
-    "contraindications": "只供外用 阴虚津伤 孕妇 脾胃虚寒",
+    "contraindications": [
+      "只供外用 阴虚津伤 孕妇 脾胃虚寒"
+    ],
     "memoryTip": "藜芦功效记心间，临床应用病自痊",
     "association": "藜芦功效独特，像专属的健康卫士守护身体",
     "keyPoint": "藜芦功效特点及临床应用要点",
@@ -23733,7 +25210,9 @@
       "具有调理作用。建议遵医嘱使用"
     ],
     "usage": "五钱至一两，煎服。外用适量。",
-    "contraindications": "只供外用 孕妇",
+    "contraindications": [
+      "只供外用 孕妇"
+    ],
     "memoryTip": "辣蓼功效记心间，临床应用病自痊",
     "association": "辣蓼功效独特，像专属的健康卫士守护身体",
     "keyPoint": "温中化湿。【临床应用】用于痢疾",
