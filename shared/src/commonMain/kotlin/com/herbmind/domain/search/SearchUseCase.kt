@@ -40,7 +40,7 @@ class SearchUseCase(
             herbs.map { herb ->
                 calculateMatchScore(herb, expandedKeywords)
             }
-            .filter { it.score > 0 }
+            .filter { it.score >= 30 }  // 提高过滤门槛，只显示有意义的匹配
             .sortedByDescending { it.score }
         }
     }
@@ -55,35 +55,51 @@ class SearchUseCase(
     private fun calculateMatchScore(herb: Herb, keywords: List<String>): SearchResult {
         var score = 0
         val matchedEffects = mutableListOf<String>()
+        var hasNameMatch = false
 
         keywords.forEach { keyword ->
-            // 功效精确匹配（最高权重）
+            // 1. 名称精确匹配（最高优先级）
+            val exactNameMatch = herb.name == keyword
+            val partialNameMatch = herb.name.contains(keyword) ||
+                    herb.pinyin.contains(keyword, ignoreCase = true) ||
+                    herb.aliases.any { it.contains(keyword) }
+
+            // 2. 功效匹配
             val exactEffectMatch = herb.effects.any {
                 it.contains(keyword)
             }
 
-            // 名称/拼音匹配
-            val nameMatch = herb.name.contains(keyword) ||
-                    herb.pinyin.contains(keyword, ignoreCase = true) ||
-                    herb.aliases.any { it.contains(keyword) }
-
-            // 主治匹配
+            // 3. 主治匹配
             val indicationMatch = herb.indications.any {
                 it.contains(keyword)
             }
 
-            // 标签匹配
+            // 4. 记忆要点匹配
             val keyPointMatch = herb.keyPoint?.contains(keyword) == true
 
             when {
+                // 精确名称匹配最高权重
+                exactNameMatch -> {
+                    score += 100
+                    hasNameMatch = true
+                }
+                // 部分名称匹配次高
+                partialNameMatch -> {
+                    score += 50
+                    hasNameMatch = true
+                }
                 exactEffectMatch -> {
                     score += 40
                     matchedEffects.add(keyword)
                 }
-                nameMatch -> score += 30
                 keyPointMatch -> score += 25
                 indicationMatch -> score += 20
             }
+        }
+
+        // 如果匹配了名称，大幅加分确保排在前面
+        if (hasNameMatch) {
+            score += 30
         }
 
         // 全部关键词都匹配到功效，额外加分

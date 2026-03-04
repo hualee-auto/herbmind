@@ -1,5 +1,6 @@
 package com.herbmind.android.ui.screens
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -18,6 +19,8 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -38,9 +41,7 @@ import org.koin.core.parameter.parametersOf
 @Composable
 fun HerbDetailScreen(
     herbId: String,
-    isFavorite: Boolean,
     onBackClick: () -> Unit,
-    onFavoriteClick: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: HerbDetailViewModel = koinViewModel { parametersOf(herbId) }
 ) {
@@ -68,9 +69,9 @@ fun HerbDetailScreen(
 
     HerbDetailContent(
         uiState = uiState,
-        isFavorite = isFavorite,
+        isFavorite = uiState.isFavorite,
         onBackClick = onBackClick,
-        onFavoriteClick = onFavoriteClick,
+        onFavoriteClick = { viewModel.toggleFavorite() },
         onStartStudying = { viewModel.startStudying() },
         modifier = modifier
     )

@@ -1,3 +1,14 @@
+-- 数据版本表（用于云端数据同步）
+CREATE TABLE data_version (
+    id INTEGER PRIMARY KEY CHECK (id = 1),  -- 强制只有一行数据
+    version INTEGER NOT NULL DEFAULT 0,      -- 当前数据版本号
+    lastSyncAt INTEGER,                      -- 上次同步时间
+    remoteVersion INTEGER DEFAULT 0          -- 云端版本号（用于比较）
+);
+
+-- 初始化版本表
+INSERT OR IGNORE INTO data_version (id, version, lastSyncAt, remoteVersion) VALUES (1, 0, 0, 0);
+
 -- 中药表
 CREATE TABLE herb (
     id TEXT PRIMARY KEY,
@@ -231,21 +242,62 @@ SELECT
     AVG(CAST(correctReviews AS REAL) / NULLIF(totalReviews, 0))
 FROM study_progress;
 
--- 查询最近7天的学习热力图数据
+-- 查询最近7天的复习记录（应用层分组）
 selectStudyHeatmap:
 SELECT
-    (reviewedAt / 1000 / 86400) * 86400,
-    COUNT(*),
-    SUM(CASE WHEN rating >= 3 THEN 1 ELSE 0 END)
+    reviewedAt,
+    rating
 FROM review_log
 WHERE reviewedAt >= ?
-GROUP BY (reviewedAt / 1000 / 86400)
-ORDER BY (reviewedAt / 1000 / 86400) DESC;
+ORDER BY reviewedAt DESC;
 
 -- ========== 插入中药（用于初始化） ==========
+-- 注意：使用 REPLACE 会触发 ON DELETE CASCADE，需要在代码层先 UPDATE 再 INSERT
 insertHerb:
 INSERT OR REPLACE INTO herb (
     id, name, pinyin, aliases, category, subCategory, nature, flavor,
     meridians, effects, indications, usage, contraindications, memoryTip,
     association, keyPoint, similarTo, image, isCommon, examFrequency
 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+-- 更新中药（保留收藏数据）
+updateHerb:
+UPDATE herb SET
+    name = ?,
+    pinyin = ?,
+    aliases = ?,
+    category = ?,
+    subCategory = ?,
+    nature = ?,
+    flavor = ?,
+    meridians = ?,
+    effects = ?,
+    indications = ?,
+    usage = ?,
+    contraindications = ?,
+    memoryTip = ?,
+    association = ?,
+    keyPoint = ?,
+    similarTo = ?,
+    image = ?,
+    isCommon = ?,
+    examFrequency = ?
+WHERE id = ?;
+
+-- ========== 数据版本控制相关查询 ==========
+
+-- 查询当前数据版本
+selectDataVersion:
+SELECT * FROM data_version WHERE id = 1;
+
+-- 更新本地版本号
+updateLocalVersion:
+UPDATE data_version SET version = ?, lastSyncAt = ? WHERE id = 1;
+
+-- 更新云端版本号（用于比较）
+updateRemoteVersion:
+UPDATE data_version SET remoteVersion = ? WHERE id = 1;
+
+-- 同时更新本地和云端版本号（同步完成后）
+updateBothVersions:
+UPDATE data_version SET version = ?, remoteVersion = ?, lastSyncAt = ? WHERE id = 1;

@@ -227,7 +227,13 @@ class StudyUseCase(
             association = association,
             keyPoint = keyPoint,
             similarTo = similarTo?.let { json.decodeFromString(it) } ?: emptyList(),
-            image = image,
+            images = image?.let {
+                try {
+                    json.decodeFromString(it)
+                } catch (e: Exception) {
+                    com.herbmind.data.model.Images(plant = "", medicinal = "", slice = it)
+                }
+            } ?: com.herbmind.data.model.Images(),
             isCommon = isCommon == 1L,
             examFrequency = examFrequency?.toInt() ?: 1
         )
@@ -270,26 +276,42 @@ class StudyUseCase(
         try {
             val startTime = Clock.System.now().toEpochMilliseconds() - (days.toLong() * 24 * 60 * 60 * 1000)
 
-            val data = queries.selectStudyHeatmap(startTime).executeAsList()
-            val maxCount = data.maxOfOrNull { it.COUNT } ?: 1L
+            val records = queries.selectStudyHeatmap(startTime).executeAsList()
+            
+            // 按天分组统计
+            val grouped = records.groupBy { 
+                (it.reviewedAt / 1000 / 86400) * 86400 
+            }.mapValues { (_, dayRecords) ->
+                HeatmapDayData(
+                    reviewCount = dayRecords.size.toLong(),
+                    correctCount = dayRecords.count { it.rating >= 3 }.toLong()
+                )
+            }
+            
+            val maxCount = grouped.maxOfOrNull { it.value.reviewCount } ?: 1L
 
-            emit(data.map { row ->
-                val timestamp = row.expr * 1000L
+            emit(grouped.map { (dayEpoch, data) ->
+                val timestamp = dayEpoch * 1000L
                 val date = Instant.fromEpochMilliseconds(timestamp)
                     .toLocalDateTime(TimeZone.currentSystemDefault())
                     .date
                     .toString()
                 HeatmapData(
                     date = date,
-                    reviewCount = row.COUNT.toInt(),
-                    correctCount = row.SUM?.toInt() ?: 0,
-                    intensity = (row.COUNT.toFloat() / maxCount.toFloat()).coerceIn(0f, 1f)
+                    reviewCount = data.reviewCount.toInt(),
+                    correctCount = data.correctCount.toInt(),
+                    intensity = (data.reviewCount.toFloat() / maxCount.toFloat()).coerceIn(0f, 1f)
                 )
             })
         } catch (e: Exception) {
             emit(emptyList())
         }
     }
+    
+    private data class HeatmapDayData(
+        val reviewCount: Long,
+        val correctCount: Long
+    )
 
     /**
      * 获取某药的学习进度

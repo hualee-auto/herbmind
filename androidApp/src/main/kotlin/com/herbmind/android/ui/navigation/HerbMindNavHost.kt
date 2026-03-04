@@ -1,10 +1,6 @@
 package com.herbmind.android.ui.navigation
 
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -21,9 +17,6 @@ import com.herbmind.android.ui.screens.StudyScreen
 fun HerbMindNavHost(
     navController: NavHostController
 ) {
-    // 使用 rememberSaveable 保存收藏状态，Activity 重建后恢复
-    var favoriteHerbs by rememberSaveable { mutableStateOf(setOf<String>()) }
-
     NavHost(
         navController = navController,
         startDestination = Screen.Home.route
@@ -114,20 +107,11 @@ fun HerbMindNavHost(
             )
         ) { backStackEntry ->
             val herbId = backStackEntry.arguments?.getString("herbId") ?: ""
-            val isFavorite = herbId in favoriteHerbs
             
             HerbDetailScreen(
                 herbId = herbId,
-                isFavorite = isFavorite,
                 onBackClick = {
                     navController.popBackStack()
-                },
-                onFavoriteClick = {
-                    favoriteHerbs = if (herbId in favoriteHerbs) {
-                        favoriteHerbs - herbId
-                    } else {
-                        favoriteHerbs + herbId
-                    }
                 }
             )
         }

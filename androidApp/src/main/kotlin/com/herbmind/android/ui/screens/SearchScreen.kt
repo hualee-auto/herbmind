@@ -115,7 +115,12 @@ fun SearchScreen(
                 }
                 // 显示提示和历史
                 else -> {
-                    SearchTipsSection()
+                    SearchTipsSection(
+                        onExampleClick = { example ->
+                            viewModel.onSearchQueryChange(example)
+                            viewModel.onSearch(example)
+                        }
+                    )
 
                     if (uiState.recentSearches.isNotEmpty()) {
                         Spacer(modifier = Modifier.height(24.dp))
@@ -355,7 +360,9 @@ private fun SearchResultItem(
 }
 
 @Composable
-private fun SearchTipsSection() {
+private fun SearchTipsSection(
+    onExampleClick: (String) -> Unit = {}
+) {
     Column {
         Row(
             verticalAlignment = Alignment.CenterVertically
@@ -405,21 +412,11 @@ private fun SearchTipsSection() {
             "安神 失眠"
         )
 
-        examples.forEach { example ->
-            Surface(
-                onClick = { },
-                shape = RoundedCornerShape(8.dp),
-                color = HerbColors.BambooGreenPale,
-                modifier = Modifier.padding(bottom = 8.dp)
-            ) {
-                Text(
-                    text = example,
-                    modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp),
-                    fontSize = 14.sp,
-                    color = HerbColors.BambooGreenDark
-                )
-            }
-        }
+        // 使用自定义流式布局实现水平排列自动换行
+        FlowRowExampleTags(
+            examples = examples,
+            onExampleClick = onExampleClick
+        )
     }
 }
 
@@ -517,5 +514,63 @@ private fun RecentSearchItem(
                 )
             }
         }
+    }
+}
+
+/**
+ * 流式标签布局 - 水平排列自动换行
+ */
+@Composable
+private fun FlowRowExampleTags(
+    examples: List<String>,
+    onExampleClick: (String) -> Unit
+) {
+    val rowCount = (examples.size + 1) / 2 // 每行最多2个
+    
+    Column(
+        verticalArrangement = Arrangement.spacedBy(8.dp)
+    ) {
+        for (rowIndex in 0 until rowCount) {
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                val startIndex = rowIndex * 2
+                val endIndex = minOf(startIndex + 2, examples.size)
+                
+                for (i in startIndex until endIndex) {
+                    ExampleTag(
+                        text = examples[i],
+                        onClick = { onExampleClick(examples[i]) },
+                        modifier = if (endIndex - startIndex == 1) {
+                            Modifier.wrapContentWidth()
+                        } else {
+                            Modifier.weight(1f)
+                        }
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun ExampleTag(
+    text: String,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    Surface(
+        onClick = onClick,
+        shape = RoundedCornerShape(8.dp),
+        color = HerbColors.BambooGreenPale,
+        modifier = modifier
+    ) {
+        Text(
+            text = text,
+            modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp),
+            fontSize = 14.sp,
+            color = HerbColors.BambooGreenDark
+        )
     }
 }

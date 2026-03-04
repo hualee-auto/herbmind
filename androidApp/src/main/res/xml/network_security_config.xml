@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    网络安全配置
+    允许 HTTP 明文传输（用于国内 CDN）
+-->
+<network-security-config>
+    <!-- 允许特定域名的明文 HTTP -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">cdn.hualee.top</domain>
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+    </domain-config>
+    
+    <!-- 默认配置：允许所有明文 HTTP（开发阶段） -->
+    <!-- 生产环境应移除此项，仅允许特定域名 -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+</network-security-config>
