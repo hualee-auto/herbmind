@@ -86,7 +86,7 @@ class CompareViewModel(
         val commonEffects = allEffects.filter { effect ->
             herbs.all { it.effects.contains(effect) }
         }
-        val uniqueEffects = allEffects - commonEffects.toSet()
+        val uniqueEffects = (allEffects - commonEffects.toSet()).toList()
 
         return EffectDifference(
             commonEffects = commonEffects,

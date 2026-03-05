@@ -135,7 +135,9 @@ private fun CategoryTabs(
                     Text(
                         text = category,
                         fontSize = 14.sp,
-                        fontWeight = if (category == selectedCategory) FontWeight.SemiBold else FontWeight.Normal
+                        fontWeight = if (category == selectedCategory) FontWeight.SemiBold else FontWeight.Normal,
+                        maxLines = 1,
+                        overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis
                     )
                 }
             )
@@ -205,10 +207,11 @@ private fun CategoryHerbCard(
                 Spacer(modifier = Modifier.height(4.dp))
 
                 Text(
-                    text = herb.effects.joinToString(" · ") { it.take(8) },
+                    text = herb.effects.joinToString(" · "),
                     fontSize = 14.sp,
                     color = HerbColors.InkGray,
-                    maxLines = 1
+                    maxLines = 2,
+                    overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis
                 )
 
                 if (herb.keyPoint != null) {
@@ -221,7 +224,9 @@ private fun CategoryHerbCard(
                             text = herb.keyPoint!!,
                             modifier = Modifier.padding(horizontal = 8.dp, vertical = 2.dp),
                             fontSize = 12.sp,
-                            color = HerbColors.Ochre
+                            color = HerbColors.Ochre,
+                            maxLines = 1,
+                            overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis
                         )
                     }
                 }
@@ -229,6 +234,7 @@ private fun CategoryHerbCard(
 
             // 常用药标记
             if (herb.isCommon) {
+                Spacer(modifier = Modifier.width(8.dp))
                 Surface(
                     shape = RoundedCornerShape(8.dp),
                     color = HerbColors.BambooGreen.copy(alpha = 0.1f)

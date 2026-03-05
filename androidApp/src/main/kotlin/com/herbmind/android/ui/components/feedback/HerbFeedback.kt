@@ -326,10 +326,10 @@ fun HerbInfoBar(
     modifier: Modifier = Modifier
 ) {
     val (backgroundColor, textColor, icon) = when (type) {
-        InfoBarType.Info -> HerbColors.BambooGreenPale to HerbColors.BambooGreenDark, "ℹ️"
-        InfoBarType.Success -> HerbColors.MemoryGreen to HerbColors.PineGreen, "✅"
-        InfoBarType.Warning -> HerbColors.MemoryYellow to HerbColors.RattanYellow, "⚠️"
-        InfoBarType.Error -> HerbColors.CinnabarLight to HerbColors.Cinnabar, "❌"
+        InfoBarType.Info -> Triple(HerbColors.BambooGreenPale, HerbColors.BambooGreenDark, "ℹ️")
+        InfoBarType.Success -> Triple(HerbColors.MemoryGreen, HerbColors.PineGreen, "✅")
+        InfoBarType.Warning -> Triple(HerbColors.MemoryYellow, HerbColors.RattanYellow, "⚠️")
+        InfoBarType.Error -> Triple(HerbColors.CinnabarLight, HerbColors.Cinnabar, "❌")
     }
 
     Surface(

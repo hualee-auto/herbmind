@@ -406,7 +406,7 @@ private fun CategoryCard(
 ) {
     Card(
         onClick = onClick,
-        modifier = modifier.height(96.dp),
+        modifier = modifier.height(108.dp),
         shape = RoundedCornerShape(12.dp),
         colors = CardDefaults.cardColors(
             containerColor = HerbColors.PureWhite
@@ -424,20 +424,24 @@ private fun CategoryCard(
                 text = category.icon,
                 fontSize = 28.sp
             )
-            Spacer(modifier = Modifier.height(4.dp))
+            Spacer(modifier = Modifier.height(2.dp))
             Text(
                 text = category.name,
                 fontSize = 13.sp,
                 fontWeight = FontWeight.SemiBold,
                 color = HerbColors.InkBlack,
                 textAlign = androidx.compose.ui.text.style.TextAlign.Center,
-                maxLines = 1
+                maxLines = 1,
+                overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis
             )
+            Spacer(modifier = Modifier.height(2.dp))
             Text(
                 text = "${category.herbCount}味",
                 fontSize = 11.sp,
                 color = HerbColors.InkGray,
-                textAlign = androidx.compose.ui.text.style.TextAlign.Center
+                textAlign = androidx.compose.ui.text.style.TextAlign.Center,
+                maxLines = 1,
+                overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis
             )
         }
     }
