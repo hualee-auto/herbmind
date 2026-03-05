@@ -96,8 +96,16 @@ fun SearchScreen(
             when {
                 // 显示搜索结果
                 uiState.searchResults.isNotEmpty() -> {
+                    // 筛选标签栏
+                    FilterChipsSection(
+                        selectedFilter = uiState.selectedFilter,
+                        onFilterSelected = viewModel::onFilterSelected
+                    )
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
                     SearchResultsSection(
-                        results = uiState.searchResults,
+                        results = uiState.filteredResults.ifEmpty { uiState.searchResults },
                         onHerbClick = onHerbClick
                     )
                 }
@@ -213,6 +221,42 @@ private fun SearchInputField(
                     )
                 }
             }
+        }
+    }
+}
+
+@Composable
+private fun FilterChipsSection(
+    selectedFilter: com.herbmind.android.ui.viewmodel.SearchFilter,
+    onFilterSelected: (com.herbmind.android.ui.viewmodel.SearchFilter) -> Unit
+) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(8.dp)
+    ) {
+        com.herbmind.android.ui.viewmodel.SearchFilter.values().forEach { filter ->
+            val isSelected = filter == selectedFilter
+            FilterChip(
+                selected = isSelected,
+                onClick = { onFilterSelected(filter) },
+                label = {
+                    Text(
+                        text = filter.label,
+                        fontSize = 13.sp
+                    )
+                },
+                colors = FilterChipDefaults.filterChipColors(
+                    selectedContainerColor = HerbColors.BambooGreen,
+                    selectedLabelColor = HerbColors.PureWhite,
+                    containerColor = HerbColors.PureWhite,
+                    labelColor = HerbColors.InkGray
+                ),
+                border = FilterChipDefaults.filterChipBorder(
+                    enabled = true,
+                    selected = isSelected,
+                    borderColor = if (isSelected) HerbColors.BambooGreen else HerbColors.BorderLight
+                )
+            )
         }
     }
 }

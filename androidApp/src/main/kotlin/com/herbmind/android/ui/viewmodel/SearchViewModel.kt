@@ -74,6 +74,12 @@ class SearchViewModel(
         }
     }
 
+    fun onFilterSelected(filter: SearchFilter) {
+        _uiState.value = _uiState.value.copy(
+            selectedFilter = filter
+        )
+    }
+
     private fun loadRecentSearches() {
         viewModelScope.launch {
             searchRepository.getRecentSearches().collect { searches ->
@@ -100,5 +106,22 @@ data class SearchUiState(
     val searchQuery: String = "",
     val searchResults: List<SearchResult> = emptyList(),
     val recentSearches: List<String> = emptyList(),
-    val isSearching: Boolean = false
-)
+    val isSearching: Boolean = false,
+    val selectedFilter: SearchFilter = SearchFilter.All
+) {
+    // 根据筛选条件过滤结果
+    val filteredResults: List<SearchResult>
+        get() = when (selectedFilter) {
+            SearchFilter.All -> searchResults
+            SearchFilter.HighFrequency -> searchResults.filter { it.herb.examFrequency >= 4 }
+            SearchFilter.Common -> searchResults.filter { it.herb.isCommon }
+            SearchFilter.Category -> searchResults // 需要额外逻辑处理
+        }
+}
+
+enum class SearchFilter(val label: String) {
+    All("全部"),
+    HighFrequency("高频考点"),
+    Common("常用药"),
+    Category("同分类")
+}

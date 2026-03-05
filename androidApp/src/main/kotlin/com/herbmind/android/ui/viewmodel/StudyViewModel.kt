@@ -38,6 +38,7 @@ class StudyViewModel(
         loadStatistics()
         loadTodayReviews()
         loadNewHerbs()
+        loadStudyRecords()
     }
 
     /**
@@ -83,6 +84,36 @@ class StudyViewModel(
                 _uiState.update { it.copy(newHerbs = list) }
             }
         }
+    }
+
+    /**
+     * 加载学习记录（用于热力图）
+     */
+    fun loadStudyRecords() {
+        viewModelScope.launch {
+            // 模拟学习记录数据，实际应从数据库加载
+            val records = generateMockStudyRecords()
+            _uiState.update { it.copy(studyRecords = records) }
+        }
+    }
+
+    /**
+     * 生成模拟学习记录（用于演示）
+     */
+    private fun generateMockStudyRecords(): List<String> {
+        val records = mutableListOf<String>()
+        val today = java.time.LocalDate.now()
+
+        // 生成最近6个月的随机学习记录
+        for (i in 0..180) {
+            val date = today.minusDays(i.toLong())
+            // 随机生成学习记录，概率约60%
+            if (kotlin.random.Random.nextFloat() < 0.6f) {
+                records.add(date.toString())
+            }
+        }
+
+        return records
     }
 
     /**
@@ -237,6 +268,7 @@ data class StudyUiState(
     val reviewCards: List<ReviewCardData> = emptyList(),  // 包含完整药材信息
     val newHerbs: List<Herb> = emptyList(),
     val isLoadingReviews: Boolean = false,
+    val studyRecords: List<String> = emptyList(),  // 学习记录日期列表 (yyyy-MM-dd)
 
     // 复习模式状态
     val isReviewMode: Boolean = false,

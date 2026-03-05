@@ -37,11 +37,26 @@ kotlin {
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.serialization.kotlinx.json)
         }
-        
+
+        commonTest.dependencies {
+            implementation(kotlin("test"))
+            implementation(kotlin("test-annotations-common"))
+            implementation(libs.kotlinx.coroutines.test)
+            implementation(libs.turbine)
+        }
+
         androidMain.dependencies {
             implementation(libs.sqldelight.android)
             implementation(libs.koin.android)
             implementation(libs.ktor.client.okhttp)
+        }
+
+        androidUnitTest.dependencies {
+            implementation(kotlin("test-junit"))
+            implementation(libs.junit)
+            implementation(libs.mockk)
+            implementation(libs.kotlinx.coroutines.test)
+            implementation(libs.turbine)
         }
     }
 }

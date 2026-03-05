@@ -7,10 +7,12 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.herbmind.android.ui.screens.CategoryScreen
+import com.herbmind.android.ui.screens.CompareScreen
 import com.herbmind.android.ui.screens.FavoritesScreen
 import com.herbmind.android.ui.screens.HerbDetailScreen
 import com.herbmind.android.ui.screens.HomeScreen
 import com.herbmind.android.ui.screens.SearchScreen
+import com.herbmind.android.ui.screens.SplashScreen
 import com.herbmind.android.ui.screens.StudyScreen
 
 @Composable
@@ -19,8 +21,19 @@ fun HerbMindNavHost(
 ) {
     NavHost(
         navController = navController,
-        startDestination = Screen.Home.route
+        startDestination = Screen.Splash.route
     ) {
+        // 启动页
+        composable(Screen.Splash.route) {
+            SplashScreen(
+                onSplashComplete = {
+                    navController.navigate(Screen.Home.route) {
+                        popUpTo(Screen.Splash.route) { inclusive = true }
+                    }
+                }
+            )
+        }
+
         // 首页
         composable(Screen.Home.route) {
             HomeScreen(
@@ -107,11 +120,14 @@ fun HerbMindNavHost(
             )
         ) { backStackEntry ->
             val herbId = backStackEntry.arguments?.getString("herbId") ?: ""
-            
+
             HerbDetailScreen(
                 herbId = herbId,
                 onBackClick = {
                     navController.popBackStack()
+                },
+                onCompareClick = { similarHerbId ->
+                    navController.navigate(Screen.Compare.createRoute(herbId, similarHerbId))
                 }
             )
         }
@@ -121,6 +137,29 @@ fun HerbMindNavHost(
             StudyScreen(
                 onBackClick = {
                     navController.popBackStack()
+                }
+            )
+        }
+
+        // 药物对比页
+        composable(
+            route = Screen.Compare.route,
+            arguments = listOf(
+                navArgument("herbId1") { type = NavType.StringType },
+                navArgument("herbId2") { type = NavType.StringType }
+            )
+        ) { backStackEntry ->
+            val herbId1 = backStackEntry.arguments?.getString("herbId1") ?: ""
+            val herbId2 = backStackEntry.arguments?.getString("herbId2") ?: ""
+
+            CompareScreen(
+                herbId1 = herbId1,
+                herbId2 = herbId2,
+                onBackClick = {
+                    navController.popBackStack()
+                },
+                onHerbClick = { herbId ->
+                    navController.navigate(Screen.HerbDetail.createRoute(herbId))
                 }
             )
         }

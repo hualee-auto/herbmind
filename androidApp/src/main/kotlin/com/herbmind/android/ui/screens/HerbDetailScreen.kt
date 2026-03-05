@@ -42,6 +42,7 @@ import org.koin.core.parameter.parametersOf
 fun HerbDetailScreen(
     herbId: String,
     onBackClick: () -> Unit,
+    onCompareClick: ((String) -> Unit)? = null,
     modifier: Modifier = Modifier,
     viewModel: HerbDetailViewModel = koinViewModel { parametersOf(herbId) }
 ) {
@@ -73,6 +74,7 @@ fun HerbDetailScreen(
         onBackClick = onBackClick,
         onFavoriteClick = { viewModel.toggleFavorite() },
         onStartStudying = { viewModel.startStudying() },
+        onCompareClick = onCompareClick,
         modifier = modifier
     )
 }
@@ -85,6 +87,7 @@ private fun HerbDetailContent(
     onBackClick: () -> Unit,
     onFavoriteClick: () -> Unit,
     onStartStudying: () -> Unit = {},
+    onCompareClick: ((String) -> Unit)? = null,
     modifier: Modifier = Modifier
 ) {
     val herb = uiState.herb ?: return
@@ -227,7 +230,9 @@ private fun HerbDetailContent(
             // 易混淆药物对比
             if (uiState.similarHerbs.isNotEmpty()) {
                 SimilarHerbsSection(
-                    similarHerbs = uiState.similarHerbs
+                    similarHerbs = uiState.similarHerbs,
+                    currentHerbId = herb.id,
+                    onCompareClick = onCompareClick
                 )
             }
 
@@ -523,7 +528,9 @@ private fun SpecialInfoCard(
 
 @Composable
 private fun SimilarHerbsSection(
-    similarHerbs: List<com.herbmind.android.ui.viewmodel.SimilarHerbInfo>
+    similarHerbs: List<com.herbmind.android.ui.viewmodel.SimilarHerbInfo>,
+    currentHerbId: String,
+    onCompareClick: ((String) -> Unit)?
 ) {
     Card(
         modifier = Modifier
@@ -579,6 +586,11 @@ private fun SimilarHerbsSection(
                     modifier = Modifier
                         .padding(bottom = 8.dp)
                         .fillMaxWidth()
+                        .then(
+                            if (onCompareClick != null)
+                                Modifier.clickable { onCompareClick(similarHerb.id) }
+                            else Modifier
+                        )
                 ) {
                     Row(
                         modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
@@ -591,7 +603,23 @@ private fun SimilarHerbsSection(
                             color = HerbColors.InkBlack,
                             modifier = Modifier.weight(1f)
                         )
-                        
+
+                        // 对比按钮
+                        if (onCompareClick != null) {
+                            Surface(
+                                shape = RoundedCornerShape(6.dp),
+                                color = HerbColors.BambooGreen.copy(alpha = 0.1f),
+                                modifier = Modifier.padding(end = 8.dp)
+                            ) {
+                                Text(
+                                    text = "对比",
+                                    modifier = Modifier.padding(horizontal = 8.dp, vertical = 2.dp),
+                                    fontSize = 11.sp,
+                                    color = HerbColors.BambooGreen
+                                )
+                            }
+                        }
+
                         similarHerb.keyPoint?.let { keyPoint ->
                             Surface(
                                 shape = RoundedCornerShape(6.dp),

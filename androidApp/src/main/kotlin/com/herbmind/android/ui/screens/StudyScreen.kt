@@ -20,6 +20,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.herbmind.android.ui.components.StudyHeatmap
 import com.herbmind.android.ui.theme.HerbColors
 import com.herbmind.android.ui.viewmodel.ReviewRating
 import com.herbmind.android.ui.viewmodel.StudyUiState
@@ -128,6 +129,14 @@ private fun StudyOverview(
 
         // 学习统计卡片
         StudyStatsCard(stats = uiState.statistics)
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        // 学习热力图
+        StudyHeatmap(
+            studyRecords = uiState.studyRecords,
+            modifier = Modifier.fillMaxWidth()
+        )
 
         Spacer(modifier = Modifier.height(24.dp))
 

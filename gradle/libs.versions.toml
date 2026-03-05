@@ -3,6 +3,11 @@ agp = "8.2.0"
 kotlin = "1.9.22"
 coroutines = "1.7.3"
 ktor = "2.3.7"
+junit = "4.13.2"
+mockk = "1.13.9"
+turbine = "1.0.0"
+androidx-test = "1.5.0"
+espresso = "3.5.1"
 
 [libraries]
 # Kotlin
@@ -32,6 +37,18 @@ ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "kto
 ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
 ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+
+# Testing
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+junit = { module = "junit:junit", version.ref = "junit" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+androidx-test-core = { module = "androidx.test:core", version.ref = "androidx-test" }
+androidx-test-junit = { module = "androidx.test.ext:junit", version = "1.1.5" }
+espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
+androidx-arch-core-testing = { module = "androidx.arch.core:core-testing", version = "2.2.0" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

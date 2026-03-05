@@ -3,6 +3,7 @@ package com.herbmind.android.di
 import androidx.work.WorkerParameters
 import com.herbmind.android.data.StudyDataInitializer
 import com.herbmind.android.ui.viewmodel.CategoryViewModel
+import com.herbmind.android.ui.viewmodel.CompareViewModel
 import com.herbmind.android.ui.viewmodel.FavoritesViewModel
 import com.herbmind.android.ui.viewmodel.HerbDetailViewModel
 import com.herbmind.android.ui.viewmodel.HomeViewModel
@@ -21,6 +22,9 @@ val appModule = module {
     viewModel { CategoryViewModel(get()) }
     viewModel { StudyViewModel(get(), get()) }
     viewModel { SyncViewModel(get()) }
+    viewModel { (herbId1: String, herbId2: String, herbId3: String?) ->
+        CompareViewModel(herbId1, herbId2, herbId3, get())
+    }
 
     // Worker factory
     factory { (params: WorkerParameters) ->
