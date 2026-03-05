@@ -57,3 +57,8 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+
+# Agent System
+.agents/.env
+.agents/locks/*.lock
+.agents/logs/*.log
