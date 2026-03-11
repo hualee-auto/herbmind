@@ -2,20 +2,20 @@ package com.herbmind.android.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.herbmind.data.model.DailyRecommend
 import com.herbmind.data.model.Herb
 import com.herbmind.data.model.HerbCategory
-import com.herbmind.domain.recommend.DailyRecommendUseCase
 import com.herbmind.data.repository.HerbRepository
+import com.herbmind.domain.search.FilterCriteria
+import com.herbmind.domain.search.FilterHerbsUseCase
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 class HomeViewModel(
     private val herbRepository: HerbRepository,
-    private val dailyRecommendUseCase: DailyRecommendUseCase
+    private val filterUseCase: FilterHerbsUseCase
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(HomeUiState())
@@ -27,53 +27,74 @@ class HomeViewModel(
 
     private fun loadData() {
         viewModelScope.launch {
-            // 加载推荐
-            dailyRecommendUseCase().collect { recommends ->
-                _uiState.value = _uiState.value.copy(
-                    dailyRecommends = recommends
-                )
-            }
-        }
-
-        viewModelScope.launch {
-            // 加载所有草药（用于分类计数）
-            herbRepository.getAllHerbs().collect { herbs ->
+            herbRepository.getAllHerbs().collectLatest { herbs ->
+                // 统计类别
                 val categories = herbs.groupBy { it.category }
                     .map { (category, herbList) ->
                         HerbCategory(
                             id = category,
                             name = category,
                             icon = getCategoryIcon(category),
-                            description = "${herbList.size}味中药",
+                            description = "${herbList.size}味",
                             herbCount = herbList.size
                         )
                     }
+
                 _uiState.value = _uiState.value.copy(
                     categories = categories,
-                    hotHerbs = herbs.filter { it.isCommon }.take(6)
+                    isLoading = false
                 )
             }
         }
+
+        viewModelScope.launch {
+            // 加载最近浏览（简化实现）
+            _uiState.value = _uiState.value.copy(
+                recentHerbs = emptyList()
+            )
+        }
+    }
+
+    fun onCategorySelected(category: String) {
+        viewModelScope.launch {
+            filterUseCase(FilterCriteria(categories = listOf(category)))
+                .collectLatest { herbs ->
+                    _uiState.value = _uiState.value.copy(
+                        selectedCategory = category,
+                        filteredHerbs = herbs
+                    )
+                }
+        }
+    }
+
+    fun clearCategoryFilter() {
+        _uiState.value = _uiState.value.copy(
+            selectedCategory = "",
+            filteredHerbs = emptyList()
+        )
     }
 
     private fun getCategoryIcon(category: String): String {
         return when (category) {
-            "解表药" -> "🌡️"
-            "清热药" -> "🔥"
-            "补虚药" -> "💊"
-            "补气药" -> "💪"
-            "补血药" -> "🩸"
-            "理气药" -> "🌿"
-            "活血化瘀药" -> "💉"
-            "安神药" -> "😴"
+            "根及根茎类" -> "🌱"
+            "果实及种子类" -> "🍎"
+            "全草类" -> "🌿"
+            "花类" -> "🌸"
+            "叶类" -> "🍃"
+            "皮类" -> "🪵"
+            "菌藻类" -> "🍄"
+            "动物类" -> "🐛"
+            "矿物类" -> "⛰️"
+            "其他类" -> "📦"
             else -> "🌿"
         }
     }
 }
 
 data class HomeUiState(
-    val dailyRecommends: List<DailyRecommend> = emptyList(),
     val categories: List<HerbCategory> = emptyList(),
-    val hotHerbs: List<Herb> = emptyList(),
-    val isLoading: Boolean = false
+    val recentHerbs: List<Herb> = emptyList(),
+    val selectedCategory: String = "",
+    val filteredHerbs: List<Herb> = emptyList(),
+    val isLoading: Boolean = true
 )

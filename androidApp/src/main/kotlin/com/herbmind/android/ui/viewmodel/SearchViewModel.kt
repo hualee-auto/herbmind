@@ -4,124 +4,75 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.herbmind.data.model.Herb
 import com.herbmind.data.model.SearchResult
-import com.herbmind.domain.search.SearchUseCase
-import com.herbmind.data.repository.SearchRepository
+import com.herbmind.domain.search.FilterCriteria
+import com.herbmind.domain.search.FilterHerbsUseCase
+import com.herbmind.domain.search.SearchHerbsUseCase
 import kotlinx.coroutines.FlowPreview
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.debounce
-import kotlinx.coroutines.flow.launchIn
-import kotlinx.coroutines.flow.onEach
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.flow.flatMapLatest
+import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.map
+
+data class SearchUiState(
+    val query: String = "",
+    val results: List<SearchResult> = emptyList(),
+    val filterCriteria: FilterCriteria = FilterCriteria(),
+    val isLoading: Boolean = false,
+    val error: String? = null
+)
 
 @OptIn(FlowPreview::class)
 class SearchViewModel(
-    private val searchUseCase: SearchUseCase,
-    private val searchRepository: SearchRepository
+    private val searchUseCase: SearchHerbsUseCase,
+    private val filterUseCase: FilterHerbsUseCase
 ) : ViewModel() {
 
-    private val _uiState = MutableStateFlow(SearchUiState())
-    val uiState: StateFlow<SearchUiState> = _uiState.asStateFlow()
-
     private val _searchQuery = MutableStateFlow("")
+    private val _filterCriteria = MutableStateFlow(FilterCriteria())
 
-    init {
-        loadRecentSearches()
-        
-        // 搜索防抖
-        _searchQuery
+    val uiState: StateFlow<SearchUiState> = combine(
+        _searchQuery,
+        _filterCriteria,
+        performSearch()
+    ) { query, filters, results ->
+        SearchUiState(
+            query = query,
+            results = results,
+            filterCriteria = filters,
+            isLoading = false
+        )
+    }.stateIn(viewModelScope, kotlinx.coroutines.flow.SharingStarted.Lazily, SearchUiState())
+
+    private fun performSearch(): Flow<List<SearchResult>> {
+        return _searchQuery
             .debounce(300)
-            .onEach { query ->
-                if (query.isNotBlank()) {
-                    performSearch(query)
+            .flatMapLatest { query ->
+                if (query.isBlank()) {
+                    // 如果没有搜索词，应用筛选条件
+                    filterUseCase(_filterCriteria.value).map { herbs ->
+                        herbs.map { SearchResult(it, 0, emptyList()) }
+                    }
                 } else {
-                    _uiState.value = _uiState.value.copy(
-                        searchResults = emptyList(),
-                        isSearching = false
-                    )
+                    searchUseCase(query)
                 }
             }
-            .launchIn(viewModelScope)
     }
 
-    fun onSearchQueryChange(query: String) {
+    fun onQueryChange(query: String) {
         _searchQuery.value = query
-        _uiState.value = _uiState.value.copy(
-            searchQuery = query,
-            isSearching = query.isNotBlank()
-        )
     }
 
-    fun onSearch(query: String) {
-        viewModelScope.launch {
-            searchRepository.addSearch(query)
-            loadRecentSearches()
-        }
+    fun onFilterChange(criteria: FilterCriteria) {
+        _filterCriteria.value = criteria
     }
 
-    fun onClearHistory() {
-        viewModelScope.launch {
-            searchRepository.clearHistory()
-            loadRecentSearches()
-        }
+    fun clearFilters() {
+        _filterCriteria.value = FilterCriteria()
     }
-
-    fun onDeleteSearch(query: String) {
-        viewModelScope.launch {
-            searchRepository.deleteSearch(query)
-            loadRecentSearches()
-        }
-    }
-
-    fun onFilterSelected(filter: SearchFilter) {
-        _uiState.value = _uiState.value.copy(
-            selectedFilter = filter
-        )
-    }
-
-    private fun loadRecentSearches() {
-        viewModelScope.launch {
-            searchRepository.getRecentSearches().collect { searches ->
-                _uiState.value = _uiState.value.copy(
-                    recentSearches = searches
-                )
-            }
-        }
-    }
-
-    private fun performSearch(query: String) {
-        viewModelScope.launch {
-            searchUseCase(query).collect { results ->
-                _uiState.value = _uiState.value.copy(
-                    searchResults = results,
-                    isSearching = false
-                )
-            }
-        }
-    }
-}
-
-data class SearchUiState(
-    val searchQuery: String = "",
-    val searchResults: List<SearchResult> = emptyList(),
-    val recentSearches: List<String> = emptyList(),
-    val isSearching: Boolean = false,
-    val selectedFilter: SearchFilter = SearchFilter.All
-) {
-    // 根据筛选条件过滤结果
-    val filteredResults: List<SearchResult>
-        get() = when (selectedFilter) {
-            SearchFilter.All -> searchResults
-            SearchFilter.HighFrequency -> searchResults.filter { it.herb.examFrequency >= 4 }
-            SearchFilter.Common -> searchResults.filter { it.herb.isCommon }
-            SearchFilter.Category -> searchResults // 需要额外逻辑处理
-        }
-}
-
-enum class SearchFilter(val label: String) {
-    All("全部"),
-    HighFrequency("高频考点"),
-    Common("常用药"),
-    Category("同分类")
 }
