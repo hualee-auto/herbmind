@@ -7,23 +7,20 @@ data class Herb(
     val id: String,
     val name: String,
     val pinyin: String,
+    val latinName: String = "",
     val aliases: List<String> = emptyList(),
     val category: String,
-    val subCategory: String? = null,
-    val nature: String? = null,
+    val nature: String = "",
     val flavor: List<String> = emptyList(),
     val meridians: List<String> = emptyList(),
-    val effects: List<String>,
+    val effects: List<String> = emptyList(),
     val indications: List<String> = emptyList(),
-    val usage: String? = null,
-    val contraindications: List<String> = emptyList(),
-    val memoryTip: String? = null,
-    val association: String? = null,
-    val keyPoint: String? = null,
-    val similarTo: List<String> = emptyList(),
+    val origin: String = "",
+    val traits: String = "",
+    val quality: String = "",
     val images: Images = Images(),
-    val isCommon: Boolean = false,
-    val examFrequency: Int = 1
+    val sourceUrl: String = "",
+    val relatedFormulas: List<String> = emptyList()
 ) {
     fun searchableText(): String = buildString {
         append(name)
@@ -31,18 +28,11 @@ data class Herb(
         append(aliases.joinToString())
         append(effects.joinToString())
         append(indications.joinToString())
-        append(keyPoint ?: "")
     }
-    
-    /**
-     * 获取药材图片半路径（饮片图）
-     */
+
     fun getImagePath(): String = images.slice
 }
 
-/**
- * 药材图片信息
- */
 @Serializable
 data class Images(
     val plant: String = "",
@@ -59,10 +49,7 @@ data class DailyRecommend(
 
 @Serializable
 enum class RecommendType {
-    SEASONAL,
-    EXAM,
-    CONTRAST,
-    DISCOVERY
+    SEASONAL, EXAM, CONTRAST, DISCOVERY
 }
 
 @Serializable
@@ -76,7 +63,7 @@ data class SearchResult(
 data class HerbCategory(
     val id: String,
     val name: String,
-    val icon: String,
-    val description: String,
-    val herbCount: Int
+    val icon: String = "🌿",
+    val description: String = "",
+    val herbCount: Int = 0
 )

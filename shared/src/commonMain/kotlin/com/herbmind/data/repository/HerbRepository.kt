@@ -2,6 +2,7 @@ package com.herbmind.data.repository
 
 import com.herbmind.data.HerbQueries
 import com.herbmind.data.model.Herb
+import com.herbmind.data.model.Images
 import app.cash.sqldelight.coroutines.asFlow
 import app.cash.sqldelight.coroutines.mapToList
 import app.cash.sqldelight.coroutines.mapToOneOrNull
@@ -10,6 +11,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.encodeToString
 
 class HerbRepository(
     private val herbQueries: HerbQueries
@@ -17,21 +19,21 @@ class HerbRepository(
     private val json = Json { ignoreUnknownKeys = true }
 
     fun getAllHerbs(): Flow<List<Herb>> {
-        return herbQueries.selectAll()
+        return herbQueries.selectAllHerbs()
             .asFlow()
             .mapToList(Dispatchers.Default)
             .map { list -> list.map { it.toHerb() } }
     }
 
     fun getHerbById(id: String): Flow<Herb?> {
-        return herbQueries.selectById(id)
+        return herbQueries.selectHerbById(id)
             .asFlow()
             .mapToOneOrNull(Dispatchers.Default)
             .map { it?.toHerb() }
     }
 
     fun getHerbsByCategory(category: String): Flow<List<Herb>> {
-        return herbQueries.selectByCategory(category)
+        return herbQueries.selectHerbsByCategory(category)
             .asFlow()
             .mapToList(Dispatchers.Default)
             .map { list -> list.map { it.toHerb() } }
@@ -42,13 +44,6 @@ class HerbRepository(
             .asFlow()
             .mapToList(Dispatchers.Default)
             .map { list -> list.map { it.toHerb() } }
-    }
-
-    fun getFavoriteIds(): Flow<Set<String>> {
-        return herbQueries.selectFavoritesIds()
-            .asFlow()
-            .mapToList(Dispatchers.Default)
-            .map { it.toSet() }
     }
 
     suspend fun addFavorite(herbId: String) {
@@ -63,39 +58,55 @@ class HerbRepository(
         return herbQueries.isFavorite(herbId).executeAsOne()
     }
 
+    suspend fun saveHerb(herb: Herb) {
+        herbQueries.insertHerb(
+            id = herb.id,
+            name = herb.name,
+            pinyin = herb.pinyin,
+            latin_name = herb.latinName,
+            aliases = json.encodeToString(herb.aliases),
+            category = herb.category,
+            nature = herb.nature,
+            flavor = json.encodeToString(herb.flavor),
+            meridians = json.encodeToString(herb.meridians),
+            effects = json.encodeToString(herb.effects),
+            indications = json.encodeToString(herb.indications),
+            origin = herb.origin,
+            traits = herb.traits,
+            quality = herb.quality,
+            images = json.encodeToString(herb.images),
+            source_url = herb.sourceUrl,
+            related_formulas = json.encodeToString(herb.relatedFormulas)
+        )
+    }
+
     private fun com.herbmind.data.Herb.toHerb(): Herb {
         return Herb(
             id = id,
             name = name,
             pinyin = pinyin,
+            latinName = latin_name ?: "",
             aliases = aliases?.let { json.decodeFromString(it) } ?: emptyList(),
             category = category,
-            subCategory = subCategory,
-            nature = nature,
+            nature = nature ?: "",
             flavor = flavor?.let { json.decodeFromString(it) } ?: emptyList(),
             meridians = meridians?.let { json.decodeFromString(it) } ?: emptyList(),
-            effects = json.decodeFromString(effects),
+            effects = effects?.let { json.decodeFromString(it) } ?: emptyList(),
             indications = indications?.let { json.decodeFromString(it) } ?: emptyList(),
-            usage = usage,
-            contraindications = contraindications?.let { json.decodeFromString(it) } ?: emptyList(),
-            memoryTip = memoryTip,
-            association = association,
-            keyPoint = keyPoint,
-            similarTo = similarTo?.let { json.decodeFromString(it) } ?: emptyList(),
-            images = image?.let {
+            origin = origin ?: "",
+            traits = traits ?: "",
+            quality = quality ?: "",
+            images = images?.let {
                 try {
                     json.decodeFromString(it)
                 } catch (e: Exception) {
-                    // 兼容旧数据：如果 image 字段存在，使用它作为 slice
-                    com.herbmind.data.model.Images(
-                        plant = "",
-                        medicinal = "",
-                        slice = it
-                    )
+                    Images(slice = it)
                 }
-            } ?: com.herbmind.data.model.Images(),
-            isCommon = isCommon == 1L,
-            examFrequency = examFrequency?.toInt() ?: 1
+            } ?: Images(),
+            sourceUrl = source_url ?: "",
+            relatedFormulas = related_formulas?.let {
+                json.decodeFromString(it)
+            } ?: emptyList()
         )
     }
 }
