@@ -10,7 +10,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
-import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -32,7 +31,6 @@ fun HomeScreen(
     onSearchClick: () -> Unit,
     onSearchWithQuery: (String) -> Unit,
     onHerbClick: (String) -> Unit,
-    onFavoritesClick: () -> Unit,
     onCategoryClick: (String) -> Unit,
     modifier: Modifier = Modifier,
     viewModel: HomeViewModel = koinViewModel()
@@ -60,15 +58,9 @@ fun HomeScreen(
                     )
                 },
                 actions = {
-                    IconButton(onClick = onFavoritesClick) {
-                        Icon(
-                            imageVector = Icons.Default.Star,
-                            contentDescription = "我的收藏",
-                            tint = HerbColors.AccentRed
-                        )
-                    }
-                }
-            )
+                // 收藏夹按钮已移除（V2暂不支持）
+            })
+
         }
     ) { padding ->
         LazyColumn(
