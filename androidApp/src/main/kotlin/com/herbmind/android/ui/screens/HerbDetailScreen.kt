@@ -30,9 +30,25 @@ import com.herbmind.android.ui.theme.HerbColors
 import com.herbmind.android.ui.viewmodel.HerbDetailUiState
 import com.herbmind.android.ui.viewmodel.HerbDetailViewModel
 import com.herbmind.data.model.Herb
+import com.herbmind.data.remote.ResourceConfig
 import coil.compose.rememberAsyncImagePainter
 import org.koin.androidx.compose.koinViewModel
 import org.koin.core.parameter.parametersOf
+import androidx.compose.runtime.remember
+
+/**
+ * 将图片半路径拼接为完整 URL
+ */
+@Composable
+private fun rememberFullImageUrl(halfPath: String): String {
+    return remember(halfPath) {
+        if (halfPath.startsWith("http://") || halfPath.startsWith("https://")) {
+            halfPath
+        } else {
+            ResourceConfig.getImageBaseUrl() + halfPath
+        }
+    }
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -212,8 +228,10 @@ private fun ImageCarousel(
                 state = pagerState,
                 modifier = Modifier.fillMaxSize()
             ) { page ->
+                // 拼接完整图片 URL
+                val imageUrl = rememberFullImageUrl(images[page])
                 Image(
-                    painter = rememberAsyncImagePainter(images[page]),
+                    painter = rememberAsyncImagePainter(imageUrl),
                     contentDescription = "$contentDescription ${page + 1}/${images.size}",
                     modifier = Modifier.fillMaxSize(),
                     contentScale = ContentScale.Crop
