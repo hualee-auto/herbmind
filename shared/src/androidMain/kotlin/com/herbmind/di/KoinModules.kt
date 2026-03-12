@@ -6,10 +6,13 @@ import com.herbmind.data.database.createDatabase
 import com.herbmind.data.remote.GitHubRawDataSource
 import com.herbmind.data.remote.HerbRemoteDataSource
 import com.herbmind.data.remote.LocalJsonDataSource
+import com.herbmind.data.repository.FormulaRepository
 import com.herbmind.data.repository.HerbRepository
 import com.herbmind.data.repository.SearchRepository
+import com.herbmind.domain.herb.GetHerbDetailUseCase
 import com.herbmind.domain.recommend.DailyRecommendUseCase
-import com.herbmind.domain.search.SearchUseCase
+import com.herbmind.domain.search.FilterHerbsUseCase
+import com.herbmind.domain.search.SearchHerbsUseCase
 import com.herbmind.domain.study.StudyUseCase
 import com.herbmind.domain.sync.AppDataInitializer
 import com.herbmind.domain.sync.HerbDataSyncUseCase
@@ -31,10 +34,13 @@ actual fun commonModule(): Module = module {
 
     // Repository
     single { HerbRepository(get()) }
+    single { FormulaRepository(get()) }
     single { SearchRepository(get()) }
 
     // UseCase
-    factory { SearchUseCase(get()) }
+    factory { SearchHerbsUseCase(get()) }
+    factory { FilterHerbsUseCase(get()) }
+    factory { GetHerbDetailUseCase(get(), get()) }
     factory { DailyRecommendUseCase(get()) }
     factory { StudyUseCase(get()) }
 

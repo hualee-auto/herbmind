@@ -26,8 +26,8 @@ class StudyDataInitializer(
             val now = Clock.System.now().toEpochMilliseconds()
             
             // 获取所有药材
-            val allHerbs = queries.selectAll().executeAsList()
-            
+            val allHerbs = queries.selectAllHerbs().executeAsList()
+
             // 为每味药材创建学习记录（如果还没有）
             allHerbs.forEach { herb ->
                 val existing = queries.selectStudyProgress(herb.id).executeAsOneOrNull()

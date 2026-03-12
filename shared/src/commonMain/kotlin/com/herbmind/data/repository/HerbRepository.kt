@@ -96,17 +96,9 @@ class HerbRepository(
             origin = origin ?: "",
             traits = traits ?: "",
             quality = quality ?: "",
-            images = images?.let {
-                try {
-                    json.decodeFromString(it)
-                } catch (e: Exception) {
-                    Images(slice = it)
-                }
-            } ?: Images(),
+            images = images?.let { json.decodeFromString(it) } ?: Images(),
             sourceUrl = source_url ?: "",
-            relatedFormulas = related_formulas?.let {
-                json.decodeFromString(it)
-            } ?: emptyList()
+            relatedFormulas = related_formulas?.let { json.decodeFromString(it) } ?: emptyList()
         )
     }
 }

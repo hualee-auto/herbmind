@@ -1,0 +1,2102 @@
+[
+  {
+    "name": "阿魏",
+    "pid": "B00362",
+    "category": "树脂类"
+  },
+  {
+    "name": "巴豆",
+    "pid": "B00238",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "白扁豆",
+    "pid": "B00152",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "百部",
+    "pid": "B00022",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "白矾",
+    "pid": "B00399",
+    "category": "矿物类"
+  },
+  {
+    "name": "白附子",
+    "pid": "B00023",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "白果",
+    "pid": "B00153",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "百合",
+    "pid": "B00340",
+    "category": "叶类"
+  },
+  {
+    "name": "白花蛇舌草",
+    "pid": "B00259",
+    "category": "全草类"
+  },
+  {
+    "name": "白及",
+    "pid": "B00028",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "白蔹",
+    "pid": "B00029",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "白茅根",
+    "pid": "B00024",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "白前",
+    "pid": "B00025",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "白芍",
+    "pid": "B00026",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "白头翁",
+    "pid": "B00027",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "白薇",
+    "pid": "B00030",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "白鲜皮",
+    "pid": "B00341",
+    "category": "皮类"
+  },
+  {
+    "name": "白芷",
+    "pid": "B00031",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "白术",
+    "pid": "B00032",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "柏子仁",
+    "pid": "B00154",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "八角茴香",
+    "pid": "B00155",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "巴戟天",
+    "pid": "B00033",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "半边莲",
+    "pid": "B00260",
+    "category": "全草类"
+  },
+  {
+    "name": "板蓝根",
+    "pid": "B00034",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "斑蝥",
+    "pid": "B00367",
+    "category": "动物类"
+  },
+  {
+    "name": "半夏",
+    "pid": "B00132",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "菝葜",
+    "pid": "B00035",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "北豆根",
+    "pid": "B00036",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "北沙参",
+    "pid": "B00004",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "荜茇",
+    "pid": "B00156",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "鳖甲",
+    "pid": "B00368",
+    "category": "动物类"
+  },
+  {
+    "name": "蓖麻子",
+    "pid": "B00157",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "槟榔",
+    "pid": "B00158",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "冰片",
+    "pid": "B00415",
+    "category": "其他类"
+  },
+  {
+    "name": "薄荷",
+    "pid": "B00261",
+    "category": "全草类"
+  },
+  {
+    "name": "补骨脂",
+    "pid": "B00159",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "苍耳子",
+    "pid": "B00241",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "苍术",
+    "pid": "B00040",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "草豆蔻",
+    "pid": "B00160",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "草果",
+    "pid": "B00161",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "草乌",
+    "pid": "B00037",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "侧柏叶",
+    "pid": "B00323",
+    "category": "叶类"
+  },
+  {
+    "name": "柴胡",
+    "pid": "B00038",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "常山",
+    "pid": "B00039",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "蟾酥",
+    "pid": "B00369",
+    "category": "动物类"
+  },
+  {
+    "name": "蝉蜕",
+    "pid": "B00370",
+    "category": "动物类"
+  },
+  {
+    "name": "陈皮",
+    "pid": "B00162",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "沉香",
+    "pid": "B00421",
+    "category": "藤木类"
+  },
+  {
+    "name": "车前草",
+    "pid": "B00262",
+    "category": "全草类"
+  },
+  {
+    "name": "车前子",
+    "pid": "B00163",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "赤芍",
+    "pid": "B00041",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "赤小豆",
+    "pid": "B00164",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "虫白蜡",
+    "pid": "B00371",
+    "category": "动物类"
+  },
+  {
+    "name": "重楼",
+    "pid": "B00042",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "茺蔚子",
+    "pid": "B00165",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "川贝母",
+    "pid": "B00043",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "川楝子",
+    "pid": "B00242",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "川木通",
+    "pid": "B00136",
+    "category": "藤木类"
+  },
+  {
+    "name": "川木香",
+    "pid": "B00044",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "川牛膝",
+    "pid": "B00045",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "川乌",
+    "pid": "B00046",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "穿心莲",
+    "pid": "B00263",
+    "category": "全草类"
+  },
+  {
+    "name": "川芎",
+    "pid": "B00047",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "垂盆草",
+    "pid": "B00264",
+    "category": "全草类"
+  },
+  {
+    "name": "椿皮",
+    "pid": "B00342",
+    "category": "皮类"
+  },
+  {
+    "name": "楮实子",
+    "pid": "B00166",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "磁石",
+    "pid": "B00400",
+    "category": "矿物类"
+  },
+  {
+    "name": "刺五加",
+    "pid": "B00048",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "大腹皮",
+    "pid": "B00167",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "大黄",
+    "pid": "B00006",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "大蓟",
+    "pid": "B00265",
+    "category": "全草类"
+  },
+  {
+    "name": "淡豆豉",
+    "pid": "B00168",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "当归",
+    "pid": "B00049",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "党参",
+    "pid": "B00021",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "丹参",
+    "pid": "B00020",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "淡竹叶",
+    "pid": "B00267",
+    "category": "全草类"
+  },
+  {
+    "name": "刀豆",
+    "pid": "B00169",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "稻芽",
+    "pid": "B00170",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "大青叶",
+    "pid": "B00325",
+    "category": "叶类"
+  },
+  {
+    "name": "大血藤",
+    "pid": "B00135",
+    "category": "藤木类"
+  },
+  {
+    "name": "大枣",
+    "pid": "B00171",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "灯心草",
+    "pid": "B00268",
+    "category": "全草类"
+  },
+  {
+    "name": "地肤子",
+    "pid": "B00172",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "地骨皮",
+    "pid": "B00343",
+    "category": "皮类"
+  },
+  {
+    "name": "地黄",
+    "pid": "B00050",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "地龙",
+    "pid": "B00372",
+    "category": "动物类"
+  },
+  {
+    "name": "丁香",
+    "pid": "B00299",
+    "category": "花类"
+  },
+  {
+    "name": "地榆",
+    "pid": "B00051",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "冬虫夏草",
+    "pid": "B00414",
+    "category": "其他类"
+  },
+  {
+    "name": "冬葵果",
+    "pid": "B00173",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "豆蔻",
+    "pid": "B00174",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "独活",
+    "pid": "B00052",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "杜仲",
+    "pid": "B00344",
+    "category": "皮类"
+  },
+  {
+    "name": "杜仲叶",
+    "pid": "B00326",
+    "category": "叶类"
+  },
+  {
+    "name": "阿胶",
+    "pid": "B00373",
+    "category": "动物类"
+  },
+  {
+    "name": "儿茶",
+    "pid": "B00416",
+    "category": "其他类"
+  },
+  {
+    "name": "莪术",
+    "pid": "B00053",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "防风",
+    "pid": "B00054",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "防己",
+    "pid": "B00055",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "番泻叶",
+    "pid": "B00327",
+    "category": "叶类"
+  },
+  {
+    "name": "榧子",
+    "pid": "B00175",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "粉葛",
+    "pid": "B00057",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "枫香脂",
+    "pid": "B00363",
+    "category": "树脂类"
+  },
+  {
+    "name": "粉萆薢",
+    "pid": "B00056",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "佛手",
+    "pid": "B00176",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "茯苓",
+    "pid": "B00356",
+    "category": "菌藻类"
+  },
+  {
+    "name": "覆盆子",
+    "pid": "B00243",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "附子",
+    "pid": "B00058",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "甘草",
+    "pid": "B00129",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "干姜",
+    "pid": "B00013",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "甘松",
+    "pid": "B00059",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "甘遂",
+    "pid": "B00060",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "藁本",
+    "pid": "B00061",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "高良姜",
+    "pid": "B00062",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "葛根",
+    "pid": "B00063",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "蛤蚧",
+    "pid": "B00374",
+    "category": "动物类"
+  },
+  {
+    "name": "蛤壳",
+    "pid": "B00375",
+    "category": "动物类"
+  },
+  {
+    "name": "枸骨叶",
+    "pid": "B00328",
+    "category": "叶类"
+  },
+  {
+    "name": "狗脊",
+    "pid": "B00064",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "枸杞子",
+    "pid": "B00227",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "钩藤",
+    "pid": "B00133",
+    "category": "藤木类"
+  },
+  {
+    "name": "瓜蒌",
+    "pid": "B00177",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "广藿香",
+    "pid": "B00269",
+    "category": "全草类"
+  },
+  {
+    "name": "广金钱草",
+    "pid": "B00270",
+    "category": "全草类"
+  },
+  {
+    "name": "关黄柏",
+    "pid": "B00345",
+    "category": "皮类"
+  },
+  {
+    "name": "龟甲",
+    "pid": "B00376",
+    "category": "动物类"
+  },
+  {
+    "name": "桂枝",
+    "pid": "B00138",
+    "category": "藤木类"
+  },
+  {
+    "name": "谷精草",
+    "pid": "B00300",
+    "category": "花类"
+  },
+  {
+    "name": "骨碎补",
+    "pid": "B00065",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "谷芽",
+    "pid": "B00178",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "海金沙",
+    "pid": "B00357",
+    "category": "菌藻类"
+  },
+  {
+    "name": "海马",
+    "pid": "B00377",
+    "category": "动物类"
+  },
+  {
+    "name": "海螵蛸",
+    "pid": "B00378",
+    "category": "动物类"
+  },
+  {
+    "name": "海藻",
+    "pid": "B00358",
+    "category": "菌藻类"
+  },
+  {
+    "name": "合欢花",
+    "pid": "B00301",
+    "category": "花类"
+  },
+  {
+    "name": "鹤虱",
+    "pid": "B00179",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "何首乌",
+    "pid": "B00130",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "核桃仁",
+    "pid": "B00228",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "荷叶",
+    "pid": "B00329",
+    "category": "叶类"
+  },
+  {
+    "name": "诃子",
+    "pid": "B00180",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "红大戟",
+    "pid": "B00066",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "红豆蔻",
+    "pid": "B00181",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "红花",
+    "pid": "B00319",
+    "category": "花类"
+  },
+  {
+    "name": "红景天",
+    "pid": "B00067",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "红芪",
+    "pid": "B00068",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "红参",
+    "pid": "B00069",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "厚朴",
+    "pid": "B00347",
+    "category": "皮类"
+  },
+  {
+    "name": "槐花",
+    "pid": "B00302",
+    "category": "花类"
+  },
+  {
+    "name": "槐角",
+    "pid": "B00229",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "花椒",
+    "pid": "B00182",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "化橘红",
+    "pid": "B00183",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "黄柏",
+    "pid": "B00346",
+    "category": "皮类"
+  },
+  {
+    "name": "黄精",
+    "pid": "B00075",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "黄连",
+    "pid": "B00070",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "黄芪",
+    "pid": "B00071",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "黄芩",
+    "pid": "B00072",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "滑石",
+    "pid": "B00401",
+    "category": "矿物类"
+  },
+  {
+    "name": "胡黄连",
+    "pid": "B00073",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "胡椒",
+    "pid": "B00184",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "槲寄生",
+    "pid": "B00271",
+    "category": "全草类"
+  },
+  {
+    "name": "胡芦巴",
+    "pid": "B00185",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "火麻仁",
+    "pid": "B00244",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "虎杖",
+    "pid": "B00074",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "僵蚕",
+    "pid": "B00379",
+    "category": "动物类"
+  },
+  {
+    "name": "姜黄",
+    "pid": "B00005",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "降香",
+    "pid": "B00139",
+    "category": "藤木类"
+  },
+  {
+    "name": "绞股蓝",
+    "pid": "B00272",
+    "category": "全草类"
+  },
+  {
+    "name": "鸡蛋花",
+    "pid": "B00303",
+    "category": "花类"
+  },
+  {
+    "name": "桔梗",
+    "pid": "B00076",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "芥子",
+    "pid": "B00186",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "鸡冠花",
+    "pid": "B00304",
+    "category": "花类"
+  },
+  {
+    "name": "鸡骨草",
+    "pid": "B00273",
+    "category": "全草类"
+  },
+  {
+    "name": "蒺藜",
+    "pid": "B00230",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "鸡内金",
+    "pid": "B00380",
+    "category": "动物类"
+  },
+  {
+    "name": "京大戟",
+    "pid": "B00077",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "荆芥",
+    "pid": "B00274",
+    "category": "全草类"
+  },
+  {
+    "name": "金礞石",
+    "pid": "B00402",
+    "category": "矿物类"
+  },
+  {
+    "name": "金钱白花蛇",
+    "pid": "B00398",
+    "category": "动物类"
+  },
+  {
+    "name": "金钱草",
+    "pid": "B00275",
+    "category": "全草类"
+  },
+  {
+    "name": "金荞麦",
+    "pid": "B00078",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "金樱子",
+    "pid": "B00236",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "金银花",
+    "pid": "B00305",
+    "category": "花类"
+  },
+  {
+    "name": "鸡屎藤",
+    "pid": "B00140",
+    "category": "藤木类"
+  },
+  {
+    "name": "韭菜子",
+    "pid": "B00187",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "九里香",
+    "pid": "B00330",
+    "category": "叶类"
+  },
+  {
+    "name": "鸡血藤",
+    "pid": "B00141",
+    "category": "藤木类"
+  },
+  {
+    "name": "卷柏",
+    "pid": "B00276",
+    "category": "全草类"
+  },
+  {
+    "name": "决明子",
+    "pid": "B00188",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "菊花",
+    "pid": "B00306",
+    "category": "花类"
+  },
+  {
+    "name": "款冬花",
+    "pid": "B00307",
+    "category": "花类"
+  },
+  {
+    "name": "苦楝皮",
+    "pid": "B00348",
+    "category": "皮类"
+  },
+  {
+    "name": "昆布",
+    "pid": "B00361",
+    "category": "菌藻类"
+  },
+  {
+    "name": "苦参",
+    "pid": "B00018",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "苦杏仁",
+    "pid": "B00216",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "莱菔子",
+    "pid": "B00189",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "腊梅花",
+    "pid": "B00321",
+    "category": "花类"
+  },
+  {
+    "name": "狼毒",
+    "pid": "B00079",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "老鹳草",
+    "pid": "B00258",
+    "category": "全草类"
+  },
+  {
+    "name": "两面针",
+    "pid": "B00080",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "连翘",
+    "pid": "B00190",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "莲子",
+    "pid": "B00245",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "莲子心",
+    "pid": "B00246",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "凌霄花",
+    "pid": "B00308",
+    "category": "花类"
+  },
+  {
+    "name": "羚羊角",
+    "pid": "B00381",
+    "category": "动物类"
+  },
+  {
+    "name": "灵芝",
+    "pid": "B00359",
+    "category": "菌藻类"
+  },
+  {
+    "name": "龙胆",
+    "pid": "B00081",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "龙眼肉",
+    "pid": "B00191",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "漏芦",
+    "pid": "B00082",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "炉甘石",
+    "pid": "B00403",
+    "category": "矿物类"
+  },
+  {
+    "name": "芦根",
+    "pid": "B00083",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "芦荟",
+    "pid": "B00417",
+    "category": "其他类"
+  },
+  {
+    "name": "路路通",
+    "pid": "B00192",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "罗布麻叶",
+    "pid": "B00331",
+    "category": "叶类"
+  },
+  {
+    "name": "罗汉果",
+    "pid": "B00231",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "络石藤",
+    "pid": "B00142",
+    "category": "藤木类"
+  },
+  {
+    "name": "鹿茸",
+    "pid": "B00382",
+    "category": "动物类"
+  },
+  {
+    "name": "鹿衔草",
+    "pid": "B00277",
+    "category": "全草类"
+  },
+  {
+    "name": "马勃",
+    "pid": "B00001",
+    "category": "菌藻类"
+  },
+  {
+    "name": "马兜铃",
+    "pid": "B00247",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "麻黄",
+    "pid": "B00278",
+    "category": "全草类"
+  },
+  {
+    "name": "麦冬",
+    "pid": "B00084",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "麦芽",
+    "pid": "B00193",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "芒硝",
+    "pid": "B00404",
+    "category": "矿物类"
+  },
+  {
+    "name": "蔓荆子",
+    "pid": "B00194",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "马钱子",
+    "pid": "B00248",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "玫瑰花",
+    "pid": "B00309",
+    "category": "花类"
+  },
+  {
+    "name": "绵萆薢",
+    "pid": "B00085",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "绵马贯众",
+    "pid": "B00086",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "明党参",
+    "pid": "B00087",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "没药",
+    "pid": "B00364",
+    "category": "树脂类"
+  },
+  {
+    "name": "木鳖子",
+    "pid": "B00249",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "牡丹皮",
+    "pid": "B00349",
+    "category": "皮类"
+  },
+  {
+    "name": "木瓜",
+    "pid": "B00195",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "木蝴蝶",
+    "pid": "B00250",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "牡荆叶",
+    "pid": "B00332",
+    "category": "叶类"
+  },
+  {
+    "name": "牡蛎",
+    "pid": "B00383",
+    "category": "动物类"
+  },
+  {
+    "name": "木通",
+    "pid": "B00143",
+    "category": "藤木类"
+  },
+  {
+    "name": "木香",
+    "pid": "B00088",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "木贼",
+    "pid": "B00279",
+    "category": "全草类"
+  },
+  {
+    "name": "南板蓝根",
+    "pid": "B00089",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "南鹤虱",
+    "pid": "B00237",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "南沙参",
+    "pid": "B00017",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "南五味子",
+    "pid": "B00196",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "闹羊花",
+    "pid": "B00310",
+    "category": "花类"
+  },
+  {
+    "name": "牛蒡子",
+    "pid": "B00251",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "牛黄",
+    "pid": "B00384",
+    "category": "动物类"
+  },
+  {
+    "name": "牛膝",
+    "pid": "B00016",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "女贞子",
+    "pid": "B00252",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "胖大海",
+    "pid": "B00253",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "佩兰",
+    "pid": "B00297",
+    "category": "全草类"
+  },
+  {
+    "name": "平贝母",
+    "pid": "B00090",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "枇杷叶",
+    "pid": "B00333",
+    "category": "叶类"
+  },
+  {
+    "name": "蒲公英",
+    "pid": "B00280",
+    "category": "全草类"
+  },
+  {
+    "name": "蒲黄",
+    "pid": "B00311",
+    "category": "花类"
+  },
+  {
+    "name": "茜草",
+    "pid": "B00091",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "羌活",
+    "pid": "B00092",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "前胡",
+    "pid": "B00093",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "千金子",
+    "pid": "B00197",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "千年健",
+    "pid": "B00094",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "牵牛子",
+    "pid": "B00198",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "芡实",
+    "pid": "B00232",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "青黛",
+    "pid": "B00413",
+    "category": "其他类"
+  },
+  {
+    "name": "青风藤",
+    "pid": "B00134",
+    "category": "藤木类"
+  },
+  {
+    "name": "青果",
+    "pid": "B00199",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "青蒿",
+    "pid": "B00281",
+    "category": "全草类"
+  },
+  {
+    "name": "青礞石",
+    "pid": "B00405",
+    "category": "矿物类"
+  },
+  {
+    "name": "青皮",
+    "pid": "B00200",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "青葙子",
+    "pid": "B00233",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "秦艽",
+    "pid": "B00095",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "秦皮",
+    "pid": "B00350",
+    "category": "皮类"
+  },
+  {
+    "name": "蕲蛇",
+    "pid": "B00385",
+    "category": "动物类"
+  },
+  {
+    "name": "拳参",
+    "pid": "B00096",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "全蝎",
+    "pid": "B00386",
+    "category": "动物类"
+  },
+  {
+    "name": "瞿麦",
+    "pid": "B00282",
+    "category": "全草类"
+  },
+  {
+    "name": "忍冬藤",
+    "pid": "B00144",
+    "category": "藤木类"
+  },
+  {
+    "name": "人参",
+    "pid": "B00002",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "肉苁蓉",
+    "pid": "B00283",
+    "category": "全草类"
+  },
+  {
+    "name": "肉豆蔻",
+    "pid": "B00201",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "肉桂",
+    "pid": "B00351",
+    "category": "皮类"
+  },
+  {
+    "name": "乳香",
+    "pid": "B00365",
+    "category": "树脂类"
+  },
+  {
+    "name": "桑白皮",
+    "pid": "B00352",
+    "category": "皮类"
+  },
+  {
+    "name": "桑寄生",
+    "pid": "B00145",
+    "category": "藤木类"
+  },
+  {
+    "name": "桑螵蛸",
+    "pid": "B00387",
+    "category": "动物类"
+  },
+  {
+    "name": "桑椹",
+    "pid": "B00202",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "桑叶",
+    "pid": "B00334",
+    "category": "叶类"
+  },
+  {
+    "name": "桑枝",
+    "pid": "B00146",
+    "category": "藤木类"
+  },
+  {
+    "name": "三棱",
+    "pid": "B00011",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "三七",
+    "pid": "B00010",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "山慈菇",
+    "pid": "B00009",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "山豆根",
+    "pid": "B00008",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "商陆",
+    "pid": "B00097",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "山麦冬",
+    "pid": "B00098",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "山柰",
+    "pid": "B00099",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "山药",
+    "pid": "B00007",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "山银花",
+    "pid": "B00312",
+    "category": "花类"
+  },
+  {
+    "name": "山楂",
+    "pid": "B00203",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "山楂叶",
+    "pid": "B00335",
+    "category": "叶类"
+  },
+  {
+    "name": "山茱萸",
+    "pid": "B00234",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "砂仁",
+    "pid": "B00254",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "蛇床子",
+    "pid": "B00204",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "射干",
+    "pid": "B00100",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "生姜",
+    "pid": "B00012",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "升麻",
+    "pid": "B00101",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "伸筋草",
+    "pid": "B00284",
+    "category": "全草类"
+  },
+  {
+    "name": "蛇蜕",
+    "pid": "B00388",
+    "category": "动物类"
+  },
+  {
+    "name": "麝香",
+    "pid": "B00389",
+    "category": "动物类"
+  },
+  {
+    "name": "石菖蒲",
+    "pid": "B00102",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "柿蒂",
+    "pid": "B00420",
+    "category": "其他类"
+  },
+  {
+    "name": "石膏",
+    "pid": "B00412",
+    "category": "矿物类"
+  },
+  {
+    "name": "石斛",
+    "pid": "B00285",
+    "category": "全草类"
+  },
+  {
+    "name": "石决明",
+    "pid": "B00390",
+    "category": "动物类"
+  },
+  {
+    "name": "使君子",
+    "pid": "B00255",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "石韦",
+    "pid": "B00336",
+    "category": "叶类"
+  },
+  {
+    "name": "水飞蓟",
+    "pid": "B00256",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "水红花子",
+    "pid": "B00205",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "水牛角",
+    "pid": "B00391",
+    "category": "动物类"
+  },
+  {
+    "name": "水蛭",
+    "pid": "B00392",
+    "category": "动物类"
+  },
+  {
+    "name": "丝瓜络",
+    "pid": "B00206",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "酸枣仁",
+    "pid": "B00235",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "苏木",
+    "pid": "B00137",
+    "category": "藤木类"
+  },
+  {
+    "name": "锁阳",
+    "pid": "B00286",
+    "category": "全草类"
+  },
+  {
+    "name": "太子参",
+    "pid": "B00019",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "檀香",
+    "pid": "B00148",
+    "category": "藤木类"
+  },
+  {
+    "name": "桃仁",
+    "pid": "B00207",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "天冬",
+    "pid": "B00103",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "天花粉",
+    "pid": "B00104",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "天葵子",
+    "pid": "B00105",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "天麻",
+    "pid": "B00003",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "天南星",
+    "pid": "B00106",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "天山雪莲",
+    "pid": "B00287",
+    "category": "全草类"
+  },
+  {
+    "name": "天仙子",
+    "pid": "B00257",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "天竺黄",
+    "pid": "B00418",
+    "category": "其他类"
+  },
+  {
+    "name": "葶苈子",
+    "pid": "B00208",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "通草",
+    "pid": "B00147",
+    "category": "藤木类"
+  },
+  {
+    "name": "土贝母",
+    "pid": "B00014",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "土鳖虫",
+    "pid": "B00396",
+    "category": "动物类"
+  },
+  {
+    "name": "土茯苓",
+    "pid": "B00015",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "土荆皮",
+    "pid": "B00353",
+    "category": "皮类"
+  },
+  {
+    "name": "土木香",
+    "pid": "B00107",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "菟丝子",
+    "pid": "B00209",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "瓦楞子",
+    "pid": "B00393",
+    "category": "动物类"
+  },
+  {
+    "name": "王不留行",
+    "pid": "B00210",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "委陵菜",
+    "pid": "B00288",
+    "category": "全草类"
+  },
+  {
+    "name": "威灵仙",
+    "pid": "B00131",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "五倍子",
+    "pid": "B00419",
+    "category": "其他类"
+  },
+  {
+    "name": "蜈蚣",
+    "pid": "B00394",
+    "category": "动物类"
+  },
+  {
+    "name": "五加皮",
+    "pid": "B00354",
+    "category": "皮类"
+  },
+  {
+    "name": "乌梅",
+    "pid": "B00240",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "乌梢蛇",
+    "pid": "B00395",
+    "category": "动物类"
+  },
+  {
+    "name": "五味子",
+    "pid": "B00211",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "乌药",
+    "pid": "B00108",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "吴茱萸",
+    "pid": "B00212",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "夏枯草",
+    "pid": "B00313",
+    "category": "花类"
+  },
+  {
+    "name": "香附",
+    "pid": "B00109",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "香加皮",
+    "pid": "B00355",
+    "category": "皮类"
+  },
+  {
+    "name": "香薷",
+    "pid": "B00289",
+    "category": "全草类"
+  },
+  {
+    "name": "相思子",
+    "pid": "B00213",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "香橼",
+    "pid": "B00214",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "仙鹤草",
+    "pid": "B00290",
+    "category": "全草类"
+  },
+  {
+    "name": "仙茅",
+    "pid": "B00110",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "小茴香",
+    "pid": "B00215",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "小蓟",
+    "pid": "B00266",
+    "category": "全草类"
+  },
+  {
+    "name": "薤白",
+    "pid": "B00111",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "西红花",
+    "pid": "B00320",
+    "category": "花类"
+  },
+  {
+    "name": "辛夷",
+    "pid": "B00314",
+    "category": "花类"
+  },
+  {
+    "name": "雄黄",
+    "pid": "B00406",
+    "category": "矿物类"
+  },
+  {
+    "name": "豨莶草",
+    "pid": "B00291",
+    "category": "全草类"
+  },
+  {
+    "name": "细辛",
+    "pid": "B00112",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "西洋参",
+    "pid": "B00113",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "旋覆花",
+    "pid": "B00322",
+    "category": "花类"
+  },
+  {
+    "name": "玄明粉",
+    "pid": "B00407",
+    "category": "矿物类"
+  },
+  {
+    "name": "玄参",
+    "pid": "B00114",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "徐长卿",
+    "pid": "B00115",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "续断",
+    "pid": "B00116",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "血竭",
+    "pid": "B00366",
+    "category": "树脂类"
+  },
+  {
+    "name": "鸦胆子",
+    "pid": "B00217",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "洋金花",
+    "pid": "B00315",
+    "category": "花类"
+  },
+  {
+    "name": "延胡索",
+    "pid": "B00117",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "野菊花",
+    "pid": "B00316",
+    "category": "花类"
+  },
+  {
+    "name": "益母草",
+    "pid": "B00292",
+    "category": "全草类"
+  },
+  {
+    "name": "银柴胡",
+    "pid": "B00118",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "茵陈",
+    "pid": "B00293",
+    "category": "全草类"
+  },
+  {
+    "name": "罂粟壳",
+    "pid": "B00218",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "银杏叶",
+    "pid": "B00337",
+    "category": "叶类"
+  },
+  {
+    "name": "淫羊藿",
+    "pid": "B00294",
+    "category": "全草类"
+  },
+  {
+    "name": "薏苡仁",
+    "pid": "B00219",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "益智",
+    "pid": "B00239",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "芫花",
+    "pid": "B00317",
+    "category": "花类"
+  },
+  {
+    "name": "远志",
+    "pid": "B00119",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "月季花",
+    "pid": "B00318",
+    "category": "花类"
+  },
+  {
+    "name": "余甘子",
+    "pid": "B00220",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "郁金",
+    "pid": "B00120",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "郁李仁",
+    "pid": "B00221",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "鱼腥草",
+    "pid": "B00295",
+    "category": "全草类"
+  },
+  {
+    "name": "禹州漏芦",
+    "pid": "B00121",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "玉竹",
+    "pid": "B00122",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "皂角刺",
+    "pid": "B00151",
+    "category": "藤木类"
+  },
+  {
+    "name": "泽兰",
+    "pid": "B00298",
+    "category": "全草类"
+  },
+  {
+    "name": "泽泻",
+    "pid": "B00123",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "浙贝母",
+    "pid": "B00124",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "珍珠母",
+    "pid": "B00397",
+    "category": "动物类"
+  },
+  {
+    "name": "赭石",
+    "pid": "B00408",
+    "category": "矿物类"
+  },
+  {
+    "name": "知母",
+    "pid": "B00125",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "枳壳",
+    "pid": "B00222",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "枳实",
+    "pid": "B00223",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "栀子",
+    "pid": "B00224",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "肿节风",
+    "pid": "B00296",
+    "category": "全草类"
+  },
+  {
+    "name": "猪苓",
+    "pid": "B00360",
+    "category": "菌藻类"
+  },
+  {
+    "name": "竹茹",
+    "pid": "B00149",
+    "category": "藤木类"
+  },
+  {
+    "name": "朱砂",
+    "pid": "B00409",
+    "category": "矿物类"
+  },
+  {
+    "name": "朱砂根",
+    "pid": "B00126",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "猪牙皂",
+    "pid": "B00225",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "紫草",
+    "pid": "B00127",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "自然铜",
+    "pid": "B00410",
+    "category": "矿物类"
+  },
+  {
+    "name": "紫石英",
+    "pid": "B00411",
+    "category": "矿物类"
+  },
+  {
+    "name": "紫苏梗",
+    "pid": "B00150",
+    "category": "藤木类"
+  },
+  {
+    "name": "紫苏叶",
+    "pid": "B00338",
+    "category": "叶类"
+  },
+  {
+    "name": "紫苏子",
+    "pid": "B00226",
+    "category": "果实及种子类"
+  },
+  {
+    "name": "紫菀",
+    "pid": "B00128",
+    "category": "根及根茎类"
+  },
+  {
+    "name": "棕榈",
+    "pid": "B00339",
+    "category": "叶类"
+  }
+]

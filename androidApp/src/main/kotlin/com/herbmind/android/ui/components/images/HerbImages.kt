@@ -73,8 +73,12 @@ fun HerbImage(
     modifier: Modifier = Modifier.size(120.dp),
     contentScale: ContentScale = ContentScale.Crop
 ) {
+    // 获取第一张图片，如果没有则使用空字符串
+    val imagePath = images.slice.firstOrNull()
+        ?: images.medicinal.firstOrNull()
+        ?: ""
     HerbImageFromPath(
-        imagePath = images.slice,
+        imagePath = imagePath,
         herbName = herbName,
         modifier = modifier,
         contentScale = contentScale
@@ -162,8 +166,11 @@ fun HerbSmallImage(
     herbName: String,
     modifier: Modifier = Modifier.size(48.dp)
 ) {
+    val imagePath = images.slice.firstOrNull()
+        ?: images.medicinal.firstOrNull()
+        ?: ""
     HerbSmallImageFromPath(
-        imagePath = images.slice,
+        imagePath = imagePath,
         herbName = herbName,
         modifier = modifier
     )
@@ -230,8 +237,11 @@ fun HerbLargeImage(
     herbName: String,
     modifier: Modifier = Modifier.size(200.dp)
 ) {
+    val imagePath = images.slice.firstOrNull()
+        ?: images.medicinal.firstOrNull()
+        ?: ""
     HerbLargeImageFromPath(
-        imagePath = images.slice,
+        imagePath = imagePath,
         herbName = herbName,
         modifier = modifier
     )

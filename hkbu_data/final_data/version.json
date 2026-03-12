@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "lastUpdated": 1773215803000,
+  "herbCount": 420,
+  "description": "从 HKBU 中药材数据库爬取的数据",
+  "source": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/",
+  "crawlDate": "2026-03-11 12:36:43",
+  "minAppVersion": "1.0.0",
+  "imageStats": {
+    "concocted": 427,
+    "plants": 302,
+    "note": "已过滤random随机图片，只保留真正的药材和植物图片"
+  }
+}

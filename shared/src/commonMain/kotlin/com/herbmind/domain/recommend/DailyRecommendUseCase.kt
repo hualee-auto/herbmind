@@ -29,24 +29,23 @@ class DailyRecommendUseCase(
                     ))
                 }
 
-                // 2. 高频考点
-                getExamHerb(herbs, seed + 1)?.let { herb ->
+                // 2. 随机推荐（替代原来的高频考点）
+                getRandomHerb(herbs, seed + 1)?.let { herb ->
                     add(DailyRecommend(
                         herb = herb,
-                        reason = "历年考试高频出现，${"★".repeat(herb.examFrequency)}重点药",
+                        reason = "今日推荐药材，了解更多中医药知识",
                         type = RecommendType.EXAM
                     ))
                 }
 
-                // 3. 易混淆药
-                getContrastHerb(herbs, seed + 2)?.let { herb ->
-                    val similarName = herb.similarTo.firstOrNull()?.let { id ->
-                        herbs.find { it.id == id }?.name
-                    }
+                // 3. 同类药材推荐（替代原来的易混淆药）
+                getSameCategoryHerb(herbs, seed + 2)?.let { herb ->
+                    val sameCategory = herbs.filter { it.category == herb.category && it.id != herb.id }
+                    val relatedName = sameCategory.firstOrNull()?.name
                     add(DailyRecommend(
                         herb = herb,
-                        reason = similarName?.let { "常与$it 混淆，注意区分" }
-                            ?: "易与其他药混淆，重点记忆",
+                        reason = relatedName?.let { "同类药材如$it，建议对比学习" }
+                            ?: "了解${herb.category}的更多知识",
                         type = RecommendType.CONTRAST
                     ))
                 }
@@ -79,16 +78,15 @@ class DailyRecommendUseCase(
         return if (candidates.isEmpty()) null else candidates.getOrNull(seed.mod(candidates.size))
     }
 
-    private fun getExamHerb(herbs: List<Herb>, seed: Int): Herb? {
-        // 加权随机：frequency 越高，被选中的概率越大
-        val weightedList = herbs.flatMap { herb ->
-            List(herb.examFrequency.coerceAtLeast(1)) { herb }
-        }
-        return if (weightedList.isEmpty()) null else weightedList.getOrNull(seed.mod(weightedList.size))
+    private fun getRandomHerb(herbs: List<Herb>, seed: Int): Herb? {
+        return if (herbs.isEmpty()) null else herbs.getOrNull(seed.mod(herbs.size))
     }
 
-    private fun getContrastHerb(herbs: List<Herb>, seed: Int): Herb? {
-        val candidates = herbs.filter { it.similarTo.isNotEmpty() }
+    private fun getSameCategoryHerb(herbs: List<Herb>, seed: Int): Herb? {
+        // 找有同类药材的药材
+        val candidates = herbs.groupBy { it.category }
+            .filter { it.value.size > 1 }
+            .flatMap { it.value }
         return if (candidates.isEmpty()) null else candidates.getOrNull(seed.mod(candidates.size))
     }
 

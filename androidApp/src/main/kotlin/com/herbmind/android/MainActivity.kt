@@ -4,40 +4,51 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.core.view.WindowCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.herbmind.android.ui.components.FullScreenSyncOverlay
-import com.herbmind.android.ui.components.SyncProgressDialog
 import com.herbmind.android.ui.navigation.HerbMindNavHost
 import com.herbmind.android.ui.theme.HerbMindTheme
-import com.herbmind.android.ui.viewmodel.SyncUiState
-import com.herbmind.android.ui.viewmodel.SyncViewModel
+import com.herbmind.domain.sync.AppDataInitializer
 import kotlinx.coroutines.launch
-import org.koin.android.ext.android.get
+import org.koin.android.ext.android.inject
 
 class MainActivity : ComponentActivity() {
 
     private var navController: NavController? = null
-    private lateinit var syncViewModel: SyncViewModel
+    private val appDataInitializer: AppDataInitializer by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
-        // 获取 SyncViewModel 实例
-        syncViewModel = get()
+        // 启动数据同步
+        lifecycleScope.launch {
+            appDataInitializer.initialize().collect { result ->
+                when (result) {
+                    is com.herbmind.domain.sync.SyncResult.Success -> {
+                        android.util.Log.d("MainActivity", "数据同步成功: ${result.syncedHerbs} 个药材")
+                    }
+                    is com.herbmind.domain.sync.SyncResult.Error -> {
+                        android.util.Log.e("MainActivity", "数据同步失败: ${result.message}")
+                    }
+                    is com.herbmind.domain.sync.SyncResult.InProgress -> {
+                        android.util.Log.d("MainActivity", "同步进度: ${result.progress}%")
+                    }
+                    is com.herbmind.domain.sync.SyncResult.NoUpdate -> {
+                        android.util.Log.d("MainActivity", "无需更新，当前版本: ${result.currentVersion}")
+                    }
+                }
+            }
+        }
 
         setContent {
             HerbMindTheme {
@@ -46,18 +57,12 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     HerbMindApp(
-                        syncViewModel = syncViewModel,
                         onNavControllerCreated = { controller ->
                             navController = controller
                         }
                     )
                 }
             }
-        }
-
-        // 启动时自动开始同步
-        lifecycleScope.launch {
-            syncViewModel.startSync()
         }
     }
 
@@ -72,31 +77,13 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun HerbMindApp(
-    syncViewModel: SyncViewModel,
     onNavControllerCreated: (NavController) -> Unit = {}
 ) {
     val navController = rememberNavController()
-    val syncState by syncViewModel.syncState.collectAsState()
 
-    LaunchedEffect(navController) {
+    androidx.compose.runtime.LaunchedEffect(navController) {
         onNavControllerCreated(navController)
     }
 
-    Box(modifier = Modifier.fillMaxSize()) {
-        // 主界面
-        HerbMindNavHost(navController = navController)
-
-        // 同步进度覆盖层（用于首次同步或需要强制等待的场景）
-        FullScreenSyncOverlay(
-            syncState = syncState,
-            onRetry = { syncViewModel.retrySync() }
-        )
-
-        // 同步进度对话框（用于可选的进度展示）
-        SyncProgressDialog(
-            syncState = syncState,
-            onDismiss = { syncViewModel.dismissSync() },
-            onRetry = { syncViewModel.retrySync() }
-        )
-    }
+    HerbMindNavHost(navController = navController)
 }

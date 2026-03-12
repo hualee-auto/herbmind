@@ -66,11 +66,11 @@ object ImageResourceConfig : ResourceConfigProvider {
      */
     fun init(context: Context) {
         val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-        val envName = prefs.getString(KEY_ENVIRONMENT, ResourceEnvironment.DOMESTIC.name)
+        val envName = prefs.getString(KEY_ENVIRONMENT, ResourceEnvironment.OVERSEAS.name)
         _currentEnvironment = try {
             ResourceEnvironment.valueOf(envName!!)
         } catch (e: Exception) {
-            ResourceEnvironment.DOMESTIC
+            ResourceEnvironment.OVERSEAS
         }
 
         // 初始化 shared 模块的 ResourceConfig

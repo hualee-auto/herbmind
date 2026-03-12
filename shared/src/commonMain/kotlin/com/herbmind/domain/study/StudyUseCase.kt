@@ -24,8 +24,6 @@ data class StudyProgress(
     val herbId: String,
     val herbName: String,
     val category: String,
-    val keyPoint: String?,
-    val examFrequency: Int,
     val easinessFactor: Double,
     val repetitionCount: Int,
     val interval: Int,
@@ -125,7 +123,7 @@ class StudyUseCase(
 
             val nextReviewAt = SM2Algorithm.calculateNextReviewTime(result.newInterval, now)
 
-            // 更新学习进度 - 使用正确的参数名
+            // 更新学习进度
             queries.updateStudyProgress(
                 easinessFactor = result.newEasinessFactor,
                 repetitionCount = result.newRepetition.toLong(),
@@ -133,8 +131,8 @@ class StudyUseCase(
                 status = result.newStatus.name,
                 lastReviewedAt = now,
                 nextReviewAt = nextReviewAt,
-                value = rating.value.toLong(),
-                value_ = rating.value.toLong(),
+                totalReviews = 1,
+                correctReviews = if (rating.value >= 3) 1 else 0,
                 herbId = herbId
             )
 
@@ -152,7 +150,8 @@ class StudyUseCase(
 
             // 返回更新后的进度
             val updatedProgress = queries.selectStudyProgress(herbId).executeAsOne()
-            val dataHerb = queries.selectById(herbId).executeAsOne()
+            val dataHerb = queries.selectHerbById(herbId).executeAsOneOrNull()
+                ?: throw IllegalStateException("药材不存在: $herbId")
             val json = Json { ignoreUnknownKeys = true }
             val herb = dataHerb.toHerb(json)
 
@@ -175,8 +174,6 @@ class StudyUseCase(
                     herbId = row.herbId,
                     herbName = row.name,
                     category = row.category,
-                    keyPoint = row.keyPoint,
-                    examFrequency = row.examFrequency?.toInt() ?: 1,
                     easinessFactor = row.easinessFactor ?: 2.5,
                     repetitionCount = row.repetitionCount?.toInt() ?: 0,
                     interval = row.interval?.toInt() ?: 0,
@@ -213,29 +210,26 @@ class StudyUseCase(
             id = id,
             name = name,
             pinyin = pinyin,
+            latinName = latin_name ?: "",
             aliases = aliases?.let { json.decodeFromString(it) } ?: emptyList(),
             category = category,
-            subCategory = subCategory,
-            nature = nature,
+            nature = nature ?: "",
             flavor = flavor?.let { json.decodeFromString(it) } ?: emptyList(),
             meridians = meridians?.let { json.decodeFromString(it) } ?: emptyList(),
-            effects = json.decodeFromString(effects),
+            effects = effects?.let { json.decodeFromString(it) } ?: emptyList(),
             indications = indications?.let { json.decodeFromString(it) } ?: emptyList(),
-            usage = usage,
-            contraindications = contraindications?.let { json.decodeFromString(it) } ?: emptyList(),
-            memoryTip = memoryTip,
-            association = association,
-            keyPoint = keyPoint,
-            similarTo = similarTo?.let { json.decodeFromString(it) } ?: emptyList(),
-            images = image?.let {
+            origin = origin ?: "",
+            traits = traits ?: "",
+            quality = quality ?: "",
+            images = images?.let {
                 try {
                     json.decodeFromString(it)
                 } catch (e: Exception) {
-                    com.herbmind.data.model.Images(plant = "", medicinal = "", slice = it)
+                    com.herbmind.data.model.Images()
                 }
             } ?: com.herbmind.data.model.Images(),
-            isCommon = isCommon == 1L,
-            examFrequency = examFrequency?.toInt() ?: 1
+            sourceUrl = source_url ?: "",
+            relatedFormulas = related_formulas?.let { json.decodeFromString(it) } ?: emptyList()
         )
     }
 
@@ -255,11 +249,11 @@ class StudyUseCase(
             val todayReviews = queries.selectTodayReviews(todayStart, tomorrow).executeAsList()
 
             emit(StudyStatistics(
-                totalStudied = stats.COUNT.toInt(),
-                masteredCount = stats.SUM?.toInt() ?: 0,
-                learningCount = stats.SUM_?.toInt() ?: 0,
-                dueTodayCount = stats.SUM__?.toInt() ?: 0,
-                retentionRate = (stats.AVG ?: 0.0).toFloat(),
+                totalStudied = stats.statsTotal.toInt(),
+                masteredCount = stats.statsMastered?.toInt() ?: 0,
+                learningCount = stats.statsLearning?.toInt() ?: 0,
+                dueTodayCount = stats.statsDue?.toInt() ?: 0,
+                retentionRate = (stats.statsAvgEF ?: 0.0).toFloat(),
                 todayReviewed = todayReviews.size,
                 todayCorrect = todayReviews.count { it.rating >= 3 },
                 streakDays = calculateStreakDays()
@@ -277,17 +271,17 @@ class StudyUseCase(
             val startTime = Clock.System.now().toEpochMilliseconds() - (days.toLong() * 24 * 60 * 60 * 1000)
 
             val records = queries.selectStudyHeatmap(startTime).executeAsList()
-            
+
             // 按天分组统计
-            val grouped = records.groupBy { 
-                (it.reviewedAt / 1000 / 86400) * 86400 
+            val grouped = records.groupBy {
+                (it.reviewedAt / 1000 / 86400) * 86400
             }.mapValues { (_, dayRecords) ->
                 HeatmapDayData(
                     reviewCount = dayRecords.size.toLong(),
                     correctCount = dayRecords.count { it.rating >= 3 }.toLong()
                 )
             }
-            
+
             val maxCount = grouped.maxOfOrNull { it.value.reviewCount } ?: 1L
 
             emit(grouped.map { (dayEpoch, data) ->
@@ -307,7 +301,7 @@ class StudyUseCase(
             emit(emptyList())
         }
     }
-    
+
     private data class HeatmapDayData(
         val reviewCount: Long,
         val correctCount: Long
@@ -319,7 +313,7 @@ class StudyUseCase(
     fun getStudyProgress(herbId: String): Flow<StudyProgress?> = flow {
         try {
             val progress = queries.selectStudyProgress(herbId).executeAsOneOrNull()
-            val dataHerb = queries.selectById(herbId).executeAsOneOrNull()
+            val dataHerb = queries.selectHerbById(herbId).executeAsOneOrNull()
             val json = Json { ignoreUnknownKeys = true }
 
             if (progress != null && dataHerb != null) {
@@ -331,8 +325,6 @@ class StudyUseCase(
                     herbId = dataHerb.id,
                     herbName = dataHerb.name,
                     category = dataHerb.category,
-                    keyPoint = dataHerb.keyPoint,
-                    examFrequency = dataHerb.examFrequency?.toInt() ?: 1,
                     easinessFactor = 2.5,
                     repetitionCount = 0,
                     interval = 0,
@@ -363,8 +355,6 @@ class StudyUseCase(
             herbId = progress.herbId,
             herbName = herb.name,
             category = herb.category,
-            keyPoint = herb.keyPoint,
-            examFrequency = herb.examFrequency?.toInt() ?: 1,
             easinessFactor = progress.easinessFactor ?: 2.5,
             repetitionCount = progress.repetitionCount?.toInt() ?: 0,
             interval = progress.interval?.toInt() ?: 0,

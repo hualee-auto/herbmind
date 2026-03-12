@@ -2,6 +2,7 @@ package com.herbmind.domain.sync
 
 import com.herbmind.data.HerbDatabase
 import com.herbmind.data.model.Herb
+import com.herbmind.data.model.Images
 import com.herbmind.data.remote.HerbRemoteDataSource
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
@@ -21,6 +22,7 @@ data class DataVersionInfo(
     val version: Int,
     val lastUpdated: Long,
     val herbCount: Int,
+    val formulaCount: Int = 0,
     val description: String? = null,
     val minAppVersion: String? = null
 )
@@ -34,7 +36,7 @@ sealed class SyncResult {
         val syncedHerbs: Int,
         val isFirstSync: Boolean
     ) : SyncResult()
-    
+
     data class NoUpdate(val currentVersion: Int) : SyncResult()
     data class Error(val message: String) : SyncResult()
     data class InProgress(val progress: Int) : SyncResult()
@@ -42,7 +44,7 @@ sealed class SyncResult {
 
 /**
  * 中药数据同步 UseCase
- * 
+ *
  * 实现云端数据版本检查和同步逻辑：
  * 1. 应用启动时检查云端版本号
  * 2. 比较本地版本与云端版本
@@ -56,7 +58,7 @@ class HerbDataSyncUseCase(
     private val json: Json = Json { ignoreUnknownKeys = true }
 ) {
     private val queries = database.herbQueries
-    
+
     /**
      * 获取当前本地数据版本
      */
@@ -68,7 +70,7 @@ class HerbDataSyncUseCase(
             emit(0)
         }
     }.flowOn(Dispatchers.Default)
-    
+
     /**
      * 检查是否需要同步
      * @param remoteVersion 云端版本号
@@ -84,7 +86,7 @@ class HerbDataSyncUseCase(
             emit(true)
         }
     }.flowOn(Dispatchers.Default)
-    
+
     /**
      * 执行数据同步
      * @param remoteHerbs 从云端获取的中药数据列表
@@ -99,50 +101,51 @@ class HerbDataSyncUseCase(
             // 获取当前本地版本
             val localVersionRow = queries.selectDataVersion().executeAsOneOrNull()
             val localVersion = localVersionRow?.version?.toInt() ?: 0
-            
+
             // 检查是否需要同步
             if (localVersion >= remoteVersion) {
                 emit(SyncResult.NoUpdate(localVersion))
                 return@flow
             }
-            
+
             val isFirstSync = localVersion == 0
             val totalHerbs = remoteHerbs.size
             var syncedCount = 0
-            
+
             emit(SyncResult.InProgress(0))
-            
+
             // 批量插入/更新中药数据
             remoteHerbs.forEachIndexed { index, herb ->
                 insertOrUpdateHerb(herb)
                 syncedCount++
-                
+
                 // 每10条发送一次进度
                 if (index % 10 == 0 || index == totalHerbs - 1) {
                     val progress = ((index + 1) * 100 / totalHerbs)
                     emit(SyncResult.InProgress(progress))
                 }
             }
-            
+
             // 更新版本号
             val now = Clock.System.now().toEpochMilliseconds()
-            queries.updateBothVersions(
+            queries.updateDataVersion(
                 version = remoteVersion.toLong(),
-                remoteVersion = remoteVersion.toLong(),
-                lastSyncAt = now
+                lastSyncAt = now,
+                herbCount = remoteHerbs.size.toLong(),
+                formulaCount = 0
             )
-            
+
             emit(SyncResult.Success(
                 newVersion = remoteVersion,
                 syncedHerbs = syncedCount,
                 isFirstSync = isFirstSync
             ))
-            
+
         } catch (e: Exception) {
             emit(SyncResult.Error("同步失败: ${e.message}"))
         }
     }.flowOn(Dispatchers.Default)
-    
+
     /**
      * 从远程数据源获取版本信息
      */
@@ -170,55 +173,55 @@ class HerbDataSyncUseCase(
     suspend fun fetchLocalHerbData(): Result<List<Herb>>? {
         return localDataSource?.getHerbData()
     }
-    
+
     /**
      * 检查并执行同步（完整流程）
-     * 
+     *
      * 仅从远程获取数据，本地 assets 已移除
-     * 
+     *
      * @return 同步结果流
      */
     fun checkAndSync(): Flow<SyncResult> = flow {
         try {
             // 1. 获取云端版本信息
             val versionInfoResult = fetchRemoteVersionInfo()
-            
+
             if (versionInfoResult.isFailure) {
                 emit(SyncResult.Error("获取版本信息失败: ${versionInfoResult.exceptionOrNull()?.message}"))
                 return@flow
             }
-            
+
             val versionInfo = versionInfoResult.getOrThrow()
             val remoteVersion = versionInfo.version
-            
+
             // 2. 检查是否需要同步
             val localVersion = queries.selectDataVersion().executeAsOneOrNull()?.version?.toInt() ?: 0
-            
+
             if (localVersion >= remoteVersion) {
                 emit(SyncResult.NoUpdate(localVersion))
                 return@flow
             }
-            
+
             // 3. 获取中药数据
             val herbDataResult = fetchRemoteHerbData()
-            
+
             if (herbDataResult.isFailure) {
                 emit(SyncResult.Error("获取中药数据失败: ${herbDataResult.exceptionOrNull()?.message}"))
                 return@flow
             }
-            
+
             val remoteHerbs = herbDataResult.getOrThrow()
-            
+
             // 4. 执行同步
             syncHerbData(remoteHerbs, remoteVersion).collect { result ->
                 emit(result)
             }
-            
+
         } catch (e: Exception) {
             emit(SyncResult.Error("同步流程出错: ${e.message}"))
         }
     }.flowOn(Dispatchers.Default)
-    
+
     /**
      * 从本地 JSON 文件同步（用于首次启动或强制刷新）
      */
@@ -226,66 +229,34 @@ class HerbDataSyncUseCase(
         herbs: List<Herb>,
         version: Int
     ): Flow<SyncResult> = syncHerbData(herbs, version)
-    
+
     // ========== 私有方法 ==========
-    
+
     private inline fun <reified T> encodeList(list: List<T>): String {
-        return json.encodeToString(kotlinx.serialization.builtins.ListSerializer(kotlinx.serialization.serializer<T>()), list)
+        return json.encodeToString(ListSerializer(serializer<T>()), list)
     }
 
     private fun insertOrUpdateHerb(herb: Herb) {
-        // 先尝试 UPDATE，如果失败再 INSERT
-        // 这样可以保留收藏数据（因为 REPLACE 会触发级联删除）
-        val existing = queries.selectById(herb.id).executeAsOneOrNull()
-        
-        if (existing != null) {
-            // 已存在，执行 UPDATE（保留收藏数据）
-            queries.updateHerb(
-                name = herb.name,
-                pinyin = herb.pinyin,
-                aliases = encodeList(herb.aliases),
-                category = herb.category,
-                subCategory = herb.subCategory,
-                nature = herb.nature,
-                flavor = encodeList(herb.flavor),
-                meridians = encodeList(herb.meridians),
-                effects = encodeList(herb.effects),
-                indications = encodeList(herb.indications),
-                usage = herb.usage,
-                contraindications = encodeList(herb.contraindications),
-                memoryTip = herb.memoryTip,
-                association = herb.association,
-                keyPoint = herb.keyPoint,
-                similarTo = encodeList(herb.similarTo),
-                image = herb.images.slice,
-                isCommon = if (herb.isCommon) 1L else 0L,
-                examFrequency = herb.examFrequency.toLong(),
-                id = herb.id
-            )
-        } else {
-            // 不存在，执行 INSERT
-            queries.insertHerb(
-                id = herb.id,
-                name = herb.name,
-                pinyin = herb.pinyin,
-                aliases = encodeList(herb.aliases),
-                category = herb.category,
-                subCategory = herb.subCategory,
-                nature = herb.nature,
-                flavor = encodeList(herb.flavor),
-                meridians = encodeList(herb.meridians),
-                effects = encodeList(herb.effects),
-                indications = encodeList(herb.indications),
-                usage = herb.usage,
-                contraindications = encodeList(herb.contraindications),
-                memoryTip = herb.memoryTip,
-                association = herb.association,
-                keyPoint = herb.keyPoint,
-                similarTo = encodeList(herb.similarTo),
-                image = herb.images.slice,
-                isCommon = if (herb.isCommon) 1L else 0L,
-                examFrequency = herb.examFrequency.toLong()
-            )
-        }
+        // V2: 使用新的表结构，使用 INSERT OR REPLACE
+        // 收藏数据通过独立的 favorite 表管理，不会被级联删除
+        queries.insertHerb(
+            id = herb.id,
+            name = herb.name,
+            pinyin = herb.pinyin,
+            latin_name = herb.latinName,
+            aliases = encodeList(herb.aliases),
+            category = herb.category,
+            nature = herb.nature,
+            flavor = encodeList(herb.flavor),
+            meridians = encodeList(herb.meridians),
+            effects = encodeList(herb.effects),
+            indications = encodeList(herb.indications),
+            origin = herb.origin,
+            traits = herb.traits,
+            quality = herb.quality,
+            images = json.encodeToString(Images.serializer(), herb.images),
+            source_url = herb.sourceUrl,
+            related_formulas = encodeList(herb.relatedFormulas)
+        )
     }
 }

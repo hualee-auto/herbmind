@@ -1,8 +1,7 @@
 package com.herbmind.data.repository
 
-import com.herbmind.data.FormulaQueries
+import com.herbmind.data.HerbQueries
 import com.herbmind.data.model.Formula
-import com.herbmind.data.model.Ingredient
 import app.cash.sqldelight.coroutines.asFlow
 import app.cash.sqldelight.coroutines.mapToList
 import app.cash.sqldelight.coroutines.mapToOneOrNull
@@ -14,33 +13,33 @@ import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 
 class FormulaRepository(
-    private val formulaQueries: FormulaQueries
+    private val herbQueries: HerbQueries
 ) {
     private val json = Json { ignoreUnknownKeys = true }
 
     fun getAllFormulas(): Flow<List<Formula>> {
-        return formulaQueries.selectAllFormulas()
+        return herbQueries.selectAllFormulas()
             .asFlow()
             .mapToList(Dispatchers.Default)
             .map { list -> list.map { it.toFormula() } }
     }
 
     fun getFormulaById(id: String): Flow<Formula?> {
-        return formulaQueries.selectFormulaById(id)
+        return herbQueries.selectFormulaById(id)
             .asFlow()
             .mapToOneOrNull(Dispatchers.Default)
             .map { it?.toFormula() }
     }
 
     fun getFormulasByHerb(herbId: String): Flow<List<Formula>> {
-        return formulaQueries.selectFormulasByHerb(herbId)
+        return herbQueries.selectFormulasByHerb(herbId)
             .asFlow()
             .mapToList(Dispatchers.Default)
             .map { list -> list.map { it.toFormula() } }
     }
 
     suspend fun saveFormula(formula: Formula) {
-        formulaQueries.insertFormula(
+        herbQueries.insertFormula(
             id = formula.id,
             name = formula.name,
             pinyin = formula.pinyin,
@@ -79,15 +78,9 @@ class FormulaRepository(
             modernUsage = modern_usage ?: "",
             precautions = precautions ?: "",
             song = song ?: "",
-            ingredients = ingredients?.let {
-                json.decodeFromString<List<Ingredient>>(it)
-            } ?: emptyList(),
-            herbs = herbs?.let {
-                json.decodeFromString<List<String>>(it)
-            } ?: emptyList(),
-            relatedFormulas = related_formulas?.let {
-                json.decodeFromString<List<String>>(it)
-            } ?: emptyList(),
+            ingredients = ingredients?.let { json.decodeFromString(it) } ?: emptyList(),
+            herbs = herbs?.let { json.decodeFromString(it) } ?: emptyList(),
+            relatedFormulas = related_formulas?.let { json.decodeFromString(it) } ?: emptyList(),
             imageUrl = image_url ?: "",
             sourceUrl = source_url ?: ""
         )

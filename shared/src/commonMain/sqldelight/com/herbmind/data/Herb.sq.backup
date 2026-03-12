@@ -1,0 +1,303 @@
+-- 数据版本表（用于云端数据同步）
+CREATE TABLE data_version (
+    id INTEGER PRIMARY KEY CHECK (id = 1),  -- 强制只有一行数据
+    version INTEGER NOT NULL DEFAULT 0,      -- 当前数据版本号
+    lastSyncAt INTEGER,                      -- 上次同步时间
+    remoteVersion INTEGER DEFAULT 0          -- 云端版本号（用于比较）
+);
+
+-- 初始化版本表
+INSERT OR IGNORE INTO data_version (id, version, lastSyncAt, remoteVersion) VALUES (1, 0, 0, 0);
+
+-- 中药表
+CREATE TABLE herb (
+    id TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    pinyin TEXT NOT NULL,
+    aliases TEXT,
+    category TEXT NOT NULL,
+    subCategory TEXT,
+    nature TEXT,
+    flavor TEXT,
+    meridians TEXT,
+    effects TEXT NOT NULL,
+    indications TEXT,
+    usage TEXT,
+    contraindications TEXT,
+    memoryTip TEXT,
+    association TEXT,
+    keyPoint TEXT,
+    similarTo TEXT,
+    image TEXT,
+    isCommon INTEGER DEFAULT 0,
+    examFrequency INTEGER DEFAULT 1
+);
+
+-- 收藏表
+CREATE TABLE favorite (
+    herbId TEXT PRIMARY KEY,
+    addedAt INTEGER NOT NULL,
+    FOREIGN KEY (herbId) REFERENCES herb(id) ON DELETE CASCADE
+);
+
+-- 搜索历史表
+CREATE TABLE searchHistory (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    query TEXT NOT NULL,
+    timestamp INTEGER NOT NULL
+);
+
+-- 学习进度表（记忆曲线核心）
+CREATE TABLE study_progress (
+    herbId TEXT PRIMARY KEY,
+    -- SM-2 算法参数
+    easinessFactor REAL DEFAULT 2.5,  -- 简易度因子 (EF)
+    repetitionCount INTEGER DEFAULT 0, -- 重复次数 (n)
+    interval INTEGER DEFAULT 0,        -- 间隔天数 (I)
+    -- 学习状态
+    status TEXT DEFAULT 'NEW',         -- NEW(新), LEARNING(学习中), REVIEW(复习中), MASTERED(已掌握)
+    -- 时间记录
+    firstStudiedAt INTEGER,            -- 首次学习时间
+    lastReviewedAt INTEGER,            -- 上次复习时间
+    nextReviewAt INTEGER,              -- 下次复习时间（核心字段）
+    -- 统计
+    totalReviews INTEGER DEFAULT 0,    -- 总复习次数
+    correctReviews INTEGER DEFAULT 0,  -- 正确回忆次数
+    streak INTEGER DEFAULT 0,          -- 连续正确次数
+    FOREIGN KEY (herbId) REFERENCES herb(id) ON DELETE CASCADE
+);
+
+-- 复习日志表
+CREATE TABLE review_log (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    herbId TEXT NOT NULL,
+    reviewedAt INTEGER NOT NULL,       -- 复习时间
+    rating INTEGER NOT NULL,           -- 评分 1-4 (😵=1, 😐=2, 😊=3, 🤩=4)
+    previousInterval INTEGER,          -- 复习前间隔
+    newInterval INTEGER,               -- 复习后间隔
+    previousEF REAL,                   -- 复习前EF
+    newEF REAL,                        -- 复习后EF
+    timeSpentMs INTEGER,               -- 花费时间（毫秒）
+    FOREIGN KEY (herbId) REFERENCES herb(id) ON DELETE CASCADE
+);
+
+-- 索引
+CREATE INDEX idx_herb_category ON herb(category);
+CREATE INDEX idx_study_progress_status ON study_progress(status);
+CREATE INDEX idx_study_progress_next_review ON study_progress(nextReviewAt);
+CREATE INDEX idx_review_log_herb ON review_log(herbId);
+CREATE INDEX idx_review_log_date ON review_log(reviewedAt);
+
+-- 查询所有中药
+selectAll:
+SELECT * FROM herb;
+
+-- 根据ID查询
+selectById:
+SELECT * FROM herb WHERE id = ?;
+
+-- 根据分类查询
+selectByCategory:
+SELECT * FROM herb WHERE category = ?;
+
+-- 查询收藏的中药
+selectFavorites:
+SELECT h.* FROM herb h
+INNER JOIN favorite f ON h.id = f.herbId
+ORDER BY f.addedAt DESC;
+
+-- 查询收藏的ID列表
+selectFavoritesIds:
+SELECT herbId FROM favorite;
+
+-- 添加收藏
+insertFavorite:
+INSERT OR REPLACE INTO favorite (herbId, addedAt)
+VALUES (?, ?);
+
+-- 删除收藏
+deleteFavorite:
+DELETE FROM favorite WHERE herbId = ?;
+
+-- 检查是否已收藏
+isFavorite:
+SELECT COUNT(*) > 0 FROM favorite WHERE herbId = ?;
+
+-- 添加搜索历史
+insertSearchHistory:
+INSERT INTO searchHistory (query, timestamp)
+VALUES (?, ?);
+
+-- 查询最近搜索
+selectRecentSearches:
+SELECT DISTINCT query FROM searchHistory
+ORDER BY timestamp DESC
+LIMIT 10;
+
+-- 删除某条搜索历史
+deleteSearchHistory:
+DELETE FROM searchHistory WHERE query = ?;
+
+-- 清空搜索历史
+clearSearchHistory:
+DELETE FROM searchHistory;
+
+-- ========== 学习进度相关查询 ==========
+
+-- 查询学习进度
+selectStudyProgress:
+SELECT * FROM study_progress WHERE herbId = ?;
+
+-- 查询所有学习进度
+selectAllStudyProgress:
+SELECT * FROM study_progress;
+
+-- 查询今日待复习（nextReviewAt <= 今天结束）
+-- 参数：todayStart(今天0点), todayEnd(今天23:59:59)
+selectDueToday:
+SELECT sp.*, h.name, h.category, h.keyPoint, h.examFrequency
+FROM study_progress sp
+INNER JOIN herb h ON sp.herbId = h.id
+WHERE sp.nextReviewAt <= ? AND sp.status != 'NEW'
+ORDER BY sp.nextReviewAt ASC;
+
+-- 查询新学习的中药（从未学习过）
+selectNewHerbs:
+SELECT h.* FROM herb h
+LEFT JOIN study_progress sp ON h.id = sp.herbId
+WHERE sp.herbId IS NULL OR sp.status = 'NEW'
+ORDER BY h.examFrequency DESC, h.isCommon DESC
+LIMIT ?;
+
+-- 查询正在学习中的中药
+selectLearningHerbs:
+SELECT sp.*, h.name, h.category, h.keyPoint
+FROM study_progress sp
+INNER JOIN herb h ON sp.herbId = h.id
+WHERE sp.status = 'LEARNING'
+ORDER BY sp.nextReviewAt ASC;
+
+-- 查询已掌握的中药
+selectMasteredHerbs:
+SELECT sp.*, h.name, h.category
+FROM study_progress sp
+INNER JOIN herb h ON sp.herbId = h.id
+WHERE sp.status = 'MASTERED'
+ORDER BY sp.lastReviewedAt DESC;
+
+-- 插入/更新学习进度
+insertStudyProgress:
+INSERT OR REPLACE INTO study_progress (
+    herbId, easinessFactor, repetitionCount, interval, status,
+    firstStudiedAt, lastReviewedAt, nextReviewAt, totalReviews, correctReviews, streak
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+-- 更新学习进度（用于复习后更新）
+updateStudyProgress:
+UPDATE study_progress SET
+    easinessFactor = ?,
+    repetitionCount = ?,
+    interval = ?,
+    status = ?,
+    lastReviewedAt = ?,
+    nextReviewAt = ?,
+    totalReviews = totalReviews + 1,
+    correctReviews = CASE WHEN ? >= 3 THEN correctReviews + 1 ELSE correctReviews END,
+    streak = CASE WHEN ? >= 3 THEN streak + 1 ELSE 0 END
+WHERE herbId = ?;
+
+-- 开始学习新药（首次学习）
+startStudying:
+INSERT INTO study_progress (
+    herbId, status, firstStudiedAt, nextReviewAt
+) VALUES (?, 'LEARNING', ?, ?);
+
+-- ========== 复习日志相关查询 ==========
+
+-- 记录复习日志
+insertReviewLog:
+INSERT INTO review_log (
+    herbId, reviewedAt, rating, previousInterval, newInterval,
+    previousEF, newEF, timeSpentMs
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?);
+
+-- 查询某中药的复习历史
+selectReviewLogsByHerb:
+SELECT * FROM review_log WHERE herbId = ? ORDER BY reviewedAt DESC;
+
+-- 查询今日复习记录
+selectTodayReviews:
+SELECT rl.*, h.name FROM review_log rl
+INNER JOIN herb h ON rl.herbId = h.id
+WHERE rl.reviewedAt >= ? AND rl.reviewedAt <= ?
+ORDER BY rl.reviewedAt DESC;
+
+-- 查询学习统计
+selectStudyStats:
+SELECT
+    COUNT(*),
+    SUM(CASE WHEN status = 'MASTERED' THEN 1 ELSE 0 END),
+    SUM(CASE WHEN status = 'LEARNING' THEN 1 ELSE 0 END),
+    SUM(CASE WHEN nextReviewAt <= ? AND status != 'NEW' THEN 1 ELSE 0 END),
+    AVG(CAST(correctReviews AS REAL) / NULLIF(totalReviews, 0))
+FROM study_progress;
+
+-- 查询最近7天的复习记录（应用层分组）
+selectStudyHeatmap:
+SELECT
+    reviewedAt,
+    rating
+FROM review_log
+WHERE reviewedAt >= ?
+ORDER BY reviewedAt DESC;
+
+-- ========== 插入中药（用于初始化） ==========
+-- 注意：使用 REPLACE 会触发 ON DELETE CASCADE，需要在代码层先 UPDATE 再 INSERT
+insertHerb:
+INSERT OR REPLACE INTO herb (
+    id, name, pinyin, aliases, category, subCategory, nature, flavor,
+    meridians, effects, indications, usage, contraindications, memoryTip,
+    association, keyPoint, similarTo, image, isCommon, examFrequency
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+-- 更新中药（保留收藏数据）
+updateHerb:
+UPDATE herb SET
+    name = ?,
+    pinyin = ?,
+    aliases = ?,
+    category = ?,
+    subCategory = ?,
+    nature = ?,
+    flavor = ?,
+    meridians = ?,
+    effects = ?,
+    indications = ?,
+    usage = ?,
+    contraindications = ?,
+    memoryTip = ?,
+    association = ?,
+    keyPoint = ?,
+    similarTo = ?,
+    image = ?,
+    isCommon = ?,
+    examFrequency = ?
+WHERE id = ?;
+
+-- ========== 数据版本控制相关查询 ==========
+
+-- 查询当前数据版本
+selectDataVersion:
+SELECT * FROM data_version WHERE id = 1;
+
+-- 更新本地版本号
+updateLocalVersion:
+UPDATE data_version SET version = ?, lastSyncAt = ? WHERE id = 1;
+
+-- 更新云端版本号（用于比较）
+updateRemoteVersion:
+UPDATE data_version SET remoteVersion = ? WHERE id = 1;
+
+-- 同时更新本地和云端版本号（同步完成后）
+updateBothVersions:
+UPDATE data_version SET version = ?, remoteVersion = ?, lastSyncAt = ? WHERE id = 1;

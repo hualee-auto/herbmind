@@ -74,8 +74,12 @@ class SearchUseCase(
                 it.contains(keyword)
             }
 
-            // 4. 记忆要点匹配
-            val keyPointMatch = herb.keyPoint?.contains(keyword) == true
+            // 4. 产地匹配
+            val originMatch = herb.origin.contains(keyword)
+
+            // 5. 性味匹配
+            val natureMatch = herb.nature.contains(keyword)
+            val flavorMatch = herb.flavor.any { it.contains(keyword) }
 
             when {
                 // 精确名称匹配最高权重
@@ -92,8 +96,9 @@ class SearchUseCase(
                     score += 40
                     matchedEffects.add(keyword)
                 }
-                keyPointMatch -> score += 25
-                indicationMatch -> score += 20
+                indicationMatch -> score += 30
+                natureMatch || flavorMatch -> score += 20
+                originMatch -> score += 15
             }
         }
 
@@ -106,12 +111,6 @@ class SearchUseCase(
         if (matchedEffects.size == keywords.distinct().size) {
             score += 20
         }
-
-        // 常用药加权
-        if (herb.isCommon) score += 5
-
-        // 考试频率加权
-        score += (herb.examFrequency - 1) * 2
 
         return SearchResult(
             herb = herb,

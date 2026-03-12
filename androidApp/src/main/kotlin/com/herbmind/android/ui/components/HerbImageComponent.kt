@@ -69,8 +69,11 @@ fun HerbImage(
     modifier: Modifier = Modifier.size(120.dp),
     contentScale: ContentScale = ContentScale.Crop
 ) {
+    val imagePath = images.slice.firstOrNull()
+        ?: images.medicinal.firstOrNull()
+        ?: ""
     HerbImageFromPath(
-        imagePath = images.slice,
+        imagePath = imagePath,
         herbName = herbName,
         modifier = modifier,
         contentScale = contentScale
@@ -160,8 +163,11 @@ fun HerbImageWithPlaceholder(
     modifier: Modifier = Modifier.size(120.dp),
     placeholderColor: Color? = null
 ) {
+    val imagePath = images.slice.firstOrNull()
+        ?: images.medicinal.firstOrNull()
+        ?: ""
     HerbImageWithPlaceholderFromPath(
-        imagePath = images.slice,
+        imagePath = imagePath,
         herbName = herbName,
         modifier = modifier,
         placeholderColor = placeholderColor
@@ -275,8 +281,11 @@ fun HerbSmallImage(
     herbName: String,
     modifier: Modifier = Modifier.size(48.dp)
 ) {
+    val imagePath = images.slice.firstOrNull()
+        ?: images.medicinal.firstOrNull()
+        ?: ""
     HerbSmallImageFromPath(
-        imagePath = images.slice,
+        imagePath = imagePath,
         herbName = herbName,
         modifier = modifier
     )

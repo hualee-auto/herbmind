@@ -30,14 +30,16 @@ data class Herb(
         append(indications.joinToString())
     }
 
-    fun getImagePath(): String = images.slice
+    fun getImagePath(): String = images.slice.firstOrNull()
+        ?: images.medicinal.firstOrNull()
+        ?: ""
 }
 
 @Serializable
 data class Images(
-    val plant: String = "",
-    val medicinal: String = "",
-    val slice: String = ""
+    val plant: List<String> = emptyList(),      // 植物图列表
+    val medicinal: List<String> = emptyList(),  // 药材图/饮片图列表
+    val slice: List<String> = emptyList()       // 饮片图列表（与medicinal相同）
 )
 
 @Serializable
