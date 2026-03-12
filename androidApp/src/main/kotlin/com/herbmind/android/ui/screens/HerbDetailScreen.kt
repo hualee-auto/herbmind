@@ -6,8 +6,9 @@ import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.gestures.awaitFirstDown
 import androidx.compose.foundation.gestures.detectTapGestures
-import androidx.compose.foundation.gestures.detectTransformGestures
+import androidx.compose.foundation.gestures.forEachGesture
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
@@ -610,7 +611,7 @@ private fun ImageViewerDialog(
 /**
  * 可缩放的图片组件
  * 支持：双指缩放、双击缩放、拖动查看
- * 当缩放为1x时，允许父组件处理滑动事件（切换图片）
+ * 使用自定义手势处理避免与 HorizontalPager 冲突
  */
 @Composable
 private fun ZoomableImage(
@@ -621,23 +622,119 @@ private fun ZoomableImage(
     var scale by remember { mutableFloatStateOf(1f) }
     var offset by remember { mutableStateOf(Offset.Zero) }
 
-    // 双击缩放
+    // 双击缩放倍数
     val doubleTapScale = 3f
+    // 最大缩放倍数
+    val maxScale = 5f
 
     Box(
         modifier = Modifier
             .fillMaxSize()
+            // 处理缩放手势
+            .pointerInput(Unit) {
+                forEachGesture {
+                    awaitPointerEventScope {
+                        // 等待手指按下
+                        val down = awaitFirstDown()
+
+                        // 检测手指数量
+                        val event = awaitPointerEvent()
+                        val pointers = event.changes
+
+                        // 双指缩放检测
+                        if (pointers.size >= 2) {
+                            val p1 = pointers[0]
+                            val p2 = pointers[1]
+
+                            // 记录初始距离和缩放值
+                            val initialDistance = calculateDistance(p1, p2)
+                            val initialScale = scale
+
+                            // 处理双指手势
+                            do {
+                                val ev = awaitPointerEvent()
+                                val pts = ev.changes
+
+                                if (pts.size >= 2) {
+                                    val currentDistance = calculateDistance(pts[0], pts[1])
+
+                                    if (initialDistance > 0) {
+                                        // 计算新的缩放值
+                                        val newScale = (initialScale * (currentDistance / initialDistance))
+                                            .coerceIn(1f, maxScale)
+
+                                        // 计算中心点偏移
+                                        val centroid = calculateCentroid(pts[0], pts[1])
+
+                                        // 更新偏移量（让缩放以中心点为基准）
+                                        if (newScale > 1f) {
+                                            val maxX = (size.width * (newScale - 1)) / 2
+                                            val maxY = (size.height * (newScale - 1)) / 2
+
+                                            // 根据中心点调整偏移
+                                            val targetOffsetX = (centroid.x - size.width / 2) * (1 - newScale / initialScale)
+                                            val targetOffsetY = (centroid.y - size.height / 2) * (1 - newScale / initialScale)
+
+                                            offset = Offset(
+                                                targetOffsetX.coerceIn(-maxX, maxX),
+                                                targetOffsetY.coerceIn(-maxY, maxY)
+                                            )
+                                        }
+
+                                        scale = newScale
+                                    }
+                                }
+                            } while (ev.changes.any { it.pressed })
+                        } else if (pointers.size == 1 && scale > 1f) {
+                            // 单指拖动（只在放大状态下）
+                            var initialOffset = offset
+                            var initialPosition = down.position
+
+                            do {
+                                val ev = awaitPointerEvent()
+                                val change = ev.changes.firstOrNull()
+
+                                if (change != null) {
+                                    val delta = change.position - initialPosition
+                                    initialPosition = change.position
+
+                                    val maxX = (size.width * (scale - 1)) / 2
+                                    val maxY = (size.height * (scale - 1)) / 2
+
+                                    offset = Offset(
+                                        (initialOffset.x + delta.x).coerceIn(-maxX, maxX),
+                                        (initialOffset.y + delta.y).coerceIn(-maxY, maxY)
+                                    )
+                                    initialOffset = offset
+                                }
+                            } while (ev.changes.any { it.pressed })
+                        }
+                    }
+                }
+            }
+            // 双击检测（单独处理）
             .pointerInput(Unit) {
                 detectTapGestures(
-                    onDoubleTap = { _ ->
-                        // 双击缩放
+                    onDoubleTap = { tapOffset ->
                         if (scale > 1f) {
-                            // 如果已经放大，则重置
+                            // 重置
                             scale = 1f
                             offset = Offset.Zero
                         } else {
-                            // 放大到指定倍数
+                            // 放大到指定倍数，以点击位置为中心
                             scale = doubleTapScale
+
+                            // 计算偏移让点击位置成为中心
+                            val maxX = (size.width * (scale - 1)) / 2
+                            val maxY = (size.height * (scale - 1)) / 2
+
+                            val targetX = (size.width / 2 - tapOffset.x) * (scale - 1)
+                            val targetY = (size.height / 2 - tapOffset.y) * (scale - 1)
+
+                            offset = Offset(
+                                targetX.coerceIn(-maxX, maxX),
+                                targetY.coerceIn(-maxY, maxY)
+                            )
                         }
                     }
                 )
@@ -648,30 +745,6 @@ private fun ZoomableImage(
             contentDescription = contentDescription,
             modifier = Modifier
                 .fillMaxSize()
-                .pointerInput(scale) {
-                    // 只有在缩放状态下才处理变换手势
-                    if (scale > 1f) {
-                        detectTransformGestures { _, pan, zoom, _ ->
-                            // 更新缩放
-                            val newScale = (scale * zoom).coerceIn(1f, 5f)
-
-                            // 计算新的偏移量
-                            if (newScale > 1f) {
-                                val maxX = (size.width * (newScale - 1)) / 2
-                                val maxY = (size.height * (newScale - 1)) / 2
-
-                                val newOffsetX = (offset.x + pan.x * scale).coerceIn(-maxX, maxX)
-                                val newOffsetY = (offset.y + pan.y * scale).coerceIn(-maxY, maxY)
-
-                                offset = Offset(newOffsetX, newOffsetY)
-                            } else {
-                                offset = Offset.Zero
-                            }
-
-                            scale = newScale
-                        }
-                    }
-                }
                 .graphicsLayer {
                     scaleX = scale
                     scaleY = scale
@@ -681,4 +754,26 @@ private fun ZoomableImage(
             contentScale = ContentScale.Fit
         )
     }
+}
+
+/**
+ * 计算两个触摸点之间的距离
+ */
+private fun calculateDistance(p1: androidx.compose.ui.input.pointer.PointerInputChange, p2: androidx.compose.ui.input.pointer.PointerInputChange): Float {
+    val dx = p1.position.x - p2.position.x
+    val dy = p1.position.y - p2.position.y
+    return kotlin.math.sqrt(dx * dx + dy * dy)
+}
+
+/**
+ * 计算两个触摸点的中心点
+ */
+private fun calculateCentroid(
+    p1: androidx.compose.ui.input.pointer.PointerInputChange,
+    p2: androidx.compose.ui.input.pointer.PointerInputChange
+): Offset {
+    return Offset(
+        (p1.position.x + p2.position.x) / 2,
+        (p1.position.y + p2.position.y) / 2
+    )
 }
