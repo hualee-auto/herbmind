@@ -1,9 +1,9 @@
 {
-  "version": 6,
+  "version": 7,
   "lastUpdated": 1741770000000,
   "herbCount": 420,
   "formulaCount": 182,
-  "description": "V2版本：修复性味拆分和图片路径",
+  "description": "V2版本：修复方剂数据 - 补充名称、拼音、英文名、类别和药材关联",
   "source": "https://sys01.lib.hkbu.edu.hk/cmed/",
   "minAppVersion": "1.0.0"
 }
