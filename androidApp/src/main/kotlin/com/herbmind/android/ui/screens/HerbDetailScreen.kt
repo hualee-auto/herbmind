@@ -233,8 +233,10 @@ private fun ImageCarousel(
                 Image(
                     painter = rememberAsyncImagePainter(imageUrl),
                     contentDescription = "$contentDescription ${page + 1}/${images.size}",
-                    modifier = Modifier.fillMaxSize(),
-                    contentScale = ContentScale.Crop
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(horizontal = 16.dp),
+                    contentScale = ContentScale.Fit
                 )
             }
 
