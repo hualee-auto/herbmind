@@ -85,10 +85,11 @@ fun HomeScreen(
             }
 
             // 同步进度卡片
-            if (uiState.syncProgress != null) {
+            val syncProgress = uiState.syncProgress
+            if (syncProgress != null) {
                 item {
                     SyncProgressCard(
-                        progress = uiState.syncProgress,
+                        progress = syncProgress,
                         message = uiState.syncMessage
                     )
                 }
