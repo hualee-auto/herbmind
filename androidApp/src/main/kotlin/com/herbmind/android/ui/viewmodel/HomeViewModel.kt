@@ -15,13 +15,15 @@ import kotlinx.coroutines.launch
 
 class HomeViewModel(
     private val herbRepository: HerbRepository,
-    private val filterUseCase: FilterHerbsUseCase
+    private val filterUseCase: FilterHerbsUseCase,
+    private val appDataInitializer: com.herbmind.domain.sync.AppDataInitializer
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(HomeUiState())
     val uiState: StateFlow<HomeUiState> = _uiState.asStateFlow()
 
     init {
+        observeSyncProgress()
         loadData()
     }
 
@@ -53,6 +55,41 @@ class HomeViewModel(
                 recentHerbs = emptyList()
             )
         }
+    }
+
+    private fun observeSyncProgress() {
+        viewModelScope.launch {
+            appDataInitializer.initialize().collect { result ->
+                when (result) {
+                    is com.herbmind.domain.sync.SyncResult.InProgress -> {
+                        _uiState.value = _uiState.value.copy(
+                            syncProgress = result.progress,
+                            syncMessage = getSyncMessage(result.progress)
+                        )
+                    }
+                    is com.herbmind.domain.sync.SyncResult.Success,
+                    is com.herbmind.domain.sync.SyncResult.NoUpdate -> {
+                        _uiState.value = _uiState.value.copy(
+                            syncProgress = null,
+                            syncMessage = ""
+                        )
+                    }
+                    is com.herbmind.domain.sync.SyncResult.Error -> {
+                        _uiState.value = _uiState.value.copy(
+                            syncProgress = null,
+                            syncMessage = "同步失败: ${result.message}"
+                        )
+                    }
+                }
+            }
+        }
+    }
+
+    private fun getSyncMessage(progress: Int): String = when {
+        progress < 15 -> "检查数据版本..."
+        progress < 30 -> "获取云端数据..."
+        progress < 100 -> "保存到本地数据库..."
+        else -> "同步完成"
     }
 
     fun onCategorySelected(category: String) {
