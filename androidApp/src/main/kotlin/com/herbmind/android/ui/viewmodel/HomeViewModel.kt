@@ -96,5 +96,8 @@ data class HomeUiState(
     val recentHerbs: List<Herb> = emptyList(),
     val selectedCategory: String = "",
     val filteredHerbs: List<Herb> = emptyList(),
-    val isLoading: Boolean = true
+    val isLoading: Boolean = true,
+    // 同步进度状态
+    val syncProgress: Int? = null,
+    val syncMessage: String = ""
 )
