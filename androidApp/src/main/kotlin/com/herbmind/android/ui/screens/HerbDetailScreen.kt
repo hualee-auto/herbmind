@@ -126,24 +126,6 @@ private fun HerbDetailContent(
     var showImageViewer by remember { mutableStateOf(false) }
     var selectedImageUrl by remember { mutableStateOf("") }
 
-    // 收集所有图片半路径
-    val allImagePaths = remember(herb) {
-        val medicinal = herb.images.slice.takeIf { it.isNotEmpty() } ?: herb.images.medicinal
-        val plant = herb.images.plant
-        medicinal + plant
-    }
-
-    // 转换为完整URL
-    val allImageUrls = remember(allImagePaths) {
-        allImagePaths.map { path ->
-            if (path.startsWith("http://") || path.startsWith("https://")) {
-                path
-            } else {
-                ResourceConfig.getImageBaseUrl() + path
-            }
-        }
-    }
-
     Scaffold(
         topBar = {
             TopAppBar(
@@ -198,8 +180,7 @@ private fun HerbDetailContent(
     // 图片查看对话框
     if (showImageViewer) {
         ImageViewerDialog(
-            images = allImageUrls,
-            initialImage = selectedImageUrl,
+            imageUrl = selectedImageUrl,
             onDismiss = { showImageViewer = false }
         )
     }
@@ -553,18 +534,14 @@ private fun InfoRow(label: String, value: String) {
 
 /**
  * 图片查看对话框 - 支持手势缩放和拖动
+ * 单张图片展示，点击哪张展示哪张
  */
-@OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun ImageViewerDialog(
-    images: List<String>,
-    initialImage: String,
+    imageUrl: String,
     onDismiss: () -> Unit
 ) {
-    // 找到初始图片的索引
-    val initialPage = images.indexOf(initialImage).coerceAtLeast(0)
-    val pagerState = rememberPagerState(initialPage = initialPage, pageCount = { images.size })
-
     Dialog(
         onDismissRequest = onDismiss,
         properties = DialogProperties(
@@ -579,7 +556,7 @@ private fun ImageViewerDialog(
         ) {
             // 顶部工具栏
             TopAppBar(
-                title = { Text("${pagerState.currentPage + 1}/${images.size}") },
+                title = { },
                 navigationIcon = {
                     IconButton(onClick = onDismiss) {
                         Icon(
@@ -594,16 +571,10 @@ private fun ImageViewerDialog(
             )
 
             // 图片查看器（支持缩放）
-            HorizontalPager(
-                state = pagerState,
-                modifier = Modifier.fillMaxSize()
-            ) { page ->
-                val imageUrl = rememberFullImageUrl(images[page])
-                ZoomableImage(
-                    imageUrl = imageUrl,
-                    contentDescription = "图片 ${page + 1}/${images.size}"
-                )
-            }
+            ZoomableImage(
+                imageUrl = imageUrl,
+                contentDescription = "查看图片"
+            )
         }
     }
 }
