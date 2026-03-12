@@ -1,7 +1,9 @@
 {
-  "version": 3,
-  "lastUpdated": 1741040400000,
-  "herbCount": 606,
-  "description": "修复数据格式：effects/indications/contraindications转为数组",
+  "version": 6,
+  "lastUpdated": 1741770000000,
+  "herbCount": 420,
+  "formulaCount": 182,
+  "description": "V2版本：修复性味拆分和图片路径",
+  "source": "https://sys01.lib.hkbu.edu.hk/cmed/",
   "minAppVersion": "1.0.0"
 }
