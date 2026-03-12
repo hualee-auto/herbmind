@@ -125,11 +125,22 @@ private fun HerbDetailContent(
     var showImageViewer by remember { mutableStateOf(false) }
     var selectedImageUrl by remember { mutableStateOf("") }
 
-    // 收集所有图片URL
-    val allImages = remember(herb) {
+    // 收集所有图片半路径
+    val allImagePaths = remember(herb) {
         val medicinal = herb.images.slice.takeIf { it.isNotEmpty() } ?: herb.images.medicinal
         val plant = herb.images.plant
         medicinal + plant
+    }
+
+    // 转换为完整URL
+    val allImageUrls = remember(allImagePaths) {
+        allImagePaths.map { path ->
+            if (path.startsWith("http://") || path.startsWith("https://")) {
+                path
+            } else {
+                ResourceConfig.getImageBaseUrl() + path
+            }
+        }
     }
 
     Scaffold(
@@ -186,7 +197,7 @@ private fun HerbDetailContent(
     // 图片查看对话框
     if (showImageViewer) {
         ImageViewerDialog(
-            images = allImages,
+            images = allImageUrls,
             initialImage = selectedImageUrl,
             onDismiss = { showImageViewer = false }
         )
@@ -599,6 +610,7 @@ private fun ImageViewerDialog(
 /**
  * 可缩放的图片组件
  * 支持：双指缩放、双击缩放、拖动查看
+ * 当缩放为1x时，允许父组件处理滑动事件（切换图片）
  */
 @Composable
 private fun ZoomableImage(
@@ -616,29 +628,8 @@ private fun ZoomableImage(
         modifier = Modifier
             .fillMaxSize()
             .pointerInput(Unit) {
-                detectTransformGestures { centroid, pan, zoom, _ ->
-                    // 更新缩放
-                    val newScale = (scale * zoom).coerceIn(1f, 5f)
-
-                    // 计算新的偏移量
-                    if (newScale > 1f) {
-                        val maxX = (size.width * (newScale - 1)) / 2
-                        val maxY = (size.height * (newScale - 1)) / 2
-
-                        val newOffsetX = (offset.x + pan.x * scale).coerceIn(-maxX, maxX)
-                        val newOffsetY = (offset.y + pan.y * scale).coerceIn(-maxY, maxY)
-
-                        offset = Offset(newOffsetX, newOffsetY)
-                    } else {
-                        offset = Offset.Zero
-                    }
-
-                    scale = newScale
-                }
-            }
-            .pointerInput(Unit) {
                 detectTapGestures(
-                    onDoubleTap = { tapOffset ->
+                    onDoubleTap = { _ ->
                         // 双击缩放
                         if (scale > 1f) {
                             // 如果已经放大，则重置
@@ -657,6 +648,30 @@ private fun ZoomableImage(
             contentDescription = contentDescription,
             modifier = Modifier
                 .fillMaxSize()
+                .pointerInput(scale) {
+                    // 只有在缩放状态下才处理变换手势
+                    if (scale > 1f) {
+                        detectTransformGestures { _, pan, zoom, _ ->
+                            // 更新缩放
+                            val newScale = (scale * zoom).coerceIn(1f, 5f)
+
+                            // 计算新的偏移量
+                            if (newScale > 1f) {
+                                val maxX = (size.width * (newScale - 1)) / 2
+                                val maxY = (size.height * (newScale - 1)) / 2
+
+                                val newOffsetX = (offset.x + pan.x * scale).coerceIn(-maxX, maxX)
+                                val newOffsetY = (offset.y + pan.y * scale).coerceIn(-maxY, maxY)
+
+                                offset = Offset(newOffsetX, newOffsetY)
+                            } else {
+                                offset = Offset.Zero
+                            }
+
+                            scale = newScale
+                        }
+                    }
+                }
                 .graphicsLayer {
                     scaleX = scale
                     scaleY = scale
