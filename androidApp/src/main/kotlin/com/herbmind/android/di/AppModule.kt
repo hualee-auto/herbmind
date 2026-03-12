@@ -2,29 +2,19 @@ package com.herbmind.android.di
 
 import androidx.work.WorkerParameters
 import com.herbmind.android.data.StudyDataInitializer
-import com.herbmind.android.ui.viewmodel.CategoryViewModel
-import com.herbmind.android.ui.viewmodel.CompareViewModel
-import com.herbmind.android.ui.viewmodel.FavoritesViewModel
+import com.herbmind.android.ui.viewmodel.FormulaDetailViewModel
 import com.herbmind.android.ui.viewmodel.HerbDetailViewModel
 import com.herbmind.android.ui.viewmodel.HomeViewModel
 import com.herbmind.android.ui.viewmodel.SearchViewModel
-import com.herbmind.android.ui.viewmodel.StudyViewModel
-import com.herbmind.android.ui.viewmodel.SyncViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val appModule = module {
-    viewModel { HomeViewModel(get(), get()) }
+    viewModel { HomeViewModel(get(), get(), get()) }
     viewModel { SearchViewModel(get(), get()) }
-    viewModel { (herbId: String) -> HerbDetailViewModel(get(), get(), herbId) }
-    viewModel { FavoritesViewModel(get()) }
-    viewModel { CategoryViewModel(get()) }
-    viewModel { StudyViewModel(get(), get()) }
-    viewModel { SyncViewModel(get()) }
-    viewModel { (herbId1: String, herbId2: String, herbId3: String?) ->
-        CompareViewModel(herbId1, herbId2, herbId3, get())
-    }
+    viewModel { (herbId: String) -> HerbDetailViewModel(get(), herbId) }
+    viewModel { (formulaId: String) -> FormulaDetailViewModel(get(), formulaId) }
 
     // Worker factory
     factory { (params: WorkerParameters) ->
