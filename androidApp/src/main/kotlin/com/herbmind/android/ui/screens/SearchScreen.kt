@@ -37,10 +37,10 @@ fun SearchScreen(
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
-    // 预定义的分类列表
+    // 预定义的分类列表 - 必须与数据库中的分类一致
     val categories = listOf(
         "根及根茎类", "果实及种子类", "全草类", "花类", "叶类",
-        "皮类", "菌藻类", "动物类", "矿物类", "其他类"
+        "皮类", "菌藻类", "动物类", "矿物类", "树脂类", "藤木类", "其他类"
     )
 
     // 如果有初始查询词，自动填充
