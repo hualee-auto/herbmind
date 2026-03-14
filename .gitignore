@@ -62,3 +62,6 @@ Thumbs.db
 .agents/.env
 .agents/locks/*.lock
 .agents/logs/*.log
+
+# Scripts
+scripts/
