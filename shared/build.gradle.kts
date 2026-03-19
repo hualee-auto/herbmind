@@ -54,7 +54,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.herbmind"
+    namespace = "hua.lee.herbmind"
     compileSdk = 34
     buildToolsVersion = "35.0.0"
 
@@ -71,7 +71,7 @@ android {
 sqldelight {
     databases {
         create("HerbDatabase") {
-            packageName.set("com.herbmind.data")
+            packageName.set("hua.lee.herbmind.data")
         }
     }
 }

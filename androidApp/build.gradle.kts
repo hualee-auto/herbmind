@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    namespace = "com.herbmind.android"
+    namespace = "hua.lee.herbmind.android"
     compileSdk = 34
     buildToolsVersion = "35.0.0"
 
     defaultConfig {
-        applicationId = "com.herbmind"
+        applicationId = "hua.lee.herbmind"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
