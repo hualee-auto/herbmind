@@ -1,12 +1,17 @@
 package hua.lee.herbmind.android.ui.screens
 
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.foundation.clickable
 import androidx.compose.material3.*
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -14,9 +19,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import coil.compose.rememberAsyncImagePainter
 import hua.lee.herbmind.android.ui.theme.HerbColors
 import hua.lee.herbmind.android.ui.viewmodel.FormulaDetailUiState
 import hua.lee.herbmind.android.ui.viewmodel.FormulaDetailViewModel
+import hua.lee.herbmind.domain.ad.model.BannerAdData
 import org.koin.androidx.compose.koinViewModel
 import org.koin.core.parameter.parametersOf
 
@@ -187,7 +194,51 @@ fun FormulaDetailScreen(
                     color = MaterialTheme.colorScheme.error
                 )
             }
+
+            // 横幅广告
+            uiState.bannerAd?.let { ad ->
+                BannerAdView(
+                    ad = ad,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(80.dp)
+                        .padding(top = 16.dp)
+                )
+            }
         }
+    }
+}
+
+/**
+ * 横幅广告视图
+ */
+@Composable
+private fun BannerAdView(
+    ad: BannerAdData,
+    modifier: Modifier = Modifier
+) {
+    val imagePainter = rememberAsyncImagePainter(
+        model = ad.contentUrl,
+        placeholder = null,
+        error = null
+    )
+
+    Box(
+        modifier = modifier
+            .fillMaxWidth()
+            .height(80.dp)
+            .clip(RoundedCornerShape(8.dp))
+            .background(HerbColors.RicePaper)
+            .clickable {
+                // 处理广告点击
+            }
+    ) {
+        Image(
+            painter = imagePainter,
+            contentDescription = "广告",
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.FillWidth
+        )
     }
 }
 

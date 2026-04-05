@@ -43,6 +43,7 @@ import hua.lee.herbmind.android.ui.viewmodel.HerbDetailUiState
 import hua.lee.herbmind.android.ui.viewmodel.HerbDetailViewModel
 import hua.lee.herbmind.data.model.Herb
 import hua.lee.herbmind.data.remote.ResourceConfig
+import hua.lee.herbmind.domain.ad.model.BannerAdData
 import coil.compose.rememberAsyncImagePainter
 import org.koin.androidx.compose.koinViewModel
 import org.koin.core.parameter.parametersOf
@@ -106,10 +107,44 @@ fun HerbDetailScreen(
     HerbDetailContent(
         herb = herb,
         relatedFormulas = uiState.relatedFormulas,
+        uiState = uiState,
         onBackClick = onBackClick,
         onFormulaClick = onFormulaClick,
         modifier = modifier
     )
+}
+
+/**
+ * 横幅广告视图
+ */
+@Composable
+private fun BannerAdView(
+    ad: BannerAdData,
+    modifier: Modifier = Modifier
+) {
+    val imagePainter = rememberAsyncImagePainter(
+        model = ad.contentUrl,
+        placeholder = null,
+        error = null
+    )
+
+    Box(
+        modifier = modifier
+            .fillMaxWidth()
+            .height(80.dp)
+            .clip(RoundedCornerShape(8.dp))
+            .background(HerbColors.RicePaper)
+            .clickable {
+                // 处理广告点击
+            }
+    ) {
+        Image(
+            painter = imagePainter,
+            contentDescription = "广告",
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.FillWidth
+        )
+    }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -117,6 +152,7 @@ fun HerbDetailScreen(
 private fun HerbDetailContent(
     herb: Herb,
     relatedFormulas: List<hua.lee.herbmind.data.model.Formula>,
+    uiState: HerbDetailUiState,
     onBackClick: () -> Unit,
     onFormulaClick: ((String) -> Unit)? = null,
     modifier: Modifier = Modifier
@@ -169,6 +205,17 @@ private fun HerbDetailContent(
                 RelatedFormulasCard(
                     formulas = relatedFormulas,
                     onFormulaClick = onFormulaClick
+                )
+            }
+
+            // 横幅广告
+            uiState.bannerAd?.let { ad ->
+                BannerAdView(
+                    ad = ad,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(80.dp)
+                        .padding(top = 16.dp)
                 )
             }
 
