@@ -1,0 +1,6 @@
+- 遵循 Kotlin 官方编码规范
+- 使用 PascalCase 命名类、枚举、接口
+- 使用 camelCase 命名变量、函数、属性
+- 使用 UPPER_SNAKE_CASE 命名常量
+- 代码注释使用中文，技术术语保持英文
+- 架构遵循 Clean Architecture 原则，分层明确

@@ -1,0 +1,8 @@
+- **平台**: Android (minSdk 24, targetSdk 34)
+- **UI 框架**: Jetpack Compose
+- **编程语言**: Kotlin
+- **架构**: MVVM + Clean Architecture
+- **依赖注入**: Koin
+- **本地存储**: SQLDelight
+- **图片加载**: Coil
+- **包名**: `hua.lee.herbmind`
