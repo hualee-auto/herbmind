@@ -14,6 +14,10 @@ import hua.lee.herbmind.domain.search.FilterHerbsUseCase
 import hua.lee.herbmind.domain.search.SearchHerbsUseCase
 import hua.lee.herbmind.domain.sync.AppDataInitializer
 import hua.lee.herbmind.domain.sync.HerbDataSyncUseCase
+import hua.lee.herbmind.domain.ad.AdFrequencyController
+import hua.lee.herbmind.domain.ad.model.AdPlatformConfig
+import kotlinx.datetime.Clock
+import kotlinx.datetime.Instant
 import org.koin.core.module.Module
 import org.koin.dsl.module
 
@@ -51,6 +55,38 @@ actual fun commonModule(): Module = module {
 
     // 应用数据初始化器
     single { AppDataInitializer(get()) }
+}
+
+/**
+ * 广告模块 - 提供广告相关的通用依赖
+ */
+val adModule = module {
+    // 广告频率控制器
+    single {
+        AdFrequencyController(
+            isPremiumUser = false, // TODO: 后续从用户设置中获取
+            installDate = Instant.fromEpochMilliseconds(0), // TODO: 后续从安装记录中获取
+            maxAdsPerSession = 3,
+            adCooldownHours = 24,
+            newUserProbability = 0.5f,
+            newUserThresholdDays = 7,
+            clock = Clock.System
+        )
+    }
+
+    // 广告平台配置（TODO: 后续从远程配置获取）
+    single {
+        listOf(
+            AdPlatformConfig(
+                platformName = "AdMob",
+                priority = 1,
+                enabled = true,
+                appId = "ca-app-pub-3940256099942544~3347511713", // 测试App ID
+                adUnitIds = emptyMap(), // 测试ID在AdMobAdapter中硬编码
+                isTestMode = true
+            )
+        )
+    }
 }
 
 // 用于 Koin 的命名限定符

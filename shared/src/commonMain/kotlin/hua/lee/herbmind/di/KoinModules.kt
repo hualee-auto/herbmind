@@ -6,11 +6,16 @@ import hua.lee.herbmind.data.remote.GitHubRawDataSource
 import hua.lee.herbmind.data.remote.HerbRemoteDataSource
 import hua.lee.herbmind.data.repository.HerbRepository
 import hua.lee.herbmind.data.repository.SearchRepository
+import hua.lee.herbmind.domain.ad.AdFrequencyController
+import hua.lee.herbmind.domain.ad.model.AdPlatformConfig
 import hua.lee.herbmind.domain.search.SearchUseCase
 import hua.lee.herbmind.domain.sync.AppDataInitializer
 import hua.lee.herbmind.domain.sync.HerbDataSyncUseCase
+import kotlinx.datetime.Clock
+import kotlinx.datetime.Instant
 import org.koin.core.module.Module
 import org.koin.dsl.module
+
 
 /**
  * 通用模块 - 在 commonMain 中定义 expect
