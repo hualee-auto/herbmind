@@ -49,6 +49,7 @@ kotlin {
             implementation(libs.sqldelight.android)
             implementation(libs.koin.android)
             implementation(libs.ktor.client.okhttp)
+            implementation(libs.play.services.ads)
         }
     }
 }
