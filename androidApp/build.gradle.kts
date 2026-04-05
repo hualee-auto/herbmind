@@ -81,6 +81,9 @@ dependencies {
     // Coil for image loading
     implementation("io.coil-kt:coil-compose:2.5.0")
 
+    // Google AdMob
+    implementation("com.google.android.gms:play-services-ads:22.6.0")
+
     // Unit Testing
     testImplementation(libs.junit)
     testImplementation(libs.mockk)
