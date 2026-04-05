@@ -11,18 +11,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import hua.lee.herbmind.domain.ad.model.NativeAdData
 
-/**
- * 原生广告数据类
- */
-data class NativeAdData(
-    val title: String,
-    val body: String,
-    val advertiser: String,
-    val iconUrl: String? = null,
-    val coverImageUrl: String? = null,
-    val callToAction: String? = null
-)
+
 
 /**
  * 原生广告卡片组件

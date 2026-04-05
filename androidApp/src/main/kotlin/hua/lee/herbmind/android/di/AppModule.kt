@@ -14,7 +14,7 @@ import org.koin.dsl.module
 
 val appModule = module {
     viewModel { HomeViewModel(get(), get(), get()) }
-    viewModel { SearchViewModel(get(), get()) }
+    viewModel { SearchViewModel(get(), get(), get()) }
     viewModel { (herbId: String) -> HerbDetailViewModel(get(), herbId) }
     viewModel { (formulaId: String) -> FormulaDetailViewModel(get(), formulaId) }
 }

@@ -5,6 +5,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
@@ -14,13 +15,16 @@ import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import hua.lee.herbmind.android.ui.components.HerbListAdapter
 import hua.lee.herbmind.android.ui.theme.HerbColors
 import hua.lee.herbmind.android.ui.viewmodel.SearchViewModel
 import hua.lee.herbmind.data.model.SearchResult
@@ -36,7 +40,15 @@ fun SearchScreen(
     viewModel: SearchViewModel = koinViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
-
+    val listState = rememberLazyListState()
+    
+    // 检测快速滑动
+    val isScrollingFast by remember {
+        derivedStateOf {
+            listState.isScrollInProgress && listState.firstVisibleItemScrollOffset > 100
+        }
+    }
+    
     // 预定义的分类列表 - 必须与数据库中的分类一致
     val categories = listOf(
         "根及根茎类", "果实及种子类", "全草类", "花类", "叶类",
@@ -56,6 +68,30 @@ fun SearchScreen(
                 }
             }
         }
+    }
+
+    // 预加载广告
+    LaunchedEffect(Unit) {
+        viewModel.preloadNativeAds(3)
+    }
+
+    // 监听快速滑动状态
+    LaunchedEffect(isScrollingFast) {
+        viewModel.onFastScrollStateChanged(isScrollingFast)
+    }
+
+    // 监听列表滚动位置，动态加载更多广告
+    LaunchedEffect(listState.firstVisibleItemIndex) {
+        val totalItems = uiState.results.size + (uiState.results.size / 6)
+        val visibleThreshold = 10 // 距离底部还有10项时加载更多广告
+        if (listState.firstVisibleItemIndex + visibleThreshold >= totalItems && !uiState.isScrollingFast) {
+            viewModel.loadMoreAd()
+        }
+    }
+
+    // 合并搜索结果和广告
+    val combinedItems = remember(uiState.results, uiState.nativeAds) {
+        HerbListAdapter.insertAdsToSearchResults(uiState.results, uiState.nativeAds)
     }
 
     Scaffold(
@@ -104,11 +140,14 @@ fun SearchScreen(
                     modifier = Modifier.padding(vertical = 8.dp)
                 )
 
-                LazyColumn {
-                    items(uiState.results) { result ->
-                        SearchResultItem(
-                            result = result,
-                            onClick = { onHerbClick(result.herb.id) }
+                LazyColumn(state = listState) {
+                    HerbListAdapter.run {
+                        renderListItems(
+                            items = combinedItems,
+                            onHerbClick = onHerbClick,
+                            onAdClick = { ad -> viewModel.onAdClicked(ad) },
+                            onAdClose = { ad -> viewModel.onAdClosed(ad) },
+                            onAdImpression = { /* 曝光已经在AdNativeCard中处理 */ }
                         )
                     }
                 }
@@ -189,78 +228,4 @@ private fun SearchBar(
     )
 }
 
-@Composable
-private fun SearchResultItem(
-    result: SearchResult,
-    onClick: () -> Unit
-) {
-    Card(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(vertical = 4.dp)
-            .clickable(onClick = onClick),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surface
-        )
-    ) {
-        Column(
-            modifier = Modifier.padding(16.dp)
-        ) {
-            Row(
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Text(
-                    text = result.herb.name,
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.Bold
-                )
 
-                if (result.score > 0) {
-                    Text(
-                        text = "${result.score}分",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.primary,
-                        modifier = Modifier.padding(start = 8.dp)
-                    )
-                }
-            }
-
-            Text(
-                text = result.herb.pinyin,
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
-            )
-
-            // 类别标签
-            if (result.herb.category.isNotEmpty()) {
-                Text(
-                    text = result.herb.category,
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier.padding(top = 4.dp)
-                )
-            }
-
-            // 功效
-            if (result.herb.effects.isNotEmpty()) {
-                Text(
-                    text = result.herb.effects.take(3).joinToString("、"),
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier.padding(top = 4.dp),
-                    maxLines = 1
-                )
-            }
-
-            // 匹配的功效
-            if (result.matchedEffects.isNotEmpty()) {
-                Text(
-                    text = "匹配: ${result.matchedEffects.joinToString("、")}",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = HerbColors.BambooGreen,
-                    modifier = Modifier.padding(top = 4.dp)
-                )
-            }
-        }
-    }
-}
