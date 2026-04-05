@@ -2803,18 +2803,18 @@
   {
     "id": "chuanxinlian",
     "name": "穿心莲",
-    "pinyin": "",
-    "latin_name": "",
-    "aliases": [],
+    "pinyin": "Chuanxinlian",
+    "latin_name": "Andrographis Herba",
+    "aliases": ["一见喜", "榄核莲", "苦胆草", "四方莲"],
     "category": "全草类",
-    "subCategory": "",
-    "nature": "",
-    "flavor": [],
-    "meridians": [],
-    "effects": [],
-    "indications": [],
-    "usage": "",
-    "contraindications": [],
+    "subCategory": "清热药",
+    "nature": "寒",
+    "flavor": ["苦"],
+    "meridians": ["心", "肺", "大肠", "膀胱"],
+    "effects": ["清热解毒", "凉血消肿", "燥湿"],
+    "indications": ["感冒发热", "咽喉肿痛", "口舌生疮", "顿咳劳嗽", "泄泻痢疾", "热淋涩痛", "痈肿疮疡", "毒蛇咬伤"],
+    "usage": "6~9g。外用适量，鲜品捣烂敷或煎汁涂患处。",
+    "contraindications": ["脾胃虚寒者不宜服用", "不宜过量久服"],
     "source": "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?lang=chs&pid=B00263",
     "images": {
       "plant": [
@@ -2827,10 +2827,10 @@
         "resources/images/concocted/chuanxinlian_B00263.jpg"
       ]
     },
-    "plant_info": null,
-    "origin": "",
-    "traits": "",
-    "quality": "",
+    "plant_info": "一年生草本，全株味苦。茎直立，多分枝，具四棱，节稍膨大。单叶对生，叶片披针形或狭披针形，全缘或浅波状。圆锥花序顶生或腋生，花小，白色，下唇带紫色斑纹。蒴果长椭圆形，两侧压扁，疏生腺毛。",
+    "origin": "主产于广东、广西、福建等地。长江流域及南方各省均有栽培。",
+    "traits": "茎呈方柱形，多分枝，长50~70cm，节稍膨大，质脆，易折断。单叶对生，叶柄短或近无柄，叶片皱缩、易碎，完整者展开后呈披针形或卵状披针形，长3~12cm，宽2~5cm，先端渐尖，基部楔形下延，全缘或波状，上表面绿色，下表面灰绿色，两面光滑。气微，味极苦。",
+    "quality": "以色绿、叶多、味极苦者为佳。",
     "related_formulas": []
   },
   {

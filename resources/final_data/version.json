@@ -1,9 +1,9 @@
 {
-  "version": 8,
-  "lastUpdated": 1741770000000,
+  "version": 9,
+  "lastUpdated": 1743855600000,
   "herbCount": 420,
   "formulaCount": 182,
-  "description": "V2版本：修复药材图片路径",
+  "description": "补全穿心莲药材详细信息",
   "source": "https://sys01.lib.hkbu.edu.hk/cmed/",
   "minAppVersion": "1.0.0"
 }
