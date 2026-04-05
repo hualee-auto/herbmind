@@ -30,10 +30,8 @@ To provide core functionality, the application stores the following information 
 | Data Type | Description | Storage Location |
 |-----------|-------------|-----------------|
 | Herb & formula knowledge data | Pharmacopoeia content synced from public data sources | Local device database |
-| Favorites | Herbs you have bookmarked | Local device database |
 | Search history | Your in-app search queries | Local device database |
 | Browsing history | Herbs or formulas you have viewed | Local device database |
-| Study & review records | Learning progress and review history | Local device database |
 
 **All of the above information is stored exclusively on your device and is never uploaded to any server.** Uninstalling the application will permanently delete all of this data.
 
@@ -46,19 +44,15 @@ The application requires network access to retrieve the latest TCM knowledge dat
 
 The application never transmits your personal information or usage behavior to any server.
 
-## 5. Notification Permission
-
-The application may request notification permission to send you study reminders. Notification content consists only of review reminders and contains no personal information. You may disable notifications at any time through your device's system settings.
-
-## 6. Children's Privacy
+## 5. Children's Privacy
 
 This application is not directed at children under the age of 13, and we do not knowingly collect personal information from children.
 
-## 7. Changes to This Policy
+## 6. Changes to This Policy
 
 If this policy changes, we will update the content and the date on this page or within the application. Your continued use of the application following any changes constitutes your acceptance of the updated policy.
 
-## 8. Contact Us
+## 7. Contact Us
 
 If you have any questions about this Privacy Policy, please contact us at:
 

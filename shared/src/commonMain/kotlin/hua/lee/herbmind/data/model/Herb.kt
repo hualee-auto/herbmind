@@ -43,18 +43,6 @@ data class Images(
 )
 
 @Serializable
-data class DailyRecommend(
-    val herb: Herb,
-    val reason: String,
-    val type: RecommendType
-)
-
-@Serializable
-enum class RecommendType {
-    SEASONAL, EXAM, CONTRAST, DISCOVERY
-}
-
-@Serializable
 data class SearchResult(
     val herb: Herb,
     val score: Int,

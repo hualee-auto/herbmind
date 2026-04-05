@@ -2,6 +2,13 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## 项目状态（2026-04-05 更新）
+**当前版本：精简版V2.0**
+- ✅ 仅保留核心功能：中药材/方剂搜索、浏览、详情查看、数据同步
+- ❌ 已移除所有未实现功能：收藏、对比、每日推荐、学习/记忆辅助等
+- ❌ 已删除所有相关设计文档、PRD、计划文档
+- 🎯 产品定位：专注于中药材查询工具，无其他附加功能
+
 ## 项目概述
 
 HerbMind (本草记) 是一款基于 HKBU（香港浸会大学）中药材数据库的专业中药材查询工具，帮助中医学生、从业者快速精准地查找药材和方剂信息。
@@ -21,9 +28,10 @@ HerbMind (本草记) 是一款基于 HKBU（香港浸会大学）中药材数据
 1. **多维度搜索**: 支持药材名称、拼音、拉丁名、别名、功效、主治、产地、性味搜索
 2. **方剂查询**: 支持方剂信息查询及与药材的关联导航
 3. **分类浏览**: 按药材类别、产地、性味、归经、功效类别进行筛选
-4. **数据同步**: 应用启动时自动从 GitHub Raw 同步最新数据
-5. **离线可用**: 基础数据完全离线可用，图片支持本地缓存
-6. **国风设计**: 采用竹青、赭石、宣纸白、墨黑的传统中医配色方案
+4. **常用功效快捷入口**: 首页提供"补气、补血、活血、清热、祛湿、止咳"等常用功效一键搜索
+5. **数据同步**: 应用启动时自动从 GitHub Raw 同步最新数据
+6. **离线可用**: 基础数据完全离线可用，图片支持本地缓存
+7. **国风设计**: 采用竹青、赭石、宣纸白、墨黑的传统中医配色方案
 
 ## 数据源
 
@@ -127,9 +135,9 @@ APK 输出路径: `androidApp/build/outputs/apk/debug/` 或 `/release/`
 
 ### 导航结构
 使用 Jetpack Navigation Compose，定义在 `androidApp/src/main/kotlin/hua/lee/herbmind/android/ui/navigation/Screen.kt`:
-- Home -> Search / HerbDetail / Category / Compare / Study
+- Home -> Search / HerbDetail
 - Search -> HerbDetail
-- HerbDetail -> FormulaDetail (通过相关方剂) / Compare (对比功能)
+- HerbDetail -> FormulaDetail (通过相关方剂)
 - FormulaDetail -> HerbDetail (通过组成药材)
 - Category -> HerbDetail
 
@@ -151,11 +159,8 @@ SQLDelight 定义在 `shared/src/commonMain/sqldelight/hua/lee/herbmind/data/Her
 - `data_version` - 数据版本控制
 - `herb` - 药材基本信息（名称、性味、功效、产地等）
 - `formula` - 方剂信息（名称、组成、功用、主治等）
-- `favorite` - 收藏表
 - `search_history` - 搜索历史
 - `browse_history` - 浏览历史
-- `study_progress` - 学习进度表（V1 功能，SM2 算法）
-- `review_log` - 复习日志表（V1 功能）
 
 ### 依赖注入
 使用 Koin，模块定义:
@@ -167,13 +172,6 @@ SQLDelight 定义在 `shared/src/commonMain/sqldelight/hua/lee/herbmind/data/Her
 - 名称(100) > 功效(40) > 主治(30) > 产地(20) > 性味(20)
 - 支持同义词扩展（如"活血"匹配"化瘀、散瘀"）
 - 考试频率加权排序
-
-### 学习功能（V1 保留）
-基于 SM2（SuperMemo 2）算法的间隔重复学习系统:
-- 使用 `study_progress` 表记录每个药材的学习状态
-- 使用 `review_log` 表记录复习历史
-- 支持学习热力图展示复习记录
-- WorkManager 实现每日复习提醒
 
 ### 国风设计配色
 定义在 `androidApp/.../ui/theme/Color.kt`:

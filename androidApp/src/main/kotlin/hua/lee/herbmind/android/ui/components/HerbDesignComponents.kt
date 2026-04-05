@@ -540,42 +540,6 @@ fun HerbSearchBar(
 
 // ==================== 图标组件 ====================
 
-/**
- * 收藏按钮 - 带动画效果
- *
- * @param isFavorite 是否已收藏
- * @param onClick 点击回调
- * @param modifier 修饰符
- */
-@Composable
-fun FavoriteButton(
-    isFavorite: Boolean,
-    onClick: () -> Unit,
-    modifier: Modifier = Modifier
-) {
-    val scale by animateFloatAsState(
-        targetValue = if (isFavorite) 1.2f else 1f,
-        animationSpec = spring(
-            dampingRatio = Spring.DampingRatioMediumBouncy,
-            stiffness = Spring.StiffnessLow
-        ),
-        label = "favorite_scale"
-    )
-
-    IconButton(
-        onClick = onClick,
-        modifier = modifier.size(48.dp)
-    ) {
-        Icon(
-            imageVector = if (isFavorite) Icons.Filled.Star else Icons.Outlined.Star,
-            contentDescription = if (isFavorite) "取消收藏" else "收藏",
-            tint = if (isFavorite) HerbColors.Cinnabar else HerbColors.InkLight,
-            modifier = Modifier
-                .size(28.dp)
-                .scale(scale)
-        )
-    }
-}
 
 /**
  * 草药图标

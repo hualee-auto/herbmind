@@ -55,13 +55,6 @@ CREATE TABLE formula (
     source_url TEXT     -- HKBU 源链接
 );
 
--- 收藏表（保留）
-CREATE TABLE favorite (
-    herbId TEXT PRIMARY KEY,
-    addedAt INTEGER NOT NULL,
-    FOREIGN KEY (herbId) REFERENCES herb(id) ON DELETE CASCADE
-);
-
 -- 搜索历史表
 CREATE TABLE search_history (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -79,44 +72,12 @@ CREATE TABLE browse_history (
     timestamp INTEGER NOT NULL
 );
 
--- 学习进度表（保留，V1功能）
-CREATE TABLE study_progress (
-    herbId TEXT PRIMARY KEY,
-    easinessFactor REAL DEFAULT 2.5,
-    repetitionCount INTEGER DEFAULT 0,
-    interval INTEGER DEFAULT 0,
-    status TEXT DEFAULT 'NEW',
-    firstStudiedAt INTEGER,
-    lastReviewedAt INTEGER,
-    nextReviewAt INTEGER,
-    totalReviews INTEGER DEFAULT 0,
-    correctReviews INTEGER DEFAULT 0,
-    streak INTEGER DEFAULT 0,
-    FOREIGN KEY (herbId) REFERENCES herb(id) ON DELETE CASCADE
-);
-
--- 复习日志表（保留，V1功能）
-CREATE TABLE review_log (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    herbId TEXT NOT NULL,
-    reviewedAt INTEGER NOT NULL,
-    rating INTEGER NOT NULL,
-    previousInterval INTEGER,
-    newInterval INTEGER,
-    previousEF REAL,
-    newEF REAL,
-    timeSpentMs INTEGER,
-    FOREIGN KEY (herbId) REFERENCES herb(id) ON DELETE CASCADE
-);
-
 -- 索引
 CREATE INDEX idx_herb_category ON herb(category);
 CREATE INDEX idx_herb_name ON herb(name);
 CREATE INDEX idx_herb_pinyin ON herb(pinyin);
 CREATE INDEX idx_formula_name ON formula(name);
 CREATE INDEX idx_browse_timestamp ON browse_history(timestamp);
-CREATE INDEX idx_study_progress_status ON study_progress(status);
-CREATE INDEX idx_study_progress_next_review ON study_progress(nextReviewAt);
 
 -- ========== 药材查询 ==========
 
@@ -158,26 +119,6 @@ INSERT OR REPLACE INTO formula (
     image_url, source_url
 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
 
--- ========== 收藏查询 ==========
-
-selectFavorites:
-SELECT h.* FROM herb h
-INNER JOIN favorite f ON h.id = f.herbId
-ORDER BY f.addedAt DESC;
-
-selectFavoriteIds:
-SELECT herbId FROM favorite;
-
-insertFavorite:
-INSERT OR REPLACE INTO favorite (herbId, addedAt)
-VALUES (?, ?);
-
-deleteFavorite:
-DELETE FROM favorite WHERE herbId = ?;
-
-isFavorite:
-SELECT COUNT(*) > 0 FROM favorite WHERE herbId = ?;
-
 -- ========== 搜索历史 ==========
 
 insertSearchHistory:
@@ -198,81 +139,6 @@ VALUES (?, ?, ?, ?);
 
 selectRecentBrowsed:
 SELECT * FROM browse_history ORDER BY timestamp DESC LIMIT 20;
-
--- ========== 学习进度（V1保留）==========
-
-selectStudyProgress:
-SELECT * FROM study_progress WHERE herbId = ?;
-
-selectAllStudyProgress:
-SELECT * FROM study_progress;
-
-selectDueToday:
-SELECT sp.*, h.name, h.category
-FROM study_progress sp
-INNER JOIN herb h ON sp.herbId = h.id
-WHERE sp.nextReviewAt <= ? AND sp.status != 'NEW'
-ORDER BY sp.nextReviewAt ASC;
-
-insertStudyProgress:
-INSERT OR REPLACE INTO study_progress (
-    herbId, easinessFactor, repetitionCount, interval, status,
-    firstStudiedAt, lastReviewedAt, nextReviewAt, totalReviews, correctReviews, streak
-) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-
--- 开始学习新药
-startStudying:
-INSERT OR REPLACE INTO study_progress (
-    herbId, status, firstStudiedAt, nextReviewAt
-) VALUES (?, 'LEARNING', ?, ?);
-
--- 更新学习进度
-updateStudyProgress:
-UPDATE study_progress SET
-    easinessFactor = ?,
-    repetitionCount = ?,
-    interval = ?,
-    status = ?,
-    lastReviewedAt = ?,
-    nextReviewAt = ?,
-    totalReviews = totalReviews + ?,
-    correctReviews = correctReviews + ?
-WHERE herbId = ?;
-
--- 插入复习日志
-insertReviewLog:
-INSERT INTO review_log (
-    herbId, reviewedAt, rating, previousInterval, newInterval,
-    previousEF, newEF, timeSpentMs
-) VALUES (?, ?, ?, ?, ?, ?, ?, ?);
-
--- 获取新学习推荐
-selectNewHerbs:
-SELECT h.* FROM herb h
-LEFT JOIN study_progress sp ON h.id = sp.herbId
-WHERE sp.herbId IS NULL OR sp.status = 'NEW'
-LIMIT ?;
-
--- 获取学习统计
-selectStudyStats:
-SELECT
-    COUNT(*) statsTotal,
-    SUM(CASE WHEN status = 'MASTERED' THEN 1 ELSE 0 END) statsMastered,
-    SUM(CASE WHEN status = 'LEARNING' THEN 1 ELSE 0 END) statsLearning,
-    SUM(CASE WHEN nextReviewAt <= ? AND status != 'NEW' THEN 1 ELSE 0 END) statsDue,
-    AVG(CASE WHEN status != 'NEW' THEN easinessFactor END) statsAvgEF
-FROM study_progress;
-
--- 查询今日复习
-selectTodayReviews:
-SELECT * FROM review_log
-WHERE reviewedAt >= ? AND reviewedAt < ?;
-
--- 获取学习热力图数据
-selectStudyHeatmap:
-SELECT * FROM review_log
-WHERE reviewedAt >= ?
-ORDER BY reviewedAt DESC;
 
 -- ========== 数据版本 ==========
 

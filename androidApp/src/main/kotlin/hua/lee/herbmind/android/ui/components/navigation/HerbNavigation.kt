@@ -206,31 +206,6 @@ fun HerbBackButton(
     }
 }
 
-/**
- * 收藏按钮
- *
- * @param isFavorite 是否已收藏
- * @param onClick 点击回调
- * @param modifier 修饰符
- */
-@Composable
-fun HerbFavoriteButton(
-    isFavorite: Boolean,
-    onClick: () -> Unit,
-    modifier: Modifier = Modifier
-) {
-    IconButton(
-        onClick = onClick,
-        modifier = modifier
-    ) {
-        Icon(
-            imageVector = if (isFavorite) Icons.Filled.Star else Icons.Default.Star,
-            contentDescription = if (isFavorite) "取消收藏" else "收藏",
-            tint = if (isFavorite) HerbColors.Cinnabar else HerbColors.InkLight,
-            modifier = Modifier.size(28.dp)
-        )
-    }
-}
 
 /**
  * 搜索按钮

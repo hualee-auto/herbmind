@@ -10,10 +10,8 @@ import hua.lee.herbmind.data.repository.FormulaRepository
 import hua.lee.herbmind.data.repository.HerbRepository
 import hua.lee.herbmind.data.repository.SearchRepository
 import hua.lee.herbmind.domain.herb.GetHerbDetailUseCase
-import hua.lee.herbmind.domain.recommend.DailyRecommendUseCase
 import hua.lee.herbmind.domain.search.FilterHerbsUseCase
 import hua.lee.herbmind.domain.search.SearchHerbsUseCase
-import hua.lee.herbmind.domain.study.StudyUseCase
 import hua.lee.herbmind.domain.sync.AppDataInitializer
 import hua.lee.herbmind.domain.sync.HerbDataSyncUseCase
 import org.koin.core.module.Module
@@ -41,8 +39,6 @@ actual fun commonModule(): Module = module {
     factory { SearchHerbsUseCase(get()) }
     factory { FilterHerbsUseCase(get()) }
     factory { GetHerbDetailUseCase(get(), get()) }
-    factory { DailyRecommendUseCase(get()) }
-    factory { StudyUseCase(get()) }
 
     // 数据同步 UseCase - 只使用远程数据源（本地 assets 已移除）
     factory {

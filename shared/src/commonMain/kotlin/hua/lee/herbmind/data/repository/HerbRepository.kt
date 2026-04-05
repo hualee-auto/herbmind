@@ -39,25 +39,6 @@ class HerbRepository(
             .map { list -> list.map { it.toHerb() } }
     }
 
-    fun getFavorites(): Flow<List<Herb>> {
-        return herbQueries.selectFavorites()
-            .asFlow()
-            .mapToList(Dispatchers.Default)
-            .map { list -> list.map { it.toHerb() } }
-    }
-
-    suspend fun addFavorite(herbId: String) {
-        herbQueries.insertFavorite(herbId, System.currentTimeMillis())
-    }
-
-    suspend fun removeFavorite(herbId: String) {
-        herbQueries.deleteFavorite(herbId)
-    }
-
-    suspend fun isFavorite(herbId: String): Boolean {
-        return herbQueries.isFavorite(herbId).executeAsOne()
-    }
-
     suspend fun saveHerb(herb: Herb) {
         herbQueries.insertHerb(
             id = herb.id,

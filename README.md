@@ -7,12 +7,10 @@
 - **多维度搜索**：支持药材名称、拼音、拉丁名、别名、功效、主治、产地、性味搜索
 - **方剂查询**：支持方剂信息查询及与药材的关联导航
 - **分类浏览**：按药材类别、产地、性味、归经、功效类别进行筛选
-- **药材对比**：支持多种药材的属性对比功能
-- **收藏功能**：收藏常用中药材和方剂，方便快速查阅
+- **常用功效快捷入口**：提供"补气、补血、活血、清热、祛湿、止咳"等常用功效一键搜索
 - **数据同步**：应用启动时自动从 GitHub Raw 同步最新数据
 - **离线可用**：基础数据完全离线可用，图片支持本地缓存
 - **国风设计**：采用竹青、赭石、宣纸白、墨黑的传统中医配色方案
-- **学习功能（V1保留）**：基于SM2间隔重复算法的药材记忆学习功能
 
 ## 技术栈
 
@@ -122,27 +120,17 @@ APK 输出路径: `androidApp/build/outputs/apk/debug/` 或 `/release/`
 - 网络失败时使用本地Assets数据作为 fallback
 
 ### 导航结构
-- Home -> Search / HerbDetail / Category / Compare / Study
+- Home -> Search / HerbDetail
 - Search -> HerbDetail
-- HerbDetail -> FormulaDetail / Compare
+- HerbDetail -> FormulaDetail
 - FormulaDetail -> HerbDetail
 - Category -> HerbDetail
 
 ## 文档
 
-### V2 设计文档
 | 文档 | 说明 |
 |------|------|
-| [01-PRD-HerbMind-V2.md](docs/v2-design/01-PRD-HerbMind-V2.md) | V2 产品需求文档 |
-| [02-UI-Visual-Design.md](docs/v2-design/02-UI-Visual-Design.md) | V2 UI 视觉设计文档 |
-| [03-Architecture-Design.md](docs/v2-design/03-Architecture-Design.md) | V2 架构设计文档 |
 | [隐私政策](docs/privacy-policy.md) | 中英文隐私政策 |
-
-### V1 文档（历史版本）
-| 文档 | 说明 |
-|------|------|
-| [PRD-中药记忆学习App.md](docs/PRD-中药记忆学习App.md) | V1 产品需求文档 |
-| [PRD-中药记忆学习App-技术方案-Android.md](docs/PRD-中药记忆学习App-技术方案-Android.md) | V1 Android 技术方案 |
 
 ## 构建状态
 
