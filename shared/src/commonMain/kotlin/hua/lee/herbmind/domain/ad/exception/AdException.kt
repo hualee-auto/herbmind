@@ -83,4 +83,21 @@ sealed class AdException(message: String, cause: Throwable? = null) : Exception(
         message: String = "Unknown ad error",
         cause: Throwable? = null
     ) : AdException(message, cause)
+
+    /**
+     * 频率限制达到
+     */
+    class FrequencyLimitReached(
+        message: String = "Ad frequency limit reached",
+        cause: Throwable? = null
+    ) : AdException(message, cause)
+
+    /**
+     * 所有广告平台都加载失败
+     */
+    class AllPlatformsFailed(
+        message: String = "All ad platforms failed to load ad",
+        override val cause: Throwable? = null,
+        val suppressedExceptions: List<Throwable> = emptyList()
+    ) : AdException(message, cause)
 }
