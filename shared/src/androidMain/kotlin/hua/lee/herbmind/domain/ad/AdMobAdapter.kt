@@ -1,6 +1,9 @@
 package hua.lee.herbmind.domain.ad
 
 import android.content.Context
+import android.os.Handler
+import android.os.Looper
+import android.util.Log
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.LoadAdError
@@ -35,7 +38,19 @@ class AdMobAdapter(private val context: Context) : AdPlatformAdapter {
 
     // 缓存已加载的广告
     private val bannerAds = mutableMapOf<AdPosition, AdView>()
-    private val nativeAds = mutableMapOf<AdPosition, NativeAd>()
+    private val nativeAds = mutableMapOf<AdPosition, MutableList<NativeAd>>() // 每个位置支持缓存多条广告
+
+    companion object {
+        // 全局缓存的NativeAd实例，供UI层直接获取
+        val globalNativeAds = mutableMapOf<String, NativeAd>()
+    }
+    // 广告加载时间记录，用于缓存过期判断
+    private val adLoadTime = mutableMapOf<AdPosition, Long>()
+    // 每个位置最多缓存的原生广告数量
+    private val MAX_NATIVE_ADS_PER_POSITION = 20 // 增加缓存上限，支持更多独立广告
+    // 配置参数
+    private val CACHE_EXPIRY_TIME = 30 * 60 * 1000 // 缓存30分钟过期
+    private val MIN_LOAD_INTERVAL = 0 // 取消最小加载间隔，支持连续加载多条不同广告
 
     override suspend fun initialize(config: AdPlatformConfig) {
         // 配置未成年人保护
@@ -144,17 +159,76 @@ class AdMobAdapter(private val context: Context) : AdPlatformAdapter {
     }
 
     override suspend fun loadNativeAd(position: AdPosition): NativeAdData {
-        // 先销毁已存在的同位置广告
-        destroy(position)
+        val now = System.currentTimeMillis()
+        val adList = nativeAds.getOrPut(position) { mutableListOf() }
+
+        // 第一步：清理过期广告
+        val loadTime = adLoadTime[position] ?: 0
+        if (now - loadTime > CACHE_EXPIRY_TIME) {
+            // 所有广告过期，销毁并清空
+            adList.forEach { it.destroy() }
+            adList.clear()
+            adLoadTime.remove(position)
+            Log.d("AdMobAdapter", "缓存已过期，清空所有广告")
+        }
+
+        // 第二步：如果有可用缓存广告，轮换返回（避免同一广告被重复使用）
+        if (adList.isNotEmpty()) {
+            // 轮换：取出第一个广告返回，然后将此广告移到列表末尾
+            val ad = adList.removeFirst()
+            adList.add(ad)
+            val uniqueAdId = ad.responseInfo?.responseId?.takeIf { it.isNotBlank() }
+                ?: "${platformName}_${System.nanoTime()}_${adList.size}"
+            Log.d("AdMobAdapter", "返回缓存广告，标题: ${ad.headline}, 剩余缓存: ${adList.size}条, adId: $uniqueAdId")
+            return NativeAdData(
+                adId = uniqueAdId,
+                title = ad.headline ?: "",
+                body = ad.body ?: "",
+                advertiser = ad.advertiser ?: "",
+                iconUrl = ad.icon?.uri?.toString(),
+                imageUrl = ad.images.firstOrNull()?.uri?.toString(),
+                price = ad.price,
+                starRating = ad.starRating?.toDouble(),
+                store = ad.store,
+                callToAction = ad.callToAction ?: "",
+                adPlatform = platformName,
+                position = position
+            )
+        }
+
+        // 第三步：避免短时间内频繁请求同一位置广告
+        if (adLoadTime.containsKey(position) && now - adLoadTime[position]!! < MIN_LOAD_INTERVAL) {
+            // 间隔太短，不请求新广告，抛出异常让上层处理（上层会保留已有广告）
+            Log.w("AdMobAdapter", "请求过于频繁，跳过本次加载")
+            throw AdException.LoadFailed(
+                position = position,
+                errorCode = -1,
+                message = "Too frequent requests",
+                cause = RuntimeException("Minimum load interval not reached")
+            )
+        }
 
         val adUnitId = getAdUnitId(position, AdType.NATIVE)
 
         return suspendCoroutine { continuation ->
+            // 官方最佳实践：每次加载都创建新的AdLoader，不要复用
             val adLoader = com.google.android.gms.ads.AdLoader.Builder(context, adUnitId)
                 .forNativeAd { nativeAd ->
-                    nativeAds[position] = nativeAd
+                    // 保存广告到缓存列表
+                    val adList = nativeAds.getOrPut(position) { mutableListOf() }
+                    // 生成唯一广告ID：如果responseId为空，使用平台名+时间戳+索引组合
+                    val uniqueAdId = nativeAd.responseInfo?.responseId?.takeIf { it.isNotBlank() }
+                        ?: "${platformName}_${System.nanoTime()}_${adList.size}"
+                    if (adList.size < MAX_NATIVE_ADS_PER_POSITION) {
+                        adList.add(nativeAd)
+                        // 添加到全局缓存
+                        globalNativeAds[uniqueAdId] = nativeAd
+                    }
+                    adLoadTime[position] = System.currentTimeMillis() // 记录加载时间
+                    Log.d("AdMobAdapter", "新加载广告成功，标题: ${nativeAd.headline}, adId: $uniqueAdId, 当前缓存数: ${adList.size}")
+
                     val nativeAdData = NativeAdData(
-                        adId = nativeAd.responseInfo?.responseId ?: "",
+                        adId = uniqueAdId,
                         title = nativeAd.headline ?: "",
                         body = nativeAd.body ?: "",
                         advertiser = nativeAd.advertiser ?: "",
@@ -168,6 +242,7 @@ class AdMobAdapter(private val context: Context) : AdPlatformAdapter {
                         position = position
                     )
                     continuation.resume(nativeAdData)
+
                     // 发送加载成功事件
                     CoroutineScope(Dispatchers.IO).launch {
                         _adEvents.emit(AdEvent.AdLoaded(position, AdType.NATIVE, platformName))
@@ -176,6 +251,7 @@ class AdMobAdapter(private val context: Context) : AdPlatformAdapter {
                 .withNativeAdOptions(
                     NativeAdOptions.Builder()
                         .setAdChoicesPlacement(NativeAdOptions.ADCHOICES_TOP_RIGHT)
+                        .setRequestMultipleImages(false) // 只请求单张图片，提高加载成功率
                         .build()
                 )
                 .withAdListener(object : com.google.android.gms.ads.AdListener() {
@@ -203,6 +279,7 @@ class AdMobAdapter(private val context: Context) : AdPlatformAdapter {
                             )
                         }
                         continuation.resumeWithException(error)
+
                         // 发送加载失败事件
                         CoroutineScope(Dispatchers.IO).launch {
                             _adEvents.emit(AdEvent.AdLoadFailed(position, error, platformName))
@@ -211,8 +288,15 @@ class AdMobAdapter(private val context: Context) : AdPlatformAdapter {
                 })
                 .build()
 
-            val adRequest = AdRequest.Builder().build()
-            adLoader.loadAd(adRequest)
+            // 官方建议：使用最新的AdRequest配置
+            val adRequest = AdRequest.Builder()
+                .setHttpTimeoutMillis(30000) // 设置30秒超时
+                .build()
+
+            // 广告加载必须在主线程执行
+            Handler(Looper.getMainLooper()).post {
+                adLoader.loadAd(adRequest)
+            }
         }
     }
 
@@ -248,10 +332,20 @@ class AdMobAdapter(private val context: Context) : AdPlatformAdapter {
         _adEvents.emit(AdEvent.AdShown(position, position.getAdType(), platformName))
     }
 
+    /**
+     * 根据adId获取对应的NativeAd实例
+     * 用于处理广告点击交互
+     */
+    fun getNativeAdById(adId: String): NativeAd? {
+        return nativeAds.values.flatten().firstOrNull {
+            it.responseInfo?.responseId == adId
+        }
+    }
+
     override suspend fun isAdReady(position: AdPosition): Boolean {
         return when (position.getAdType()) {
             AdType.BANNER -> bannerAds.containsKey(position)
-            AdType.NATIVE -> nativeAds.containsKey(position)
+            AdType.NATIVE -> nativeAds[position]?.isNotEmpty() == true
             else -> false
         }
     }
@@ -259,14 +353,38 @@ class AdMobAdapter(private val context: Context) : AdPlatformAdapter {
     override fun destroy(position: AdPosition?) {
         if (position == null) {
             // 销毁所有广告
-            bannerAds.values.forEach { adView -> adView.destroy() }
-            nativeAds.values.forEach { nativeAd -> nativeAd.destroy() }
+            bannerAds.values.forEach { adView ->
+                adView.removeAllViews()
+                adView.destroy()
+            }
+            nativeAds.values.forEach { adList -> 
+                adList.forEach { 
+                    it.destroy()
+                    // 从全局缓存移除
+                    it.responseInfo?.responseId?.let { adId ->
+                        globalNativeAds.remove(adId)
+                    }
+                } 
+            }
             bannerAds.clear()
             nativeAds.clear()
+            adLoadTime.clear()
         } else {
             // 销毁指定位置的广告
-            bannerAds.remove(position)?.destroy()
-            nativeAds.remove(position)?.destroy()
+            bannerAds.remove(position)?.let { adView ->
+                adView.removeAllViews()
+                adView.destroy()
+            }
+            nativeAds.remove(position)?.let { adList ->
+                adList.forEach { 
+                    it.destroy()
+                    // 从全局缓存移除
+                    it.responseInfo?.responseId?.let { adId ->
+                        globalNativeAds.remove(adId)
+                    }
+                }
+            }
+            adLoadTime.remove(position) // 销毁时同时清理时间记录
         }
     }
 
@@ -276,8 +394,8 @@ class AdMobAdapter(private val context: Context) : AdPlatformAdapter {
      */
     private fun getAdUnitId(position: AdPosition, adType: AdType): String {
         return when (adType) {
-            AdType.BANNER -> "ca-app-pub-3940256099942544/6300978111" // 测试横幅广告ID
-            AdType.NATIVE -> "ca-app-pub-3940256099942544/2247426341" // 测试原生广告ID
+            AdType.BANNER -> "ca-app-pub-3940256099942544/9214589741" // 最新测试横幅广告ID（2026版）
+            AdType.NATIVE -> "ca-app-pub-3940256099942544/2247696110" // 最新测试原生广告ID（2026版）
             AdType.INTERSTITIAL -> "ca-app-pub-3940256099942544/1033173712" // 测试插屏广告ID
             AdType.REWARDED -> "ca-app-pub-3940256099942544/5224354917" // 测试激励广告ID
             AdType.OPEN_APP -> "ca-app-pub-3940256099942544/3419835294" // 测试开屏广告ID

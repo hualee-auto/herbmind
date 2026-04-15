@@ -12,6 +12,8 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 
 class HerbDetailViewModel(
@@ -25,14 +27,26 @@ class HerbDetailViewModel(
 
     init {
         loadHerbDetail()
+        // 观察横幅广告更新通知，广告预加载完成后自动刷新UI
+        adManager.bannerAdUpdated
+            .onEach { position ->
+                if (position == AdPosition.HERB_DETAIL_BOTTOM_BANNER) {
+                    loadBannerAd()
+                }
+            }
+            .launchIn(viewModelScope)
+
         loadBannerAd()
     }
 
     private fun loadBannerAd() {
         viewModelScope.launch {
             try {
-                val ad = adManager.loadBannerAd(AdPosition.HERB_DETAIL_BOTTOM_BANNER)
-                _uiState.value = _uiState.value.copy(bannerAd = ad)
+                // 从全局缓存取横幅广告，没有就返回null
+                val ad = adManager.getBannerAd(AdPosition.HERB_DETAIL_BOTTOM_BANNER)
+                ad?.let {
+                    _uiState.value = _uiState.value.copy(bannerAd = it)
+                }
             } catch (e: Exception) {
                 // 广告加载失败，静默处理，不显示
             }

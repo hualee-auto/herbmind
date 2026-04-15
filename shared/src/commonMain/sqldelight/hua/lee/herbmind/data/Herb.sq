@@ -84,11 +84,17 @@ CREATE INDEX idx_browse_timestamp ON browse_history(timestamp);
 selectAllHerbs:
 SELECT * FROM herb;
 
+selectAllHerbsPaginated:
+SELECT * FROM herb LIMIT :limit OFFSET :offset;
+
 selectHerbById:
 SELECT * FROM herb WHERE id = ?;
 
 selectHerbsByCategory:
 SELECT * FROM herb WHERE category = ?;
+
+selectHerbsByCategoryPaginated:
+SELECT * FROM herb WHERE category = :category LIMIT :limit OFFSET :offset;
 
 selectHerbsByNameLike:
 SELECT * FROM herb WHERE name LIKE ? OR pinyin LIKE ?;

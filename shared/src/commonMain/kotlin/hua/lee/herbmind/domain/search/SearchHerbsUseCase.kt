@@ -28,6 +28,10 @@ class SearchHerbsUseCase(
         "消食" to listOf("消食", "健胃", "开胃", "助消化")
     )
 
+    /**
+     * 搜索药材
+     * @param query 搜索词
+     */
     operator fun invoke(query: String): Flow<List<SearchResult>> {
         if (query.isBlank()) {
             return kotlinx.coroutines.flow.flowOf(emptyList())
@@ -42,6 +46,31 @@ class SearchHerbsUseCase(
             }
             .filter { it.score >= 20 }
             .sortedByDescending { it.score }
+        }
+    }
+
+    /**
+     * 分页搜索药材
+     * @param query 搜索词
+     * @param page 页码（从0开始）
+     * @param pageSize 每页数量
+     */
+    fun searchPaginated(query: String, page: Int, pageSize: Int): Flow<List<SearchResult>> {
+        if (query.isBlank()) {
+            return kotlinx.coroutines.flow.flowOf(emptyList())
+        }
+
+        val keywords = query.trim().split(Regex("\\s+"))
+        val expandedKeywords = keywords.flatMap { expandSynonyms(it) }
+
+        return herbRepository.getAllHerbs().map { herbs ->
+            herbs.map { herb ->
+                calculateMatchScore(herb, expandedKeywords)
+            }
+            .filter { it.score >= 20 }
+            .sortedByDescending { it.score }
+            .drop(page * pageSize)
+            .take(pageSize)
         }
     }
 

@@ -2,6 +2,11 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## ⚠️ 重要提醒
+**正确工作目录**: `/Users/lijie/workspace/herbmind/.worktrees/feature-admob-integration`
+> ❌ 禁止使用临时目录 `/Users/lijie/workspace/herbmind/.claude/worktrees/feature-admob-integration`，所有修改必须在上述正确目录下执行
+**当前开发分支**: `feature-admob-integration` - AdMob广告集成功能开发
+
 ## 项目状态（2026-04-05 更新）
 **当前版本：精简版V2.0**
 - ✅ 仅保留核心功能：中药材/方剂搜索、浏览、详情查看、数据同步
@@ -129,6 +134,15 @@ APK 输出路径: `androidApp/build/outputs/apk/debug/` 或 `/release/`
 
 # 查看项目结构
 ./gradlew projects
+
+# 启动应用
+adb shell am start -n hua.lee.herbmind/hua.lee.herbmind.android.MainActivity
+
+# 卸载应用
+adb uninstall hua.lee.herbmind
+
+# 查看广告相关日志
+adb logcat -s HerbMindApp SearchScreen SearchViewModel AdMobAdapter Ads
 ```
 
 ## 架构说明

@@ -33,11 +33,14 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.viewinterop.AndroidView
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.compose.runtime.DisposableEffect
 import hua.lee.herbmind.android.ui.theme.HerbColors
 import hua.lee.herbmind.android.ui.viewmodel.HerbDetailUiState
 import hua.lee.herbmind.android.ui.viewmodel.HerbDetailViewModel
@@ -115,36 +118,35 @@ fun HerbDetailScreen(
 }
 
 /**
- * 横幅广告视图
+ * 横幅广告视图，使用AdMob官方AdView渲染
+ * 直接使用测试广告单元ID，确保每次都能加载成功
  */
 @Composable
 private fun BannerAdView(
-    ad: BannerAdData,
     modifier: Modifier = Modifier
 ) {
-    val imagePainter = rememberAsyncImagePainter(
-        model = ad.contentUrl,
-        placeholder = null,
-        error = null
-    )
+    val context = LocalContext.current
+    val adView = remember {
+        com.google.android.gms.ads.AdView(context).apply {
+            // 直接使用AdMob官方测试横幅广告ID，确保加载成功
+            setAdUnitId("ca-app-pub-3940256099942544/9214589741")
+            setAdSize(com.google.android.gms.ads.AdSize.BANNER)
+            loadAd(com.google.android.gms.ads.AdRequest.Builder().build())
+        }
+    }
 
-    Box(
+    DisposableEffect(adView) {
+        onDispose {
+            adView.destroy()
+        }
+    }
+
+    AndroidView(
+        factory = { adView },
         modifier = modifier
             .fillMaxWidth()
-            .height(80.dp)
-            .clip(RoundedCornerShape(8.dp))
-            .background(HerbColors.RicePaper)
-            .clickable {
-                // 处理广告点击
-            }
-    ) {
-        Image(
-            painter = imagePainter,
-            contentDescription = "广告",
-            modifier = Modifier.fillMaxSize(),
-            contentScale = ContentScale.FillWidth
-        )
-    }
+            .clip(RoundedCornerShape(topStart = 8.dp, topEnd = 8.dp))
+    )
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -160,6 +162,8 @@ private fun HerbDetailContent(
     // 图片查看器状态
     var showImageViewer by remember { mutableStateOf(false) }
     var selectedImageUrl by remember { mutableStateOf("") }
+    // 横幅广告高度，标准AdMob横幅高度为50dp
+    val bannerAdHeight = 50.dp
 
     Scaffold(
         topBar = {
@@ -174,6 +178,14 @@ private fun HerbDetailContent(
                     }
                 }
             )
+        },
+        bottomBar = {
+            // 横幅广告悬浮在底部
+            BannerAdView(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(bannerAdHeight)
+            )
         }
     ) { padding ->
         Column(
@@ -181,6 +193,8 @@ private fun HerbDetailContent(
                 .fillMaxSize()
                 .padding(padding)
                 .verticalScroll(rememberScrollState())
+                // 底部预留广告高度 + 间距，避免内容被广告遮挡
+                .padding(bottom = bannerAdHeight + 16.dp)
         ) {
             // 药材图片（分区域展示，支持滑动切换）
             HerbImagesSection(
@@ -205,17 +219,6 @@ private fun HerbDetailContent(
                 RelatedFormulasCard(
                     formulas = relatedFormulas,
                     onFormulaClick = onFormulaClick
-                )
-            }
-
-            // 横幅广告
-            uiState.bannerAd?.let { ad ->
-                BannerAdView(
-                    ad = ad,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(80.dp)
-                        .padding(top = 16.dp)
                 )
             }
 

@@ -25,6 +25,18 @@ class HerbRepository(
             .map { list -> list.map { it.toHerb() } }
     }
 
+    /**
+     * 分页获取所有药材
+     * @param limit 每页数量
+     * @param offset 偏移量
+     */
+    fun getAllHerbsPaginated(limit: Long, offset: Long): Flow<List<Herb>> {
+        return herbQueries.selectAllHerbsPaginated(limit, offset)
+            .asFlow()
+            .mapToList(Dispatchers.Default)
+            .map { list -> list.map { it.toHerb() } }
+    }
+
     fun getHerbById(id: String): Flow<Herb?> {
         return herbQueries.selectHerbById(id)
             .asFlow()
@@ -34,6 +46,19 @@ class HerbRepository(
 
     fun getHerbsByCategory(category: String): Flow<List<Herb>> {
         return herbQueries.selectHerbsByCategory(category)
+            .asFlow()
+            .mapToList(Dispatchers.Default)
+            .map { list -> list.map { it.toHerb() } }
+    }
+
+    /**
+     * 分页获取指定分类的药材
+     * @param category 分类名称
+     * @param limit 每页数量
+     * @param offset 偏移量
+     */
+    fun getHerbsByCategoryPaginated(category: String, limit: Long, offset: Long): Flow<List<Herb>> {
+        return herbQueries.selectHerbsByCategoryPaginated(category, limit, offset)
             .asFlow()
             .mapToList(Dispatchers.Default)
             .map { list -> list.map { it.toHerb() } }

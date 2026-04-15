@@ -66,10 +66,10 @@ val adModule = module {
         AdFrequencyController(
             isPremiumUser = false, // TODO: 后续从用户设置中获取
             installDate = Instant.fromEpochMilliseconds(0), // TODO: 后续从安装记录中获取
-            maxAdsPerSession = 3,
-            adCooldownHours = 24,
-            newUserProbability = 0.5f,
-            newUserThresholdDays = 7,
+            maxAdsPerSession = Int.MAX_VALUE, // 测试期间无广告数量限制
+            adCooldownHours = 0, // 测试期间无冷却时间
+            newUserProbability = 1.0f, // 测试期间100%展示广告
+            newUserThresholdDays = 0, // 测试期间禁用新用户概率限制
             clock = Clock.System
         )
     }

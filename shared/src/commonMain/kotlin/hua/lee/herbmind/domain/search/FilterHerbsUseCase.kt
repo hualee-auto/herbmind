@@ -16,11 +16,57 @@ data class FilterCriteria(
 class FilterHerbsUseCase(
     private val herbRepository: HerbRepository
 ) {
+    /**
+     * 筛选药材（不分页，用于获取总数）
+     * @param criteria 筛选条件
+     */
     operator fun invoke(criteria: FilterCriteria): Flow<List<Herb>> {
+        // 如果只有分类筛选，使用数据库分页
+        if (criteria.isCategoryOnly()) {
+            return herbRepository.getHerbsByCategory(criteria.categories.first())
+        }
+        // 其他情况加载全部数据进行内存筛选
         return herbRepository.getAllHerbs().map { herbs ->
-            herbs.filter { herb ->
-                matchesCriteria(herb, criteria)
-            }
+            herbs.filter { herb -> matchesCriteria(herb, criteria) }
+        }
+    }
+
+    /**
+     * 分页获取筛选结果
+     * @param criteria 筛选条件
+     * @param page 页码（从0开始）
+     * @param pageSize 每页数量
+     */
+    fun getFilteredHerbsPaginated(criteria: FilterCriteria, page: Int, pageSize: Int): Flow<List<Herb>> {
+        val offset = page.toLong() * pageSize
+
+        // 如果只有分类筛选，使用数据库层面分页
+        if (criteria.isCategoryOnly()) {
+            return herbRepository.getHerbsByCategoryPaginated(
+                category = criteria.categories.first(),
+                limit = pageSize.toLong(),
+                offset = offset
+            )
+        }
+
+        // 其他情况：加载所有数据后在内存中分页（因为 SQL 层面无法做复杂筛选）
+        return herbRepository.getAllHerbs().map { herbs ->
+            herbs.filter { herb -> matchesCriteria(herb, criteria) }
+                .drop(offset.toInt())
+                .take(pageSize)
+        }
+    }
+
+    /**
+     * 获取筛选结果的总数
+     */
+    fun getFilteredCount(criteria: FilterCriteria): Flow<Int> {
+        if (criteria.isCategoryOnly()) {
+            return herbRepository.getHerbsByCategory(criteria.categories.first())
+                .map { it.size }
+        }
+        return herbRepository.getAllHerbs().map { herbs ->
+            herbs.count { herb -> matchesCriteria(herb, criteria) }
         }
     }
 
@@ -63,4 +109,15 @@ class FilterHerbsUseCase(
 
         return true
     }
+}
+
+/**
+ * 判断筛选条件是否仅包含分类
+ */
+private fun FilterCriteria.isCategoryOnly(): Boolean {
+    return categories.isNotEmpty() &&
+            origins.isEmpty() &&
+            flavors.isEmpty() &&
+            meridians.isEmpty() &&
+            effectCategories.isEmpty()
 }

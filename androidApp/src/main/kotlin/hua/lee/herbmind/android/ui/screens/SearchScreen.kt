@@ -1,7 +1,5 @@
 package hua.lee.herbmind.android.ui.screens
 
-import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -18,16 +16,19 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
+import android.util.Log
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import hua.lee.herbmind.android.ui.components.HerbListAdapter
-import hua.lee.herbmind.android.ui.theme.HerbColors
+import hua.lee.herbmind.android.ui.components.ListItem
 import hua.lee.herbmind.android.ui.viewmodel.SearchViewModel
-import hua.lee.herbmind.data.model.SearchResult
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.filter
 import org.koin.androidx.compose.koinViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -41,14 +42,7 @@ fun SearchScreen(
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val listState = rememberLazyListState()
-    
-    // 检测快速滑动
-    val isScrollingFast by remember {
-        derivedStateOf {
-            listState.isScrollInProgress && listState.firstVisibleItemScrollOffset > 100
-        }
-    }
-    
+
     // 预定义的分类列表 - 必须与数据库中的分类一致
     val categories = listOf(
         "根及根茎类", "果实及种子类", "全草类", "花类", "叶类",
@@ -56,42 +50,47 @@ fun SearchScreen(
     )
 
     // 如果有初始查询词，自动填充
+    // 只有当 ViewModel 尚未加载数据时才触发（避免从详情页返回时重新加载）
     LaunchedEffect(initialQuery) {
-        initialQuery?.let { query ->
-            if (query.isNotBlank() && uiState.query != query) {
-                // 检查是否是分类名，如果是则使用筛选而不是搜索
-                if (categories.contains(query)) {
-                    viewModel.onFilterChange(hua.lee.herbmind.domain.search.FilterCriteria(categories = listOf(query)))
-                    viewModel.onQueryChange("") // 清空搜索词，使用筛选
-                } else {
-                    viewModel.onQueryChange(query)
-                }
+        // 检查是否需要加载：数据为空 且 有初始查询词
+        if (uiState.results.isEmpty() && !initialQuery.isNullOrBlank()) {
+            if (categories.contains(initialQuery)) {
+                viewModel.onFilterChange(hua.lee.herbmind.domain.search.FilterCriteria(categories = listOf(initialQuery)))
+            } else {
+                viewModel.onQueryChange(initialQuery)
             }
         }
     }
 
-    // 预加载广告
-    LaunchedEffect(Unit) {
-        viewModel.preloadNativeAds(3)
-    }
-
     // 监听快速滑动状态
-    LaunchedEffect(isScrollingFast) {
-        viewModel.onFastScrollStateChanged(isScrollingFast)
-    }
-
-    // 监听列表滚动位置，动态加载更多广告
-    LaunchedEffect(listState.firstVisibleItemIndex) {
-        val totalItems = uiState.results.size + (uiState.results.size / 6)
-        val visibleThreshold = 10 // 距离底部还有10项时加载更多广告
-        if (listState.firstVisibleItemIndex + visibleThreshold >= totalItems && !uiState.isScrollingFast) {
-            viewModel.loadMoreAd()
+    LaunchedEffect(listState) {
+        snapshotFlow {
+            listState.isScrollInProgress && listState.firstVisibleItemScrollOffset > 100
+        }.distinctUntilChanged().collect { isScrollingFast ->
+            viewModel.onFastScrollStateChanged(isScrollingFast)
         }
     }
 
-    // 合并搜索结果和广告
-    val combinedItems = remember(uiState.results, uiState.nativeAds) {
-        HerbListAdapter.insertAdsToSearchResults(uiState.results, uiState.nativeAds)
+    // 合并搜索结果和广告，从分页数据计算展示列表
+    val combinedItems = remember(uiState.pages) {
+        Log.d("SearchScreen", "合并列表，分页数: ${uiState.pages.size}, 总药材: ${uiState.results.size}")
+        uiState.getCombinedDisplayItems()
+    }
+
+    // 检测是否滚动到列表底部，触发加载更多
+    LaunchedEffect(listState, uiState.hasMoreResults, uiState.isLoadingMore) {
+        snapshotFlow {
+            val layoutInfo = listState.layoutInfo
+            val totalItems = layoutInfo.totalItemsCount
+            val lastVisibleItem = layoutInfo.visibleItemsInfo.lastOrNull()?.index ?: 0
+            // 当最后可见项接近列表末尾时触发加载
+            lastVisibleItem >= totalItems - 4
+        }.filter { shouldLoad ->
+            shouldLoad && uiState.hasMoreResults && !uiState.isLoadingMore
+        }.distinctUntilChanged().collect {
+            Log.d("SearchScreen", "触发加载更多...")
+            viewModel.loadNextPage()
+        }
     }
 
     Scaffold(
@@ -118,7 +117,9 @@ fun SearchScreen(
             // 搜索输入框
             SearchBar(
                 query = uiState.query,
-                onQueryChange = viewModel::onQueryChange,
+                onQueryChange = { query ->
+                    viewModel.onQueryChange(query)
+                },
                 onClearClick = {
                     viewModel.onQueryChange("")
                     viewModel.clearFilters()
@@ -132,9 +133,28 @@ fun SearchScreen(
             )
 
             // 搜索结果
-            if (uiState.results.isNotEmpty()) {
+            if (uiState.isLoading) {
+                // 加载中状态
+                Box(
+                    modifier = Modifier.fillMaxSize(),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        CircularProgressIndicator(
+                            modifier = Modifier.size(48.dp),
+                            color = MaterialTheme.colorScheme.primary
+                        )
+                        Text(
+                            text = "加载中...",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            modifier = Modifier.padding(top = 16.dp)
+                        )
+                    }
+                }
+            } else if (uiState.results.isNotEmpty() || combinedItems.isNotEmpty()) {
                 Text(
-                    text = "搜索结果 (${uiState.results.size})",
+                    text = "搜索结果 (${uiState.totalResults})",
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.padding(vertical = 8.dp)
@@ -146,9 +166,28 @@ fun SearchScreen(
                             items = combinedItems,
                             onHerbClick = onHerbClick,
                             onAdClick = { ad -> viewModel.onAdClicked(ad) },
-                            onAdClose = { ad -> viewModel.onAdClosed(ad) },
-                            onAdImpression = { /* 曝光已经在AdNativeCard中处理 */ }
+                            onAdClose = { adItem ->
+                                viewModel.onAdClosed(adItem.pageIndex, adItem.ad)
+                                Log.d("SearchScreen", "用户关闭了第${adItem.pageIndex + 1}页的广告: ${adItem.ad.adId}")
+                            }
                         )
+                    }
+
+                    // 加载更多指示器
+                    if (uiState.isLoadingMore) {
+                        item {
+                            Box(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(16.dp),
+                                contentAlignment = Alignment.Center
+                            ) {
+                                CircularProgressIndicator(
+                                    modifier = Modifier.size(24.dp),
+                                    color = MaterialTheme.colorScheme.primary
+                                )
+                            }
+                        }
                     }
                 }
             } else if (uiState.query.isNotBlank()) {
@@ -159,6 +198,18 @@ fun SearchScreen(
                 ) {
                     Text(
                         text = "未找到相关药材",
+                        style = MaterialTheme.typography.bodyLarge,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            } else if (uiState.filterCriteria.categories.isNotEmpty()) {
+                // 分类筛选无结果
+                Box(
+                    modifier = Modifier.fillMaxSize(),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = "该分类暂无药材",
                         style = MaterialTheme.typography.bodyLarge,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
