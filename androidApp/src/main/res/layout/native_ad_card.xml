@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.gms.ads.nativead.NativeAdView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#FFFFFF"
@@ -78,7 +79,7 @@
                 android:src="@android:drawable/ic_menu_close_clear_cancel"
                 android:contentDescription="关闭广告"
                 android:padding="4dp"
-                android:tint="#757575" />
+                app:tint="#757575" />
 
         </LinearLayout>
 
