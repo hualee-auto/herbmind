@@ -66,3 +66,9 @@ Thumbs.db
 # Scripts
 scripts/
 .worktrees/
+
+# Google Play 发布（gradle-play-publisher）
+# 服务账号私钥，绝不可提交
+/play-service-account.json
+# 本地 release 签名 keystore（CI 上由 Secrets 注入，勿入库）
+/herbmind-release.keystore

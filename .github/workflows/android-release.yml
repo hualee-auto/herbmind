@@ -1,0 +1,36 @@
+name: Android Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: 写入签名密钥
+        env:
+          HERBMIND_KEYSTORE_BASE64: ${{ secrets.HERBMIND_KEYSTORE_BASE64 }}
+        run: |
+          echo "$HERBMIND_KEYSTORE_BASE64" | base64 -d > "${GITHUB_WORKSPACE}/herbmind-release.keystore"
+
+      - name: 构建 Release AAB
+        env:
+          HERBMIND_STORE_FILE: ${{ github.workspace }}/herbmind-release.keystore
+          HERBMIND_STORE_PASSWORD: ${{ secrets.HERBMIND_STORE_PASSWORD }}
+          HERBMIND_KEY_ALIAS: herbmind
+          HERBMIND_KEY_PASSWORD: ${{ secrets.HERBMIND_KEY_PASSWORD }}
+        run: chmod +x gradlew && ./gradlew :androidApp:bundleRelease --console=plain
+
+      - name: 上传 AAB 产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: herbmind-release-aab
+          path: androidApp/build/outputs/bundle/release/*.aab
+          if-no-files-found: error

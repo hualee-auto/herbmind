@@ -1,7 +1,12 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    id("com.github.triplet.play") version "3.11.0"
 }
+
+// 签名配置读取顺序：Gradle 属性（本地 ~/.gradle/gradle.properties）> 环境变量（CI Secrets 注入）
+fun signingProp(name: String): String? =
+    providers.gradleProperty(name).orElse(providers.environmentVariable(name)).orNull
 
 android {
     namespace = "hua.lee.herbmind.android"
@@ -33,11 +38,31 @@ android {
         jvmTarget = "17"
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = signingProp("HERBMIND_STORE_FILE")?.let { file(it) }
+            storePassword = signingProp("HERBMIND_STORE_PASSWORD")
+            keyAlias = signingProp("HERBMIND_KEY_ALIAS")
+            keyPassword = signingProp("HERBMIND_KEY_PASSWORD")
+        }
+    }
+
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
+            // 仅当签名配置完整（本地属性或 CI 环境变量）时启用签名，否则保持未签名
+            if (signingProp("HERBMIND_STORE_FILE") != null) {
+                signingConfig = signingConfigs.getByName("release")
+            }
         }
     }
+}
+
+// Google Play 发布（gradle-play-publisher），用法与账号配置见 docs/google-play-cli.md
+play {
+    // 服务账号 JSON 私钥（已 gitignore，需自行放置到仓库根目录）
+    serviceAccountCredentials.set(file("${rootDir}/play-service-account.json"))
+    track.set("internal")
 }
 
 dependencies {
@@ -81,8 +106,8 @@ dependencies {
     // Coil for image loading
     implementation("io.coil-kt:coil-compose:2.5.0")
 
-    // Google AdMob
-    implementation("com.google.android.gms:play-services-ads:22.6.0")
+    // Google AdMob（版本统一由 libs.versions.toml 管理）
+    implementation(libs.play.services.ads)
 
     // Unit Testing
     testImplementation(libs.junit)

@@ -1,0 +1,23 @@
+HerbMind is a reference app for traditional Chinese medicine (TCM) built on the Hong Kong Baptist University (HKBU) Chinese medicinal herbs database, covering 420 common herbs and classic formulas. It is designed for TCM students, practitioners, and enthusiasts.
+
+[Multi-dimensional search]
+Search herbs by name, pinyin, Latin botanical name, aliases, therapeutic effects, indications, origin, nature, and flavor — with synonym expansion (e.g. searching for a common therapeutic term also matches its classical synonyms) to help you find the right herb quickly.
+
+[Formula lookup]
+Browse classic formulas with two-way navigation between each formula and its constituent herbs — jump from a herb to related formulas, and from a formula to every ingredient.
+
+[Categorised browsing & filtering]
+Browse by herb category, and filter by origin, nature, flavor, meridian tropism, and therapeutic category.
+
+[Quick effect shortcuts]
+One-tap shortcuts for commonly searched effects such as tonifying qi, nourishing blood, promoting circulation, clearing heat, and more.
+
+[Sync & offline]
+Data syncs automatically on launch. The core database is fully available offline, with images cached locally — look things up even without a network.
+
+[Classical Chinese design]
+A calm, scholarly interface inspired by traditional Chinese colors: bamboo green, ochre, rice-paper white, and pine-soot ink.
+
+Data source: HKBU School of Chinese Medicine herbal database.
+
+This app contains ads (AdMob). Content is for educational reference only and is not medical advice.
