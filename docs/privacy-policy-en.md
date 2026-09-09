@@ -2,7 +2,7 @@
 
 **HerbMind**
 
-Last Updated: 2026-03-20
+Last Updated: 2026-09-09
 
 ---
 
@@ -18,10 +18,12 @@ This application does **NOT** collect any of the following personal information:
 - Geographic location data
 - Camera, microphone, or other sensor data
 - Contacts, SMS messages, or call logs
-- Device unique identifiers (e.g., IMEI, advertising ID)
+- Device unique identifiers (e.g., IMEI)
 - Crash reports or behavioral analytics data
 
-This application contains **no** third-party advertising SDKs, analytics SDKs, or crash reporting SDKs.
+Note: The Google AdMob SDK may collect the Advertising ID for ad serving. This is independent behavior of the AdMob SDK. For details, please refer to the [Google Privacy Policy](https://policies.google.com/privacy).
+
+This application integrates the Google AdMob SDK to display advertisements. AdMob may collect information such as the device advertising identifier for personalized ad delivery. You can reset the advertising identifier or restrict ad tracking in your device settings.
 
 ## 3. Information Stored Locally
 
@@ -42,7 +44,7 @@ The application requires network access to retrieve the latest TCM knowledge dat
 - Download up-to-date herb and formula data from GitHub or a CDN (one-way download only — no data is uploaded)
 - Load herb image resources
 
-The application never transmits your personal information or usage behavior to any server.
+The application itself never transmits your personal information or usage behavior to any server. However, the AdMob SDK may collect and process necessary ad-related data in accordance with its own privacy policy.
 
 ## 5. Children's Privacy
 
