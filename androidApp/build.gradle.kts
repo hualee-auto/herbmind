@@ -10,13 +10,13 @@ fun signingProp(name: String): String? =
 
 android {
     namespace = "hua.lee.herbmind.android"
-    compileSdk = 34
-    buildToolsVersion = "35.0.0"
+    compileSdk = 36
+    buildToolsVersion = "36.1.0"
 
     defaultConfig {
         applicationId = "hua.lee.herbmind"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0.0"
     }

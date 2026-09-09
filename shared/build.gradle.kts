@@ -56,8 +56,8 @@ kotlin {
 
 android {
     namespace = "hua.lee.herbmind"
-    compileSdk = 34
-    buildToolsVersion = "35.0.0"
+    compileSdk = 36
+    buildToolsVersion = "36.1.0"
 
     defaultConfig {
         minSdk = 24
