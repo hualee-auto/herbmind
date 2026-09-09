@@ -8,8 +8,9 @@ plugins {
 fun signingProp(name: String): String? =
     providers.gradleProperty(name).orElse(providers.environmentVariable(name)).orNull
 
-// 版本代码：Gradle 属性（-PversionCode）> 环境变量 > Git 提交总数。
-// Play 要求每次上传的 versionCode 严格递增，Git 提交数天然单调递增，作为默认来源。
+// 版本代码：Gradle 属性（-PversionCode）> 环境变量 > Git 提交总数（本地兜底）。
+// Play 要求每次上传的 versionCode 严格递增；CI 通过 HERBMIND_VERSION_CODE
+// 注入 workflow 运行序号（单调递增），本地构建退回 Git 提交总数。
 fun versionCodeOf(): Int {
     val explicit = providers.gradleProperty("versionCode")
         .orElse(providers.environmentVariable("HERBMIND_VERSION_CODE"))
