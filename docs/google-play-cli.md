@@ -24,6 +24,7 @@ API 不能创建新应用。若本草记还没在 Play Console 创建：
 
 1. <https://play.google.com/console> → 创建应用（包名 `hua.lee.herbmind`），完成目标受众、内容分级问卷、隐私政策链接等一次性声明。
 2. **第一个 AAB 必须手动上传一次**（用 `./gradlew :androidApp:bundleRelease` 的产物，在 Console → 创建版本）。此后所有更新都可走 API。
+   - ✅ 本草记已上传过 versionCode 1 的包，此步骤已完成。
 
 如果应用已存在且有任意一个已上传版本，本节跳过。
 
@@ -78,8 +79,8 @@ chmod 600 play-service-account.json
 ## 发布前检查清单
 
 - [ ] `play-service-account.json` 已就位且未被 git 跟踪（`git check-ignore play-service-account.json` 应有输出）
-- [ ] **release 签名已配置**：当前 `release` 构建未配置签名，Play 不接受未签名 AAB。需在 `androidApp/build.gradle.kts` 配置 `signingConfigs`（keystore 路径/密码放本机文件或 CI Secret，勿入库）
-- [ ] AdMob：Manifest 中的 APP ID 已从 Google 测试 ID 替换为正式 ID；`AdMobAdapter.kt` 中 5 个测试广告位 ID 已替换
+- [ ] **release 签名已配置**：本机通过 `~/.gradle/gradle.properties` 或环境变量注入 `HERBMIND_STORE_FILE` / `HERBMIND_STORE_PASSWORD` / `HERBMIND_KEY_ALIAS` / `HERBMIND_KEY_PASSWORD`；CI 已通过 Secrets 注入（勿入库）
+- [ ] AdMob：Manifest 中的 APP ID（`ca-app-pub-8623430918768964~5684788741`）与 `AdMobAdapter.kt` 中 5 个正式广告位 ID 均已生效
 - [ ] 广告声明：Play Console → 应用内容 → **广告** 已勾选"含广告"（本应用集成 AdMob）
 - [ ] 数据安全表单（Data safety）：按 `docs/privacy-policy.md` 内容在 Console 填写
 - [ ] 隐私政策 URL 可公开访问（Console 要求填写链接）
