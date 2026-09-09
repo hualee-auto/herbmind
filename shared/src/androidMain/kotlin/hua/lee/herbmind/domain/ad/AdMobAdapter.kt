@@ -394,11 +394,11 @@ class AdMobAdapter(private val context: Context) : AdPlatformAdapter {
      */
     private fun getAdUnitId(position: AdPosition, adType: AdType): String {
         return when (adType) {
-            AdType.BANNER -> "ca-app-pub-3940256099942544/9214589741" // 最新测试横幅广告ID（2026版）
-            AdType.NATIVE -> "ca-app-pub-3940256099942544/2247696110" // 最新测试原生广告ID（2026版）
-            AdType.INTERSTITIAL -> "ca-app-pub-3940256099942544/1033173712" // 测试插屏广告ID
-            AdType.REWARDED -> "ca-app-pub-3940256099942544/5224354917" // 测试激励广告ID
-            AdType.OPEN_APP -> "ca-app-pub-3940256099942544/3419835294" // 测试开屏广告ID
+            AdType.BANNER -> "ca-app-pub-8623430918768964/9751163204" // 详情页横幅
+            AdType.NATIVE -> "ca-app-pub-8623430918768964/5269982397" // 原生
+            AdType.INTERSTITIAL -> "ca-app-pub-8623430918768964/6391492375" // 插页式
+            AdType.REWARDED -> "ca-app-pub-8623430918768964/3185754851" // 激励
+            AdType.OPEN_APP -> "ca-app-pub-8623430918768964/3482740501" // 开屏
         }
     }
 

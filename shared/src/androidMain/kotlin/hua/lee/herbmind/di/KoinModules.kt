@@ -81,9 +81,9 @@ val adModule = module {
                 platformName = "AdMob",
                 priority = 1,
                 enabled = true,
-                appId = "ca-app-pub-3940256099942544~3347511713", // 测试App ID
-                adUnitIds = emptyMap(), // 测试ID在AdMobAdapter中硬编码
-                isTestMode = true
+                appId = "ca-app-pub-8623430918768964~5684788741",
+                adUnitIds = emptyMap(), // 广告位ID在AdMobAdapter中硬编码
+                isTestMode = false
             )
         )
     }

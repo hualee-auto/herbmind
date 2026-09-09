@@ -119,7 +119,6 @@ fun HerbDetailScreen(
 
 /**
  * 横幅广告视图，使用AdMob官方AdView渲染
- * 直接使用测试广告单元ID，确保每次都能加载成功
  */
 @Composable
 private fun BannerAdView(
@@ -128,8 +127,8 @@ private fun BannerAdView(
     val context = LocalContext.current
     val adView = remember {
         com.google.android.gms.ads.AdView(context).apply {
-            // 直接使用AdMob官方测试横幅广告ID，确保加载成功
-            setAdUnitId("ca-app-pub-3940256099942544/9214589741")
+            // 详情页横幅广告位
+            setAdUnitId("ca-app-pub-8623430918768964/9751163204")
             setAdSize(com.google.android.gms.ads.AdSize.BANNER)
             loadAd(com.google.android.gms.ads.AdRequest.Builder().build())
         }
