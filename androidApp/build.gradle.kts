@@ -8,6 +8,19 @@ plugins {
 fun signingProp(name: String): String? =
     providers.gradleProperty(name).orElse(providers.environmentVariable(name)).orNull
 
+// 版本代码：Gradle 属性（-PversionCode）> 环境变量 > Git 提交总数。
+// Play 要求每次上传的 versionCode 严格递增，Git 提交数天然单调递增，作为默认来源。
+fun versionCodeOf(): Int {
+    val explicit = providers.gradleProperty("versionCode")
+        .orElse(providers.environmentVariable("HERBMIND_VERSION_CODE"))
+        .orNull
+    if (explicit != null) return explicit.toInt()
+    return providers.exec {
+        commandLine("git", "rev-list", "--count", "HEAD")
+        workingDir(rootDir)
+    }.standardOutput.asText.get().trim().toInt()
+}
+
 android {
     namespace = "hua.lee.herbmind.android"
     compileSdk = 36
@@ -17,7 +30,7 @@ android {
         applicationId = "hua.lee.herbmind"
         minSdk = 24
         targetSdk = 36
-        versionCode = 1
+        versionCode = versionCodeOf()
         versionName = "1.0.0"
     }
 
