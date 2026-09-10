@@ -67,11 +67,11 @@ chmod 600 play-service-account.json
 # 只上传/更新商店资料（标题、简介、图标、截图、更新说明），不传安装包
 ./gradlew :androidApp:publishListing
 
-# 构建 release AAB 并上传到 internal 测试轨道（自动提交，internal 审核快）
+# 构建 release AAB 并上传到封闭式测试 Alpha 轨道（自动提交，当前配置的默认轨道）
 ./gradlew :androidApp:publishBundle
 
-# internal 验证没问题后，提升（promote）到生产环境，不重新上传包
-./gradlew :androidApp:promoteArtifact --from-track internal --to-track production
+# Alpha 验证没问题后，提升（promote）到生产环境，不重新上传包
+./gradlew :androidApp:promoteArtifact --from-track alpha --to-track production
 ```
 
 其他常用任务：`./gradlew :androidApp:tasks --group publishing` 查看全部发布任务。
