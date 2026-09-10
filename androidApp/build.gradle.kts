@@ -76,7 +76,7 @@ android {
 play {
     // 服务账号 JSON 私钥（已 gitignore，需自行放置到仓库根目录）
     serviceAccountCredentials.set(file("${rootDir}/play-service-account.json"))
-    track.set("internal")
+    track.set("alpha") // 封闭式测试（Alpha）
 }
 
 dependencies {
